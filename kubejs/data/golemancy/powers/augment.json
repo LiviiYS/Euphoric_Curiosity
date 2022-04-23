@@ -1,0 +1,870 @@
+{
+	"type": "origins:multiple",
+	"level": {
+		"type": "origins:resource",
+		"min": 0,
+		"max": 10,
+		"hud_render": {
+			"sprite_location": "origins:textures/gui/community/spiderkolo/resource_bar_03.png",
+			"bar_index": 22,
+			"condition": {
+				"type": "origins:resource",
+				"resource": "golemancy:augment_level",
+				"comparison": "==",
+				"compare_to": 10,
+				"inverted": true
+			}
+		}
+	},
+	"progress": {
+		"type": "origins:resource",
+		"min": 0,
+		"max": 100,
+		"hud_render": {
+			"sprite_location": "origins:textures/gui/community/spiderkolo/resource_bar_03.png",
+			"bar_index": 7,
+			"condition": {
+				"type": "origins:resource",
+				"resource": "golemancy:augment_level",
+				"comparison": "==",
+				"compare_to": 10,
+				"inverted": true
+			}
+		}
+	},
+	"aura": {
+		"type": "origins:resource",
+		"min": 0,
+		"max": 6,
+		"hud_render": {
+			"sprite_location": "origins:textures/gui/community/spiderkolo/resource_bar_02.png",
+			"bar_index": 6,
+			"condition": {
+				"type": "origins:resource",
+				"resource": "golemancy:augment_aura",
+				"comparison": ">",
+				"compare_to": 0
+			}
+		}
+	},
+	"up_progress": {
+		"type": "origins:active_self",
+		"entity_action": {
+			"type": "origins:if_else_list",
+			"actions": [
+			{
+				"condition": {
+					"type": "origins:and",
+					"conditions": [
+					{
+						"type": "origins:resource",
+						"resource": "golemancy:augment_level",
+						"comparison": "==",
+						"compare_to": 0
+					},
+					{
+						"type": "origins:or",
+						"conditions": [
+						{
+							"type": "origins:equipped_item",
+							"equipment_slot": "mainhand",
+							"item_condition": {
+								"type": "origins:ingredient",
+								"ingredient": {
+									"item": "minecraft:leather"
+								}
+							}
+						},
+						{
+							"type": "origins:equipped_item",
+							"equipment_slot": "offhand",
+							"item_condition": {
+								"type": "origins:ingredient",
+								"ingredient": {
+									"item": "minecraft:leather"
+								}
+							}
+						}
+						]
+					}
+					]
+				},
+				"action": {
+					"type": "origins:and",
+					"actions": [
+					{
+						"type": "origins:execute_command",
+						"command": "clear @s minecraft:leather 1"
+					},
+					{
+						"type": "origins:change_resource",
+						"resource": "golemancy:augment_progress",
+						"change": 5
+					}
+					]
+				}
+			},
+			{
+				"condition": {
+					"type": "origins:and",
+					"conditions": [
+					{
+						"type": "origins:resource",
+						"resource": "golemancy:augment_level",
+						"comparison": "==",
+						"compare_to": 1
+					},
+					{
+						"type": "origins:or",
+						"conditions": [
+						{
+							"type": "origins:equipped_item",
+							"equipment_slot": "mainhand",
+							"item_condition": {
+								"type": "origins:ingredient",
+								"ingredient": {
+									"item": "minecraft:iron_ingot"
+								}
+							}
+						},
+						{
+							"type": "origins:equipped_item",
+							"equipment_slot": "offhand",
+							"item_condition": {
+								"type": "origins:ingredient",
+								"ingredient": {
+									"item": "minecraft:iron_ingot"
+								}
+							}
+						}
+						]
+					}
+					]
+				},
+				"action": {
+					"type": "origins:and",
+					"actions": [
+					{
+						"type": "origins:execute_command",
+						"command": "clear @s minecraft:iron_ingot 1"
+					},
+					{
+						"type": "origins:change_resource",
+						"resource": "golemancy:augment_progress",
+						"change": 4
+					}
+					]
+				}
+			},
+			{
+				"condition": {
+					"type": "origins:and",
+					"conditions": [
+					{
+						"type": "origins:resource",
+						"resource": "golemancy:augment_level",
+						"comparison": "==",
+						"compare_to": 2
+					},
+					{
+						"type": "origins:or",
+						"conditions": [
+						{
+							"type": "origins:equipped_item",
+							"equipment_slot": "mainhand",
+							"item_condition": {
+								"type": "origins:ingredient",
+								"ingredient": {
+									"item": "minecraft:gold_ingot"
+								}
+							}
+						},
+						{
+							"type": "origins:equipped_item",
+							"equipment_slot": "offhand",
+							"item_condition": {
+								"type": "origins:ingredient",
+								"ingredient": {
+									"item": "minecraft:gold_ingot"
+								}
+							}
+						}
+						]
+					}
+					]
+				},
+				"action": {
+					"type": "origins:and",
+					"actions": [
+					{
+						"type": "origins:execute_command",
+						"command": "clear @s minecraft:gold_ingot 1"
+					},
+					{
+						"type": "origins:change_resource",
+						"resource": "golemancy:augment_progress",
+						"change": 4
+					}
+					]
+				}
+			},
+			{
+				"condition": {
+					"type": "origins:and",
+					"conditions": [
+					{
+						"type": "origins:resource",
+						"resource": "golemancy:augment_level",
+						"comparison": "==",
+						"compare_to": 3
+					},
+					{
+						"type": "origins:or",
+						"conditions": [
+						{
+							"type": "origins:equipped_item",
+							"equipment_slot": "mainhand",
+							"item_condition": {
+								"type": "origins:ingredient",
+								"ingredient": {
+									"item": "minecraft:lapis_lazuli"
+								}
+							}
+						},
+						{
+							"type": "origins:equipped_item",
+							"equipment_slot": "offhand",
+							"item_condition": {
+								"type": "origins:ingredient",
+								"ingredient": {
+									"item": "minecraft:lapis_lazuli"
+								}
+							}
+						}
+						]
+					}
+					]
+				},
+				"action": {
+					"type": "origins:and",
+					"actions": [
+					{
+						"type": "origins:execute_command",
+						"command": "clear @s minecraft:lapis_lazuli 1"
+					},
+					{
+						"type": "origins:change_resource",
+						"resource": "golemancy:augment_progress",
+						"change": 1
+					}
+					]
+				}
+			},
+			{
+				"condition": {
+					"type": "origins:and",
+					"conditions": [
+					{
+						"type": "origins:resource",
+						"resource": "golemancy:augment_level",
+						"comparison": "==",
+						"compare_to": 4
+					},
+					{
+						"type": "origins:or",
+						"conditions": [
+						{
+							"type": "origins:equipped_item",
+							"equipment_slot": "mainhand",
+							"item_condition": {
+								"type": "origins:ingredient",
+								"ingredient": {
+									"item": "minecraft:diamond"
+								}
+							}
+						},
+						{
+							"type": "origins:equipped_item",
+							"equipment_slot": "offhand",
+							"item_condition": {
+								"type": "origins:ingredient",
+								"ingredient": {
+									"item": "minecraft:diamond"
+								}
+							}
+						}
+						]
+					}
+					]
+				},
+				"action": {
+					"type": "origins:and",
+					"actions": [
+					{
+						"type": "origins:execute_command",
+						"command": "clear @s minecraft:diamond 1"
+					},
+					{
+						"type": "origins:change_resource",
+						"resource": "golemancy:augment_progress",
+						"change": 4
+					}
+					]
+				}
+			},
+			{
+				"condition": {
+					"type": "origins:and",
+					"conditions": [
+					{
+						"type": "origins:resource",
+						"resource": "golemancy:augment_level",
+						"comparison": "==",
+						"compare_to": 5
+					},
+					{
+						"type": "origins:or",
+						"conditions": [
+						{
+							"type": "origins:equipped_item",
+							"equipment_slot": "mainhand",
+							"item_condition": {
+								"type": "origins:ingredient",
+								"ingredient": {
+									"item": "minecraft:netherite_ingot"
+								}
+							}
+						},
+						{
+							"type": "origins:equipped_item",
+							"equipment_slot": "offhand",
+							"item_condition": {
+								"type": "origins:ingredient",
+								"ingredient": {
+									"item": "minecraft:netherite_ingot"
+								}
+							}
+						}
+						]
+					}
+					]
+				},
+				"action": {
+					"type": "origins:and",
+					"actions": [
+					{
+						"type": "origins:execute_command",
+						"command": "clear @s minecraft:netherite_ingot 1"
+					},
+					{
+						"type": "origins:change_resource",
+						"resource": "golemancy:augment_progress",
+						"change": 25
+					}
+					]
+				}
+			},
+			{
+				"condition": {
+					"type": "origins:and",
+					"conditions": [
+					{
+						"type": "origins:resource",
+						"resource": "golemancy:augment_level",
+						"comparison": ">=",
+						"compare_to": 6
+					},
+					{
+						"type": "origins:resource",
+						"resource": "golemancy:augment_level",
+						"comparison": "<",
+						"compare_to": 10
+					},
+					{
+						"type": "origins:or",
+						"conditions": [
+						{
+							"type": "origins:equipped_item",
+							"equipment_slot": "mainhand",
+							"item_condition": {
+								"type": "origins:ingredient",
+								"ingredient": {
+									"item": "minecraft:air"
+								}
+							}
+						},
+						{
+							"type": "origins:equipped_item",
+							"equipment_slot": "offhand",
+							"item_condition": {
+								"type": "origins:ingredient",
+								"ingredient": {
+									"item": "minecraft:air"
+								}
+							}
+						}
+						]
+					},
+					{
+						"type": "origins:xp_levels",
+						"comparison": ">=",
+						"compare_to": 10
+					}
+					]
+				},
+				"action": {
+					"type": "origins:and",
+					"actions": [
+					{
+						"type": "origins:add_xp",
+						"levels": -10
+					},
+					{
+						"type": "origins:change_resource",
+						"resource": "golemancy:augment_progress",
+						"change": 5
+					}
+					]
+				}
+			}
+			]
+		},
+		"cooldown": 1,
+		"hud_render": {
+			"should_render": false
+		},
+		"key": {
+			"key": "key.origins.secondary_active",
+			"continuous": true
+		},
+		"condition": {
+			"type": "origins:and",
+			"conditions": [
+			{
+				"type": "origins:sneaking",
+				"inverted": true
+			},
+			{
+				"type": "origins:resource",
+				"resource": "golemancy:augment_level",
+				"comparison": "<",
+				"compare_to": 10
+			}
+			]
+		}
+	},
+	"up_level": {
+		"type": "origins:action_over_time",
+		"interval": 5,
+		"rising_action": {
+			"type": "origins:and",
+			"actions": [
+			{
+				"type": "origins:if_else_list",
+				"actions": [
+				{
+					"condition": {
+						"type": "origins:resource",
+						"resource": "golemancy:augment_level",
+						"comparison": "==",
+						"compare_to": 0
+					},
+					"action": {
+						"type": "origins:execute_command",
+						"command": "tellraw @s {\"text\":\"The Leather hide enforces your otherwise-frail frame.\",\"color\":\"dark_purple\"}"
+					}
+				},
+				{
+					"condition": {
+						"type": "origins:resource",
+						"resource": "golemancy:augment_level",
+						"comparison": "==",
+						"compare_to": 1
+					},
+					"action": {
+						"type": "origins:execute_command",
+						"command": "tellraw @s {\"text\":\"You forge the Iron into plating, which you meld to your body and over the Leather hide.\",\"color\":\"dark_purple\"}"
+					}
+				},
+				{
+					"condition": {
+						"type": "origins:resource",
+						"resource": "golemancy:augment_level",
+						"comparison": "==",
+						"compare_to": 2
+					},
+					"action": {
+						"type": "origins:and",
+						"actions": [
+						{
+							"type": "origins:execute_command",
+							"command": "tellraw @s {\"text\":\"Gold plating appears to have marginally enhanced the physical properties of your body.\",\"color\":\"dark_purple\"}"
+						},
+						{
+							"type": "origins:change_resource",
+							"resource": "golemancy:augment_aura",
+							"change": 2
+						}
+						]
+					}
+				},
+				{
+					"condition": {
+						"type": "origins:resource",
+						"resource": "golemancy:augment_level",
+						"comparison": "==",
+						"compare_to": 3
+					},
+					"action": {
+						"type": "origins:and",
+						"actions": [
+						{
+							"type": "origins:execute_command",
+							"command": "tellraw @s {\"text\":\"Isolating Lazurite from your Lapis Lazuli reveals an excellent embellishing material with arcane properties.\",\"color\":\"dark_purple\"}"
+						},
+						{
+							"type": "origins:change_resource",
+							"resource": "golemancy:augment_aura",
+							"change": 2
+						}
+						]
+					}
+				},
+				{
+					"condition": {
+						"type": "origins:resource",
+						"resource": "golemancy:augment_level",
+						"comparison": "==",
+						"compare_to": 4
+					},
+					"action": {
+						"type": "origins:execute_command",
+						"command": "tellraw @s {\"text\":\"The Diamond shards are placed intelligently and precisely across your armor, increasing the toughness.\",\"color\":\"dark_purple\"}"
+					}
+				},
+				{
+					"condition": {
+						"type": "origins:resource",
+						"resource": "golemancy:augment_level",
+						"comparison": "==",
+						"compare_to": 5
+					},
+					"action": {
+						"type": "origins:execute_command",
+						"command": "tellraw @s {\"text\":\"The Netherite further enhances your body. This is as far as you can go with physical augmentation.\",\"color\":\"dark_purple\"}"
+					}
+				},
+				{
+					"condition": {
+						"type": "origins:and",
+						"conditions": [
+						{
+							"type": "origins:resource",
+							"resource": "golemancy:augment_level",
+							"comparison": ">=",
+							"compare_to": 6
+						},
+						{
+							"type": "origins:resource",
+							"resource": "golemancy:augment_level",
+							"comparison": "<",
+							"compare_to": 9
+						}
+						]
+					},
+					"action": {
+						"type": "origins:execute_command",
+						"command": "tellraw @s {\"text\":\"The Gold and Lazurite absorb the raw essence-- but you can go further.\",\"color\":\"dark_purple\"}"
+					}
+				},
+				{
+					"condition": {
+						"type": "origins:resource",
+						"resource": "golemancy:augment_level",
+						"comparison": "==",
+						"compare_to": 9
+					},
+					"action": {
+						"type": "origins:and",
+						"actions": [
+						{
+							"type": "origins:execute_command",
+							"command": "tellraw @s {\"text\":\"The Gold and Lazurite absorb the raw essence. This is as far as you can go with this form of augmentation.\",\"color\":\"dark_purple\"}"
+						},
+						{
+							"type": "origins:change_resource",
+							"resource": "golemancy:augment_aura",
+							"change": 2
+						}
+						]
+					}
+				}
+				]
+			},
+			{
+				"type": "origins:change_resource",
+				"resource": "golemancy:augment_progress",
+				"change": -100
+			},
+			{
+				"type": "origins:change_resource",
+				"resource": "golemancy:augment_level",
+				"change": 1
+			},
+			{
+				"type": "origins:play_sound",
+				"sound": "minecraft:entity.item.break",
+				"pitch": 1.4,
+				"volume": 1
+			},
+			{
+				"type": "origins:play_sound",
+				"sound": "minecraft:block.note_block.basedrum",
+				"pitch": 1,
+				"volume": 0.8
+			},
+			{
+				"type": "origins:delay",
+				"ticks": 8,
+				"action": {
+					"type": "origins:play_sound",
+					"sound": "minecraft:entity.item.break",
+					"pitch": 0.8,
+					"volume": 1
+				}
+			},
+			{
+				"type": "origins:delay",
+				"ticks": 8,
+				"action": {
+					"type": "origins:play_sound",
+					"sound": "minecraft:block.note_block.basedrum",
+					"pitch": 0.8,
+					"volume": 0.8
+				}
+			},
+			{
+				"type": "origins:delay",
+				"ticks": 16,
+				"action": {
+					"type": "origins:play_sound",
+					"sound": "minecraft:entity.item.break",
+					"pitch": 0.5,
+					"volume": 1
+				}
+			},
+			{
+				"type": "origins:delay",
+				"ticks": 16,
+				"action": {
+					"type": "origins:play_sound",
+					"sound": "minecraft:block.note_block.basedrum",
+					"pitch": 0.5,
+					"volume": 0.8
+				}
+			},
+			{
+				"type": "origins:delay",
+				"ticks": 16,
+				"action": {
+					"type": "origins:play_sound",
+					"sound": "minecraft:entity.elder_guardian.curse",
+					"pitch": 1.5,
+					"volume": 0.5
+				}
+			}
+			]
+		},
+		"condition": {
+			"type": "origins:resource",
+			"resource": "golemancy:augment_progress",
+			"comparison": "==",
+			"compare_to": 100
+		}
+	},
+	"tier0": {
+		"type": "origins:conditioned_attribute",
+		"modifier": {
+			"attribute": "minecraft:generic.armor",
+			"operation": "addition",
+			"value": 2
+		},
+		"condition": {
+			"type": "origins:resource",
+			"resource": "golemancy:augment_level",
+			"comparison": "==",
+			"compare_to": 1
+		}
+	},
+	"tier1": {
+		"type": "origins:conditioned_attribute",
+		"modifier": {
+			"attribute": "minecraft:generic.armor",
+			"operation": "addition",
+			"value": 7
+		},
+		"condition": {
+			"type": "origins:resource",
+			"resource": "golemancy:augment_level",
+			"comparison": "==",
+			"compare_to": 1
+		}
+	},
+	"tier2": {
+		"type": "origins:conditioned_attribute",
+		"modifier": {
+			"attribute": "minecraft:generic.armor",
+			"operation": "addition",
+			"value": 12
+		},
+		"condition": {
+			"type": "origins:resource",
+			"resource": "golemancy:augment_level",
+			"comparison": "==",
+			"compare_to": 2
+		}
+	},
+	"tier3": {
+		"type": "origins:conditioned_attribute",
+		"modifier": {
+			"attribute": "minecraft:generic.armor",
+			"operation": "addition",
+			"value": 15
+		},
+		"condition": {
+			"type": "origins:resource",
+			"resource": "golemancy:augment_level",
+			"comparison": "==",
+			"compare_to": 3
+		}
+	},
+	"tier4": {
+		"type": "origins:conditioned_attribute",
+		"modifier": {
+			"attribute": "minecraft:generic.armor",
+			"operation": "addition",
+			"value": 17
+		},
+		"condition": {
+			"type": "origins:resource",
+			"resource": "golemancy:augment_level",
+			"comparison": "==",
+			"compare_to": 4
+		}
+	},
+	"tier5": {
+		"type": "origins:conditioned_attribute",
+		"modifiers": [
+		{
+			"attribute": "minecraft:generic.armor",
+			"operation": "addition",
+			"value": 20
+		},
+		{
+			"attribute": "minecraft:generic.armor_toughness",
+			"operation": "addition",
+			"value": 8
+		}
+		],
+		"condition": {
+			"type": "origins:resource",
+			"resource": "golemancy:augment_level",
+			"comparison": "==",
+			"compare_to": 5
+		}
+	},
+	"tier6": {
+		"type": "origins:conditioned_attribute",
+		"modifiers": [
+		{
+			"attribute": "minecraft:generic.armor",
+			"operation": "addition",
+			"value": 20
+		},
+		{
+			"attribute": "minecraft:generic.armor_toughness",
+			"operation": "addition",
+			"value": 12
+		},
+		{
+			"attribute": "minecraft:generic.knockback_resistance",
+			"operation": "addition",
+			"value": 0.9
+		}
+		],
+		"condition": {
+			"type": "origins:resource",
+			"resource": "golemancy:augment_level",
+			"comparison": ">=",
+			"compare_to": 6
+		}
+	},
+	"tier7": {
+		"type": "origins:modify_damage_taken",
+		"modifier": {
+			"operation": "multiply_total",
+			"value": -0.16
+		},
+		"condition": {
+			"type": "origins:resource",
+			"resource": "golemancy:augment_level",
+			"comparison": "==",
+			"compare_to": 7
+		}
+	},
+	"tier8": {
+		"type": "origins:modify_damage_taken",
+		"modifier": {
+			"operation": "multiply_total",
+			"value": -0.32
+		},
+		"condition": {
+			"type": "origins:resource",
+			"resource": "golemancy:augment_level",
+			"comparison": "==",
+			"compare_to": 8
+		}
+	},
+	"tier9": {
+		"type": "origins:modify_damage_taken",
+		"modifier": {
+			"operation": "multiply_total",
+			"value": -0.48
+		},
+		"condition": {
+			"type": "origins:resource",
+			"resource": "golemancy:augment_level",
+			"comparison": "==",
+			"compare_to": 9
+		}
+	},
+	"tier10": {
+		"type": "origins:modify_damage_taken",
+		"modifier": {
+			"operation": "multiply_total",
+			"value": -0.64
+		},
+		"condition": {
+			"type": "origins:resource",
+			"resource": "golemancy:augment_level",
+			"comparison": "==",
+			"compare_to": 10
+		}
+	},
+	"name": "Augment",
+	"description": "You gain the ability to continuously augment your body using resources you find.",
+	"badges": [
+	{
+		"sprite": "origins:textures/gui/badge/active.png",
+		"text": "Active ability, use with %s while holding a material to incorporate it into your body."
+	},
+	{
+		"sprite": "origins:textures/gui/badge/arrow_up.png",
+		"text": "Upgrade order: Leather, Iron, Gold, Lapis Lazuli, Diamond, Netherite, and then XP."
+	},
+	{
+		"sprite": "origins:textures/gui/badge/info.png",
+		"text": "There are 4 XP tiers, and progress on each consumes 10 levels at a time. Hold an empty hand to upgrade with XP."
+	}
+	]
+}

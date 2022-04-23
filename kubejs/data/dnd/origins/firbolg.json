@@ -1,0 +1,14 @@
+{
+	"powers": [
+		"dnd:firbolg/giant_stature",
+		"dnd:firbolg/giant_appetite",
+		"dnd:speak_with_beasts",
+		"dnd:firbolg/hidden_step",
+		"dnd:powerful_build"
+	],
+	"icon": "minecraft:clay_ball",
+	"order": 2,
+	"impact": 2,
+	"name": "Firbolg",
+	"description": "Firbolg tribes cloister in remote forest strongholds, preferring to spend their days in quiet harmony with the woods."
+}

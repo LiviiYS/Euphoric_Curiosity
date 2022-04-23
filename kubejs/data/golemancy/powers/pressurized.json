@@ -1,0 +1,47 @@
+{
+	"type": "origins:multiple",
+	"move": {
+		"type": "origins:conditioned_attribute",
+		"modifier": {
+			"attribute": "minecraft:generic.movement_speed",
+			"operation": "multiply_total",
+			"value": -0.5,
+			"name": "Aquanaut Pressure Move Slow"
+		},
+		"tick_rate": 4,
+		"condition": {
+			"type": "origins:submerged_in",
+			"fluid": "minecraft:water",
+			"inverted": true
+		}
+	},
+	"break": {
+		"type": "origins:modify_break_speed",
+		"modifier": {
+			"attribute": "minecraft:generic.movement_speed",
+			"operation": "multiply_total",
+			"value": -0.5,
+			"name": "Aquanaut Pressure Break Slow"
+		},
+		"condition": {
+			"type": "origins:submerged_in",
+			"fluid": "minecraft:water",
+			"inverted": true
+		}
+	},
+	"exhaust": {
+		"type": "origins:modify_exhaustion",
+		"modifier": {
+			"name": "Aquanaut Pressure Exhaustion",
+			"value": 1,
+			"operation": "multiply_base"
+		},
+		"condition": {
+			"type": "origins:submerged_in",
+			"fluid": "minecraft:water",
+			"inverted": true
+		}
+	},
+	"name": "Pressurized",
+	"description": "While not submerged in water, you move and break blocks slower, and lose hunger more quickly."
+}

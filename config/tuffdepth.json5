@@ -1,0 +1,10 @@
+{
+	// Minimum Y-Level Tuff Depth Mobs can spawn
+	"minYLevel": -64,
+	// Maximum Y-Level Tuff Depth Mobs can spawn
+	"maxYLevel": 0,
+	// Health Multiplier for Tuff Depth Mobs
+	"healthMultiplier": 1.5,
+	// Damage Multiplier for Tuff Depth Mobs
+	"damageMultiplier": 2.0
+}

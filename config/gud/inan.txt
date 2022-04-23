@@ -1,0 +1,4 @@
+disable_auto_auto_jump=true
+disable_interaction_nag=true
+disable_mp_nag=true
+disable_tutorial=true

@@ -1,0 +1,61 @@
+{
+	"name": "Hold Breath",
+	"description": "You can hold your breath twice as long as a human.",
+	"type": "origins:multiple",
+	"respiration_0": {
+		"type": "origins:action_over_time",
+		"interval": 2,
+		"entity_action": {
+			"type": "origins:gain_air",
+			"value": 1
+		},
+		"condition": {
+			"type": "origins:enchantment",
+			"enchantment": "minecraft:respiration",
+			"comparison": "==",
+			"compare_to": 0
+		}
+	},
+	"respiration_1": {
+		"type": "origins:action_over_time",
+		"interval": 3,
+		"entity_action": {
+			"type": "origins:gain_air",
+			"value": 1
+		},
+		"condition": {
+			"type": "origins:enchantment",
+			"enchantment": "minecraft:respiration",
+			"comparison": "==",
+			"compare_to": 1
+		}
+	},
+	"respiration_2": {
+		"type": "origins:action_over_time",
+		"interval": 4,
+		"entity_action": {
+			"type": "origins:gain_air",
+			"value": 1
+		},
+		"condition": {
+			"type": "origins:enchantment",
+			"enchantment": "minecraft:respiration",
+			"comparison": "==",
+			"compare_to": 2
+		}
+	},
+	"respiration_3": {
+		"type": "origins:action_over_time",
+		"interval": 5,
+		"entity_action": {
+			"type": "origins:gain_air",
+			"value": 1
+		},
+		"condition": {
+			"type": "origins:enchantment",
+			"enchantment": "minecraft:respiration",
+			"comparison": "==",
+			"compare_to": 3
+		}
+	}
+}

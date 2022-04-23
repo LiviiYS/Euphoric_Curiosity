@@ -1,0 +1,30 @@
+{
+	"type": "origins:active_self",
+	"key": {
+		"key": "key.loadToolbarActivator"
+	},
+	"entity_action": {
+		"type": "origins:and",
+		"actions": [
+			{
+				"type": "origins:execute_command",
+ 				"command": "summon skeleton ^2 ^ ^ {Tags:[\"sfriend\"],HandItems:[{Count:1,id:bow,tag:{Enchantments:[{id:vanishing_curse,lvl:1}]}},{}],ArmorItems:[{Count:1,id:iron_boots,tag:{Enchantments:[{id:vanishing_curse,lvl:1}]}},{Count:1,id:iron_leggings,tag:{Enchantments:[{id:vanishing_curse,lvl:1}]}},{Count:1,id:iron_chestplate,tag:{Enchantments:[{id:vanishing_curse,lvl:1}]}},{Count:1,id:iron_helmet,tag:{Enchantments:[{id:vanishing_curse,lvl:1}]}}]}"
+			},
+ 			{
+ 				"type": "origins:execute_command",
+ 				"command": "summon zombie ^-2 ^ ^ {Tags:[\"sfriend\"],ArmorItems:[{Count:1,id:iron_boots,tag:{Enchantments:[{id:vanishing_curse,lvl:1}]}},{Count:1,id:iron_leggings,tag:{Enchantments:[{id:vanishing_curse,lvl:1}]}},{Count:1,id:iron_chestplate,tag:{Enchantments:[{id:vanishing_curse,lvl:1}]}},{Count:1,id:iron_helmet,tag:{Enchantments:[{id:vanishing_curse,lvl:1}]}}]}"
+ 			},
+ 			{
+ 				"type": "origins:execute_command",
+ 				"command": "playsound entity.evoker.cast_spell ambient @p ~ ~ ~"
+ 			}
+		]
+	},
+	"cooldown": 600,
+	"hud_render": {
+		"sprite_location": "origins:textures/gui/community/spiderkolo/resource_bar_02.png",
+		"bar_index": 17
+	},
+	"name": "§2Summon",
+	"description": "Your inherent ability to perform necromancy allows you to call forth an armored skeleton, and an armored zombie, from beyond the grave. [Load Toolbar Activator]"
+}

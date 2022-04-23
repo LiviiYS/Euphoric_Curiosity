@@ -1,0 +1,33 @@
+{
+	id: "718797D2C5949E7F"
+	order_index: 4
+	title: "Random Redstone"
+	icon: "kubejs:dice_redstone"
+	loot_size: 1
+	hide_tooltip: true
+	rewards: [
+		{ item: "minecraft:repeater", count: 5 }
+		{ item: "minecraft:comparator", count: 5 }
+		{ item: "minecraft:tnt", count: 5 }
+		{ item: "minecraft:piston", count: 5 }
+		{ item: "minecraft:sticky_piston", count: 5 }
+		{ item: "blockshifter:rail", count: 10 }
+		{ item: "glassential:redstone_glass", count: 10 }
+		{ item: "blockus:redstone_sand", count: 10 }
+		{ item: "redbits:two_way_repeater", count: 5 }
+		{ item: "redbits:t_flip_flop", count: 5 }
+		{ item: "redbits:inverter", count: 5 }
+		{ item: "redbits:detector", count: 5 }
+		{ item: "redbits:latch", count: 5 }
+		{
+			item: {
+				id: "redbits:timer"
+				Count: 1b
+				tag: { }
+			}
+			count: 5
+		}
+		{ item: "redbits:emitter", count: 3 }
+		{ item: "redbits:vision_sensor", count: 3 }
+	]
+}

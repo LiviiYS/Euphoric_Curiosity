@@ -1,0 +1,685 @@
+{
+  "configVersion": 1,
+  "fishing": {
+    "enabled": true
+  },
+  "blobsGenerations": {
+    "scaldingVolcanicStoneInJungle": {
+      "enable": true,
+      "size": 20,
+      "repeat": 15,
+      "minOffset": 0,
+      "maxOffset": 64,
+      "minBelowTop": true,
+      "maxAboveBottom": true
+    },
+    "carmineStone": {
+      "enable": false,
+      "size": 20,
+      "repeat": 15,
+      "minOffset": 0,
+      "maxOffset": 128,
+      "minBelowTop": false,
+      "maxAboveBottom": false
+    },
+    "mossyCarmineStone": {
+      "enable": false,
+      "size": 20,
+      "repeat": 15,
+      "minOffset": 0,
+      "maxOffset": 128,
+      "minBelowTop": false,
+      "maxAboveBottom": false
+    },
+    "mudInJungle": {
+      "enable": false,
+      "size": 33,
+      "repeat": 3,
+      "minOffset": 32,
+      "maxOffset": 128,
+      "minBelowTop": false,
+      "maxAboveBottom": false
+    },
+    "sporeyCarmineStone": {
+      "enable": false,
+      "size": 5,
+      "repeat": 15,
+      "minOffset": 0,
+      "maxOffset": 128,
+      "minBelowTop": false,
+      "maxAboveBottom": false
+    },
+    "mossyStone": {
+      "enable": false,
+      "size": 33,
+      "repeat": 15,
+      "minOffset": 0,
+      "maxOffset": 128,
+      "minBelowTop": false,
+      "maxAboveBottom": false
+    },
+    "mariniteStone": {
+      "enable": false,
+      "size": 33,
+      "repeat": 10,
+      "minOffset": 0,
+      "maxOffset": 128,
+      "minBelowTop": false,
+      "maxAboveBottom": false
+    },
+    "greenGranite": {
+      "enable": false,
+      "size": 15,
+      "repeat": 5,
+      "minOffset": 0,
+      "maxOffset": 50,
+      "minBelowTop": false,
+      "maxAboveBottom": false
+    },
+    "swampStone": {
+      "enable": false,
+      "size": 33,
+      "repeat": 20,
+      "minOffset": 0,
+      "maxOffset": 128,
+      "minBelowTop": false,
+      "maxAboveBottom": false
+    },
+    "darkStone": {
+      "enable": false,
+      "size": 33,
+      "repeat": 15,
+      "minOffset": 0,
+      "maxOffset": 128,
+      "minBelowTop": false,
+      "maxAboveBottom": false
+    },
+    "limestone": {
+      "enable": false,
+      "size": 15,
+      "repeat": 10,
+      "minOffset": 0,
+      "maxOffset": 50,
+      "minBelowTop": false,
+      "maxAboveBottom": false
+    },
+    "pumice": {
+      "enable": false,
+      "size": 15,
+      "repeat": 10,
+      "minOffset": 0,
+      "maxOffset": 50,
+      "minBelowTop": false,
+      "maxAboveBottom": false
+    },
+    "jasper": {
+      "enable": false,
+      "size": 15,
+      "repeat": 5,
+      "minOffset": 0,
+      "maxOffset": 50,
+      "minBelowTop": false,
+      "maxAboveBottom": false
+    },
+    "undergroundSand": {
+      "enable": false,
+      "size": 33,
+      "repeat": 20,
+      "minOffset": 0,
+      "maxOffset": 128,
+      "minBelowTop": false,
+      "maxAboveBottom": false
+    },
+    "undergroundSandstone": {
+      "enable": false,
+      "size": 33,
+      "repeat": 20,
+      "minOffset": 0,
+      "maxOffset": 128,
+      "minBelowTop": false,
+      "maxAboveBottom": false
+    },
+    "dryMoss": {
+      "enable": false,
+      "size": 20,
+      "repeat": 10,
+      "minOffset": 0,
+      "maxOffset": 64,
+      "minBelowTop": false,
+      "maxAboveBottom": false
+    },
+    "gravelInDeserts": {
+      "enable": false,
+      "size": 33,
+      "repeat": 20,
+      "minOffset": 0,
+      "maxOffset": 128,
+      "minBelowTop": false,
+      "maxAboveBottom": false
+    },
+    "scaldingSandstone": {
+      "enable": true,
+      "size": 33,
+      "repeat": 15,
+      "minOffset": 0,
+      "maxOffset": 64,
+      "minBelowTop": true,
+      "maxAboveBottom": true
+    },
+    "undergroundRedSand": {
+      "enable": false,
+      "size": 33,
+      "repeat": 20,
+      "minOffset": 0,
+      "maxOffset": 128,
+      "minBelowTop": false,
+      "maxAboveBottom": false
+    },
+    "undergroundRedSandstone": {
+      "enable": false,
+      "size": 33,
+      "repeat": 20,
+      "minOffset": 0,
+      "maxOffset": 128,
+      "minBelowTop": false,
+      "maxAboveBottom": false
+    },
+    "scaldingStone": {
+      "enable": true,
+      "size": 20,
+      "repeat": 8,
+      "minOffset": 0,
+      "maxOffset": 32,
+      "minBelowTop": true,
+      "maxAboveBottom": true
+    },
+    "undergroundIce": {
+      "enable": false,
+      "size": 33,
+      "repeat": 20,
+      "minOffset": 0,
+      "maxOffset": 128,
+      "minBelowTop": false,
+      "maxAboveBottom": false
+    },
+    "undergroundPackedIce": {
+      "enable": false,
+      "size": 16,
+      "repeat": 20,
+      "minOffset": 0,
+      "maxOffset": 128,
+      "minBelowTop": false,
+      "maxAboveBottom": false
+    },
+    "undergroundSnow": {
+      "enable": false,
+      "size": 33,
+      "repeat": 20,
+      "minOffset": 0,
+      "maxOffset": 128,
+      "minBelowTop": false,
+      "maxAboveBottom": false
+    },
+    "undergroundBlueIce": {
+      "enable": false,
+      "size": 16,
+      "repeat": 5,
+      "minOffset": 0,
+      "maxOffset": 128,
+      "minBelowTop": false,
+      "maxAboveBottom": false
+    },
+    "undergroundPowderedSnow": {
+      "enable": false,
+      "size": 20,
+      "repeat": 15,
+      "minOffset": 0,
+      "maxOffset": 128,
+      "minBelowTop": false,
+      "maxAboveBottom": false
+    },
+    "glacialStone": {
+      "enable": false,
+      "size": 5,
+      "repeat": 5,
+      "minOffset": 0,
+      "maxOffset": 48,
+      "minBelowTop": false,
+      "maxAboveBottom": false
+    },
+    "saltOre": {
+      "enable": false,
+      "size": 6,
+      "repeat": 15,
+      "minOffset": 0,
+      "maxOffset": 64,
+      "minBelowTop": false,
+      "maxAboveBottom": false
+    },
+    "mixedOre": {
+      "enable": false,
+      "size": 6,
+      "repeat": 10,
+      "minOffset": 0,
+      "maxOffset": 32,
+      "minBelowTop": false,
+      "maxAboveBottom": false
+    },
+    "saltpeterOre": {
+      "enable": false,
+      "size": 6,
+      "repeat": 6,
+      "minOffset": 0,
+      "maxOffset": 32,
+      "minBelowTop": false,
+      "maxAboveBottom": false
+    },
+    "mud": {
+      "enable": true,
+      "size": 33,
+      "repeat": 5,
+      "minOffset": 32,
+      "maxOffset": 64,
+      "minBelowTop": true,
+      "maxAboveBottom": true
+    },
+    "volcanicAsh": {
+      "enable": true,
+      "size": 33,
+      "repeat": 10,
+      "minOffset": 0,
+      "maxOffset": 128,
+      "minBelowTop": true,
+      "maxAboveBottom": true
+    },
+    "volcanicStone": {
+      "enable": true,
+      "size": 33,
+      "repeat": 20,
+      "minOffset": 0,
+      "maxOffset": 128,
+      "minBelowTop": true,
+      "maxAboveBottom": true
+    },
+    "netherSaltOre": {
+      "enable": false,
+      "size": 12,
+      "repeat": 10,
+      "minOffset": 0,
+      "maxOffset": 0,
+      "minBelowTop": true,
+      "maxAboveBottom": true
+    },
+    "netherCoalOre": {
+      "enable": false,
+      "size": 12,
+      "repeat": 10,
+      "minOffset": 0,
+      "maxOffset": 0,
+      "minBelowTop": false,
+      "maxAboveBottom": false
+    },
+    "taigaStone": {
+      "enable": false,
+      "size": 33,
+      "repeat": 15,
+      "minOffset": 0,
+      "maxOffset": 128,
+      "minBelowTop": false,
+      "maxAboveBottom": false
+    }
+  },
+  "featureGenerations": {
+    "caveFeatures": {
+      "redstoneCrystalPatchEnabled": false,
+      "spiderSackPatchEnabled": false,
+      "rocksPatchEnabled": false,
+      "glowKelpPatch": {
+        "enable": false,
+        "tries": 65,
+        "repeat": 9,
+        "yMinBottom": 10,
+        "yMax": 32
+      },
+      "prismarineCluster": {
+        "enable": false,
+        "tries": 200,
+        "spread": 6,
+        "rarity": 4
+      }
+    },
+    "oceanFeatures": {
+      "redSeaGrassPatch": {
+        "enable": false,
+        "tries": 70,
+        "rarity": 6
+      },
+      "clamPatch": {
+        "enable": false,
+        "tries": 50,
+        "rarity": 17
+      },
+      "sandDollarPatch": {
+        "enable": false,
+        "tries": 50,
+        "rarity": 25
+      },
+      "starfishPatch": {
+        "enable": false,
+        "tries": 50,
+        "rarity": 30
+      },
+      "seaFernPatch": {
+        "enable": false,
+        "tries": 60,
+        "rarity": 10
+      },
+      "seaUrchinPatch": {
+        "enable": false,
+        "tries": 50,
+        "rarity": 32
+      },
+      "tubeWormPatch": {
+        "enable": false,
+        "tries": 50,
+        "rarity": 23
+      },
+      "anPinkPatch": {
+        "enable": false,
+        "tries": 55,
+        "rarity": 80
+      },
+      "anPurplePatch": {
+        "enable": false,
+        "tries": 55,
+        "rarity": 80
+      },
+      "anYellowPatch": {
+        "enable": false,
+        "tries": 55,
+        "rarity": 80
+      },
+      "anGreenPatch": {
+        "enable": false,
+        "tries": 55,
+        "rarity": 80
+      },
+      "anOrangePatch": {
+        "enable": false,
+        "tries": 55,
+        "rarity": 80
+      },
+      "scallopPatch": {
+        "enable": false,
+        "tries": 50,
+        "rarity": 30
+      }
+    },
+    "netherFeatures": {
+      "soulSporecapPatch": {
+        "enable": false,
+        "tries": 80,
+        "rarity": 1
+      },
+      "rootedWatcherPatch": {
+        "enable": false,
+        "tries": 80,
+        "rarity": 3
+      },
+      "rootedWatcherCrimsonPatch": {
+        "enable": false,
+        "tries": 80,
+        "rarity": 2
+      },
+      "taintedWartPatch": {
+        "enable": false,
+        "tries": 80,
+        "rarity": 1
+      }
+    },
+    "plantFeatures": {
+      "wheatPatch": {
+        "enable": false,
+        "tries": 60,
+        "rarity": 70
+      },
+      "carrotPatch": {
+        "enable": false,
+        "tries": 60,
+        "rarity": 70
+      },
+      "beetPatch": {
+        "enable": false,
+        "tries": 60,
+        "rarity": 70
+      },
+      "potatoPatch": {
+        "enable": false,
+        "tries": 60,
+        "rarity": 70
+      },
+      "willowPatch": {
+        "enable": false,
+        "tries": 50,
+        "rarity": 12
+      },
+      "ribbonPatch": {
+        "enable": false,
+        "tries": 50,
+        "rarity": 12
+      },
+      "orangeFernPatch": {
+        "enable": false,
+        "tries": 60,
+        "rarity": 12
+      },
+      "orangeBeautyPatch": {
+        "enable": false,
+        "tries": 60,
+        "rarity": 12
+      },
+      "dahliaPatch": {
+        "enable": false,
+        "tries": 30,
+        "rarity": 10
+      },
+      "lavenderPatch": {
+        "enable": false,
+        "tries": 45,
+        "rarity": 10
+      },
+      "sorrelPatch": {
+        "enable": false,
+        "tries": 60,
+        "rarity": 25
+      },
+      "dandelionPatch": {
+        "enable": false,
+        "tries": 50,
+        "rarity": 15
+      },
+      "herbPatch": {
+        "enable": false,
+        "tries": 40,
+        "rarity": 60
+      },
+      "taprootPatch": {
+        "enable": false,
+        "tries": 40,
+        "rarity": 60
+      },
+      "crocusPatch": {
+        "enable": false,
+        "tries": 60,
+        "rarity": 20
+      },
+      "hollyPatch": {
+        "enable": false,
+        "tries": 40,
+        "rarity": 45
+      },
+      "morelPatch": {
+        "enable": false,
+        "tries": 50,
+        "rarity": 20
+      },
+      "bushPatch": {
+        "enable": false,
+        "tries": 14,
+        "rarity": 3
+      },
+      "sproutPatch": {
+        "enable": false,
+        "tries": 25,
+        "rarity": 7
+      },
+      "boxwoodPatch": {
+        "enable": false,
+        "tries": 40,
+        "rarity": 25
+      },
+      "jungleCapPatch": {
+        "enable": false,
+        "tries": 60,
+        "rarity": 12
+      },
+      "panPatch": {
+        "enable": false,
+        "tries": 40,
+        "rarity": 20
+      },
+      "swampBushPatch": {
+        "enable": false,
+        "tries": 13,
+        "rarity": 3
+      },
+      "rockPatch": {
+        "enable": false,
+        "tries": 7,
+        "rarity": 4
+      },
+      "snowPatch": {
+        "enable": false,
+        "tries": 7,
+        "rarity": 4
+      },
+      "snowRockPatch": {
+        "enable": false,
+        "tries": 7,
+        "rarity": 4
+      },
+      "rosePatch": {
+        "enable": false,
+        "tries": 30,
+        "rarity": 40
+      },
+      "honeyClusterPatch": {
+        "enable": false,
+        "tries": 50,
+        "rarity": 15
+      },
+      "lilacPatch": {
+        "enable": false,
+        "tries": 40,
+        "rarity": 50
+      },
+      "peonyPatch": {
+        "enable": false,
+        "tries": 40,
+        "rarity": 50
+      },
+      "tumblePatch": {
+        "enable": false,
+        "tries": 20,
+        "rarity": 5
+      },
+      "floweringCactusPatch": {
+        "enable": false,
+        "tries": 40,
+        "rarity": 10
+      },
+      "cactusPatch": {
+        "enable": false,
+        "tries": 10,
+        "rarity": 20
+      },
+      "alivePatch": {
+        "enable": false,
+        "tries": 20,
+        "rarity": 4
+      },
+      "bitterPatch": {
+        "enable": false,
+        "tries": 40,
+        "rarity": 20
+      },
+      "tomatoPatch": {
+        "enable": false,
+        "tries": 40,
+        "rarity": 30
+      },
+      "sourPatch": {
+        "enable": false,
+        "tries": 50,
+        "rarity": 15
+      },
+      "reedPatch": {
+        "enable": false,
+        "tries": 20,
+        "rarity": 2
+      }
+    },
+    "trees": {
+      "appleTreeEnabled": false
+    }
+  },
+  "mobs": {
+    "bearSpawn": {
+      "enable": false,
+      "weight": 5,
+      "minGroupSize": 1,
+      "maxGroupSize": 2
+    },
+    "duckSpawn": {
+      "enable": false,
+      "weight": 6,
+      "minGroupSize": 3,
+      "maxGroupSize": 4
+    },
+    "fireEelSpawn": {
+      "enable": false,
+      "weight": 5,
+      "minGroupSize": 1,
+      "maxGroupSize": 2
+    },
+    "perchSpawn": {
+      "enable": false,
+      "weight": 5,
+      "minGroupSize": 3,
+      "maxGroupSize": 6
+    },
+    "minnowSpawn": {
+      "enable": false,
+      "weight": 4,
+      "minGroupSize": 3,
+      "maxGroupSize": 6
+    },
+    "sardineSpawn": {
+      "enable": false,
+      "weight": 4,
+      "minGroupSize": 3,
+      "maxGroupSize": 6
+    },
+    "redPorgySpawn": {
+      "enable": false,
+      "weight": 4,
+      "minGroupSize": 3,
+      "maxGroupSize": 6
+    }
+  },
+  "misc": {
+    "foodEffectsEnabled": false,
+    "spiderEggWebGenEnabled": false,
+    "scaldingBurn": "ALL"
+  }
+}

@@ -1,0 +1,363 @@
+{
+   "type":"origins:active_self",
+   "cooldown":100,
+   "hud_render":{
+      "should_render":true,
+      "sprite_location":"origins:textures/gui/community/spiderkolo/resource_bar_01.png",
+      "bar_index":0
+   },
+   "entity_action":{
+      "type":"origins:choice",
+      "actions":[
+         {
+            "element":{
+               "type":"origins:execute_command",
+               "command":"execute run function lunarpath:soul_speed1",
+               "permission_level":4
+            },
+            "weight":1.09
+         },
+         {
+            "element":{
+               "type":"origins:execute_command",
+               "command":"execute run function lunarpath:soul_speed2",
+               "permission_level":4
+            },
+            "weight":1.09
+         },
+         {
+            "element":{
+               "type":"origins:execute_command",
+               "command":"execute run function lunarpath:soul_speed3",
+               "permission_level":4
+            },
+            "weight":1.09
+         },
+         {
+            "element":{
+               "type":"origins:execute_command",
+               "command":"execute run function lunarpath:soul_boots1",
+               "permission_level":4
+            },
+            "weight":1.74
+         },
+         {
+            "element":{
+               "type":"origins:execute_command",
+               "command":"execute run function lunarpath:soul_boots2",
+               "permission_level":4
+            },
+            "weight":1.74
+         },
+         {
+            "element":{
+               "type":"origins:execute_command",
+               "command":"execute run function lunarpath:soul_boots3",
+               "permission_level":4
+            },
+            "weight":1.74
+         },
+         {
+            "element":{
+               "type":"origins:execute_command",
+               "command":"execute run function lunarpath:splash_fire_resistance",
+               "permission_level":4
+            },
+            "weight":1.74
+         },
+         {
+            "element":{
+               "type":"origins:execute_command",
+               "command":"execute run function lunarpath:fire_resistance",
+               "permission_level":4
+            },
+            "weight":1.74
+         },
+         {
+            "element":{
+               "type":"origins:execute_command",
+               "command":"execute run function lunarpath:water_bottle",
+               "permission_level":4
+            },
+            "weight":2.18
+         },
+         {
+            "element":{
+               "type":"origins:execute_command",
+               "command":"execute run function lunarpath:iron_nugget10",
+               "permission_level":4
+            },
+            "weight":2.18
+         },
+         {
+            "element":{
+               "type":"origins:execute_command",
+               "command":"execute run function lunarpath:iron_nugget23",
+               "permission_level":4
+            },
+            "weight":2.18
+         },
+         {
+            "element":{
+               "type":"origins:execute_command",
+               "command":"execute run function lunarpath:iron_nugget36",
+               "permission_level":4
+            },
+            "weight":2.18
+         },
+         {
+            "element":{
+               "type":"origins:execute_command",
+               "command":"execute run function lunarpath:pearl2",
+               "permission_level":4
+            },
+            "weight":2.18
+         },
+         {
+            "element":{
+               "type":"origins:execute_command",
+               "command":"execute run function lunarpath:pearl3",
+               "permission_level":4
+            },
+            "weight":2.18
+         },
+         {
+            "element":{
+               "type":"origins:execute_command",
+               "command":"execute run function lunarpath:pearl4",
+               "permission_level":4
+            },
+            "weight":2.18
+         },
+         {
+            "element":{
+               "type":"origins:execute_command",
+               "command":"execute run function lunarpath:string3",
+               "permission_level":4
+            },
+            "weight":4.36
+         },
+         {
+            "element":{
+               "type":"origins:execute_command",
+               "command":"execute run function lunarpath:string6",
+               "permission_level":4
+            },
+            "weight":4.36
+         },
+         {
+            "element":{
+               "type":"origins:execute_command",
+               "command":"execute run function lunarpath:string9",
+               "permission_level":4
+            },
+            "weight":4.36
+         },
+         {
+            "element":{
+               "type":"origins:execute_command",
+               "command":"execute run function lunarpath:quartz5",
+               "permission_level":4
+            },
+            "weight":4.36
+         },
+         {
+            "element":{
+               "type":"origins:execute_command",
+               "command":"execute run function lunarpath:quartz9",
+               "permission_level":4
+            },
+            "weight":4.36
+         },
+         {
+            "element":{
+               "type":"origins:execute_command",
+               "command":"execute run function lunarpath:quartz12",
+               "permission_level":4
+            },
+            "weight":4.36
+         },
+         {
+            "element":{
+               "type":"origins:execute_command",
+               "command":"execute run function lunarpath:obsidian",
+               "permission_level":4
+            },
+            "weight":8.71
+         },
+         {
+            "element":{
+               "type":"origins:execute_command",
+               "command":"execute run function lunarpath:fire_charge",
+               "permission_level":4
+            },
+            "weight":8.71
+         },
+         {
+            "element":{
+               "type":"origins:execute_command",
+               "command":"execute run function lunarpath:crying_obsidian1",
+               "permission_level":4
+            },
+            "weight":8.71
+         },
+         {
+            "element":{
+               "type":"origins:execute_command",
+               "command":"execute run function lunarpath:crying_obsidian2",
+               "permission_level":4
+            },
+            "weight":8.71
+         },
+         {
+            "element":{
+               "type":"origins:execute_command",
+               "command":"execute run function lunarpath:crying_obsidian3",
+               "permission_level":4
+            },
+            "weight":8.71
+         },
+         {
+            "element":{
+               "type":"origins:execute_command",
+               "command":"execute run function lunarpath:soul2",
+               "permission_level":4
+            },
+            "weight":8.71
+         },
+         {
+            "element":{
+               "type":"origins:execute_command",
+               "command":"execute run function lunarpath:soul5",
+               "permission_level":4
+            },
+            "weight":8.71
+         },
+         {
+            "element":{
+               "type":"origins:execute_command",
+               "command":"execute run function lunarpath:soul8",
+               "permission_level":4
+            },
+            "weight":8.71
+         },
+         {
+            "element":{
+               "type":"origins:execute_command",
+               "command":"execute run function lunarpath:nether_brick2",
+               "permission_level":4
+            },
+            "weight":8.71
+         },
+         {
+            "element":{
+               "type":"origins:execute_command",
+               "command":"execute run function lunarpath:nether_brick5",
+               "permission_level":4
+            },
+            "weight":8.71
+         },
+         {
+            "element":{
+               "type":"origins:execute_command",
+               "command":"execute run function lunarpath:nether_brick8",
+               "permission_level":4
+            },
+            "weight":8.71
+         },
+         {
+            "element":{
+               "type":"origins:execute_command",
+               "command":"execute run function lunarpath:scrap",
+               "permission_level":4
+            },
+            "weight":1
+         },
+         {
+            "element":{
+               "type":"origins:execute_command",
+               "command":"execute run function lunarpath:spectral_arrow6",
+               "permission_level":4
+            },
+            "weight":8.71
+         },
+         {
+            "element":{
+               "type":"origins:execute_command",
+               "command":"execute run function lunarpath:spectral_arrow9",
+               "permission_level":4
+            },
+            "weight":8.71
+         },
+         {
+            "element":{
+               "type":"origins:execute_command",
+               "command":"execute run function lunarpath:spectral_arrow12",
+               "permission_level":4
+            },
+            "weight":8.71
+         },
+         {
+            "element":{
+               "type":"origins:execute_command",
+               "command":"execute run function lunarpath:gravel8",
+               "permission_level":4
+            },
+            "weight":8.71
+         },
+         {
+            "element":{
+               "type":"origins:execute_command",
+               "command":"execute run function lunarpath:gravel12",
+               "permission_level":4
+            },
+            "weight":8.71
+         },
+         {
+            "element":{
+               "type":"origins:execute_command",
+               "command":"execute run function lunarpath:gravel16",
+               "permission_level":4
+            },
+            "weight":8.71
+         },
+         {
+            "element":{
+               "type":"origins:execute_command",
+               "command":"execute run function lunarpath:blackstone8",
+               "permission_level":4
+            },
+            "weight":8.71
+         },
+         {
+            "element":{
+               "type":"origins:execute_command",
+               "command":"execute run function lunarpath:blackstone12",
+               "permission_level":4
+            },
+            "weight":8.71
+         },
+         {
+            "element":{
+               "type":"origins:execute_command",
+               "command":"execute run function lunarpath:blackstone16",
+               "permission_level":4
+            },
+            "weight":8.71
+         }
+      ]
+   },
+   "condition":{
+      "type":"origins:equipped_item",
+      "equipment_slot":"mainhand",
+      "item_condition":{
+         "type":"origins:ingredient",
+         "ingredient":{
+            "item":"minecraft:gold_ingot"
+         }
+      }
+   },
+   "name":"§2Bartering",
+   "description":"You may trade in gold for random prizes out of the Piglins Loot table [Save Toolbar Activator]",
+   "key":"key.saveToolbarActivator"
+}

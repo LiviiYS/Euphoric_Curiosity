@@ -1,0 +1,53 @@
+{
+	"name": "Arctic Habitat",
+	"description": "You attack and move faster in cold biomes, but you are weakened and slowed in hot biomes including the nether.",
+	"type": "origins:multiple",
+	"cold_buffs": {
+		"type": "origins:conditioned_attribute",
+		"tick_rate": 10,
+		"modifiers": [
+			{
+				"attribute": "minecraft:generic.movement_speed",
+				"operation": "multiply_total",
+				"value": "0.2"
+			},
+			{
+				"attribute": "minecraft:generic.attack_speed",
+				"operation": "multiply_total",
+				"value": "0.2"
+			}
+		],
+		"condition": {
+			"type": "origins:biome",
+			"condition": {
+				"type": "origins:temperature",
+				"comparison": "<=",
+				"compare_to": 0
+			}
+		}
+	},
+	"hot_debuffs": {
+		"type": "origins:conditioned_attribute",
+		"tick_rate": 10,
+		"modifiers": [
+			{
+				"attribute": "minecraft:generic.movement_speed",
+				"operation": "multiply_total",
+				"value": "-0.2"
+			},
+			{
+				"attribute": "minecraft:generic.attack_damage",
+				"operation": "addition",
+				"value": "-3"
+			}
+		],
+		"condition": {
+			"type": "origins:biome",
+			"condition": {
+				"type": "origins:temperature",
+				"comparison": ">=",
+				"compare_to": 1
+			}
+		}
+	}
+}

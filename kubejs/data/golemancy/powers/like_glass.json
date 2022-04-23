@@ -1,0 +1,11 @@
+{
+	"type": "origins:attribute",
+	"modifier": {
+		"attribute": "minecraft:generic.max_health",
+		"operation": "addition",
+		"value": -18,
+		"name": "Glass Golem Health"
+	},
+	"name": "Like Glass",
+	"description": "You have one heart of health."
+}

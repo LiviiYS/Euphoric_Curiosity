@@ -1,0 +1,11 @@
+{
+	"powers": [
+		"dnd:elf/mask_of_the_wild",
+		"dnd:elf/fleet_of_foot"
+	],
+	"icon": "minecraft:jungle_leaves",
+	"order": 1,
+	"impact": 0,
+	"name": "Wood Elf",
+	"description": "As a wood elf, you have keen senses and intuition, and your fleet feet carry you quickly and stealthily through your native forests."
+}

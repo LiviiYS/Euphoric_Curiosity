@@ -1,0 +1,122 @@
+{
+  "tables": {
+    "table_advanced": {
+      "display_name": "Advanced Crafting Table",
+      "width": 3,
+      "height": 3,
+      "block_entity": true,
+      "normal_recipes": true,
+      "generate_assets": true,
+      "color": "#DBDBDB",
+      "settings": {
+        "material": "wood",
+        "non_opaque": true,
+        "hardness": 4,
+        "resistance": 3
+      },
+      "requires_tool": true,
+      "tags": [
+        "minecraft:blocks/needs_stone_tool",
+        "minecraft:blocks/mineable/pickaxe",
+      ]
+    },
+    "table_superior": {
+      "display_name": "Superior Crafting Table",
+      "width": 5,
+      "height": 5,
+      "block_entity": true,
+      "generate_assets": true,
+      "color": "#E1C4EB",
+      "settings": {
+        "material": "wood",
+        "non_opaque": true,
+        "hardness": 4,
+        "resistance": 3
+      },
+      "requires_tool": true,
+      "tags": [
+        "minecraft:blocks/needs_stone_tool",
+        "minecraft:blocks/mineable/pickaxe",
+      ]
+    },
+    "table_mega": {
+      "display_name": "Mega Crafting Table",
+      "width": 7,
+      "height": 7,
+      "block_entity": true,
+      "generate_assets": true,
+      "color": "#E1B0EB",
+      "settings": {
+        "material": "wood",
+        "non_opaque": true,
+        "hardness": 4,
+        "resistance": 3
+      },
+      "requires_tool": true,
+      "tags": [
+        "minecraft:blocks/needs_stone_tool",
+        "minecraft:blocks/mineable/pickaxe",
+      ]
+    },
+    "table_extreme": {
+      "display_name": "Extreme Crafting Table",
+      "width": 9,
+      "height": 9,
+      "block_entity": true,
+      "generate_assets": true,
+      "color": "#E18FEB",
+      "settings": {
+        "material": "wood",
+        "non_opaque": true,
+        "hardness": 4,
+        "resistance": 3
+      },
+      "requires_tool": true,
+      "tags": [
+        "minecraft:blocks/needs_stone_tool",
+        "minecraft:blocks/mineable/pickaxe",
+      ]
+    },
+    "minecraft:fletching_table": {
+      "type": "existing_block",
+      "width": 1,
+      "height": 3
+    },
+    "morevillagers:blueprint_table": {
+      "type": "existing_block",
+      "display_name": "Blueprint Table Crafting",
+      "normal_recipes": true,
+      "width": 3,
+      "height": 3,
+      "color": "#0058B4"
+    },
+    "kubejs:pocket_advanced_table": {
+      "type": "existing_item",
+      "display_name": "Pocket Advanced Crafting Table",
+      "width": 3,
+      "height": 3,
+      "color": "#DBDBDB"
+    },
+    "kubejs:pocket_superior_table": {
+      "type": "existing_item",
+      "display_name": "Pocket Superior Crafting Table",
+      "width": 5,
+      "height": 5,
+      "color": "#E1C4EB"
+    },
+    "kubejs:pocket_mega_table": {
+      "type": "existing_item",
+      "display_name": "Pocket Mega Crafting Table",
+      "width": 7,
+      "height": 7,
+      "color": "#E1B0EB"
+    },
+    "kubejs:pocket_extreme_table": {
+      "type": "existing_item",
+      "display_name": "Pocket Extreme Crafting Table",
+      "width": 9,
+      "height": 9,
+      "color": "#E18FEB"
+    }
+  }
+}

@@ -1,0 +1,560 @@
+{
+	id: "6E90DAB44D59AEF4"
+	group: "2061988DE7EF893B"
+	order_index: 1
+	filename: "deep_mob_learning"
+	title: "Deep Mob Learning"
+	icon: "dml-refabricated:deep_learner"
+	default_quest_shape: ""
+	default_hide_dependency_lines: false
+	quests: [
+		{
+			x: -1.5d
+			y: -0.5d
+			dependencies: ["21688B94099D0B9A"]
+			size: 1.5d
+			id: "018A1D5CCEAB9824"
+			tasks: [{
+				id: "237A4B03B4236308"
+				type: "item"
+				item: "dml-refabricated:soot_redstone"
+			}]
+		}
+		{
+			x: -1.5d
+			y: -2.5d
+			dependencies: ["018A1D5CCEAB9824"]
+			id: "5604B260E9D8D661"
+			tasks: [{
+				id: "4AF5D70ACB3CCC1E"
+				type: "item"
+				item: "dml-refabricated:soot_plate"
+			}]
+		}
+		{
+			x: -1.5d
+			y: 1.5d
+			dependencies: ["018A1D5CCEAB9824"]
+			size: 1.5d
+			id: "1B8CF9A88F23C0BE"
+			tasks: [{
+				id: "3AE98EE8AA951586"
+				type: "item"
+				item: {
+					id: "dml-refabricated:data_model"
+					Count: 1b
+					tag: { }
+				}
+			}]
+		}
+		{
+			x: -3.0d
+			y: -2.5d
+			dependencies: ["5604B260E9D8D661"]
+			id: "3DE431B8D58FA1F8"
+			tasks: [{
+				id: "34C94FF57C7D1D4A"
+				type: "item"
+				item: "dml-refabricated:deep_learner"
+			}]
+			rewards: [{
+				id: "6FCEC18344E2D996"
+				type: "random"
+				table_id: 3990050942893790865L
+			}]
+		}
+		{
+			x: 0.0d
+			y: -2.5d
+			dependencies: ["5604B260E9D8D661"]
+			id: "29A95F93E3A54D07"
+			tasks: [{
+				id: "11D0C0D34A5F520D"
+				type: "item"
+				item: "dml-refabricated:machine_casing"
+			}]
+		}
+		{
+			x: 0.0d
+			y: -1.5d
+			dependencies: ["29A95F93E3A54D07"]
+			id: "1ECF753CDF60CB99"
+			tasks: [{
+				id: "1F2F3F6E8B24D607"
+				type: "item"
+				item: "dml-refabricated:loot_fabricator"
+			}]
+			rewards: [
+				{
+					id: "07F1C7B56E266309"
+					type: "item"
+					item: "minecraft:netherite_scrap"
+					count: 4
+				}
+				{
+					id: "20C41382132B79CD"
+					type: "random"
+					table_id: 3990050942893790865L
+				}
+			]
+		}
+		{
+			x: -4.0d
+			y: 1.0d
+			dependencies: ["1B8CF9A88F23C0BE"]
+			id: "5431855EF7F53F54"
+			tasks: [{
+				id: "4620D47BFCB66396"
+				type: "item"
+				item: {
+					id: "dml-refabricated:data_model_overworld"
+					Count: 1b
+					tag: { }
+				}
+			}]
+		}
+		{
+			x: -4.0d
+			y: 2.0d
+			dependencies: ["1B8CF9A88F23C0BE"]
+			id: "07E59501BB74EB81"
+			tasks: [{
+				id: "20E091DFF2400A5C"
+				type: "item"
+				item: {
+					id: "dml-refabricated:data_model_nether"
+					Count: 1b
+					tag: { }
+				}
+			}]
+		}
+		{
+			x: -3.5d
+			y: 3.0d
+			dependencies: ["1B8CF9A88F23C0BE"]
+			id: "41A197FC5024CE3F"
+			tasks: [{
+				id: "6DBEC3E5DAEE3E6C"
+				type: "item"
+				item: {
+					id: "dml-refabricated:data_model_ocean"
+					Count: 1b
+					tag: { }
+				}
+			}]
+		}
+		{
+			x: -2.5d
+			y: 3.5d
+			dependencies: ["1B8CF9A88F23C0BE"]
+			id: "64333C77458F8CE5"
+			tasks: [{
+				id: "07AC98FE7EA70691"
+				type: "item"
+				item: {
+					id: "dml-refabricated:data_model_end"
+					Count: 1b
+					tag: { }
+				}
+			}]
+		}
+		{
+			x: -1.5d
+			y: 3.5d
+			dependencies: ["1B8CF9A88F23C0BE"]
+			id: "322688543B916017"
+			tasks: [{
+				id: "35180E7142FCAECF"
+				type: "item"
+				item: {
+					id: "dml-refabricated:data_model_zombie"
+					Count: 1b
+					tag: { }
+				}
+			}]
+		}
+		{
+			x: -0.5d
+			y: 3.5d
+			dependencies: ["1B8CF9A88F23C0BE"]
+			id: "591BD85E97AD6EBF"
+			tasks: [{
+				id: "3319015DC0BCD7DC"
+				type: "item"
+				item: {
+					id: "dml-refabricated:data_model_skeleton"
+					Count: 1b
+					tag: { }
+				}
+			}]
+		}
+		{
+			x: 0.5d
+			y: 3.0d
+			dependencies: ["1B8CF9A88F23C0BE"]
+			id: "536C04247B6578D6"
+			tasks: [{
+				id: "4C7EBC394A74C711"
+				type: "item"
+				item: {
+					id: "dml-refabricated:data_model_illager"
+					Count: 1b
+					tag: { }
+				}
+			}]
+		}
+		{
+			x: 1.0d
+			y: 2.0d
+			dependencies: ["1B8CF9A88F23C0BE"]
+			id: "76F8294CC13E82BB"
+			tasks: [{
+				id: "5C8496A005357B8A"
+				type: "item"
+				item: {
+					id: "dml-refabricated:data_model_slimy"
+					Count: 1b
+					tag: { }
+				}
+			}]
+		}
+		{
+			x: 1.0d
+			y: 1.0d
+			dependencies: ["1B8CF9A88F23C0BE"]
+			id: "6189B2CD7668BFB0"
+			tasks: [{
+				id: "226DCD493F3064B0"
+				type: "item"
+				item: {
+					id: "dml-refabricated:data_model_ghost"
+					Count: 1b
+					tag: { }
+				}
+			}]
+		}
+		{
+			x: 0.0d
+			y: -3.5d
+			dependencies: ["29A95F93E3A54D07"]
+			id: "37D357A6CF73703B"
+			tasks: [{
+				id: "6664A7679F3A01A5"
+				type: "item"
+				item: "dml-refabricated:matter_condenser"
+			}]
+			rewards: [
+				{
+					id: "656E1DBFD86D4D6A"
+					type: "random"
+					table_id: 7876699373989475424L
+				}
+				{
+					id: "5588FA78C6556BBA"
+					type: "random"
+					table_id: 3990050942893790865L
+				}
+			]
+		}
+		{
+			x: 1.5d
+			y: -2.5d
+			dependencies: ["29A95F93E3A54D07"]
+			id: "6DB751AD8912000C"
+			tasks: [{
+				id: "6DF929B26471454A"
+				type: "item"
+				item: "dml-refabricated:trial_keystone"
+			}]
+		}
+		{
+			x: 1.5d
+			y: -3.5d
+			dependencies: [
+				"6DB751AD8912000C"
+				"37D357A6CF73703B"
+			]
+			id: "5BA3B92B86613071"
+			tasks: [{
+				id: "12A5DE79CD8EAEBB"
+				type: "item"
+				item: "dml-refabricated:physically_condensed_matrix_fragment"
+			}]
+		}
+		{
+			x: 1.5d
+			y: -5.5d
+			dependencies: ["5BA3B92B86613071"]
+			id: "7BE93F5A75C4B07C"
+			tasks: [{
+				id: "0FBA38B1E8C8E278"
+				type: "item"
+				item: "dml-refabricated:glitch_ingot"
+			}]
+			rewards: [
+				{
+					id: "6A01019A31628EB2"
+					type: "random"
+					table_id: 7876699373989475424L
+				}
+				{
+					id: "6493C0FF39F33FD9"
+					type: "random"
+					table_id: 3234863821922014612L
+				}
+				{
+					id: "362AFB3BB96568AB"
+					type: "random"
+					table_id: 3990050942893790865L
+				}
+			]
+		}
+		{
+			x: 0.5d
+			y: -6.0d
+			dependencies: ["7BE93F5A75C4B07C"]
+			id: "1393126FBA176D41"
+			tasks: [{
+				id: "09ABB8DE40D3175C"
+				type: "item"
+				item: {
+					id: "dml-refabricated:glitch_helmet"
+					Count: 1b
+					tag: { }
+				}
+			}]
+		}
+		{
+			x: 0.5d
+			y: -5.0d
+			dependencies: ["7BE93F5A75C4B07C"]
+			id: "6D7C4E99C825A067"
+			tasks: [{
+				id: "40F2A5395EC86777"
+				type: "item"
+				item: {
+					id: "dml-refabricated:glitch_chestplate"
+					Count: 1b
+					tag: { }
+				}
+			}]
+		}
+		{
+			x: 2.5d
+			y: -6.0d
+			dependencies: ["7BE93F5A75C4B07C"]
+			id: "310060A5F3889DEC"
+			tasks: [{
+				id: "1224C3806D642EE7"
+				type: "item"
+				item: {
+					id: "dml-refabricated:glitch_leggings"
+					Count: 1b
+					tag: { }
+				}
+			}]
+		}
+		{
+			x: 2.5d
+			y: -5.0d
+			dependencies: ["7BE93F5A75C4B07C"]
+			id: "5FBBEA0B7593DBC8"
+			tasks: [{
+				id: "2EF52B87257AE0DE"
+				type: "item"
+				item: {
+					id: "dml-refabricated:glitch_boots"
+					Count: 1b
+					tag: { }
+				}
+			}]
+		}
+		{
+			x: -3.0d
+			y: -5.5d
+			hide_dependency_lines: true
+			dependencies: ["018A1D5CCEAB9824"]
+			id: "43F2E3EEF6003424"
+			tasks: [{
+				id: "0E21327ECB3825A2"
+				type: "item"
+				item: "dmlsimulacrum:simulation_chamber"
+			}]
+		}
+		{
+			x: -3.0d
+			y: -4.5d
+			dependencies: ["43F2E3EEF6003424"]
+			id: "513996DD46EE81D3"
+			tasks: [{
+				id: "431C4666A390C4FA"
+				type: "item"
+				item: "dmlsimulacrum:polymer_clay"
+			}]
+		}
+		{
+			x: -1.5d
+			y: -6.0d
+			hide_dependency_lines: true
+			dependencies: ["018A1D5CCEAB9824"]
+			id: "17A61074FE2F0E9A"
+			tasks: [{
+				id: "219E181BCEABCA52"
+				type: "item"
+				item: "dmlsimulacrum:overworld_matter"
+			}]
+			rewards: [{
+				id: "3247F6172DB01401"
+				type: "random"
+				table_id: 3990050942893790865L
+			}]
+		}
+		{
+			x: -1.5d
+			y: -5.0d
+			dependencies: ["17A61074FE2F0E9A"]
+			id: "023D4F156410C5B0"
+			tasks: [{
+				id: "58C00B47E642B0F3"
+				type: "item"
+				item: "dmlsimulacrum:hellish_matter"
+			}]
+			rewards: [{
+				id: "510FBF35AC983D0F"
+				type: "random"
+				table_id: 3990050942893790865L
+			}]
+		}
+		{
+			x: -1.5d
+			y: -4.0d
+			dependencies: ["023D4F156410C5B0"]
+			id: "4AF4F45DCB0B7529"
+			tasks: [{
+				id: "700147EE2A7727E2"
+				type: "item"
+				item: "dmlsimulacrum:extraterrestrial_matter"
+			}]
+			rewards: [{
+				id: "1930D00F13A7BE89"
+				type: "random"
+				table_id: 3990050942893790865L
+			}]
+		}
+		{
+			x: 3.5d
+			y: -0.5d
+			dependencies: ["018A1D5CCEAB9824"]
+			size: 1.5d
+			id: "06D2F03FD5E3A71E"
+			tasks: [{
+				id: "42F2F6341FDC8A2A"
+				type: "item"
+				item: {
+					id: "dml-refabricated:trial_key"
+					Count: 1b
+					tag: { }
+				}
+			}]
+		}
+		{
+			x: 4.0d
+			y: 2.0d
+			dependencies: ["06D2F03FD5E3A71E"]
+			id: "7942308E5618DCD4"
+			tasks: [{
+				id: "4F164355A364E7D7"
+				type: "item"
+				item: "dml-refabricated:pristine_matter_nether"
+			}]
+		}
+		{
+			x: 5.0d
+			y: 1.5d
+			dependencies: ["06D2F03FD5E3A71E"]
+			id: "6F5E2F63178B80ED"
+			tasks: [{
+				id: "6E6C9B35306F0E8B"
+				type: "item"
+				item: "dml-refabricated:pristine_matter_slimy"
+			}]
+		}
+		{
+			x: 5.5d
+			y: 0.5d
+			dependencies: ["06D2F03FD5E3A71E"]
+			id: "1E566BF946B6F1BD"
+			tasks: [{
+				id: "41AADF9DCC1BB569"
+				type: "item"
+				item: "dml-refabricated:pristine_matter_overworld"
+			}]
+		}
+		{
+			x: 5.5d
+			y: -0.5d
+			dependencies: ["06D2F03FD5E3A71E"]
+			id: "682BBED54F0024B5"
+			tasks: [{
+				id: "6E57E1F1B2325B1B"
+				type: "item"
+				item: "dml-refabricated:pristine_matter_zombie"
+			}]
+		}
+		{
+			x: 5.5d
+			y: -1.5d
+			dependencies: ["06D2F03FD5E3A71E"]
+			id: "036FB4F6B4EFD249"
+			tasks: [{
+				id: "32E6BFC8ADF88431"
+				type: "item"
+				item: "dml-refabricated:pristine_matter_skeleton"
+			}]
+		}
+		{
+			x: 5.0d
+			y: -2.5d
+			dependencies: ["06D2F03FD5E3A71E"]
+			id: "0E075768BF0FAEC5"
+			tasks: [{
+				id: "61CFEC4C36115039"
+				type: "item"
+				item: "dml-refabricated:pristine_matter_end"
+			}]
+		}
+		{
+			x: 4.0d
+			y: -3.0d
+			dependencies: ["06D2F03FD5E3A71E"]
+			id: "269D2BAE48E540D8"
+			tasks: [{
+				id: "1866BB7DA8B11AF8"
+				type: "item"
+				item: "dml-refabricated:pristine_matter_ghost"
+			}]
+		}
+		{
+			x: 3.0d
+			y: -3.0d
+			dependencies: ["06D2F03FD5E3A71E"]
+			id: "4D4EE3A3F9861492"
+			tasks: [{
+				id: "28A4D3E8DBDC60C7"
+				type: "item"
+				item: "dml-refabricated:pristine_matter_illager"
+			}]
+		}
+		{
+			x: 3.0d
+			y: 2.0d
+			dependencies: ["06D2F03FD5E3A71E"]
+			id: "3673F24EB729F31A"
+			tasks: [{
+				id: "5D8C139572C1F768"
+				type: "item"
+				item: "dml-refabricated:pristine_matter_ocean"
+			}]
+		}
+	]
+}

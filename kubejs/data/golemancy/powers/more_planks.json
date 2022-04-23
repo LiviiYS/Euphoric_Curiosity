@@ -1,0 +1,83 @@
+{
+	"type": "origins:multiple",
+	"oak": {
+		"type": "origins:modify_crafting",
+		"item_condition": {
+			"type": "origins:ingredient",
+			"ingredient": {
+				"item": "minecraft:oak_planks"
+			}
+		},
+		"result": {
+			"item": "minecraft:oak_planks",
+			"amount": 6
+		}
+	},
+	"spruce": {
+		"type": "origins:modify_crafting",
+		"item_condition": {
+			"type": "origins:ingredient",
+			"ingredient": {
+				"item": "minecraft:spruce_planks"
+			}
+		},
+		"result": {
+			"item": "minecraft:spruce_planks",
+			"amount": 6
+		}
+	},
+	"birch": {
+		"type": "origins:modify_crafting",
+		"item_condition": {
+			"type": "origins:ingredient",
+			"ingredient": {
+				"item": "minecraft:birch_planks"
+			}
+		},
+		"result": {
+			"item": "minecraft:birch_planks",
+			"amount": 6
+		}
+	},
+	"jungle": {
+		"type": "origins:modify_crafting",
+		"item_condition": {
+			"type": "origins:ingredient",
+			"ingredient": {
+				"item": "minecraft:jungle_planks"
+			}
+		},
+		"result": {
+			"item": "minecraft:jungle_planks",
+			"amount": 6
+		}
+	},
+	"acacia": {
+		"type": "origins:modify_crafting",
+		"item_condition": {
+			"type": "origins:ingredient",
+			"ingredient": {
+				"item": "minecraft:acacia_planks"
+			}
+		},
+		"result": {
+			"item": "minecraft:acacia_planks",
+			"amount": 6
+		}
+	},
+	"dark_oak": {
+		"type": "origins:modify_crafting",
+		"item_condition": {
+			"type": "origins:ingredient",
+			"ingredient": {
+				"item": "minecraft:dark_oak_planks"
+			}
+		},
+		"result": {
+			"item": "minecraft:dark_oak_planks",
+			"amount": 6
+		}
+	},
+	"name": "Nature's Gift",
+	"description": "Logs yield 6 planks, instead of 4."
+}

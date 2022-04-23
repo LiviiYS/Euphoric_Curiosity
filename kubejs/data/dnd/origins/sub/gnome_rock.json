@@ -1,0 +1,11 @@
+{
+	"powers": [
+		"dnd:gnome/artificers_lore",
+		"dnd:gnome/tinker"
+	],
+	"icon": "minecraft:cobblestone",
+	"order": 2,
+	"impact": 0,
+	"name": "Rock Gnome",
+	"description": "As a rock gnome, you have a natural inventiveness and hardiness beyond that of other gnomes."
+}

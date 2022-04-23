@@ -1,0 +1,12 @@
+{
+	"powers": [
+		"dnd:dragonborn/breath_lightning",
+		"dnd:dragonborn/resistance_lightning",
+		"dnd:dragonborn/scales_blue"
+	],
+	"icon": "minecraft:blue_concrete",
+	"order": 2,
+	"impact": 0,
+	"name": "Blue",
+	"description": "As a descendant of the blue dragons you can call down lightning on your enemies."
+}

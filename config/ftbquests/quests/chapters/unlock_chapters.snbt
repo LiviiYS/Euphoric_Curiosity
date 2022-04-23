@@ -1,0 +1,743 @@
+{
+	id: "2200F703DE0C25D8"
+	group: ""
+	order_index: 1
+	filename: "unlock_chapters"
+	title: "Unlock chapters"
+	icon: "kubejs:lock"
+	default_quest_shape: "gear"
+	default_hide_dependency_lines: false
+	quests: [
+		{
+			title: "Adventure Items"
+			icon: "kibe:pocket_crafting_table"
+			x: -3.75d
+			y: -3.125d
+			shape: "gear"
+			dependencies: ["297D1E50C45B87F1"]
+			size: 1.25d
+			id: "0E4DF4FC20773B34"
+			tasks: [{
+				id: "34773DE3CFB480E0"
+				type: "checkmark"
+				title: "Adventure Items"
+			}]
+		}
+		{
+			icon: {
+				id: "gateofbabylon:iron_broadsword"
+				Count: 1b
+				tag: {
+					Damage: 0
+				}
+			}
+			x: -1.875d
+			y: -3.125d
+			shape: "gear"
+			dependencies: ["297D1E50C45B87F1"]
+			size: 1.25d
+			id: "0160C6ECDEA4BA45"
+			tasks: [{
+				id: "67A073E2855D8C82"
+				type: "checkmark"
+				title: "Bounty Hunter Quests"
+			}]
+		}
+		{
+			icon: "kubejs:dimensions"
+			x: 0.0d
+			y: -3.125d
+			shape: "gear"
+			dependencies: ["297D1E50C45B87F1"]
+			size: 1.25d
+			id: "30763C24895BEE7B"
+			tasks: [{
+				id: "6DE46418BF4AF0E8"
+				type: "checkmark"
+				title: "Dimension Exploration"
+			}]
+		}
+		{
+			icon: "kubejs:dungeon"
+			x: 1.875d
+			y: -3.125d
+			shape: "gear"
+			dependencies: ["297D1E50C45B87F1"]
+			size: 1.25d
+			id: "724F38E5ADBBBF3B"
+			tasks: [{
+				id: "52F59718F8499BCF"
+				type: "checkmark"
+				title: "Dungeon Exploration"
+			}]
+		}
+		{
+			icon: "givemehats:crown"
+			x: 3.75d
+			y: -3.125d
+			shape: "gear"
+			dependencies: ["297D1E50C45B87F1"]
+			size: 1.25d
+			id: "6BA9F7C83CB35984"
+			tasks: [{
+				id: "639864F0851D5ACA"
+				type: "checkmark"
+				title: "Legendary Items"
+			}]
+		}
+		{
+			icon: "farmersdelight:pasta_with_meatballs"
+			x: 5.625d
+			y: -3.125d
+			shape: "gear"
+			dependencies: ["297D1E50C45B87F1"]
+			size: 1.25d
+			id: "04CE2CAA5B45A212"
+			tasks: [{
+				id: "7D0667BEB3399C43"
+				type: "checkmark"
+				title: "Cooking and Farming"
+			}]
+		}
+		{
+			icon: "kibe:cursed_droplets"
+			x: 7.5d
+			y: -3.125d
+			shape: "gear"
+			dependencies: ["297D1E50C45B87F1"]
+			size: 1.25d
+			id: "5BA6272AD369212B"
+			tasks: [{
+				id: "4881FC7794A94341"
+				type: "checkmark"
+				title: "Mob Farming Utilities"
+			}]
+		}
+		{
+			icon: "expandedstorage:iron_chest"
+			x: -3.75d
+			y: -1.25d
+			shape: "gear"
+			dependencies: ["297D1E50C45B87F1"]
+			size: 1.25d
+			id: "613CADFE6D1BD57F"
+			tasks: [{
+				id: "1E5DE8B3B7479B9B"
+				type: "checkmark"
+				title: "Storage and Furnaces"
+			}]
+		}
+		{
+			icon: {
+				id: "bewitchment:athame"
+				Count: 1b
+				tag: {
+					Damage: 0
+				}
+			}
+			x: -1.875d
+			y: -1.25d
+			shape: "gear"
+			dependencies: ["297D1E50C45B87F1"]
+			size: 1.25d
+			id: "07935BDEE10F47FC"
+			tasks: [{
+				id: "1004D4AB4FC24740"
+				type: "checkmark"
+				title: "Bewitchment"
+			}]
+		}
+		{
+			icon: "botania:gaia_pylon"
+			x: 0.0d
+			y: -1.25d
+			shape: "gear"
+			dependencies: ["297D1E50C45B87F1"]
+			size: 1.25d
+			id: "55D861C125BF1A4B"
+			tasks: [{
+				id: "572CB0CF049C66C3"
+				type: "checkmark"
+				title: "Botania"
+			}]
+		}
+		{
+			icon: "conjuring:superior_conjuring_scepter"
+			x: 1.875d
+			y: -1.25d
+			shape: "gear"
+			dependencies: ["297D1E50C45B87F1"]
+			size: 1.25d
+			id: "0443700FAF4215D6"
+			tasks: [{
+				id: "7A79D963644C36F3"
+				type: "checkmark"
+				title: "Conjuring"
+			}]
+		}
+		{
+			icon: "dml-refabricated:deep_learner"
+			x: -3.75d
+			y: 0.625d
+			shape: "gear"
+			dependencies: ["297D1E50C45B87F1"]
+			size: 1.25d
+			id: "21688B94099D0B9A"
+			tasks: [{
+				id: "4D3EC896EC0A5191"
+				type: "checkmark"
+				title: "Deep Mob Learning"
+			}]
+		}
+		{
+			icon: "gobber2:dragon_star"
+			x: 3.75d
+			y: -1.25d
+			shape: "gear"
+			dependencies: ["297D1E50C45B87F1"]
+			size: 1.25d
+			id: "531A7C5D4A40131D"
+			tasks: [{
+				id: "4FC4DB02A3497B56"
+				type: "checkmark"
+				title: "Gobber"
+			}]
+		}
+		{
+			icon: {
+				id: "arcanus:adept_wand"
+				Count: 1b
+				tag: {
+					arcanus: { }
+				}
+			}
+			x: 5.625d
+			y: -1.25d
+			shape: "gear"
+			dependencies: ["297D1E50C45B87F1"]
+			size: 1.25d
+			id: "2834C68C1A4AB8F6"
+			tasks: [{
+				id: "75F6EB2E86F11484"
+				type: "checkmark"
+				title: "Magic Utilities"
+			}]
+		}
+		{
+			icon: "spectrum:midnight_aberration"
+			x: 7.5d
+			y: -1.25d
+			shape: "gear"
+			dependencies: ["297D1E50C45B87F1"]
+			size: 1.25d
+			id: "6520F2F80BE5CC19"
+			tasks: [{
+				id: "48D3EE1BB8EB0C23"
+				type: "checkmark"
+				title: "Spectrum"
+			}]
+		}
+		{
+			icon: "ae2:wireless_crafting_terminal"
+			x: 3.75d
+			y: 0.625d
+			shape: "gear"
+			dependencies: ["297D1E50C45B87F1"]
+			size: 1.25d
+			id: "0A24FFB1EB314EC9"
+			tasks: [{
+				id: "7622D7CE74D38F86"
+				type: "checkmark"
+				title: "Applied Energistics 2"
+			}]
+		}
+		{
+			icon: {
+				id: "indrev:heat_coil"
+				Count: 1b
+				tag: {
+					Damage: 0
+				}
+			}
+			x: -1.875d
+			y: 0.625d
+			shape: "gear"
+			dependencies: ["297D1E50C45B87F1"]
+			size: 1.25d
+			id: "73A74EE26A1D1ADB"
+			tasks: [{
+				id: "4064BB161DCAF4B2"
+				type: "checkmark"
+				title: "Industrial Revolution"
+			}]
+		}
+		{
+			icon: "modern_industrialization:robot_arm"
+			x: 0.0d
+			y: 0.625d
+			shape: "gear"
+			dependencies: ["297D1E50C45B87F1"]
+			size: 1.25d
+			id: "0DF6408162F74EE3"
+			tasks: [{
+				id: "0C3242C0272CFA27"
+				type: "checkmark"
+				title: "Modern Industrialization"
+			}]
+		}
+		{
+			icon: "techreborn:electronic_circuit"
+			x: 1.875d
+			y: 0.625d
+			shape: "gear"
+			dependencies: ["297D1E50C45B87F1"]
+			size: 1.25d
+			id: "2156F8085A4633DA"
+			tasks: [{
+				id: "45DD472A72B4AF77"
+				type: "checkmark"
+				title: "Tech Reborn"
+			}]
+		}
+		{
+			icon: "extragenerators:colorful_generator"
+			x: 5.625d
+			y: 0.625d
+			shape: "gear"
+			dependencies: ["297D1E50C45B87F1"]
+			size: 1.25d
+			id: "7EB1B6965157A706"
+			tasks: [{
+				id: "068C55E7F7D74A7D"
+				type: "checkmark"
+				title: "Technology Utilities"
+			}]
+		}
+		{
+			icon: "spatialharvesters:ore_core"
+			x: 7.5d
+			y: 0.625d
+			shape: "gear"
+			dependencies: ["297D1E50C45B87F1"]
+			size: 1.25d
+			id: "66570143B84009EC"
+			tasks: [{
+				id: "1F2B03F33773E4C0"
+				type: "checkmark"
+				title: "Quarries"
+			}]
+		}
+		{
+			icon: "ae2:creative_energy_cell"
+			x: 1.75d
+			y: 3.5d
+			shape: "gear"
+			hide_dependency_lines: true
+			dependencies: [
+				"297D1E50C45B87F1"
+				"1BE1FCB67B8BA0A2"
+				"61025BDE15F439DA"
+			]
+			size: 1.75d
+			id: "7AF4D96097879A89"
+			tasks: [{
+				id: "6F0F3F958A463B93"
+				type: "checkmark"
+				title: "END GAME"
+			}]
+		}
+		{
+			title: "Complete Adventure Items"
+			icon: "kubejs:lock"
+			x: -3.0d
+			y: -2.5d
+			shape: "gear"
+			dependencies: [
+				"0E4DF4FC20773B34"
+				"6B92095799FC1036"
+			]
+			id: "0C9BCFD2DDF31993"
+			tasks: [{
+				id: "432F6F6E048704D1"
+				type: "checkmark"
+			}]
+		}
+		{
+			icon: "kubejs:lock"
+			x: -1.125d
+			y: -2.5d
+			dependencies: [
+				"0160C6ECDEA4BA45"
+				"6F5F2BA2A2DC43C3"
+			]
+			id: "2EE537FFC0BBFD89"
+			tasks: [{
+				id: "17AD727C1F3F67C8"
+				type: "checkmark"
+				title: "Complete Bounty Hunter Quests"
+			}]
+		}
+		{
+			icon: "kubejs:lock"
+			x: 0.75d
+			y: -2.5d
+			dependencies: [
+				"2F33E5BBC7E0BBEC"
+				"30763C24895BEE7B"
+			]
+			id: "02358EC508CAFFB4"
+			tasks: [{
+				id: "742261327E1F33DC"
+				type: "checkmark"
+				title: "Complete Dimension Exploration"
+			}]
+		}
+		{
+			icon: "kubejs:lock"
+			x: 2.625d
+			y: -2.5d
+			dependencies: [
+				"6FDA97EEFEAF603A"
+				"724F38E5ADBBBF3B"
+			]
+			id: "1BE1FCB67B8BA0A2"
+			tasks: [{
+				id: "12B7A569308D2E13"
+				type: "checkmark"
+				title: "Complete Dungeon Exploration"
+			}]
+		}
+		{
+			icon: "kubejs:lock"
+			x: 4.5d
+			y: -2.5d
+			dependencies: [
+				"6BA9F7C83CB35984"
+				"774C8F1ECCE08986"
+			]
+			id: "6F6E37EBE8E557B1"
+			tasks: [{
+				id: "37C2B49FE9E7EA82"
+				type: "checkmark"
+				title: "Complete Legendary Items"
+			}]
+		}
+		{
+			icon: "kubejs:lock"
+			x: 6.375d
+			y: -2.5d
+			dependencies: [
+				"04CE2CAA5B45A212"
+				"3B1B24048560349D"
+			]
+			id: "202C2B373B7FFC8A"
+			tasks: [{
+				id: "114D38527517E9EB"
+				type: "checkmark"
+				title: "Complete Cooking and Farming"
+			}]
+		}
+		{
+			icon: "kubejs:lock"
+			x: 8.25d
+			y: -2.5d
+			dependencies: [
+				"5BA6272AD369212B"
+				"49FEF80A7697F2EA"
+			]
+			id: "042D58B84CC98CFF"
+			tasks: [{
+				id: "0816B2774C885092"
+				type: "checkmark"
+				title: "Complete Mob Farming Utilities"
+			}]
+		}
+		{
+			icon: "kubejs:lock"
+			x: -3.0d
+			y: -0.625d
+			dependencies: [
+				"5E5388B53193B93C"
+				"613CADFE6D1BD57F"
+			]
+			id: "67848577A630F846"
+			tasks: [{
+				id: "1A58F0B6539AA88D"
+				type: "checkmark"
+				title: "Complete Storage and Furnaces"
+			}]
+		}
+		{
+			icon: "kubejs:lock"
+			x: -1.125d
+			y: -0.625d
+			dependencies: [
+				"07935BDEE10F47FC"
+				"0C45334460D7F5A8"
+			]
+			id: "433924D5188A14AA"
+			tasks: [{
+				id: "1D53309271322645"
+				type: "checkmark"
+				title: "Complete Bewitchment"
+			}]
+		}
+		{
+			icon: "kubejs:lock"
+			x: 0.75d
+			y: -0.625d
+			dependencies: [
+				"1821A2698FA1BD49"
+				"55D861C125BF1A4B"
+			]
+			id: "603A28FB9AF6E717"
+			tasks: [{
+				id: "2B4192CF266CA65C"
+				type: "checkmark"
+				title: "Complete Botania"
+			}]
+		}
+		{
+			icon: "kubejs:lock"
+			x: 2.625d
+			y: -0.625d
+			dependencies: [
+				"0443700FAF4215D6"
+				"5E09DB13DBE296E4"
+			]
+			id: "0F9016C0F5C9CEAE"
+			tasks: [{
+				id: "114A41B6C9562454"
+				type: "checkmark"
+				title: "Complete Conjuring"
+			}]
+		}
+		{
+			icon: "kubejs:lock"
+			x: 4.5d
+			y: -0.625d
+			dependencies: [
+				"779CD8ECED593F7C"
+				"531A7C5D4A40131D"
+			]
+			id: "4931A9AEC77E8263"
+			tasks: [{
+				id: "21EFF53A3E0B4F37"
+				type: "checkmark"
+				title: "Complete Gobber"
+			}]
+		}
+		{
+			icon: "kubejs:lock"
+			x: 6.375d
+			y: -0.625d
+			dependencies: [
+				"2834C68C1A4AB8F6"
+				"33C2822D34331E10"
+			]
+			id: "5E637760BFA188F4"
+			tasks: [{
+				id: "1E0567183EC40F70"
+				type: "checkmark"
+				title: "Complete Magic Utilities"
+			}]
+		}
+		{
+			icon: "kubejs:lock"
+			x: 8.25d
+			y: -0.625d
+			dependencies: [
+				"7255AD8A8D010308"
+				"6520F2F80BE5CC19"
+			]
+			id: "5EB7F20A6BE083BD"
+			tasks: [{
+				id: "53A01E935BDBB8D3"
+				type: "checkmark"
+				title: "Complete Spectrum"
+			}]
+		}
+		{
+			icon: "kubejs:lock"
+			x: 4.5d
+			y: 1.25d
+			dependencies: [
+				"0A24FFB1EB314EC9"
+				"6C891E4EAC7ADBB6"
+			]
+			id: "161D9EF06E2F101F"
+			tasks: [{
+				id: "641B8E2C78964436"
+				type: "checkmark"
+				title: "Compled Applied Energistics 2"
+			}]
+		}
+		{
+			icon: "kubejs:lock"
+			x: -3.0d
+			y: 1.25d
+			dependencies: [
+				"21688B94099D0B9A"
+				"6E90DAB44D59AEF4"
+			]
+			id: "6528F743F806C71D"
+			tasks: [{
+				id: "28C176DA2CD8BAB8"
+				type: "checkmark"
+				title: "Complete Deep Mob Learning"
+			}]
+		}
+		{
+			icon: "kubejs:lock"
+			x: -1.125d
+			y: 1.25d
+			dependencies: [
+				"73A74EE26A1D1ADB"
+				"5C7B23C7E1B6961D"
+			]
+			id: "2748373CB75D0EE4"
+			tasks: [{
+				id: "76D8EB8C6A60FF75"
+				type: "checkmark"
+				title: "Complete Industrial Revolution"
+			}]
+		}
+		{
+			icon: "kubejs:lock"
+			x: 0.75d
+			y: 1.25d
+			dependencies: [
+				"0DF6408162F74EE3"
+				"324D90AB163C3D4D"
+			]
+			id: "61025BDE15F439DA"
+			tasks: [{
+				id: "0558C86C6F186971"
+				type: "checkmark"
+				title: "Complete Modern Industrialization"
+			}]
+		}
+		{
+			icon: "kubejs:lock"
+			x: 2.625d
+			y: 1.25d
+			dependencies: [
+				"2156F8085A4633DA"
+				"02750BB4615243F0"
+			]
+			id: "775058606729F4EA"
+			tasks: [{
+				id: "0478DB8F105364A6"
+				type: "checkmark"
+				title: "Complete Tech Reborn"
+			}]
+		}
+		{
+			icon: "kubejs:lock"
+			x: 6.375d
+			y: 1.25d
+			dependencies: [
+				"7EB1B6965157A706"
+				"59994BD2506E70AE"
+			]
+			id: "3A48B2DBDB04D5DA"
+			tasks: [{
+				id: "27ECADC4D69ECA32"
+				type: "checkmark"
+				title: "Complete Technology Utilities"
+			}]
+		}
+		{
+			icon: "kubejs:lock"
+			x: 8.25d
+			y: 1.25d
+			dependencies: [
+				"66570143B84009EC"
+				"77D5BDB3E754BAB6"
+			]
+			id: "235CFD39C065D561"
+			tasks: [{
+				id: "74B67454DF03FC25"
+				type: "checkmark"
+				title: "Complete Quarries"
+			}]
+		}
+		{
+			icon: "kubejs:lock_endgame"
+			x: 2.625d
+			y: 4.35d
+			dependencies: [
+				"7AF4D96097879A89"
+				"580968D8927EAB82"
+			]
+			id: "0C2C3F7CBC4694ED"
+			tasks: [{
+				id: "1EC9F909617E75B9"
+				type: "checkmark"
+				title: "Complete End Game"
+			}]
+		}
+		{
+			icon: "magicfungi:utilis_essence"
+			x: 9.375d
+			y: -1.25d
+			dependencies: ["297D1E50C45B87F1"]
+			size: 1.25d
+			id: "1A2C608F855F322C"
+			tasks: [{
+				id: "6BE9E5346B856AB7"
+				type: "checkmark"
+				title: "Magic Fungi"
+			}]
+		}
+		{
+			icon: {
+				id: "lightingwand:wand"
+				Count: 1b
+				tag: {
+					Damage: 0
+				}
+			}
+			x: 9.375d
+			y: -3.125d
+			dependencies: ["297D1E50C45B87F1"]
+			size: 1.25d
+			id: "0CF7C5EC0CD1CF14"
+			tasks: [{
+				id: "2279FD25D7A34464"
+				type: "checkmark"
+				title: "Miscellaneous"
+			}]
+		}
+		{
+			icon: "kubejs:lock"
+			x: 10.1d
+			y: -2.5d
+			dependencies: [
+				"0CF7C5EC0CD1CF14"
+				"2520FFF58AC14D09"
+			]
+			id: "612DD1DDCC1523D6"
+			tasks: [{
+				id: "2161219251CE3512"
+				type: "checkmark"
+				title: "Complete Miscellaneous"
+			}]
+		}
+		{
+			icon: "kubejs:lock"
+			x: 10.1d
+			y: -0.6d
+			dependencies: [
+				"1A2C608F855F322C"
+				"1CB7FC52C9DD8325"
+			]
+			id: "476CA201C7C3858E"
+			tasks: [{
+				id: "404C9C97FED30566"
+				type: "checkmark"
+				title: "Complete Magic Fungi"
+			}]
+		}
+	]
+}

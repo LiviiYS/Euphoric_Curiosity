@@ -1,0 +1,63 @@
+{
+	"name": "Standing Leap",
+	"description": "You can jump 4 blocks high.",
+	"type": "origins:multiple",
+	"high_jump": {
+		"type": "origins:modify_jump",
+		"modifier": {
+			"operation": "addition",
+			"value": 0.4
+		}
+	},
+	"fall": {
+		"type": "origins:resource",
+		"min": 0,
+		"max": 1,
+		"start_value": 1,
+		"hud_render": {
+			"should_render": false
+		}
+	},
+	"reset_fall": {
+		"type": "origins:action_on_land",
+		"entity_action": {
+			"type": "origins:change_resource",
+			"resource": "dnd:grung/standing_leap_fall",
+			"change": 1
+		}
+	},
+	"less_fall_damage": {
+		"type": "origins:action_over_time",
+		"interval": 1,
+		"entity_action": {
+			"type": "origins:and",
+			"actions": [
+				{
+					"type": "origins:set_fall_distance",
+					"fall_distance": 0
+				},
+				{
+					"type": "origins:change_resource",
+					"resource": "dnd:grung/standing_leap_fall",
+					"change": -1
+				}
+			]
+		},
+		"condition": {
+			"type": "origins:and",
+			"conditions": [
+				{
+					"type": "origins:fall_distance",
+					"comparison": ">=",
+					"compare_to": 3
+				},
+				{
+					"type": "origins:resource",
+					"resource": "dnd:grung/standing_leap_fall",
+					"comparison": "==",
+					"compare_to": 1
+				}
+			]
+		}
+	}
+}

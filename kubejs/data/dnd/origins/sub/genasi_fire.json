@@ -1,0 +1,16 @@
+{
+	"powers": [
+		"origins:fire_immunity",
+		"dnd:genasi/burning_hands",
+		"origins:water_vulnerability",
+		"dnd:genasi/hypothermia",
+		"dnd:darkvision",
+		"origins:damage_from_potions",
+		"origins:flame_particles"
+	],
+	"icon": "minecraft:magma_block",
+	"order": 1,
+	"impact": 2,
+	"name": "Fire Genasi",
+	"description": "As a fire genasi, you have inherited the volatile mood and keen mind of the efreet. You tend toward impatience and making snap judgments."
+}

@@ -1,0 +1,342 @@
+{
+	"type": "origins:multiple",
+	"no_regen": {
+		"type": "origins:disable_regen"
+	},
+	"heal": {
+		"type": "origins:active_self",
+		"entity_action": {
+			"type": "origins:if_else_list",
+			"actions": [
+			{
+				"condition": {
+					"type": "origins:equipped_item",
+					"equipment_slot": "mainhand",
+					"item_condition": {
+						"type": "origins:ingredient",
+						"ingredient": {
+							"tag": "minecraft:wool"
+						}
+					}
+				},
+				"action": {
+					"type": "origins:and",
+					"actions": [
+					{
+						"type": "origins:equipped_item_action",
+						"equipment_slot": "mainhand",
+						"action": {
+							"type": "origins:consume",
+							"amount": 1
+						}
+					},
+					{
+						"type": "origins:heal",
+						"amount": 4
+					},
+					{
+						"type": "origins:delay",
+						"ticks": 2,
+						"action": {
+							"type": "origins:heal",
+							"amount": 2
+						}
+					},
+					{
+						"type": "origins:delay",
+						"ticks": 3,
+						"action": {
+							"type": "origins:heal",
+							"amount": 1
+						}
+					},
+					{
+						"type": "origins:delay",
+						"ticks": 4,
+						"action": {
+							"type": "origins:heal",
+							"amount": 1
+						}
+					},
+					{
+						"type": "origins:play_sound",
+						"sound": "minecraft:block.wool.place",
+						"pitch": 0
+					},
+					{
+						"type": "origins:play_sound",
+						"sound": "minecraft:entity.player.hurt_sweet_berry_bush",
+						"volume": 0.4
+					},
+					{
+						"type": "origins:play_sound",
+						"sound": "minecraft:entity.player.levelup",
+						"volume": 0.1,
+						"pitch": 1.2
+					},
+					{
+						"type": "origins:delay",
+						"ticks": 4,
+						"action": {
+							"type": "origins:play_sound",
+							"sound": "minecraft:block.wool.place",
+							"volume": 0.4,
+							"pitch": 2
+						}
+					}
+					]
+				}
+			},
+			{
+				"condition": {
+					"type": "origins:equipped_item",
+					"equipment_slot": "offhand",
+					"item_condition": {
+						"type": "origins:ingredient",
+						"ingredient": {
+							"tag": "minecraft:wool"
+						}
+					}
+				},
+				"action": {
+					"type": "origins:and",
+					"actions": [
+					{
+						"type": "origins:equipped_item_action",
+						"equipment_slot": "offhand",
+						"action": {
+							"type": "origins:consume",
+							"amount": 1
+						}
+					},
+					{
+						"type": "origins:heal",
+						"amount": 4
+					},
+					{
+						"type": "origins:delay",
+						"ticks": 2,
+						"action": {
+							"type": "origins:heal",
+							"amount": 2
+						}
+					},
+					{
+						"type": "origins:delay",
+						"ticks": 3,
+						"action": {
+							"type": "origins:heal",
+							"amount": 1
+						}
+					},
+					{
+						"type": "origins:delay",
+						"ticks": 4,
+						"action": {
+							"type": "origins:heal",
+							"amount": 1
+						}
+					},
+					{
+						"type": "origins:play_sound",
+						"sound": "minecraft:block.wool.place",
+						"pitch": 0
+					},
+					{
+						"type": "origins:play_sound",
+						"sound": "minecraft:entity.player.hurt_sweet_berry_bush",
+						"volume": 0.4
+					},
+					{
+						"type": "origins:play_sound",
+						"sound": "minecraft:entity.player.levelup",
+						"volume": 0.1,
+						"pitch": 1.2
+					},
+					{
+						"type": "origins:delay",
+						"ticks": 4,
+						"action": {
+							"type": "origins:play_sound",
+							"sound": "minecraft:block.wool.place",
+							"volume": 0.4,
+							"pitch": 2
+						}
+					}
+					]
+				}
+			},
+			{
+				"condition": {
+					"type": "origins:equipped_item",
+					"equipment_slot": "mainhand",
+					"item_condition": {
+						"type": "origins:ingredient",
+						"ingredient": {
+							"item": "minecraft:string"
+						}
+					}
+				},
+				"action": {
+					"type": "origins:and",
+					"actions": [
+					{
+						"type": "origins:equipped_item_action",
+						"equipment_slot": "mainhand",
+						"action": {
+							"type": "origins:consume",
+							"amount": 1
+						}
+					},
+					{
+						"type": "origins:heal",
+						"amount": 2
+					},
+					{
+						"type": "origins:delay",
+						"ticks": 1,
+						"action": {
+							"type": "origins:heal",
+							"amount": 1
+						}
+					},
+					{
+						"type": "origins:delay",
+						"ticks": 2,
+						"action": {
+							"type": "origins:heal",
+							"amount": 1
+						}
+					},
+					{
+						"type": "origins:delay",
+						"ticks": 4,
+						"action": {
+							"type": "origins:heal",
+							"amount": 1
+						}
+					},
+					{
+						"type": "origins:play_sound",
+						"sound": "minecraft:entity.player.hurt_sweet_berry_bush",
+						"volume": 0.4
+					},
+					{
+						"type": "origins:play_sound",
+						"sound": "minecraft:entity.player.levelup",
+						"volume": 0.1,
+						"pitch": 1.2
+					},
+					{
+						"type": "origins:delay",
+						"ticks": 4,
+						"action": {
+							"type": "origins:play_sound",
+							"sound": "minecraft:block.wool.place",
+							"volume": 0.4,
+							"pitch": 2
+						}
+					}
+					]
+				}
+			},
+			{
+				"condition": {
+					"type": "origins:equipped_item",
+					"equipment_slot": "offhand",
+					"item_condition": {
+						"type": "origins:ingredient",
+						"ingredient": {
+							"item": "minecraft:string"
+						}
+					}
+				},
+				"action": {
+					"type": "origins:and",
+					"actions": [
+					{
+						"type": "origins:equipped_item_action",
+						"equipment_slot": "offhand",
+						"action": {
+							"type": "origins:consume",
+							"amount": 1
+						}
+					},
+					{
+						"type": "origins:heal",
+						"amount": 2
+					},
+					{
+						"type": "origins:delay",
+						"ticks": 2,
+						"action": {
+							"type": "origins:heal",
+							"amount": 1
+						}
+					},
+					{
+						"type": "origins:delay",
+						"ticks": 4,
+						"action": {
+							"type": "origins:heal",
+							"amount": 1
+						}
+					},
+					{
+						"type": "origins:delay",
+						"ticks": 6,
+						"action": {
+							"type": "origins:heal",
+							"amount": 1
+						}
+					},
+					{
+						"type": "origins:play_sound",
+						"sound": "minecraft:entity.player.hurt_sweet_berry_bush",
+						"volume": 0.4
+					},
+					{
+						"type": "origins:play_sound",
+						"sound": "minecraft:entity.player.levelup",
+						"volume": 0.1,
+						"pitch": 1.2
+					},
+					{
+						"type": "origins:delay",
+						"ticks": 4,
+						"action": {
+							"type": "origins:play_sound",
+							"sound": "minecraft:block.wool.place",
+							"volume": 0.4,
+							"pitch": 2
+						}
+					}
+					]
+				}
+			}
+			]
+		},
+		"cooldown": 120,
+		"hud_render": {
+			"sprite_location": "origins:textures/gui/community/spiderkolo/resource_bar_01.png",
+			"bar_index": 9
+		},
+		"key": {
+			"key": "key.origins.primary_active"
+		},
+		"condition": {
+			"type": "origins:relative_health",
+			"comparison": "==",
+			"compare_to": 1,
+			"inverted": true
+		}
+	},
+	"name": "Patchwork Body",
+	"description": "Your body doesn't heal naturally. Instead, you can heal your wounds by consuming Wool and String.",
+	"badges": [
+	{
+		"sprite": "origins:textures/gui/badge/active.png",
+		"text": "Active ability, use with %s while holding Wool or String in your hands."
+	}
+	]
+}

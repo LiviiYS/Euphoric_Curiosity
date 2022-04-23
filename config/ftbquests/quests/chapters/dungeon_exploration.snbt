@@ -1,0 +1,568 @@
+{
+	id: "6FDA97EEFEAF603A"
+	group: "0631C37AA5FCBCF1"
+	order_index: 3
+	filename: "dungeon_exploration"
+	title: "Dungeons"
+	icon: "kubejs:dungeon"
+	default_quest_shape: ""
+	default_hide_dependency_lines: false
+	quests: [
+		{
+			x: 0.0d
+			y: 0.0d
+			dependencies: ["724F38E5ADBBBF3B"]
+			id: "6E0A8FAAB809A9C2"
+			tasks: [{
+				id: "5C60DBD5EF1BC58D"
+				type: "advancement"
+				title: "Abandoned Temple"
+				icon: {
+					id: "kubejs:dungeon"
+					Count: 1b
+					tag: { }
+				}
+				advancement: "dungeons_arise:find_abandoned_temple"
+				criterion: ""
+			}]
+		}
+		{
+			x: 1.0d
+			y: 0.0d
+			dependencies: ["724F38E5ADBBBF3B"]
+			id: "7F744998A4D5ECE5"
+			tasks: [{
+				id: "2FC1C96161D5AE68"
+				type: "advancement"
+				title: "Bandit Towers"
+				icon: "kubejs:dungeon"
+				advancement: "dungeons_arise:find_bandit_towers"
+				criterion: ""
+			}]
+		}
+		{
+			x: 2.0d
+			y: 0.0d
+			dependencies: ["724F38E5ADBBBF3B"]
+			id: "6F9D62A5990CE607"
+			tasks: [{
+				id: "5369C41B27E9C8A0"
+				type: "advancement"
+				title: "Bandit Village"
+				icon: {
+					id: "kubejs:dungeon"
+					Count: 1b
+					tag: { }
+				}
+				advancement: "dungeons_arise:find_bandit_village"
+				criterion: ""
+			}]
+		}
+		{
+			x: 3.0d
+			y: 0.0d
+			dependencies: ["724F38E5ADBBBF3B"]
+			id: "6570D7AF30D8DE01"
+			tasks: [{
+				id: "06E9B1B3F8E90790"
+				type: "advancement"
+				title: "Ceryneian Hind"
+				icon: {
+					id: "kubejs:dungeon"
+					Count: 1b
+					tag: { }
+				}
+				advancement: "dungeons_arise:find_ceryneian_hind"
+				criterion: ""
+			}]
+		}
+		{
+			x: 4.0d
+			y: 0.0d
+			dependencies: ["724F38E5ADBBBF3B"]
+			id: "2740C9667812C9E3"
+			tasks: [{
+				id: "689496E688D36321"
+				type: "advancement"
+				title: "Coliseum"
+				icon: {
+					id: "kubejs:dungeon"
+					Count: 1b
+					tag: { }
+				}
+				advancement: "dungeons_arise:find_coliseum"
+				criterion: ""
+			}]
+		}
+		{
+			x: 5.0d
+			y: 0.0d
+			dependencies: ["724F38E5ADBBBF3B"]
+			id: "613F05CC57A32158"
+			tasks: [{
+				id: "6CDD60DC9ABD6E03"
+				type: "advancement"
+				title: "Fishing Hut"
+				icon: {
+					id: "kubejs:dungeon"
+					Count: 1b
+					tag: { }
+				}
+				advancement: "dungeons_arise:find_fishing_hut"
+				criterion: ""
+			}]
+		}
+		{
+			x: 6.0d
+			y: 0.0d
+			dependencies: ["724F38E5ADBBBF3B"]
+			id: "04F465F29C16ACB2"
+			tasks: [{
+				id: "280B6F1A87B8ACF3"
+				type: "advancement"
+				title: "Foundry"
+				icon: {
+					id: "kubejs:dungeon"
+					Count: 1b
+					tag: { }
+				}
+				advancement: "dungeons_arise:find_foundry"
+				criterion: ""
+			}]
+		}
+		{
+			x: 7.0d
+			y: 0.0d
+			dependencies: ["724F38E5ADBBBF3B"]
+			id: "71DF4BDF6EBB51AA"
+			tasks: [{
+				id: "1DF7B0DBC9A46A8B"
+				type: "advancement"
+				title: "Giant Mushroom"
+				icon: {
+					id: "kubejs:dungeon"
+					Count: 1b
+					tag: { }
+				}
+				advancement: "dungeons_arise:find_giant_mushroom"
+				criterion: ""
+			}]
+		}
+		{
+			x: 0.0d
+			y: 1.0d
+			dependencies: ["724F38E5ADBBBF3B"]
+			id: "2A3EE8AD51F5065E"
+			tasks: [{
+				id: "273F95DE860200C8"
+				type: "advancement"
+				title: "Heavenly Challenger"
+				icon: {
+					id: "kubejs:dungeon"
+					Count: 1b
+					tag: { }
+				}
+				advancement: "dungeons_arise:find_heavenly_challenger"
+				criterion: ""
+			}]
+		}
+		{
+			x: 1.0d
+			y: 1.0d
+			dependencies: ["724F38E5ADBBBF3B"]
+			id: "4D47313C03F83689"
+			tasks: [{
+				id: "7E7EF970BDCE23CE"
+				type: "advancement"
+				title: "Heavenly Conqueror"
+				icon: {
+					id: "kubejs:dungeon"
+					Count: 1b
+					tag: { }
+				}
+				advancement: "dungeons_arise:find_heavenly_conqueror"
+				criterion: ""
+			}]
+		}
+		{
+			x: 2.0d
+			y: 1.0d
+			dependencies: ["724F38E5ADBBBF3B"]
+			id: "2A88F34933C6788E"
+			tasks: [{
+				id: "7912F8D64E05B47A"
+				type: "advancement"
+				title: "Heavenly Rider"
+				icon: {
+					id: "kubejs:dungeon"
+					Count: 1b
+					tag: { }
+				}
+				advancement: "dungeons_arise:find_heavenly_rider"
+				criterion: ""
+			}]
+		}
+		{
+			x: 3.0d
+			y: 1.0d
+			dependencies: ["724F38E5ADBBBF3B"]
+			id: "632BD2D7AEEE28CB"
+			tasks: [{
+				id: "55AA5B1C06D5466D"
+				type: "advancement"
+				title: "Illager Campsite"
+				icon: {
+					id: "kubejs:dungeon"
+					Count: 1b
+					tag: { }
+				}
+				advancement: "dungeons_arise:find_illager_campsite"
+				criterion: ""
+			}]
+		}
+		{
+			x: 4.0d
+			y: 1.0d
+			dependencies: ["724F38E5ADBBBF3B"]
+			id: "6EC6528FCBB41A31"
+			tasks: [{
+				id: "646B40CE6ECD6800"
+				type: "advancement"
+				title: "Illager Corsair"
+				icon: {
+					id: "kubejs:dungeon"
+					Count: 1b
+					tag: { }
+				}
+				advancement: "dungeons_arise:find_illager_corsair_or_illager_galley"
+				criterion: ""
+			}]
+		}
+		{
+			x: 5.0d
+			y: 1.0d
+			dependencies: ["724F38E5ADBBBF3B"]
+			id: "20250DADAD44FAD3"
+			tasks: [{
+				id: "3334A78497ABE080"
+				type: "advancement"
+				title: "Illager Fort"
+				icon: {
+					id: "kubejs:dungeon"
+					Count: 1b
+					tag: { }
+				}
+				advancement: "dungeons_arise:find_illager_fort"
+				criterion: ""
+			}]
+		}
+		{
+			x: 6.0d
+			y: 1.0d
+			dependencies: ["724F38E5ADBBBF3B"]
+			id: "2101F0C2CEC7D5EF"
+			tasks: [{
+				id: "19159FF25F2A7CF5"
+				type: "advancement"
+				title: "Illager Windmill"
+				icon: {
+					id: "kubejs:dungeon"
+					Count: 1b
+					tag: { }
+				}
+				advancement: "dungeons_arise:find_illager_windmill"
+				criterion: ""
+			}]
+		}
+		{
+			x: 7.0d
+			y: 1.0d
+			dependencies: ["724F38E5ADBBBF3B"]
+			id: "787F188BDBB07662"
+			tasks: [{
+				id: "5BBF7EE6EF1CA374"
+				type: "advancement"
+				title: "Infested Temple"
+				icon: {
+					id: "kubejs:dungeon"
+					Count: 1b
+					tag: { }
+				}
+				advancement: "dungeons_arise:find_infested_temple"
+				criterion: ""
+			}]
+		}
+		{
+			x: 0.0d
+			y: 2.0d
+			dependencies: ["724F38E5ADBBBF3B"]
+			id: "4441043E3D379CD8"
+			tasks: [{
+				id: "32708E82B9D6805D"
+				type: "advancement"
+				title: "Lighthouse"
+				icon: {
+					id: "kubejs:dungeon"
+					Count: 1b
+					tag: { }
+				}
+				advancement: "dungeons_arise:find_lighthouse"
+				criterion: ""
+			}]
+		}
+		{
+			x: 1.0d
+			y: 2.0d
+			dependencies: ["724F38E5ADBBBF3B"]
+			id: "5FD04D11E0593193"
+			tasks: [{
+				id: "40F2CB340C93EC83"
+				type: "advancement"
+				title: "Merchant Campsite"
+				icon: {
+					id: "kubejs:dungeon"
+					Count: 1b
+					tag: { }
+				}
+				advancement: "dungeons_arise:find_merchant_campsite"
+				criterion: ""
+			}]
+		}
+		{
+			x: 2.0d
+			y: 2.0d
+			dependencies: ["724F38E5ADBBBF3B"]
+			id: "69AFD47D721336B4"
+			tasks: [{
+				id: "1AB5EF87258B1FAE"
+				type: "advancement"
+				title: "Mining System"
+				icon: {
+					id: "kubejs:dungeon"
+					Count: 1b
+					tag: { }
+				}
+				advancement: "dungeons_arise:find_mining_system"
+				criterion: ""
+			}]
+		}
+		{
+			x: 3.0d
+			y: 2.0d
+			dependencies: ["724F38E5ADBBBF3B"]
+			id: "3E152AFE4D81ED71"
+			tasks: [{
+				id: "3D63996D423163EF"
+				type: "advancement"
+				title: "Monastery"
+				icon: {
+					id: "kubejs:dungeon"
+					Count: 1b
+					tag: { }
+				}
+				advancement: "dungeons_arise:find_monasteries"
+				criterion: ""
+			}]
+		}
+		{
+			x: 4.0d
+			y: 2.0d
+			dependencies: ["724F38E5ADBBBF3B"]
+			id: "4221E6F804841799"
+			tasks: [{
+				id: "79E3EC9F74C276C9"
+				type: "advancement"
+				title: "Mushroom House"
+				icon: {
+					id: "kubejs:dungeon"
+					Count: 1b
+					tag: { }
+				}
+				advancement: "dungeons_arise:find_mushroom_house"
+				criterion: ""
+			}]
+		}
+		{
+			x: 5.0d
+			y: 2.0d
+			dependencies: ["724F38E5ADBBBF3B"]
+			id: "05DA6DD498DA607A"
+			tasks: [{
+				id: "42AFE1F0A1DCB46D"
+				type: "advancement"
+				title: "Mushroom Mines"
+				icon: {
+					id: "kubejs:dungeon"
+					Count: 1b
+					tag: { }
+				}
+				advancement: "dungeons_arise:find_mushroom_mines"
+				criterion: ""
+			}]
+		}
+		{
+			x: 6.0d
+			y: 2.0d
+			dependencies: ["724F38E5ADBBBF3B"]
+			id: "227F910FAD6B8490"
+			tasks: [{
+				id: "4F9E28C36F856129"
+				type: "advancement"
+				title: "Mushroom Village"
+				icon: {
+					id: "kubejs:dungeon"
+					Count: 1b
+					tag: { }
+				}
+				advancement: "dungeons_arise:find_mushroom_village"
+				criterion: ""
+			}]
+		}
+		{
+			x: 7.0d
+			y: 2.0d
+			dependencies: ["724F38E5ADBBBF3B"]
+			id: "465D34816992E04C"
+			tasks: [{
+				id: "6CFCDB6C0CB7140F"
+				type: "advancement"
+				title: "Plague Asylum"
+				icon: {
+					id: "kubejs:dungeon"
+					Count: 1b
+					tag: { }
+				}
+				advancement: "dungeons_arise:find_plague_asylum"
+				criterion: ""
+			}]
+		}
+		{
+			x: 0.0d
+			y: 3.0d
+			dependencies: ["724F38E5ADBBBF3B"]
+			id: "1A2501A8C4654A94"
+			tasks: [{
+				id: "3D05DE4D6D64CB34"
+				type: "advancement"
+				title: "Scorched Mines"
+				icon: {
+					id: "kubejs:dungeon"
+					Count: 1b
+					tag: { }
+				}
+				advancement: "dungeons_arise:find_scorched_mines"
+				criterion: ""
+			}]
+		}
+		{
+			x: 1.0d
+			y: 3.0d
+			dependencies: ["724F38E5ADBBBF3B"]
+			id: "28F3B2493FFB1B9F"
+			tasks: [{
+				id: "7A868B1E243308C6"
+				type: "advancement"
+				title: "Shiraz Palace"
+				icon: {
+					id: "kubejs:dungeon"
+					Count: 1b
+					tag: { }
+				}
+				advancement: "dungeons_arise:find_shiraz_palace"
+				criterion: ""
+			}]
+		}
+		{
+			x: 2.0d
+			y: 3.0d
+			dependencies: ["724F38E5ADBBBF3B"]
+			id: "3ACB4FE6BFE83F92"
+			tasks: [{
+				id: "54B50BF9664DA1FD"
+				type: "advancement"
+				title: "Small Blimp"
+				icon: {
+					id: "kubejs:dungeon"
+					Count: 1b
+					tag: { }
+				}
+				advancement: "dungeons_arise:find_small_blimp"
+				criterion: ""
+			}]
+		}
+		{
+			x: 4.0d
+			y: 3.0d
+			dependencies: ["724F38E5ADBBBF3B"]
+			id: "29961A86D0551A71"
+			tasks: [{
+				id: "7B05940117767375"
+				type: "advancement"
+				title: "Thornborn Towers"
+				icon: {
+					id: "kubejs:dungeon"
+					Count: 1b
+					tag: { }
+				}
+				advancement: "dungeons_arise:find_thornborn_towers"
+				criterion: ""
+			}]
+		}
+		{
+			x: 5.0d
+			y: 3.0d
+			dependencies: ["724F38E5ADBBBF3B"]
+			id: "166F94243FBE3BD2"
+			tasks: [{
+				id: "025F7EF154BA0E2D"
+				type: "advancement"
+				title: "Typhon"
+				icon: "kubejs:dungeon"
+				advancement: "dungeons_arise:find_typhon"
+				criterion: ""
+			}]
+		}
+		{
+			x: 6.0d
+			y: 3.0d
+			dependencies: ["724F38E5ADBBBF3B"]
+			id: "7FE98CD33E135323"
+			tasks: [{
+				id: "2E12E7DBC46F521D"
+				type: "advancement"
+				title: "Undead Pirate Ship"
+				icon: "kubejs:dungeon"
+				advancement: "dungeons_arise:find_undead_pirate_ship"
+				criterion: ""
+			}]
+		}
+		{
+			x: 7.0d
+			y: 3.0d
+			dependencies: ["724F38E5ADBBBF3B"]
+			id: "59C4EFE1A06EC4FC"
+			tasks: [{
+				id: "1EE632C161BEC98C"
+				type: "advancement"
+				title: "Wishing Well"
+				icon: "kubejs:dungeon"
+				advancement: "dungeons_arise:find_wishing_well"
+				criterion: ""
+			}]
+		}
+		{
+			x: 3.0d
+			y: 3.0d
+			dependencies: ["724F38E5ADBBBF3B"]
+			id: "4D11866C5E25D657"
+			tasks: [{
+				id: "35E9E16F91086CAD"
+				type: "advancement"
+				title: "Small Prairie House"
+				icon: "kubejs:dungeon"
+				advancement: "dungeons_arise:find_small_prairie_house"
+				criterion: ""
+			}]
+		}
+	]
+}

@@ -1,0 +1,17 @@
+{
+	"powers": [
+		"golemancy:copper_crafting",
+		"golemancy:wax",
+		"golemancy:lightning_rod",
+		"golemancy:synthetic_stomach",
+		"golemancy:oxidation",
+		"golemancy:sink",
+		"golemancy:copper_regen",
+		"golemancy:fire_vuln"
+	],
+	"icon": "minecraft:copper_block",
+	"order": 683,
+	"impact": 2,
+	"name": "Copper Golem",
+	"description": "A construction golem capable of exploiting the properties of copper."
+}

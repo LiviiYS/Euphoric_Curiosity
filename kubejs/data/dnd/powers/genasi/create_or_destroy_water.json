@@ -1,0 +1,353 @@
+{
+	"name": "Create or Destroy Water",
+	"description": "Press the primary key to create water below you or in a bucket. If there's already water present, it will be destroyed.",
+	"type": "origins:active_self",
+	"key": "primary",
+	"cooldown": 0,
+	"hud_render": {
+		"should_render": false
+	},
+	"entity_action": {
+		"type": "origins:if_else_list",
+		"actions": [
+			{
+				"condition": {
+					"type": "origins:equipped_item",
+					"equipment_slot": "mainhand",
+					"item_condition": {
+						"type": "origins:ingredient",
+						"ingredient": {
+							"item": "minecraft:bucket"
+						}
+					}
+				},
+				"action": {
+					"type": "origins:execute_command",
+					"command": "item replace entity @s weapon.mainhand with minecraft:water_bucket"
+				}
+			},
+			{
+				"condition": {
+					"type": "origins:equipped_item",
+					"equipment_slot": "mainhand",
+					"item_condition": {
+						"type": "origins:ingredient",
+						"ingredient": {
+							"item": "minecraft:water_bucket"
+						}
+					}
+				},
+				"action": {
+					"type": "origins:execute_command",
+					"command": "item replace entity @s weapon.mainhand with minecraft:bucket"
+				}
+			},
+			{
+				"condition": {
+					"type": "origins:in_block",
+					"block_condition": {
+						"type": "origins:block",
+						"block": "minecraft:water"
+					}
+				},
+				"action": {
+					"type": "origins:and",
+					"actions": [
+						{
+							"type": "origins:block_action_at",
+							"block_action": {
+								"type": "origins:set_block",
+								"block": "minecraft:air"
+							}
+						},
+						{
+							"type": "origins:play_sound",
+							"sound": "minecraft:item.bucket.empty",
+							"volume": 0.7
+						}
+					]
+				}
+			},
+			{
+				"condition": {
+					"type": "origins:in_block",
+					"block_condition": {
+						"type": "origins:and",
+						"conditions": [
+							{
+								"type": "origins:offset",
+								"y": -4,
+								"condition": {
+									"type": "origins:and",
+									"conditions": [
+										{
+											"inverted": true,
+											"type": "origins:block",
+											"block": "minecraft:air"
+										},
+										{
+											"inverted": true,
+											"type": "origins:block",
+											"block": "minecraft:cave_air"
+										},
+										{
+											"inverted": true,
+											"type": "origins:block",
+											"block": "minecraft:water"
+										}
+									]
+								}
+							},
+							{
+								"type": "origins:offset",
+								"y": -3,
+								"condition": {
+									"type": "origins:or",
+									"conditions": [
+										{
+											"type": "origins:block",
+											"block": "minecraft:air"
+										},
+										{
+											"type": "origins:block",
+											"block": "minecraft:cave_air"
+										}
+									]
+								}
+							}
+						]
+					}
+				},
+				"action": {
+					"type": "origins:and",
+					"actions": [
+						{
+							"type": "origins:block_action_at",
+							"block_action": {
+								"type": "origins:offset",
+								"y": -3,
+								"action": {
+									"type": "origins:set_block",
+									"block": "minecraft:water"
+								}
+							}
+						},
+						{
+							"type": "origins:play_sound",
+							"sound": "minecraft:item.bucket.fill",
+							"volume": 0.4
+						}
+					]
+				}
+			},
+			{
+				"condition": {
+					"type": "origins:in_block",
+					"block_condition": {
+						"type": "origins:and",
+						"conditions": [
+							{
+								"type": "origins:offset",
+								"y": -3,
+								"condition": {
+									"type": "origins:and",
+									"conditions": [
+										{
+											"inverted": true,
+											"type": "origins:block",
+											"block": "minecraft:air"
+										},
+										{
+											"inverted": true,
+											"type": "origins:block",
+											"block": "minecraft:cave_air"
+										},
+										{
+											"inverted": true,
+											"type": "origins:block",
+											"block": "minecraft:water"
+										}
+									]
+								}
+							},
+							{
+								"type": "origins:offset",
+								"y": -2,
+								"condition": {
+									"type": "origins:or",
+									"conditions": [
+										{
+											"type": "origins:block",
+											"block": "minecraft:air"
+										},
+										{
+											"type": "origins:block",
+											"block": "minecraft:cave_air"
+										}
+									]
+								}
+							}
+						]
+					}
+				},
+				"action": {
+					"type": "origins:and",
+					"actions": [
+						{
+							"type": "origins:block_action_at",
+							"block_action": {
+								"type": "origins:offset",
+								"y": -2,
+								"action": {
+									"type": "origins:set_block",
+									"block": "minecraft:water"
+								}
+							}
+						},
+						{
+							"type": "origins:play_sound",
+							"sound": "minecraft:item.bucket.fill",
+							"volume": 0.5
+						}
+					]
+				}
+			},
+			{
+				"condition": {
+					"type": "origins:in_block",
+					"block_condition": {
+						"type": "origins:and",
+						"conditions": [
+							{
+								"type": "origins:offset",
+								"y": -2,
+								"condition": {
+									"type": "origins:and",
+									"conditions": [
+										{
+											"inverted": true,
+											"type": "origins:block",
+											"block": "minecraft:air"
+										},
+										{
+											"inverted": true,
+											"type": "origins:block",
+											"block": "minecraft:cave_air"
+										},
+										{
+											"inverted": true,
+											"type": "origins:block",
+											"block": "minecraft:water"
+										}
+									]
+								}
+							},
+							{
+								"type": "origins:offset",
+								"y": -1,
+								"condition": {
+									"type": "origins:or",
+									"conditions": [
+										{
+											"type": "origins:block",
+											"block": "minecraft:air"
+										},
+										{
+											"type": "origins:block",
+											"block": "minecraft:cave_air"
+										}
+									]
+								}
+							}
+						]
+					}
+				},
+				"action": {
+					"type": "origins:and",
+					"actions": [
+						{
+							"type": "origins:block_action_at",
+							"block_action": {
+								"type": "origins:offset",
+								"y": -1,
+								"action": {
+									"type": "origins:set_block",
+									"block": "minecraft:water"
+								}
+							}
+						},
+						{
+							"type": "origins:play_sound",
+							"sound": "minecraft:item.bucket.fill",
+							"volume": 0.6
+						}
+					]
+				}
+			},
+			{
+				"condition": {
+					"type": "origins:in_block",
+					"block_condition": {
+						"type": "origins:and",
+						"conditions": [
+							{
+								"type": "origins:offset",
+								"y": -1,
+								"condition": {
+									"type": "origins:and",
+									"conditions": [
+										{
+											"inverted": true,
+											"type": "origins:block",
+											"block": "minecraft:air"
+										},
+										{
+											"inverted": true,
+											"type": "origins:block",
+											"block": "minecraft:cave_air"
+										},
+										{
+											"inverted": true,
+											"type": "origins:block",
+											"block": "minecraft:water"
+										}
+									]
+								}
+							},
+							{
+								"type": "origins:or",
+								"conditions": [
+									{
+										"type": "origins:block",
+										"block": "minecraft:air"
+									},
+									{
+										"type": "origins:block",
+										"block": "minecraft:cave_air"
+									}
+								]
+							}
+						]
+					}
+				},
+				"action": {
+					"type": "origins:and",
+					"actions": [
+						{
+							"type": "origins:block_action_at",
+							"block_action": {
+								"type": "origins:set_block",
+								"block": "minecraft:water"
+							}
+						},
+						{
+							"type": "origins:play_sound",
+							"sound": "minecraft:item.bucket.fill",
+							"volume": 0.7
+						}
+					]
+				}
+			}
+		]
+	}
+}

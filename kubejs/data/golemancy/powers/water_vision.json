@@ -1,0 +1,25 @@
+{
+	"type": "origins:toggle_night_vision",
+	"strength": 0.3,
+	"condition": {
+		"type": "origins:and",
+		"conditions": [
+		{
+			"type": "origins:submerged_in",
+			"fluid": "minecraft:water"
+		},
+		{
+			"type": "origins:status_effect",
+			"effect": "minecraft:conduit_power",
+			"inverted": true
+		}
+		]
+	},
+	"active_by_default": true,
+	"key": {
+		"key": "key.origins.secondary_active",
+		"continuous": false
+	},
+	"name": "Waterproof Lenses",
+	"description": "Your underwater vision is somewhat improved."
+}

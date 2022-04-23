@@ -1,0 +1,16 @@
+{
+  "builtinServers": [
+    {
+      "name": "NA West (Community)",
+      "address": "benchtwo.flintlockservers.com"
+    },
+    {
+      "name": "NA East (Community)",
+      "address": "SomeBenchmark2Server.mcserver.us"
+    },
+    {
+      "name": "EU (Community)",
+      "address": "home.nerdnet.co.uk"
+    }
+  ]
+}

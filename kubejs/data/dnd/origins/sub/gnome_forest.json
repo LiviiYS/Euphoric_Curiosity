@@ -1,0 +1,10 @@
+{
+	"powers": [
+		"dnd:speak_with_beasts"
+	],
+	"icon": "minecraft:oak_sapling",
+	"order": 1,
+	"impact": 0,
+	"name": "Forest Gnome",
+	"description": "As a forest gnome, you have learnt to  speak with beasts and use them to your advantage."
+}

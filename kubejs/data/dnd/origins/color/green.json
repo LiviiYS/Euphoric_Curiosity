@@ -1,0 +1,12 @@
+{
+	"powers": [
+		"dnd:dragonborn/breath_poison",
+		"dnd:dragonborn/resistance_poison",
+		"dnd:dragonborn/scales_green"
+	],
+	"icon": "minecraft:lime_terracotta",
+	"order": 3,
+	"impact": 0,
+	"name": "Green",
+	"description": "As a descendant of the green dragons you can breathe poisonous green gas."
+}

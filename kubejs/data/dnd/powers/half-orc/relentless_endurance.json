@@ -1,0 +1,41 @@
+{
+    "name": "Relentless Endurance",
+    "description": "You can survive a lethal blow once every 5 minutes.",
+    "type": "origins:multiple",
+    "prevent_death": {
+        "type": "origins:prevent_death",
+        "entity_action": {
+            "type": "origins:and",
+            "actions": [
+                {
+                    "type": "origins:trigger_cooldown",
+                    "power": "dnd:half-orc/relentless_endurance_cooldown"
+                },
+                {
+                    "type": "origins:apply_effect",
+                    "effect": {
+                        "effect": "minecraft:resistance",
+                        "duration": 60,
+                        "amplifier": 4,
+                        "show_particles": false,
+                        "show_icon": false
+                    }
+                }
+            ]
+        },
+        "condition": {
+            "type": "origins:resource",
+            "resource": "dnd:half-orc/relentless_endurance_cooldown",
+            "comparison": "==",
+            "compare_to": 0
+        }
+    },
+    "cooldown": {
+        "type": "origins:cooldown",
+        "cooldown": 6000,
+        "hud_render": {
+            "sprite_location": "origins:textures/gui/community/spiderkolo/resource_bar_02.png",
+            "bar_index": 9
+        }
+    }
+}

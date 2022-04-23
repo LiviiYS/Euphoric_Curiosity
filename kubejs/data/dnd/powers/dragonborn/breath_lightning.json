@@ -1,0 +1,30 @@
+{
+	"name": "Lightning Breath",
+	"description": "Press the primary key to call down lightning on your enemies.",
+	"type": "origins:multiple",
+	"fire_projectile": {
+		"type": "origins:fire_projectile",
+		"entity_type": "minecraft:llama_spit",
+		"cooldown": 200,
+		"hud_render": {
+			"bar_index": 2
+		},
+		"count": 1,
+		"speed": 5,
+		"divergence": 0,
+		"sound": "entity.ender_dragon.shoot",
+		"key": "key.origins.primary_active"
+	},
+	"spawn_lightning": {
+		"type": "origins:target_action_on_hit",
+		"cooldown": 0,
+		"damage_condition": {
+			"type": "origins:projectile",
+			"projectile": "minecraft:llama_spit"
+		},
+		"entity_action": {
+			"type": "origins:spawn_entity",
+			"entity_type": "minecraft:lightning_bolt"
+		}
+	}
+}

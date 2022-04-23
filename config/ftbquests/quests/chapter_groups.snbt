@@ -1,0 +1,9 @@
+{
+	chapter_groups: [
+		{ id: "0631C37AA5FCBCF1", title: "Adventure" }
+		{ id: "2061988DE7EF893B", title: "Technology" }
+		{ id: "2BBA68A47A608B1A", title: "Magic" }
+		{ id: "0D2279FE883A3D33", title: "Utilities" }
+		{ id: "708F1B4506ED41C5", title: "End-game" }
+	]
+}

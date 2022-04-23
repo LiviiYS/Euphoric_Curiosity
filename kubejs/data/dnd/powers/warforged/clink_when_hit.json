@@ -1,0 +1,10 @@
+{
+	"hidden": true,
+	"type": "origins:self_action_when_hit",
+	"cooldown": 0,
+	"entity_action": {
+		"type": "origins:play_sound",
+		"sound": "minecraft:entity.iron_golem.hurt",
+		"volume": 0.5
+	}
+}

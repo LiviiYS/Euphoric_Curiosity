@@ -1,0 +1,13 @@
+{
+	"powers": [
+		"dnd:dragonborn/draconic_strength",
+		"origins:no_shield",
+		"origins:carnivore",
+		"dnd:large_stature"
+	],
+	"icon": "minecraft:fire_charge",
+	"order": 2,
+	"impact": 1,
+	"name": "Dragonborn",
+	"description": "Dragonborn look very much like dragons standing erect in humanoid form, though they lack wings or a tail."
+}

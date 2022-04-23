@@ -1,0 +1,11 @@
+{
+	"powers": [
+		"dnd:warforged/light_step",
+		"dnd:warforged/swift"
+	],
+	"icon": "minecraft:spyglass",
+	"order": 3,
+	"impact": 0,
+	"name": "Skirmisher",
+	"description": "You were built to scout the edges of battle and outmaneuver your enemies."
+}

@@ -1,0 +1,47 @@
+{
+  "hidden": true,
+  "type": "origins:multiple",
+  "resource": {
+    "type": "origins:resource",
+    "min": 0,
+    "max": 1,
+    "hud_render": {
+        "should_render": true,
+        "sprite_location": "origins:textures/gui/community/spiderkolo/resource_bar_02.png",
+        "bar_index": 19,
+        "condition": {
+                "type": "origins:resource",
+                "resource": "*:*_resource",
+                "comparison": ">",
+                "compare_to": 0
+            }
+    }
+},
+"indicator1": {
+    "type": "origins:action_over_time",
+    "entity_action": {
+    "type": "origins:change_resource",
+    "resource": "*:*_resource",
+    "change": 1
+},
+    "interval": 1,
+    "condition": {
+        "type": "origins:power_active",
+        "power": "zadori:bar1"
+    }
+},
+"indicator2": {
+    "type": "origins:action_over_time",
+    "entity_action": {
+    "type": "origins:change_resource",
+    "resource": "*:*_resource",
+    "change": -1
+},
+    "interval": 1,
+    "condition": {
+        "type": "origins:power_active",
+        "power": "zadori:bar1",
+        "inverted": true
+    }
+}
+}

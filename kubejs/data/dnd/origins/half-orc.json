@@ -1,0 +1,16 @@
+{
+    "powers": [
+        "dnd:half-orc/savage_attacks",
+        "dnd:half-orc/relentless_endurance",
+        "dnd:half-orc/intimidating",
+        "origins:carnivore",
+        "dnd:dense",
+        "dnd:darkvision",
+        "dnd:large_stature"
+    ],
+    "icon": "minecraft:beef",
+    "order": 2,
+    "impact": 2,
+    "name": "Half-Orc",
+    "description": "Half-orcs’ grayish pigmentation, sloping foreheads, jutting jaws, prominent teeth, and towering builds make their orcish heritage plain for all to see."
+}

@@ -1,0 +1,299 @@
+{
+	id: "375F82313EE59691"
+	order_index: 0
+	title: "Random Reward"
+	icon: "kubejs:dice"
+	loot_size: 1
+	hide_tooltip: true
+	rewards: [
+		{ item: "terrarianslimes:grenade", count: 3 }
+		{ item: "terrarianslimes:sticky_grenade", count: 3 }
+		{ item: "terrarianslimes:bouncy_grenade", count: 3 }
+		{ item: "terrarianslimes:bomb", count: 3 }
+		{ item: "terrarianslimes:sticky_bomb", count: 3 }
+		{ item: "terrarianslimes:bouncy_bomb", count: 3 }
+		{ item: "terrarianslimes:dirt_bomb", count: 3 }
+		{ item: "terrarianslimes:sticky_dirt_bomb", count: 3 }
+		{ item: "terrarianslimes:bouncy_dirt_bomb", count: 3 }
+		{ item: "terrarianslimes:apple_pie", count: 3 }
+		{ item: "terrarianslimes:ice_cream", count: 3 }
+		{ item: "terrarianslimes:umbrella_hat" }
+		{ item: "terrarianslimes:umbrella" }
+		{
+			item: {
+				id: "tacocraft:divine_corn_blade"
+				Count: 1b
+				tag: {
+					Damage: 0
+				}
+			}
+		}
+		{ item: "betternether:willow_torch", count: 16 }
+		{ item: "betternether:glowstone_pile", count: 32 }
+		{ item: "betternether:lapis_pile", count: 32 }
+		{ item: "betternether:hook_mushroom_cooked", count: 4 }
+		{ item: "phonos:tiny_potato_speaker" }
+		{ item: "architects_palette:algal_brick", count: 24 }
+		{ item: "architects_palette:sunmetal_brick", count: 24 }
+		{ item: "architects_palette:entwine_rod", count: 24 }
+		{ item: "blockus:lime_neon", count: 12 }
+		{ item: "blockus:pink_neon", count: 12 }
+		{ item: "blockus:rainbow_colored_tiles", count: 16 }
+		{ item: "blockus:love_block" }
+		{ item: "blockus:companion_cube" }
+		{ item: "blockus:glow_berries_crate", count: 3 }
+		{ item: "blockus:apple_crate", count: 3 }
+		{ item: "blockus:cod_crate", count: 3 }
+		{ item: "blockus:bread_box", count: 2 }
+		{ item: "architects_palette:twisted_sapling" }
+		{ item: "architects_palette:gold_ore_bricks", count: 32 }
+		{ item: "architects_palette:emerald_ore_bricks", count: 32 }
+		{ item: "techreborn:carbon_fiber", count: 4 }
+		{ item: "techreborn:plantball", count: 12 }
+		{ item: "techreborn:rubber", count: 10 }
+		{
+			item: {
+				id: "techreborn:cell"
+				Count: 1b
+				tag: {
+					fluid: "kibe:liquid_xp"
+				}
+			}
+			count: 4
+		}
+		{
+			item: {
+				id: "techreborn:cell"
+				Count: 1b
+				tag: {
+					fluid: "minecraft:lava"
+				}
+			}
+			count: 3
+		}
+		{
+			item: {
+				id: "techreborn:cell"
+				Count: 1b
+				tag: {
+					fluid: "techreborn:mercury"
+				}
+			}
+			count: 2
+		}
+		{ item: "techreborn:scrap_box", count: 3 }
+		{ item: "bewitchment:aconite", count: 4 }
+		{ item: "bewitchment:dragons_blood_resin", count: 3 }
+		{ item: "bewitchment:witchberry_cookie", count: 4 }
+		{ item: "bewitchment:bottle_of_blood" }
+		{ item: "betteranimalsplus:brownbearhead_1" }
+		{ item: "betteranimalsplus:feralwolfhead_arctic" }
+		{
+			item: {
+				id: "betteranimalsplus:jellyfish_bucket"
+				Count: 1b
+				tag: { }
+			}
+		}
+		{ item: "betteranimalsplus:bottled_butterfly" }
+		{ item: "betterend:missing_tile", count: 16 }
+		{ item: "betterend:iron_chandelier" }
+		{ item: "betterend:gold_chandelier" }
+		{ item: "betterend:silk_fiber", count: 10 }
+		{ item: "biomemakeover:glowshroom_stew" }
+		{
+			item: {
+				id: "biomemakeover:cowboy_hat"
+				Count: 1b
+				tag: {
+					Damage: 0
+				}
+			}
+		}
+		{ item: "blockus:glowing_obsidian", count: 16 }
+		{ item: "blockus:rainbow_block", count: 16 }
+		{ item: "blockus:rainbow_glowstone", count: 12 }
+		{ item: "croptopia:cinnamon", count: 12 }
+		{ item: "croptosis:rotten_pile", count: 6 }
+		{ item: "decorative_blocks:chain", count: 10 }
+		{ item: "decorative_blocks:chandelier" }
+		{ item: "decorative_blocks:stone_pillar", count: 14 }
+		{ item: "dwarfcoal:dwarf_coal", count: 6 }
+		{ item: "dwarfcoal:dwarf_torch", count: 12 }
+		{
+			item: {
+				id: "entitybanners:entity_banner"
+				Count: 1b
+				tag: {
+					BlockEntityTag: {
+						entitybanners_Entity: "minecraft:drowned"
+						Patterns: [
+							{
+								Pattern: "tts"
+								Color: 3
+							}
+							{
+								Pattern: "bts"
+								Color: 3
+							}
+							{
+								Pattern: "bo"
+								Color: 3
+							}
+							{
+								Pattern: "cs"
+								Color: 8
+							}
+						]
+						Bannerpp_LoomPatterns: [{
+							Pattern: "minecraft:drowned_banner"
+							Color: 8
+							Index: 0
+						}]
+					}
+				}
+			}
+		}
+		{ item: "dml-refabricated:soot_redstone", count: 3 }
+		{ item: "blockus:iron_plating", count: 12 }
+		{ item: "blockus:gold_plating", count: 12 }
+		{ item: "blockus:legacy_explosion_proof_gold_block" }
+		{ item: "blockus:legacy_crying_obsidian", count: 3 }
+		{ item: "byg:chain_plating", count: 8 }
+		{ item: "byg:nightshade_berry_pie" }
+		{ item: "byg:mud_ball", count: 24 }
+		{ item: "campanion:marshmallow", count: 6 }
+		{
+			item: {
+				id: "campanion:iron_spear"
+				Count: 1b
+				tag: {
+					Damage: 0
+				}
+			}
+		}
+		{ item: "campanion:tanned_leather", count: 5 }
+		{ item: "campanion:red_lawn_chair" }
+		{ item: "catwalksinc:cage_lamp", count: 3 }
+		{ item: "catwalksinc:catwalk", count: 8 }
+		{ item: "conjuring:lesser_conjuration_essence", count: 3 }
+		{ item: "croptopia:paprika", count: 8 }
+		{ item: "croptopia:flour", count: 12 }
+		{ item: "croptopia:coconut_sapling" }
+		{ item: "croptopia:banana_sapling" }
+		{ item: "croptopia:dragonfruit_sapling" }
+		{ item: "croptopia:lemon_chicken", count: 2 }
+		{ item: "croptopia:sushi", count: 3 }
+		{ item: "croptopia:scrambled_eggs" }
+		{ item: "croptopia:grilled_eggplant", count: 2 }
+		{ item: "croptopia:fruit_cake" }
+		{ item: "croptopia:food_press" }
+		{ item: "oxidized:copper_lantern", count: 4 }
+		{ item: "plushies:slime_plushie" }
+		{ item: "plushies:mooshroom_plushie" }
+		{ item: "spectrum:red_spore_blossom", count: 4 }
+		{ item: "spectrum:polished_calcite_crest", count: 16 }
+		{ item: "spectrum:polished_basalt_crest", count: 16 }
+		{
+			item: {
+				id: "vanilla-hammers:fiery_hammer"
+				Count: 1b
+				tag: {
+					Damage: 0
+				}
+			}
+		}
+		{ item: "winged:bat_wing" }
+		{ item: "winterly:garland_lights", count: 2 }
+		{ item: "expandedstorage:wood_to_gold_conversion_kit", count: 2 }
+		{ item: "expandedstorage:iron_to_gold_conversion_kit", count: 2 }
+		{ item: "expandedstorage:iron_to_obsidian_conversion_kit" }
+		{ item: "expandedstorage:pumpkin_chest", count: 3 }
+		{ item: "expandedstorage:red_mini_present" }
+		{ item: "expandedstorage:pink_amethyst_mini_present" }
+		{ item: "farmersdelight:tomato_crate", count: 3 }
+		{ item: "farmersdelight:oak_pantry", count: 5 }
+		{ item: "farmersdelight:organic_compost", count: 5 }
+		{ item: "farmersdelight:raw_pasta", count: 6 }
+		{ item: "farmersdelight:sweet_berry_cookie", count: 4 }
+		{ item: "farmersdelight:melon_popsicle", count: 2 }
+		{ item: "fertilization:compressed_bonemeal", count: 3 }
+		{ item: "fertilization:florists_bonemeal", count: 3 }
+		{
+			item: {
+				id: "gateofbabylon:netherite_dagger"
+				Count: 1b
+				tag: {
+					Damage: 0
+				}
+			}
+		}
+		{
+			item: {
+				id: "gateofbabylon:iron_haladie"
+				Count: 1b
+				tag: {
+					Damage: 0
+				}
+			}
+		}
+		{
+			item: {
+				id: "gateofbabylon:golden_boomerang"
+				Count: 1b
+				tag: {
+					Damage: 0
+				}
+			}
+		}
+		{
+			item: {
+				id: "gateofbabylon:stone_bow"
+				Count: 1b
+				tag: {
+					RepairCost: 1
+					Enchantments: [{
+						lvl: 2s
+						id: "minecraft:power"
+					}]
+					Damage: 0
+				}
+			}
+		}
+		{ item: "graveyard:sarcophagus" }
+		{ item: "indrev:circuit_mk1", count: 3 }
+		{
+			item: {
+				id: "indrev:cooler_cell"
+				Count: 1b
+				tag: {
+					Damage: 0
+				}
+			}
+			count: 2
+		}
+		{ item: "iron-jetpacks:strap", count: 3 }
+		{ item: "iron-jetpacks:basic_coil", count: 2 }
+		{ item: "kibe:kibe" }
+		{ item: "kibe:void_bucket" }
+		{
+			item: {
+				id: "oxidized:copper_pulsar"
+				Count: 1b
+				tag: {
+					Powered: 0b
+				}
+			}
+		}
+		{ item: "winterly:snowguy" }
+		{ item: "workings:traffic_drum" }
+		{ item: "workings:asphalt", count: 12 }
+		{ item: "workings:stop_sign" }
+		{ item: "sandwichable:glass_kitchen_knife" }
+		{ item: "techreborn:electronic_circuit", count: 4 }
+		{ item: "techreborn:advanced_circuit", count: 4 }
+		{ item: "techreborn:industrial_circuit", count: 4 }
+		{ item: "techreborn:data_storage_chip", count: 3 }
+		{ item: "techreborn:energy_flow_chip", count: 3 }
+	]
+}

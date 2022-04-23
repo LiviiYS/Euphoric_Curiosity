@@ -1,0 +1,33 @@
+{
+	"name": "Flap",
+	"description": "Press primary to flap your wings and give yourself a small boost forward while flying.",
+	"type": "origins:active_self",
+	"cooldown": 100,
+	"key": {
+		"key": "primary",
+		"continuous": true
+	},
+	"entity_action": {
+		"type": "origins:add_velocity",
+		"space": "local",
+		"z": 0.4
+	},
+	"condition": {
+		"type": "origins:and",
+		"conditions": [
+			{
+				"type": "origins:fall_flying"
+			},
+			{
+				"type": "origins:fluid_height",
+				"fluid": "minecraft:water",
+				"comparison": "==",
+				"compare_to": 0
+			}
+		]
+	},
+	"hud_render": {
+		"sprite_location": "origins:textures/gui/resource_bar.png",
+		"bar_index": 4
+	}
+}

@@ -1,0 +1,139 @@
+{
+	"name": "Feline Agility",
+	"description": "Press primary to double your speed for a moment, you can only do so again after standing still for a while.",
+	"type": "origins:multiple",
+	"speed": {
+		"type": "origins:active_self",
+		"cooldown": 1,
+		"key": "primary",
+		"hud_render": {
+			"should_render": false
+		},
+		"condition": {
+			"type": "origins:resource",
+			"resource": "*:*_cooldown",
+			"comparison": "==",
+			"compare_to": 100
+		},
+		"entity_action": {
+			"type": "origins:and",
+			"actions": [
+				{
+					"type": "origins:apply_effect",
+					"effect": {
+						"effect": "minecraft:speed",
+						"amplifier": 4,
+						"duration": 100,
+						"is_ambient": true,
+						"show_particles": false
+					}
+				},
+				{
+					"type": "origins:change_resource",
+					"resource": "*:*_is_active",
+					"change": 1
+				}
+			]
+		}
+	},
+	"is_active": {
+		"type": "origins:resource",
+		"min": 0,
+		"max": 1,
+		"hud_render": {
+			"should_render": false
+		}
+	},
+	"decrease": {
+		"type": "origins:action_over_time",
+		"interval": 1,
+		"entity_action": {
+			"type": "origins:change_resource",
+			"resource": "*:*_cooldown",
+			"change": -1
+		},
+		"condition": {
+			"type": "origins:resource",
+			"resource": "*:*_is_active",
+			"comparison": "==",
+			"compare_to": 1
+		}
+	},
+	"cooldown": {
+		"type": "origins:resource",
+		"min": 0,
+		"max": 100,
+		"hud_render": {
+			"sprite_location": "origins:textures/gui/community/spiderkolo/resource_bar_02.png",
+			"bar_index": 2,
+			"condition": {
+				"type": "origins:resource",
+				"resource": "*:*_cooldown",
+				"comparison": "<",
+				"compare_to": 100
+			}
+		},
+		"min_action": {
+			"type": "origins:change_resource",
+			"resource": "*:*_is_active",
+			"change": -1
+		}
+	},
+	"recharge_resource": {
+		"type": "origins:resource",
+		"min": 0,
+		"max": 10,
+		"hud_render": {
+			"should_render": false
+		}
+	},
+	"recharge": {
+		"type": "origins:action_over_time",
+		"interval": 1,
+		"entity_action": {
+			"type": "origins:change_resource",
+			"resource": "*:*_cooldown",
+			"change": 1
+		},
+		"condition": {
+			"type": "origins:and",
+			"conditions": [
+				{
+					"inverted": true,
+					"type": "origins:moving"
+				},
+				{
+					"type": "origins:resource",
+					"resource": "*:*_recharge_resource",
+					"comparison": "==",
+					"compare_to": 10
+				}
+			]
+		}
+	},
+	"recharge_recharge_resource": {
+		"type": "origins:action_over_time",
+		"interval": 1,
+		"entity_action": {
+			"type": "origins:change_resource",
+			"resource": "*:*_recharge_resource",
+			"change": 1
+		},
+		"condition": {
+			"inverted": true,
+			"type": "origins:moving"
+		}
+	},
+	"decrease_recharge_resource": {
+		"type": "origins:action_over_time",
+		"interval": 1,
+		"entity_action": {
+			"type": "origins:change_resource",
+			"resource": "*:*_recharge_resource",
+			"change": -1
+		},
+		"condition": {
+			"type": "origins:moving"
+		}
+	}
+}

@@ -1,0 +1,16 @@
+{
+	"type": "origins:modify_damage_taken",
+	"modifier": {
+		"operation": "multiply_base",
+		"value": 3
+	},
+	"damage_condition": {
+		"type": "origins:attacker",
+		"entity_condition": {
+			"type": "origins:entity_group",
+			"group": "default"
+		}
+	},
+	"name": "§cTwice The Damage",
+	"description": "You take triple damage from all mobs."
+}

@@ -1,0 +1,28 @@
+{
+	// If Extendo Grips are enabled. Default: true
+	"enableExtendoGrips": true,
+	// If Flight Charm is enabled. Default: true
+	"enableFlightCharm": true,
+	// If Tool belt is enabled. Default: true
+	"enableToolBelt": true,
+	// If Instant Shield Blocking is enabled. Default: true
+	"enableInstantShieldBlocking": true,
+	// If holding shield up should negate fall damage. Default: false
+	"enableShieldBlocksFallDamage": false,
+	/* Extendo Grips reach buffs
+	   Default: 3
+	*/
+	"extendoGripsLowBlockReach": 3,
+	// Default: 0
+	"extendoGripsLowAttackReach": 0,
+	// Default: 5
+	"extendoGripsNormalBlockReach": 5,
+	// Default: 5
+	"extendoGripsNormalAttackReach": 5,
+	// Default: 15
+	"extendoGripsHighBlockReach": 15,
+	// Default: 15
+	"extendoGripsHighAttackReach": 15,
+	// Wether Milkevs Custom Rules are enabled. Consists of ancient debris and wheat being effected by fortune, as well as crafting recipes for cobweb from string and vice versa
+	"milkevsCustomRules": true
+}

@@ -1,0 +1,20 @@
+{
+  "mod_id": "lightestlamp",
+  "provided_stones": [],
+  "provided_ores": [
+    {
+      "id": "lanthanum_ore",
+      "stone": [
+        "netherrack"
+      ],
+      "texture_location": "lightestlamp:textures/block/lanthanum_ore.png",
+      "block_id": [
+        "lightestlamp:lanthanum_ore"
+      ],
+      "en_name": "Lanthanum Ore",
+      "types": [
+        "nether"
+      ]
+    }
+  ]
+}

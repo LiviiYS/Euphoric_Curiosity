@@ -1,0 +1,9 @@
+{
+	"name": "Call to the Wave",
+	"description": "You swim twice as fast as a human.",
+	"type": "origins:modify_swim_speed",
+	"modifier": {
+		"operation": "multiply_base",
+		"value": 1
+	}
+}

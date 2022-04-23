@@ -1,0 +1,70 @@
+{
+  "mod_id": "modern_industrialization",
+  "provided_stones": [],
+  "provided_ores": [
+    {
+      "id": "antimony_ore",
+      "stone": [
+        "stone",
+        "deepslate"
+      ],
+      "texture_location": "modern_industrialization:textures/blocks/antimony_ore.png",
+      "block_id": [
+        "modern_industrialization:antimony_ore",
+        "modern_industrialization:deepslate_antimony_ore"
+      ],
+      "en_name": "Antimony Ore",
+      "types": [
+        "stone"
+      ]
+    },
+    {
+      "id": "mozanite_ore",
+      "stone": [
+        "stone",
+        "deepslate"
+      ],
+      "texture_location": "modern_industrialization:textures/blocks/mozanite_ore.png",
+      "block_id": [
+        "modern_industrialization:mozanite_ore",
+        "modern_industrialization:deepslate_mozanite_ore"
+      ],
+      "en_name": "Mozanite Ore",
+      "types": [
+        "stone"
+      ]
+    },
+    {
+      "id": "nickel_ore",
+      "stone": [
+        "stone",
+        "deepslate"
+      ],
+      "texture_location": "modern_industrialization:textures/blocks/nickel_ore.png",
+      "block_id": [
+        "modern_industrialization:nickel_ore",
+        "modern_industrialization:deepslate_nickel_ore"
+      ],
+      "en_name": "Nickel Ore",
+      "types": [
+        "stone"
+      ]
+    },
+    {
+      "id": "uranium_ore",
+      "stone": [
+        "stone",
+        "deepslate"
+      ],
+      "texture_location": "modern_industrialization:textures/blocks/uranium_ore.png",
+      "block_id": [
+        "modern_industrialization:uranium_ore",
+        "modern_industrialization:deepslate_uranium_ore"
+      ],
+      "en_name": "Uranium Ore",
+      "types": [
+        "stone"
+      ]
+    }
+  ]
+}

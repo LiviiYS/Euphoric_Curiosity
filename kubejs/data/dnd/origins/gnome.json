@@ -1,0 +1,13 @@
+{
+	"powers": [
+		"dnd:small_stature",
+		"dnd:short_legs",
+		"dnd:intelligent",
+		"dnd:darkvision"
+	],
+	"icon": "minecraft:yellow_dye",
+	"order": 1,
+	"impact": 2,
+	"name": "Gnome",
+	"description": "A gnome’s energy and enthusiasm for living shines through every inch of their tiny body."
+}

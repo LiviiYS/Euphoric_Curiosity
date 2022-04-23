@@ -1,0 +1,302 @@
+{
+	"type": "origins:multiple",
+	"swim": {
+		"type": "origins:swimming",
+		"condition": {
+			"type": "origins:in_block",
+			"block_condition": {
+				"type": "origins:block",
+				"block": "minecraft:lava"
+			}
+		}
+	},
+	"vision": {
+		"type": "origins:lava_vision",
+		"s": 8,
+		"v": 25
+	},
+	"swim_speed": {
+		"type": "origins:modify_swim_speed",
+		"modifier": {
+			"value": 1.5,
+			"operation": "multiply_base"
+		},
+		"condition": {
+			"type": "origins:in_block_anywhere",
+			"block_condition": {
+				"type": "origins:fluid",
+				"fluid_condition": {
+					"type": "origins:in_tag",
+					"tag": "minecraft:lava"
+				}
+			}
+		}
+	},
+	"lava_speed": {
+		"type": "origins:modify_lava_speed",
+		"modifier": {
+			"value": 0.4,
+			"operation": "addition"
+		}
+	},
+	"immune": {
+		"type": "origins:fire_immunity"
+	},
+	"slow_fall": {
+		"type": "origins:action_over_time",
+		"interval": 1,
+		"entity_action": {
+			"type": "origins:add_velocity",
+			"y": 0.0225
+		},
+		"condition": {
+			"type": "origins:and",
+			"conditions": [
+			{
+				"type": "origins:swimming",
+				"inverted": true
+			},
+			{
+				"type": "origins:in_block_anywhere",
+				"block_condition": {
+					"type": "origins:fluid",
+					"fluid_condition": {
+						"type": "origins:in_tag",
+						"tag": "minecraft:lava"
+					}
+				}
+			},
+			{
+				"type": "origins:sneaking",
+				"inverted": true
+			},
+			{
+				"type": "origins:creative_flying",
+				"inverted": true
+			}
+			]
+		}
+	},
+	"fall": {
+		"type": "origins:active_self",
+		"cooldown": 2,
+		"entity_action": {
+			"type": "origins:add_velocity",
+			"y": -0.2
+		},
+		"key": {
+			"key": "key.sneak",
+			"continuous": true
+		},
+		"condition": {
+			"type": "origins:and",
+			"conditions": [
+			{
+				"type": "origins:swimming",
+				"inverted": true
+			},
+			{
+				"type": "origins:in_block_anywhere",
+				"block_condition": {
+					"type": "origins:fluid",
+					"fluid_condition": {
+						"type": "origins:in_tag",
+						"tag": "minecraft:lava"
+					}
+				}
+			},
+			{
+				"type": "origins:creative_flying",
+				"inverted": true
+			}
+			]
+		}
+	},
+	"rise": {
+		"type": "origins:active_self",
+		"cooldown": 2,
+		"entity_action": {
+			"type": "origins:add_velocity",
+			"y": 0.1
+		},
+		"key": {
+			"key": "key.jump",
+			"continuous": true
+		},
+		"condition": {
+			"type": "origins:and",
+			"conditions": [
+			{
+				"type": "origins:swimming",
+				"inverted": true
+			},
+			{
+				"type": "origins:in_block_anywhere",
+				"block_condition": {
+					"type": "origins:fluid",
+					"fluid_condition": {
+						"type": "origins:in_tag",
+						"tag": "minecraft:lava"
+					}
+				}
+			},
+			{
+				"type": "origins:creative_flying",
+				"inverted": true
+			}
+			]
+		}
+	},
+	"forward": {
+		"type": "origins:active_self",
+		"cooldown": 2,
+		"entity_action": {
+			"type": "origins:add_velocity",
+			"space": "local_horizontal",
+			"z": 0.05
+		},
+		"key": {
+			"key": "key.forward",
+			"continuous": true
+		},
+		"condition": {
+			"type": "origins:and",
+			"conditions": [
+			{
+				"type": "origins:swimming",
+				"inverted": true
+			},
+			{
+				"type": "origins:in_block_anywhere",
+				"block_condition": {
+					"type": "origins:fluid",
+					"fluid_condition": {
+						"type": "origins:in_tag",
+						"tag": "minecraft:lava"
+					}
+				}
+			},
+			{
+				"type": "origins:creative_flying",
+				"inverted": true
+			}
+			]
+		}
+	},
+	"back": {
+		"type": "origins:active_self",
+		"cooldown": 2,
+		"entity_action": {
+			"type": "origins:add_velocity",
+			"space": "local_horizontal",
+			"z": -0.05
+		},
+		"key": {
+			"key": "key.back",
+			"continuous": true
+		},
+		"condition": {
+			"type": "origins:and",
+			"conditions": [
+			{
+				"type": "origins:swimming",
+				"inverted": true
+			},
+			{
+				"type": "origins:in_block_anywhere",
+				"block_condition": {
+					"type": "origins:fluid",
+					"fluid_condition": {
+						"type": "origins:in_tag",
+						"tag": "minecraft:lava"
+					}
+				}
+			},
+			{
+				"type": "origins:creative_flying",
+				"inverted": true
+			}
+			]
+		}
+	},
+	"left": {
+		"type": "origins:active_self",
+		"cooldown": 2,
+		"entity_action": {
+			"type": "origins:add_velocity",
+			"space": "local_horizontal",
+			"x": 0.05
+		},
+		"key": {
+			"key": "key.left",
+			"continuous": true
+		},
+		"condition": {
+			"type": "origins:and",
+			"conditions": [
+			{
+				"type": "origins:swimming",
+				"inverted": true
+			},
+			{
+				"type": "origins:in_block_anywhere",
+				"block_condition": {
+					"type": "origins:fluid",
+					"fluid_condition": {
+						"type": "origins:in_tag",
+						"tag": "minecraft:lava"
+					}
+				}
+			},
+			{
+				"type": "origins:creative_flying",
+				"inverted": true
+			}
+			]
+		}
+	},
+	"right": {
+		"type": "origins:active_self",
+		"cooldown": 2,
+		"entity_action": {
+			"type": "origins:add_velocity",
+			"space": "local_horizontal",
+			"x": -0.05
+		},
+		"key": {
+			"key": "key.right",
+			"continuous": true
+		},
+		"condition": {
+			"type": "origins:and",
+			"conditions": [
+			{
+				"type": "origins:swimming",
+				"inverted": true
+			},
+			{
+				"type": "origins:in_block_anywhere",
+				"block_condition": {
+					"type": "origins:fluid",
+					"fluid_condition": {
+						"type": "origins:in_tag",
+						"tag": "minecraft:lava"
+					}
+				}
+			},
+			{
+				"type": "origins:creative_flying",
+				"inverted": true
+			}
+			]
+		}
+	},
+	"name": "Boiling Body",
+	"description": "You can swim through lava, and are immune to fire.",
+	"badges": [
+	{
+		"sprite": "origins:textures/gui/badge/info.png",
+		"text": "You have dramatically increased control in lava."
+	}
+	]
+}

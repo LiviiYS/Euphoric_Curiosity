@@ -1,0 +1,85 @@
+{
+	"name": "Cat's Claws",
+	"description": "When you hold nothing in your hand you can climb any kind of wall and deal 2 more damage.",
+	"type": "origins:multiple",
+	"more_damage": {
+		"type": "origins:modify_damage_dealt",
+		"condition": {
+			"type": "origins:and",
+			"conditions": [
+				{
+					"type": "origins:equipped_item",
+					"equipment_slot": "mainhand",
+					"item_condition": {
+						"type": "origins:ingredient",
+						"ingredient": {
+							"item": "minecraft:air"
+						}
+					}
+				},
+				{
+					"inverted": true,
+					"type": "origins:status_effect",
+					"effect": "minecraft:weakness"
+				}
+			]
+		},
+		"modifier": {
+			"operation": "addition",
+			"value": 2
+		}
+	},
+	"climbing": {
+		"type": "origins:climbing",
+		"hold_condition": {
+			"type": "origins:and",
+			"conditions": [
+				{
+					"type": "origins:or",
+					"conditions": [
+						{
+							"type": "origins:block_collision",
+							"offset_x": 0.01,
+							"offset_z": 0.01,
+							"offset_y": 0
+						},
+						{
+							"type": "origins:block_collision",
+							"offset_x": -0.01,
+							"offset_z": -0.01,
+							"offset_y": 0
+						}
+					]
+				},
+				{
+					"type": "origins:equipped_item",
+					"equipment_slot": "mainhand",
+					"item_condition": {
+						"type": "origins:ingredient",
+						"ingredient": {
+							"item": "minecraft:air"
+						}
+					}
+				}
+			]
+		},
+		"condition": {
+			"type": "origins:and",
+			"conditions": [
+				{
+					"type": "origins:collided_horizontally"
+				},
+				{
+					"type": "origins:equipped_item",
+					"equipment_slot": "mainhand",
+					"item_condition": {
+						"type": "origins:ingredient",
+						"ingredient": {
+							"item": "minecraft:air"
+						}
+					}
+				}
+			]
+		}
+	}
+}

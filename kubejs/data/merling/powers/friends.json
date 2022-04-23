@@ -1,0 +1,36 @@
+{
+    "type": "origins:action_over_time",
+    "name": "Friendly Kinship",
+    "description": "Guardians, Elder Guardians, and Drowned are all your allies and will not attack you.",
+    "interval": 20,
+    "entity_action": {
+        "type": "origins:and",
+        "actions": [
+			{
+                "type": "origins:execute_command",
+                "permission_level": 4,
+                "command": "team add merling_sea"
+            },
+            {
+                "type": "origins:execute_command",
+                "permission_level": 4,
+                "command": "team join merling_sea @s"
+            },
+            {
+                "type": "origins:execute_command",
+                "permission_level": 4,
+                "command": "team join merling_sea @e[type=minecraft:guardian]"
+            },
+            {
+                "type": "origins:execute_command",
+                "permission_level": 4,
+                "command": "team join merling_sea @e[type=minecraft:elder_guardian]"
+            },
+            {
+                "type": "origins:execute_command",
+                "permission_level": 4,
+                "command": "team join merling_sea @e[type=minecraft:drowned]"
+            }
+        ]
+    }
+}

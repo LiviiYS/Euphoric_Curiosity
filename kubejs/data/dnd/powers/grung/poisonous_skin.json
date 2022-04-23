@@ -1,0 +1,51 @@
+{
+	"name": "Poisonous Skin",
+	"description": "You poison attackers when struck and you are immune to poison.",
+	"type": "origins:multiple",
+	"poison": {
+		"type": "origins:attacker_action_when_hit",
+		"cooldown": 0,
+		"entity_action": {
+			"type": "origins:if_else",
+			"condition": {
+				"type": "origins:or",
+				"conditions": [
+					{
+						"type": "origins:entity_group",
+						"group": "undead"
+					},
+					{
+						"type": "origins:entity_group",
+						"group": "arthropod"
+					}
+				]
+			},
+			"if_action": {
+				"type": "origins:apply_effect",
+				"effect": {
+					"effect": "minecraft:wither",
+					"duration": 60,
+					"amplifier": 2
+				}
+			},
+			"else_action": {
+				"type": "origins:apply_effect",
+				"effect": {
+					"effect": "minecraft:poison",
+					"duration": 60,
+					"amplifier": 4
+				}
+			}
+		},
+		"damage_condition": {
+			"type": "origins:projectile",
+			"inverted": true
+		}
+	},
+	"immunity": {
+		"name": "Poison Immunity",
+		"description": "You are not affected by poison.",
+		"type": "origins:effect_immunity",
+		"effect": "minecraft:poison"
+	}
+}

@@ -1,0 +1,16 @@
+{
+	"powers": [
+		"golemancy:ice_body",
+		"golemancy:snow_phasing",
+		"golemancy:no_stomach",
+		"golemancy:temperature",
+		"golemancy:fire_vuln_extr",
+		"golemancy:frosted_health",
+		"golemancy:shovelable"
+	],
+	"icon": "minecraft:snow_block",
+	"order": 684,
+	"impact": 3,
+	"name": "Frosted Golem",
+	"description": "An entity formed of snow and ice, which prospers in cold climates."
+}

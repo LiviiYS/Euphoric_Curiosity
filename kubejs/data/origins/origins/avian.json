@@ -1,0 +1,22 @@
+{
+	"powers": [
+		"avian:double_jump/resource",
+		"avian:double_jump/gain",
+		"avian:double_jump/use",
+		"avian:air_time/resource",
+		"avian:gust",
+		"avian:air_time/gain",
+		"avian:air_time/reset",
+		"origins:slow_falling",
+		"origins:lay_eggs",
+		"avian:upgraded_tailwind",
+		"origins:fresh_air",
+		"origins:vegetarian",
+		"avian:boosted_jump",
+		"avian:air_speed_boost"
+	],
+	"icon": "minecraft:feather",
+	"order": 0,
+	"impact": 1,
+	"loading_priority": 10
+}

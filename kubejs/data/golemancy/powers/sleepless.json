@@ -1,0 +1,6 @@
+{
+	"type": "origins:prevent_sleep",
+	"message": "§4You get the feeling that sleeping in a wooden bed is not the greatest idea in the world.",
+	"name": "Sleepless",
+	"description": "You cannot rest."
+}

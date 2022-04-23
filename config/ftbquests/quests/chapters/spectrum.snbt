@@ -1,0 +1,11 @@
+{
+	id: "7255AD8A8D010308"
+	group: "2BBA68A47A608B1A"
+	order_index: 6
+	filename: "spectrum"
+	title: "Spectrum"
+	icon: "spectrum:midnight_aberration"
+	default_quest_shape: ""
+	default_hide_dependency_lines: false
+	quests: [ ]
+}

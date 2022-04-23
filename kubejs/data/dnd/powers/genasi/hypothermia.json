@@ -1,0 +1,22 @@
+{
+	"name": "Hypothermia",
+	"description": "You take double damage in cold biomes.",
+	"type": "origins:modify_damage_taken",
+	"tick_rate": 10,
+	"modifier": {
+		"operation": "multiply_total",
+		"value": 1
+	},
+	"damage_condition": {
+		"inverted": true,
+		"type": "origins:fire"
+	},
+	"condition": {
+		"type": "origins:biome",
+		"condition": {
+			"type": "origins:temperature",
+			"comparison": "<=",
+			"compare_to": 0
+		}
+	}
+}

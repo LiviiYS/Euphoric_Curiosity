@@ -1,0 +1,25 @@
+{
+	"type": "origins:action_over_time",
+	"entity_action": {
+		"type": "origins:change_resource",
+		"resource": "avian:air_time/resource",
+		"change": 1
+	},
+	"condition": {
+		"type": "origins:and",
+		"conditions": [
+			{
+				"type": "origins:on_block",
+				"inverted": true
+			},
+			{
+				"type": "origins:resource",
+				"resource": "avian:double_jump/resource",
+				"comparison": "==",
+				"compare_to": 1
+			}
+		]
+	},
+	"interval": 5,
+	"hidden": true
+}

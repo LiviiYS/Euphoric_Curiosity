@@ -1,0 +1,15 @@
+{
+	"name": "Fire Breath",
+	"description": "Press the primary key to shoot a fireball.",
+	"type": "origins:fire_projectile",
+	"entity_type": "minecraft:fireball",
+	"cooldown": 400,
+	"hud_render": {
+		"bar_index": 7
+	},
+	"count": 1,
+	"speed": 0.3,
+	"divergence": 4,
+	"sound": "entity.ender_dragon.shoot",
+	"key": "key.origins.primary_active"
+}

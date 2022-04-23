@@ -1,0 +1,14 @@
+{
+	"name": "Light Step",
+	"description": "You aren't slowed as much when sneaking.",
+	"type": "origins:conditioned_attribute",
+	"tick_rate": 1,
+	"modifier": {
+		"attribute": "minecraft:generic.movement_speed",
+		"operation": "multiply_base",
+		"value": 1.5
+	},
+	"condition": {
+		"type": "origins:sneaking"
+	}
+}

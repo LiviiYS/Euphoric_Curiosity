@@ -1,0 +1,228 @@
+{
+	"name": "Water Dependency",
+	"description": "You get exhausted, slowed and weakened from being out of water for too long. You dry out faster in hot biomes.",
+	"type": "origins:multiple",
+	"resource": {
+		"type": "origins:resource",
+		"min": 0,
+		"max": 2400,
+		"start_value": 2400,
+		"hud_render": {
+			"sprite_location": "origins:textures/gui/resource_bar.png",
+			"bar_index": 1
+		}
+	},
+	"slow_weak_1": {
+		"type": "origins:conditioned_attribute",
+		"modifiers": [
+			{
+				"name": "Water Dependency, 10% slower.",
+				"attribute": "minecraft:generic.movement_speed",
+				"operation": "multiply_base",
+				"value": -0.1
+			},
+			{
+				"name": "Water Dependency, 10% weaker.",
+				"attribute": "minecraft:generic.attack_damage",
+				"operation": "multiply_base",
+				"value": -0.1
+			}
+		],
+		"condition": {
+			"type": "origins:and",
+			"conditions": [
+				{
+					"type": "origins:resource",
+					"resource": "dnd:grung/water_dependency_resource",
+					"comparison": "<=",
+					"compare_to": 1600
+				},
+				{
+					"type": "origins:resource",
+					"resource": "dnd:grung/water_dependency_resource",
+					"comparison": ">",
+					"compare_to": 800
+				}
+			]
+		}
+	},
+	"slow_weak_2": {
+		"type": "origins:conditioned_attribute",
+		"modifiers": [
+			{
+				"name": "Water Dependency, 20% slower.",
+				"attribute": "minecraft:generic.movement_speed",
+				"operation": "multiply_base",
+				"value": -0.2
+			},
+			{
+				"name": "Water Dependency, 20% weaker.",
+				"attribute": "minecraft:generic.attack_damage",
+				"operation": "multiply_base",
+				"value": -0.2
+			}
+		],
+		"condition": {
+			"type": "origins:and",
+			"conditions": [
+				{
+					"type": "origins:resource",
+					"resource": "dnd:grung/water_dependency_resource",
+					"comparison": "<=",
+					"compare_to": 800
+				},
+				{
+					"type": "origins:resource",
+					"resource": "dnd:grung/water_dependency_resource",
+					"comparison": ">",
+					"compare_to": 0
+				}
+			]
+		}
+	},
+	"slow_weak_3": {
+		"type": "origins:conditioned_attribute",
+		"modifiers": [
+			{
+				"name": "Water Dependency, 40% slower.",
+				"attribute": "minecraft:generic.movement_speed",
+				"operation": "multiply_base",
+				"value": -0.4
+			},
+			{
+				"name": "Water Dependency, 40% weaker.",
+				"attribute": "minecraft:generic.attack_damage",
+				"operation": "multiply_base",
+				"value": -0.4
+			}
+		],
+		"condition": {
+			"type": "origins:resource",
+			"resource": "dnd:grung/water_dependency_resource",
+			"comparison": "==",
+			"compare_to": 0
+		}
+	},
+	"exhaust_1": {
+		"type": "origins:modify_exhaustion",
+		"modifier": {
+			"name": "Water Dependency, 50% faster exhaustion.",
+			"operation": "multiply_base",
+			"value": 0.5
+		},
+		"condition": {
+			"type": "origins:and",
+			"conditions": [
+				{
+					"type": "origins:resource",
+					"resource": "dnd:grung/water_dependency_resource",
+					"comparison": "<=",
+					"compare_to": 1600
+				},
+				{
+					"type": "origins:resource",
+					"resource": "dnd:grung/water_dependency_resource",
+					"comparison": ">",
+					"compare_to": 800
+				}
+			]
+		}
+	},
+	"exhaust_2": {
+		"type": "origins:modify_exhaustion",
+		"modifier": {
+			"name": "Water Dependency, 100% faster exhaustion.",
+			"operation": "multiply_base",
+			"value": 1
+		},
+		"condition": {
+			"type": "origins:and",
+			"conditions": [
+				{
+					"type": "origins:resource",
+					"resource": "dnd:grung/water_dependency_resource",
+					"comparison": "<=",
+					"compare_to": 800
+				},
+				{
+					"type": "origins:resource",
+					"resource": "dnd:grung/water_dependency_resource",
+					"comparison": ">",
+					"compare_to": 0
+				}
+			]
+		}
+	},
+	"exhaust_3": {
+		"type": "origins:modify_exhaustion",
+		"modifier": {
+			"name": "Water Dependency, 200% faster exhaustion.",
+			"operation": "multiply_base",
+			"value": 2
+		},
+		"condition": {
+			"type": "origins:resource",
+			"resource": "dnd:grung/water_dependency_resource",
+			"comparison": "==",
+			"compare_to": 0
+		}
+	},
+	"water_gain": {
+		"type": "origins:action_over_time",
+		"interval": 10,
+		"entity_action": {
+			"type": "origins:if_else_list",
+			"actions": [
+				{
+					"condition": {
+						"type": "origins:fluid_height",
+						"fluid": "minecraft:water",
+						"comparison": ">",
+						"compare_to": 0.0
+					},
+					"action": {
+						"type": "origins:change_resource",
+						"resource": "dnd:grung/water_dependency_resource",
+						"change": 11
+					}
+				},
+				{
+					"condition": {
+						"type": "origins:in_rain"
+					},
+					"action": {
+						"type": "origins:change_resource",
+						"resource": "dnd:grung/water_dependency_resource",
+						"change": 6
+					}
+				}
+			]
+		}
+	},
+	"drain": {
+		"type": "origins:action_over_time",
+		"interval": 10,
+		"entity_action": {
+			"type": "origins:change_resource",
+			"resource": "dnd:grung/water_dependency_resource",
+			"change": -1
+		}
+	},
+	"hot_extra_drain": {
+		"type": "origins:action_over_time",
+		"interval": 10,
+		"entity_action": {
+			"type": "origins:change_resource",
+			"resource": "dnd:grung/water_dependency_resource",
+			"change": -1
+		},
+		"condition": {
+			"type": "origins:biome",
+			"condition": {
+				"type": "origins:temperature",
+				"comparison": ">=",
+				"compare_to": 1
+			}
+		}
+	}
+}

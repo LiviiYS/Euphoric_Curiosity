@@ -1,0 +1,30 @@
+{
+    "ModSettings": {
+        "enable_updates_check": false,
+        "first_run": false
+    },
+    "GuiSettings": {
+        "enable_profiles_ui": false,
+        "enable_inventory_editor_button": false,
+        "treat_unknown_screens_as_containers": false,
+        "show_continuous_crafting_checkbox": false,
+        "show_move_all_button": false
+    },
+    "LockedSlotsSettings": {
+        "lock_slots_switch_config_modifier": {
+            "main": {
+                "keys": "TAB"
+            }
+        }
+    },
+    "AutoRefillSettings": {
+        "refill_before_tool_break": false
+    },
+    "Hotkeys": {
+        "sort_inventory": {
+            "main": {
+                "keys": "WORLD_2"
+            }
+        }
+    }
+}

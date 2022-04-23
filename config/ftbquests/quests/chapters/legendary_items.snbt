@@ -1,0 +1,628 @@
+{
+	id: "774C8F1ECCE08986"
+	group: "0631C37AA5FCBCF1"
+	order_index: 4
+	filename: "legendary_items"
+	title: "Legendary Items"
+	icon: "givemehats:crown"
+	default_quest_shape: ""
+	default_hide_dependency_lines: false
+	quests: [
+		{
+			x: 5.5d
+			y: -1.0d
+			dependencies: ["6BA9F7C83CB35984"]
+			id: "22AEDB5263159CA5"
+			tasks: [{
+				id: "0B5452B81B027DA8"
+				type: "item"
+				item: "givemehats:bunny_ears"
+			}]
+		}
+		{
+			x: 6.5d
+			y: -1.0d
+			dependencies: ["6BA9F7C83CB35984"]
+			id: "5B35930DD748CFFF"
+			tasks: [{
+				id: "4EC9FB3D2D4626A0"
+				type: "item"
+				item: "givemehats:cat_ears"
+			}]
+		}
+		{
+			x: 7.5d
+			y: -1.0d
+			dependencies: ["6BA9F7C83CB35984"]
+			id: "73DDB35B3E3F5D55"
+			tasks: [{
+				id: "1D1E36672663FE1C"
+				type: "item"
+				item: "givemehats:electric_mouse_ears"
+			}]
+		}
+		{
+			x: 8.5d
+			y: -1.0d
+			dependencies: ["6BA9F7C83CB35984"]
+			id: "4E37B210375DCFAB"
+			tasks: [{
+				id: "1FA8C550D28BF836"
+				type: "item"
+				item: "givemehats:fox_ears"
+			}]
+		}
+		{
+			x: 9.5d
+			y: -1.0d
+			dependencies: ["6BA9F7C83CB35984"]
+			id: "07D1D8483C48BFB9"
+			tasks: [{
+				id: "373483BC98E90102"
+				type: "item"
+				item: "givemehats:wolf_ears"
+			}]
+		}
+		{
+			x: 5.0d
+			y: -4.0d
+			dependencies: ["6BA9F7C83CB35984"]
+			id: "3A6F0DF8A5972861"
+			tasks: [{
+				id: "7DA380BE01FA27EB"
+				type: "item"
+				item: "givemehats:bowler_hat"
+			}]
+		}
+		{
+			x: 6.0d
+			y: -4.0d
+			dependencies: ["6BA9F7C83CB35984"]
+			id: "1DDED9B8FAB3715A"
+			tasks: [{
+				id: "3E881F9968E8CED1"
+				type: "item"
+				item: "givemehats:top_hat"
+			}]
+		}
+		{
+			x: 7.0d
+			y: -4.0d
+			dependencies: ["6BA9F7C83CB35984"]
+			id: "222B3AA38D809FC4"
+			tasks: [{
+				id: "538E193984B964F2"
+				type: "item"
+				item: "givemehats:topest_hat"
+			}]
+		}
+		{
+			x: 8.0d
+			y: -4.0d
+			dependencies: ["6BA9F7C83CB35984"]
+			id: "15A7F89173D65E7E"
+			tasks: [{
+				id: "4357B207EAF516FF"
+				type: "item"
+				item: "givemehats:russian_hat"
+			}]
+		}
+		{
+			x: 9.0d
+			y: -4.0d
+			dependencies: ["6BA9F7C83CB35984"]
+			id: "16719190D827B0AF"
+			tasks: [{
+				id: "74C50EB5FCADEE44"
+				type: "item"
+				item: "givemehats:cowboy_hat"
+			}]
+		}
+		{
+			x: 10.0d
+			y: -4.0d
+			dependencies: ["6BA9F7C83CB35984"]
+			id: "40FE6626535A99C6"
+			tasks: [{
+				id: "2578C542AC83AF80"
+				type: "item"
+				item: "givemehats:sailor_hat"
+			}]
+		}
+		{
+			x: 11.0d
+			y: -4.0d
+			dependencies: ["6BA9F7C83CB35984"]
+			id: "6E6193D52A17AD20"
+			tasks: [{
+				id: "4A6CBF088AB47F3A"
+				type: "item"
+				item: "givemehats:crown"
+			}]
+		}
+		{
+			x: 5.5d
+			y: -3.0d
+			dependencies: ["6BA9F7C83CB35984"]
+			id: "18ACA21050B6D627"
+			tasks: [{
+				id: "62F1AA42398CCEF4"
+				type: "item"
+				item: "givemehats:floating_hat"
+			}]
+		}
+		{
+			x: 6.5d
+			y: -3.0d
+			dependencies: ["6BA9F7C83CB35984"]
+			id: "522C8550B7C1EB84"
+			tasks: [{
+				id: "25757FCCA2CC69A0"
+				type: "item"
+				item: "givemehats:fez_hat"
+			}]
+		}
+		{
+			x: 7.5d
+			y: -3.0d
+			dependencies: ["6BA9F7C83CB35984"]
+			id: "1ABFC2EE85CEC68E"
+			tasks: [{
+				id: "41F9DECDED14ACAD"
+				type: "item"
+				item: "givemehats:santa_hat"
+			}]
+		}
+		{
+			x: 8.5d
+			y: -3.0d
+			dependencies: ["6BA9F7C83CB35984"]
+			id: "5CE52FBD8A46408E"
+			tasks: [{
+				id: "725152E2B6A07038"
+				type: "item"
+				item: "givemehats:strider_hat"
+			}]
+		}
+		{
+			x: 9.5d
+			y: -3.0d
+			dependencies: ["6BA9F7C83CB35984"]
+			id: "5642195D138A08A2"
+			tasks: [{
+				id: "233396C406B726C6"
+				type: "item"
+				item: "givemehats:slime_hat"
+			}]
+		}
+		{
+			x: 10.5d
+			y: -3.0d
+			dependencies: ["6BA9F7C83CB35984"]
+			id: "2A6E02EE051141C0"
+			tasks: [{
+				id: "525F4F522E00EDD3"
+				type: "item"
+				item: "givemehats:woolrus_hat"
+			}]
+		}
+		{
+			x: 11.5d
+			y: -3.0d
+			dependencies: ["6BA9F7C83CB35984"]
+			id: "2F3317B436A50ED2"
+			tasks: [{
+				id: "7F853FD33C35E0C0"
+				type: "item"
+				item: "givemehats:dwarven_hat"
+			}]
+		}
+		{
+			x: 12.5d
+			y: -3.0d
+			dependencies: ["6BA9F7C83CB35984"]
+			id: "108706FDC8495381"
+			tasks: [{
+				id: "5041EA284FFA5F9A"
+				type: "item"
+				item: "givemehats:viking_hat"
+			}]
+		}
+		{
+			x: 12.0d
+			y: -4.0d
+			dependencies: ["6BA9F7C83CB35984"]
+			id: "09311AD48DEEE278"
+			tasks: [{
+				id: "6995F33EF1DD1377"
+				type: "item"
+				item: "givemehats:tater_hat"
+			}]
+		}
+		{
+			x: 5.0d
+			y: -2.0d
+			dependencies: ["6BA9F7C83CB35984"]
+			id: "71613141FFE6FF20"
+			tasks: [{
+				id: "7F4540705FDC4CD4"
+				type: "item"
+				item: "givemehats:deerstalker_hat"
+			}]
+		}
+		{
+			x: 6.0d
+			y: -2.0d
+			dependencies: ["6BA9F7C83CB35984"]
+			id: "3C68AA0FBF46DF87"
+			tasks: [{
+				id: "54693ADEF0D2A717"
+				type: "item"
+				item: "givemehats:irish_hat"
+			}]
+		}
+		{
+			x: 8.0d
+			y: -2.0d
+			dependencies: ["6BA9F7C83CB35984"]
+			id: "79C72DF023EE72D3"
+			tasks: [{
+				id: "5596EF45E5B34DD5"
+				type: "item"
+				item: "givemehats:golem_bucket"
+			}]
+		}
+		{
+			x: 9.0d
+			y: -2.0d
+			dependencies: ["6BA9F7C83CB35984"]
+			id: "29742983E00ADB1E"
+			tasks: [{
+				id: "2475D82B6599E61B"
+				type: "item"
+				item: "givemehats:jojo_hat"
+			}]
+		}
+		{
+			x: 10.0d
+			y: -2.0d
+			dependencies: ["6BA9F7C83CB35984"]
+			id: "01C1241EE757EACF"
+			tasks: [{
+				id: "656EC2905201E0B3"
+				type: "item"
+				item: "givemehats:witch_hat"
+			}]
+		}
+		{
+			x: 5.0d
+			y: 1.5d
+			dependencies: ["6BA9F7C83CB35984"]
+			id: "4EBAA96D7706DA6E"
+			tasks: [{
+				id: "42C979AAF40A6FFA"
+				type: "item"
+				item: "ringsofascension:ring_fire_resistance"
+			}]
+		}
+		{
+			x: 6.0d
+			y: 1.5d
+			dependencies: ["6BA9F7C83CB35984"]
+			id: "1709B50B6841283F"
+			tasks: [{
+				id: "43D6A6C8791F56E4"
+				type: "item"
+				item: "ringsofascension:ring_jump_boost"
+			}]
+		}
+		{
+			x: 7.0d
+			y: 1.5d
+			dependencies: ["6BA9F7C83CB35984"]
+			id: "38F1528E42F5E745"
+			tasks: [{
+				id: "11BF855A19035616"
+				type: "item"
+				item: "ringsofascension:ring_night_vision"
+			}]
+		}
+		{
+			x: 8.0d
+			y: 1.5d
+			dependencies: ["6BA9F7C83CB35984"]
+			id: "73785DD47BFE474B"
+			tasks: [{
+				id: "4A2B44E89522B0DB"
+				type: "item"
+				item: "ringsofascension:ring_slow_falling"
+			}]
+		}
+		{
+			x: 9.0d
+			y: 1.5d
+			dependencies: ["6BA9F7C83CB35984"]
+			id: "2217CFFCA0CBEB67"
+			tasks: [{
+				id: "02991B39FA9DBCAC"
+				type: "item"
+				item: "ringsofascension:ring_water_breathing"
+			}]
+		}
+		{
+			x: 10.0d
+			y: 1.5d
+			dependencies: ["6BA9F7C83CB35984"]
+			id: "23D9CB5F4F1759D4"
+			tasks: [{
+				id: "40A92CAB399DA3AC"
+				type: "item"
+				item: "ringsofascension:ring_experience"
+			}]
+		}
+		{
+			x: 11.0d
+			y: 1.5d
+			dependencies: ["6BA9F7C83CB35984"]
+			id: "4DC99EC783EDF80F"
+			tasks: [{
+				id: "48729D4A48810862"
+				type: "item"
+				item: "ringsofascension:ring_knockback_resistance"
+			}]
+		}
+		{
+			x: 12.0d
+			y: 1.5d
+			dependencies: ["6BA9F7C83CB35984"]
+			id: "6535690C25D20FB0"
+			tasks: [{
+				id: "6D6FB45245248406"
+				type: "item"
+				item: "ringsofascension:ring_water_walking"
+			}]
+		}
+		{
+			x: 5.5d
+			y: 2.5d
+			dependencies: ["6BA9F7C83CB35984"]
+			id: "6FF7D2CF27CA2C88"
+			tasks: [{
+				id: "18A360289F0C1B4E"
+				type: "item"
+				item: "ringsofascension:ring_dolphin"
+			}]
+		}
+		{
+			x: 6.5d
+			y: 2.5d
+			dependencies: ["6BA9F7C83CB35984"]
+			id: "2B0511418DD127B8"
+			tasks: [{
+				id: "31929137FEACD5A2"
+				type: "item"
+				item: "ringsofascension:ring_invisibility"
+			}]
+		}
+		{
+			x: 7.5d
+			y: 2.5d
+			dependencies: ["6BA9F7C83CB35984"]
+			id: "56A7158F54FB91AF"
+			tasks: [{
+				id: "33085B9866FC29DA"
+				type: "item"
+				item: "ringsofascension:ring_speed"
+			}]
+		}
+		{
+			x: 8.5d
+			y: 2.5d
+			dependencies: ["6BA9F7C83CB35984"]
+			id: "19F131B1B372D525"
+			tasks: [{
+				id: "2E6139649DC7C690"
+				type: "item"
+				item: "ringsofascension:ring_slow_resistance"
+			}]
+		}
+		{
+			x: 9.5d
+			y: 2.5d
+			dependencies: ["6BA9F7C83CB35984"]
+			id: "0F1CC718D160AB3A"
+			tasks: [{
+				id: "29D7DEB8D8F0566B"
+				type: "item"
+				item: "ringsofascension:ring_wither"
+			}]
+		}
+		{
+			x: 10.5d
+			y: 2.5d
+			dependencies: ["6BA9F7C83CB35984"]
+			id: "08369F87E700859C"
+			tasks: [{
+				id: "021FDAD81266C465"
+				type: "item"
+				item: "ringsofascension:ring_sponge"
+			}]
+		}
+		{
+			x: 5.0d
+			y: 3.5d
+			dependencies: ["6BA9F7C83CB35984"]
+			id: "21F2A70AC97E8AD6"
+			tasks: [{
+				id: "54DD6219957BA181"
+				type: "item"
+				item: "ringsofascension:ring_mining"
+			}]
+		}
+		{
+			x: 6.0d
+			y: 3.5d
+			dependencies: ["6BA9F7C83CB35984"]
+			id: "4372DA7031BC8D1C"
+			tasks: [{
+				id: "1C8BDDA1DFBE2A6D"
+				type: "item"
+				item: "ringsofascension:ring_strength"
+			}]
+		}
+		{
+			x: 7.0d
+			y: 3.5d
+			dependencies: ["6BA9F7C83CB35984"]
+			id: "44A3255F9805047B"
+			tasks: [{
+				id: "32E0AFF12CB44354"
+				type: "item"
+				item: "ringsofascension:ring_poison_resistance"
+			}]
+		}
+		{
+			x: 8.0d
+			y: 3.5d
+			dependencies: ["6BA9F7C83CB35984"]
+			id: "2334A5CCC58B8444"
+			tasks: [{
+				id: "224082AFB15AAC4F"
+				type: "item"
+				item: "ringsofascension:ring_magnetism"
+			}]
+		}
+		{
+			x: 9.0d
+			y: 3.5d
+			dependencies: ["6BA9F7C83CB35984"]
+			id: "45FE0DC74C8FA947"
+			tasks: [{
+				id: "10152CAC130F891B"
+				type: "item"
+				item: "ringsofascension:ring_growth"
+			}]
+		}
+		{
+			x: 11.0d
+			y: 3.5d
+			dependencies: ["6BA9F7C83CB35984"]
+			id: "6A3F53C1E94413EA"
+			tasks: [{
+				id: "6E728BDEAB8ECFF4"
+				type: "item"
+				item: "ringsofascension:ring_luck"
+			}]
+		}
+		{
+			x: 12.0d
+			y: 3.5d
+			dependencies: ["6BA9F7C83CB35984"]
+			id: "737A9DC5054BE347"
+			tasks: [{
+				id: "0ADFCEC5C3198BBE"
+				type: "item"
+				item: "ringsofascension:ring_regeneration"
+			}]
+		}
+		{
+			x: 5.5d
+			y: 4.5d
+			dependencies: ["6BA9F7C83CB35984"]
+			id: "2DFA52BC8EC8EB5C"
+			tasks: [{
+				id: "18C094D7B924DF19"
+				type: "item"
+				item: "ringsofascension:ring_health"
+			}]
+		}
+		{
+			x: 6.5d
+			y: 4.5d
+			dependencies: ["6BA9F7C83CB35984"]
+			id: "3841CBAAC7D43045"
+			tasks: [{
+				id: "4F499791DF5C8CE5"
+				type: "item"
+				item: "ringsofascension:ring_hungerless"
+			}]
+		}
+		{
+			x: -1.0d
+			y: 2.0d
+			dependencies: ["6BA9F7C83CB35984"]
+			id: "0DC4A66688A55948"
+			tasks: [{
+				id: "5DB4E9868AFA9AC7"
+				type: "item"
+				item: "villager-hats:farmer_hat"
+			}]
+		}
+		{
+			x: 0.0d
+			y: 2.0d
+			dependencies: ["6BA9F7C83CB35984"]
+			id: "2C859D1C41250BCC"
+			tasks: [{
+				id: "02CC318593E2A7A4"
+				type: "item"
+				item: "villager-hats:fletcher_hat"
+			}]
+		}
+		{
+			x: 1.0d
+			y: 2.0d
+			dependencies: ["6BA9F7C83CB35984"]
+			id: "3E513E75475D93B1"
+			tasks: [{
+				id: "6A99217D86BF3EF9"
+				type: "item"
+				item: "villager-hats:fisherman_hat"
+			}]
+		}
+		{
+			x: 2.0d
+			y: 2.0d
+			dependencies: ["6BA9F7C83CB35984"]
+			id: "6FAB0BEACFD677E4"
+			tasks: [{
+				id: "3AE96EA01BD52200"
+				type: "item"
+				item: "villager-hats:armorer_hat"
+			}]
+		}
+		{
+			x: -0.5d
+			y: 3.0d
+			dependencies: ["6BA9F7C83CB35984"]
+			id: "197544A0E42EC317"
+			tasks: [{
+				id: "4D155701CAACB19E"
+				type: "item"
+				item: "villager-hats:shepherd_hat"
+			}]
+		}
+		{
+			x: 0.5d
+			y: 3.0d
+			dependencies: ["6BA9F7C83CB35984"]
+			id: "74D7B49DA1956C8A"
+			tasks: [{
+				id: "21BC568054A5F0A4"
+				type: "item"
+				item: "villager-hats:librarian_hat"
+			}]
+		}
+		{
+			x: 1.5d
+			y: 3.0d
+			dependencies: ["6BA9F7C83CB35984"]
+			id: "304BF803A12D24C0"
+			tasks: [{
+				id: "299C5F2EBEE87BAF"
+				type: "item"
+				item: "villager-hats:butcher_hat"
+			}]
+		}
+	]
+}

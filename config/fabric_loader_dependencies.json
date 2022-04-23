@@ -1,0 +1,55 @@
+{
+  "version": 1,
+  "overrides": {
+    "blast": {
+      "-depends": {
+        "minecraft": ""
+      }
+    },
+    "cleancut": {
+      "-depends": {
+        "minecraft": ""
+      }
+    },
+    "platypus": {
+      "-depends": {
+        "minecraft": ""
+      }
+    },
+    "slotlock": {
+      "-depends": {
+        "minecraft": ""
+      }
+    },
+    "terrarianslimes": {
+      "-depends": {
+        "minecraft": ""
+      }
+    },
+    "totemicoverhaul": {
+      "-depends": {
+        "minecraft": ""
+      }
+    },
+    "workings": {
+      "-depends": {
+        "minecraft": ""
+      }
+    },
+    "twigs": {
+      "-depends": {
+        "minecraft": ""
+      }
+    },
+    "addendum": {
+      "-depends": {
+        "minecraft": ""
+      }
+    },
+    "nomorescore": {
+      "-depends": {
+        "minecraft": ""
+      }
+    }
+  }
+}

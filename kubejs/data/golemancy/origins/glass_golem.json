@@ -1,0 +1,18 @@
+{
+	"powers": [
+		"golemancy:glass_shield",
+		"golemancy:spike_immune",
+		"golemancy:decay_immune",
+		"golemancy:shatter",
+		"golemancy:shockwave",
+		"golemancy:synthetic_stomach",
+		"golemancy:like_glass",
+		"golemancy:glass_model"
+	],
+	"icon": "minecraft:glass",
+	"order": 691,
+	"impact": 3,
+	"name": "Glass Golem 3",
+	"description": "A fragile construct.",
+	"unchoosable": true
+}

@@ -1,0 +1,10 @@
+{
+	"name": "Fresh Air",
+	"description": "You can only sleep if your bed is exposed to the sky.",
+	"type": "origins:prevent_sleep",
+	"message": "You can only sleep if your bed is exposed to the sky.",
+	"block_condition": {
+		"inverted": true,
+		"type": "origins:exposed_to_sky"
+	}
+}

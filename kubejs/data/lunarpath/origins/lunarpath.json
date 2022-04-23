@@ -1,0 +1,25 @@
+{
+	"powers": [
+		"lunarpath:night_boost",
+		"lunarpath:undead_alliance",
+		"lunarpath:undead",
+		"lunarpath:summon_fangs",
+		"lunarpath:chains_of_death",
+		"lunarpath:iron_sword",
+		"lunarpath:summon",
+		"lunarpath:ally",
+		"lunarpath:explosion_immunity",
+		"lunarpath:trades",
+		"lunarpath:water",
+		"lunarpath:sunterror",
+		"lunarpath:sunlightsensitivity",
+		"lunarpath:exiled",
+		"lunarpath:cursed_being",
+		"lunarpath:twice_the_damage"
+	],
+	"icon": "minecraft:sea_lantern",
+	"order": 10,
+	"impact": 3,
+	"name": "§6Lunar§0Path",
+	"description": "You are a powerful, undead being."
+}

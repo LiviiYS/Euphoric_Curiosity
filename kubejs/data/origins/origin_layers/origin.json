@@ -1,0 +1,27 @@
+{
+	"replace": false,
+	"order": 1,
+	"origins": [
+		"dnd:genasi",
+		"dnd:elf",
+		"dnd:halfling",
+		"dnd:gnome",
+		"dnd:half-orc",
+		"dnd:lizardfolk",
+		"dnd:dragonborn",
+		"dnd:firbolg",
+		"dnd:dwarf",
+		"dnd:grung",
+		"dnd:warforged",
+		"dnd:aarakocra",
+		"dnd:tabaxi",
+		"golemancy:sentinel",
+		"golemancy:copper_golem",
+		"golemancy:frosted_golem",
+		"golemancy:cartographic_golem",
+		"golemancy:glass_golem",
+		"golemancy:plant_golem",
+                "zadori:originpog",
+                "lunarpath:lunarpath"
+	]
+}

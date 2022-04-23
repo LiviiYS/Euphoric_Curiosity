@@ -1,0 +1,74 @@
+{
+	"type": "origins:multiple",
+	"phase": {
+		"type": "origins:phasing",
+		"render_type": "blindness",
+		"view_distance": 5,
+		"block_condition": {
+			"type": "origins:in_tag",
+			"tag": "golemancy:snow_phasing"
+		},
+		"phase_down_condition": {
+			"type": "origins:and",
+			"conditions": [
+				{
+					"type": "origins:sneaking"
+				},
+				{
+					"type": "origins:on_block"
+				}
+			]
+		},
+		"condition": {
+			"type": "origins:power_active",
+			"power": "golemancy:snow_phasing_toggle"
+		}
+    },
+	"toggle": {
+		"type": "origins:toggle",
+		"key": {
+			"key": "key.origins.secondary_active"
+		}
+	},
+	"suffocation": {
+		"type": "origins:modify_damage_taken",
+		"damage_condition": {
+			"type": "origins:name",
+			"name": "inWall"
+		},
+		"modifier": {
+			"operation": "multiply_total",
+			"value": -1,
+			"name": "Snow Phasing suffocation immunity"
+		},
+		"condition": {
+			"type": "origins:and",
+			"conditions": [
+			{
+				"type": "origins:in_block_anywhere",
+				"compare_to": 2,
+				"block_condition": {
+					"type": "origins:in_tag",
+					"tag": "golemancy:snow_phasing"
+				}
+			},
+			{
+				"type": "origins:power_active",
+				"power": "golemancy:snow_phasing_toggle"
+			}
+			]
+		}
+	},
+	"name": "Meld With Frost",
+	"description": "You can move freely through snow and ice.",
+	"badges": [
+	{
+		"sprite": "origins:textures/gui/badge/toggle.png",
+		"text": "Toggle with %s."
+	},
+	{
+		"sprite": "origins:textures/gui/badge/info.png",
+		"text": "Your temperature decreases slightly while fully submerged in snow or ice."
+	}
+	]
+}

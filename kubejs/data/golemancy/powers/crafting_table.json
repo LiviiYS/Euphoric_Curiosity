@@ -1,0 +1,11 @@
+{
+	"type": "origins:active_self",
+	"entity_action": {
+		"type": "origins:crafting_table"
+	},
+	"key": {
+		"key": "key.origins.primary_active"
+	},
+	"name": "Wayfarer's Crafting",
+	"description": "You have access to a portable crafting table."
+}

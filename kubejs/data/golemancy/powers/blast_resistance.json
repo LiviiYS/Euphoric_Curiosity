@@ -1,0 +1,23 @@
+{
+	"type": "origins:modify_damage_taken",
+	"damage_condition": {
+		"type": "origins:or",
+		"conditions": [
+		{
+			"type": "origins:name",
+			"name": "explosion"			
+		},
+		{
+			"type": "origins:name",
+			"name": "explosion.player"
+		}
+		]
+	},
+	"modifier": {
+		"operation": "multiply_total",
+		"value": -0.5,
+		"name": "Tinkerer Blast Resistance"
+	},
+	"name": "Volatile Innovations",
+	"description": "You take reduced damage from explosions."
+}

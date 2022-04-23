@@ -1,0 +1,16 @@
+{
+    "powers": [
+        "origins:elytra",
+        "dnd:aarakocra/flap",
+        "dnd:aarakocra/need_for_mobility",
+        "dnd:weak",
+        "origins:claustrophobia",
+        "dnd:aarakocra/talons",
+        "dnd:aarakocra/fresh_air"
+    ],
+    "icon": "minecraft:feather",
+    "order": 1,
+    "impact": 3,
+    "name": "Aarakocra",
+    "description": "Sequestered in high mountains atop tall trees, the aarakocra, sometimes called birdfolk, evoke fear and wonder."
+}

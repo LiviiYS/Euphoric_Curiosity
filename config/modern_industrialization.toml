@@ -1,0 +1,10 @@
+generateOres = true
+blacklistedOres = ["bauxite", "iridium", "lead", "lignite_coal", "platinum", "salt", "tin", "titanium", "tungsten"]
+spawnWithGuideBook = false
+respawnWithGuideBook = false
+disableFuelTooltips = true
+disableItemTagTooltips = true
+newVersionMessage = false
+enableHatchPlacementOverlay = true
+colorWaterLava = true
+enableDebugCommands = false

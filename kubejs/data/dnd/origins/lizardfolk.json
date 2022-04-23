@@ -1,0 +1,17 @@
+{
+    "powers": [
+        "dnd:lizardfolk/hungry_jaws",
+        "origins:carnivore",
+        "dnd:lizardfolk/primitive",
+        "dnd:lizardfolk/cold-blooded",
+        "dnd:lizardfolk/exceptional_regeneration",
+        "dnd:lizardfolk/hold_breath",
+        "dnd:lizardfolk/tail",
+        "dnd:lizardfolk/scaly_skin"
+    ],
+    "icon": "minecraft:green_dye",
+    "order": 2,
+    "impact": 2,
+    "name": "Lizardfolk",
+    "description": "Lizardfolk possess an alien and inscrutable mindset, their desires and thoughts driven by a different set of basic principles than those warm-blooded creatures."
+}

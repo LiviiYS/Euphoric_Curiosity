@@ -1,0 +1,193 @@
+{
+	"type": "origins:multiple",
+	"timer": {
+		"type": "origins:cooldown",
+		"cooldown": 400,
+		"hud_render": {
+			"should_render": false
+		}
+	},
+	"reset": {
+		"type": "origins:action_over_time",
+		"interval": 2,
+		"entity_action": {
+			"type": "origins:trigger_cooldown",
+			"power": "golemancy:inertia_timer"
+		},
+		"condition": {
+			"type": "origins:and",
+			"conditions": [
+			{
+				"type": "origins:moving",
+				"inverted": true
+			},
+			{
+				"type": "origins:resource",
+				"resource": "golemancy:inertia_grace_timer",
+				"comparison": "==",
+				"compare_to": 0
+			}
+			]
+		}
+	},
+	"grace_timer": {
+		"type": "origins:cooldown",
+		"cooldown": 20,
+		"hud_render": {
+			"should_render": false
+		}
+	},
+	"grace_reset": {
+		"type": "origins:action_over_time",
+		"interval": 2,
+		"entity_action": {
+			"type": "origins:trigger_cooldown",
+			"power": "golemancy:inertia_grace_timer"
+		},
+		"condition": {
+			"type": "origins:moving"
+		}
+	},
+	"low": {
+		"type": "origins:conditioned_attribute",
+		"modifier": {
+			"attribute": "minecraft:generic.movement_speed",
+			"operation": "multiply_total",
+			"value": -0.2,
+			"name": "Inertia Low"
+		},
+		"tick_rate": 3,
+		"condition": {
+			"type": "origins:resource",
+			"resource": "golemancy:inertia_timer",
+			"comparison": ">",
+			"compare_to": 360
+		}
+	},
+	"medium_low": {
+		"type": "origins:conditioned_attribute",
+		"modifier": {
+			"attribute": "minecraft:generic.movement_speed",
+			"operation": "multiply_total",
+			"value": -0.1,
+			"name": "Inertia Medium Low"
+		},
+		"tick_rate": 3,
+		"condition": {
+			"type": "origins:and",
+			"conditions": [
+			{
+				"type": "origins:resource",
+				"resource": "golemancy:inertia_timer",
+				"comparison": ">",
+				"compare_to": 260
+			},
+			{
+				"type": "origins:resource",
+				"resource": "golemancy:inertia_timer",
+				"comparison": "<=",
+				"compare_to": 360
+			}
+			]
+		}
+	},
+	"medium": {
+		"type": "origins:conditioned_attribute",
+		"modifier": {
+			"attribute": "minecraft:generic.movement_speed",
+			"operation": "multiply_total",
+			"value": 0,
+			"name": "Inertia Medium"
+		},
+		"tick_rate": 3,
+		"condition": {
+			"type": "origins:and",
+			"conditions": [
+			{
+				"type": "origins:resource",
+				"resource": "golemancy:inertia_timer",
+				"comparison": ">",
+				"compare_to": 160
+			},
+			{
+				"type": "origins:resource",
+				"resource": "golemancy:inertia_timer",
+				"comparison": "<=",
+				"compare_to": 260
+			}
+			]
+		}
+	},
+	"medium_high": {
+		"type": "origins:conditioned_attribute",
+		"modifier": {
+			"attribute": "minecraft:generic.movement_speed",
+			"operation": "multiply_total",
+			"value": 0.1,
+			"name": "Inertia Medium High"
+		},
+		"tick_rate": 3,
+		"condition": {
+			"type": "origins:and",
+			"conditions": [
+			{
+				"type": "origins:resource",
+				"resource": "golemancy:inertia_timer",
+				"comparison": ">",
+				"compare_to": 100
+			},
+			{
+				"type": "origins:resource",
+				"resource": "golemancy:inertia_timer",
+				"comparison": "<=",
+				"compare_to": 160
+			}
+			]
+		}
+	},
+	"high": {
+		"type": "origins:conditioned_attribute",
+		"modifier": {
+			"attribute": "minecraft:generic.movement_speed",
+			"operation": "multiply_total",
+			"value": 0.25,
+			"name": "Inertia High"
+		},
+		"tick_rate": 3,
+		"condition": {
+			"type": "origins:and",
+			"conditions": [
+			{
+				"type": "origins:resource",
+				"resource": "golemancy:inertia_timer",
+				"comparison": ">",
+				"compare_to": 10
+			},
+			{
+				"type": "origins:resource",
+				"resource": "golemancy:inertia_timer",
+				"comparison": "<=",
+				"compare_to": 100
+			}
+			]
+		}
+	},
+	"full": {
+		"type": "origins:conditioned_attribute",
+		"modifier": {
+			"attribute": "minecraft:generic.movement_speed",
+			"operation": "multiply_total",
+			"value": 0.4,
+			"name": "Inertia Full"
+		},
+		"tick_rate": 3,
+		"condition": {
+			"type": "origins:resource",
+			"resource": "golemancy:inertia_timer",
+			"comparison": "<=",
+			"compare_to": 10
+		}
+	},
+	"name": "Inertia",
+	"description": "You're slower by default, but become faster as you continue to move."
+}

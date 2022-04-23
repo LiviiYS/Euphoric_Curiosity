@@ -1,0 +1,52 @@
+{
+  "type": "modern_industrialization:quarry",
+  "eu": 12,
+  "duration": 600,
+  "item_inputs": {
+    "item": "modern_industrialization:steel_drill",
+    "amount": 1,
+    "probability": 0.01
+  },
+  "item_outputs": [
+    {
+      "item": "modern_industrialization:antimony_ore",
+      "amount": 5,
+      "probability": 0.04
+    },
+    {
+      "item": "minecraft:diamond_ore",
+      "amount": 6,
+      "probability": 0.02
+    },
+    {
+      "item": "minecraft:lapis_ore",
+      "amount": 10,
+      "probability": 0.01
+    },
+    {
+      "item": "techreborn:lead_ore",
+      "amount": 5,
+      "probability": 0.05
+    },
+    {
+      "item": "modern_industrialization:nickel_ore",
+      "amount": 6,
+      "probability": 0.03
+    },
+    {
+      "item": "techreborn:bauxite_ore",
+      "amount": 8,
+      "probability": 0.05
+    },
+    {
+      "item": "croptopia:salt_ore",
+      "amount": 4,
+      "probability": 0.03
+    },
+    {
+      "item": "minecraft:emerald_ore",
+      "amount": 4,
+      "probability": 0.025
+    }
+  ]
+}

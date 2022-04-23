@@ -1,0 +1,10 @@
+{
+	"name": "Light Footed",
+	"description": "You are 10% faster than a halfling.",
+	"type": "origins:attribute",
+	"modifier": {
+		"attribute": "minecraft:generic.movement_speed",
+		"operation": "multiply_total",
+		"value": 0.1
+	}
+}

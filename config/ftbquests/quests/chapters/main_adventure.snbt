@@ -1,0 +1,114 @@
+{
+	id: "2F33E5BBC7E0BBEC"
+	group: "0631C37AA5FCBCF1"
+	order_index: 2
+	filename: "main_adventure"
+	title: "Dimension Exploration"
+	icon: "kubejs:dimensions"
+	default_quest_shape: "hexagon"
+	default_hide_dependency_lines: false
+	quests: [
+		{
+			title: "Visit Overworld"
+			icon: "minecraft:grass_block"
+			x: -6.75d
+			y: -3.75d
+			dependencies: ["30763C24895BEE7B"]
+			hide: false
+			size: 1.5d
+			id: "5333907540B3E082"
+			tasks: [{
+				id: "6999F49FEAD89376"
+				type: "dimension"
+				title: "Visit Overworld"
+				icon: "minecraft:grass_block"
+				dimension: "minecraft:overworld"
+			}]
+		}
+		{
+			x: -2.5d
+			y: -5.0d
+			dependencies: ["30763C24895BEE7B"]
+			id: "36AB3FDCC0559026"
+			tasks: [{
+				id: "12609D631EEDB4B5"
+				type: "item"
+				item: "minecraft:obsidian"
+				count: 10L
+			}]
+		}
+		{
+			x: -3.75d
+			y: -3.75d
+			dependencies: [
+				"5333907540B3E082"
+				"36AB3FDCC0559026"
+			]
+			size: 1.5d
+			id: "48D5C3FFBF2E22F7"
+			tasks: [{
+				id: "4A598027FAE63793"
+				type: "dimension"
+				title: "Visit the Nether"
+				icon: "minecraft:crimson_nylium"
+				dimension: "minecraft:overworld"
+			}]
+		}
+		{
+			x: 0.5d
+			y: -5.0d
+			dependencies: ["30763C24895BEE7B"]
+			id: "39CF68607066DD42"
+			tasks: [{
+				id: "767DD2B5AFB97968"
+				type: "item"
+				item: "minecraft:blaze_rod"
+				count: 6L
+			}]
+		}
+		{
+			x: 0.5d
+			y: -2.5d
+			dependencies: ["30763C24895BEE7B"]
+			id: "764D4C3459BF886E"
+			tasks: [{
+				id: "4F5B8A694DC54F43"
+				type: "item"
+				item: "minecraft:ender_pearl"
+				count: 12L
+			}]
+		}
+		{
+			x: -0.75d
+			y: -3.75d
+			dependencies: [
+				"48D5C3FFBF2E22F7"
+				"39CF68607066DD42"
+				"764D4C3459BF886E"
+			]
+			size: 1.5d
+			id: "572279EADDDF83A8"
+			tasks: [{
+				id: "0D47E0068DC1D4A5"
+				type: "dimension"
+				title: "Visit the End"
+				icon: "byg:ivis_phylium"
+				dimension: "minecraft:overworld"
+			}]
+		}
+		{
+			x: 2.25d
+			y: -3.75d
+			dependencies: ["572279EADDDF83A8"]
+			size: 1.5d
+			id: "768222F8D09BA438"
+			tasks: [{
+				id: "3FAA6957118BB17A"
+				type: "dimension"
+				title: "Visit the Void"
+				icon: "voidz:void"
+				dimension: "minecraft:overworld"
+			}]
+		}
+	]
+}

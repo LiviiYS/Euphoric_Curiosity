@@ -1,0 +1,12 @@
+{
+	"powers": [
+		"dnd:dragonborn/breath_frost",
+		"dnd:dragonborn/resistance_frost",
+		"dnd:dragonborn/arctic_habitat"
+	],
+	"icon": "minecraft:white_concrete",
+	"order": 4,
+	"impact": 1,
+	"name": "White",
+	"description": "As a descendant of the white dragons your breath is so cold it can freeze your enemies in place."
+}

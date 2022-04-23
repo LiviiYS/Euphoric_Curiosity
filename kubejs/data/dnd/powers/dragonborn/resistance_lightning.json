@@ -1,0 +1,9 @@
+{
+	"name": "Lightning Resistance",
+	"description": "You don't take any damage from lightning strikes.",
+	"type": "origins:invulnerability",
+	"damage_condition": {
+		"type": "origins:name",
+		"name": "lightningBolt"
+	}
+}

@@ -1,0 +1,31 @@
+{
+    "type": "origins:active_self",
+    "entity_action": {
+      "type": "origins:and",
+      "actions": [{
+          "type": "origins:execute_command",
+          "command": "resource set @s zadori:bar1 0",
+          "permission_level": 4
+        },
+        {
+          "type": "origins:execute_command",
+          "command": "playsound minecraft:block.beacon.deactivate master @s ~ ~ ~ 1 1.55",
+          "permission_level": 4
+        },
+        {
+            "type": "origins:execute_command",
+            "command": "effect give @s slow_falling 2 4 true",
+            "permission_level": 4
+        }
+      ]
+    },
+    "cooldown": 10,
+    "hud_render": {
+      "should_render": false
+    },
+    "condition": {
+                    "type": "origins:power_active",
+                    "power": "zadori:bar1"
+                },
+                "hidden": true
+  }

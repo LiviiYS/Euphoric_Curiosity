@@ -1,0 +1,31 @@
+{
+	"name": "Mask of the Wild",
+	"description": "You can phase through leaves.",
+	"type": "origins:multiple",
+	"phase": {
+		"type": "origins:phasing",
+		"block_condition": {
+			"type": "origins:in_tag",
+			"tag": "minecraft:leaves"
+		},
+		"phase_down_condition": {
+			"type": "origins:and",
+			"conditions": [
+				{
+					"type": "origins:sneaking"
+				},
+				{
+					"type": "origins:on_block"
+				}
+			]
+		},
+		"condition": {
+			"type": "origins:power_active",
+			"power": "dnd:elf/mask_of_the_wild_toggle"
+		}
+	},
+	"toggle": {
+		"type": "origins:toggle",
+		"key": "primary"
+	}
+}

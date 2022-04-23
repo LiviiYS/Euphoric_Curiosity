@@ -1,0 +1,14 @@
+{
+	"powers": [
+		"dnd:merge_with_stone",
+		"dnd:bulky",
+		"origins:more_exhaustion",
+		"origins:strong_arms",
+		"origins:strong_arms_break_speed"
+	],
+	"icon": "minecraft:rooted_dirt",
+	"order": 1,
+	"impact": 1,
+	"name": "Earth Genasi",
+	"description": "As an earth genasi, you are descended from the cruel and greedy dao, though you aren’t necessarily evil. You have inherited some measure of control over earth, reveling in superior strength and solid power."
+}

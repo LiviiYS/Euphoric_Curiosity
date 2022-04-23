@@ -1,0 +1,54 @@
+{
+	"type": "origins:multiple",
+	"map": {
+		"type": "origins:recipe",
+		"recipe": {
+			"type": "minecraft:crafting_shapeless",
+			"id": "golemancy:carto_map",
+			"result": {
+				"item": "minecraft:map",
+				"count": 1
+			},
+			"ingredients": [
+			{
+				"item": "minecraft:ink_sac"
+			},
+			{
+				"item": "minecraft:paper"
+			},
+			{
+				"item": "minecraft:paper"
+			},
+			{
+				"item": "minecraft:paper"
+			}
+			]
+		}
+	},
+	"lodestone": {
+		"type": "origins:recipe",
+		"recipe": {
+			"type": "minecraft:crafting_shaped",
+			"id": "golemancy:carto_lodestone",
+			"result": {
+				"item": "minecraft:lodestone",
+				"count": 1
+			},
+			"pattern": [
+				"SSS",
+				"SCS",
+				"SSS"
+			],
+			"key": {
+				"C": {
+					"item": "minecraft:compass"
+				},
+				"S": {
+					"item": "minecraft:chiseled_stone_bricks"
+				}
+			}
+		}
+	},
+	"name": "Atlas Artisan",
+	"description": "You can craft maps and lodestones for much, much less."
+}

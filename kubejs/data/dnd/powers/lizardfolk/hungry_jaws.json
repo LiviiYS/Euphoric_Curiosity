@@ -1,0 +1,45 @@
+{
+	"name": "Hungry Jaws",
+	"description": "When attacking with your hand you deal 2 more damage and have a 20% chance to become saturated.",
+	"type": "origins:multiple",
+	"more_damage": {
+		"type": "origins:modify_damage_dealt",
+		"condition": {
+			"type": "origins:equipped_item",
+			"equipment_slot": "mainhand",
+			"item_condition": {
+				"type": "origins:ingredient",
+				"ingredient": {
+					"item": "minecraft:air"
+				}
+			}
+		},
+		"modifier": {
+			"operation": "addition",
+			"value": 2
+		}
+	},
+	"satiation": {
+		"type": "origins:self_action_on_hit",
+		"cooldown": 0,
+		"condition": {
+			"type": "origins:equipped_item",
+			"equipment_slot": "mainhand",
+			"item_condition": {
+				"type": "origins:ingredient",
+				"ingredient": {
+					"item": "minecraft:air"
+				}
+			}
+		},
+		"entity_action": {
+			"type": "origins:chance",
+			"chance": 0.2,
+			"action": {
+				"type": "origins:feed",
+				"food": 1,
+				"saturation": 0.6
+			}
+		}
+	}
+}

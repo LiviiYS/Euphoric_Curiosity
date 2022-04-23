@@ -1,0 +1,10 @@
+{
+	"powers": [
+		"dnd:dwarf/dwarven_strength"
+	],
+	"icon": "minecraft:stone",
+	"order": 2,
+	"impact": 0,
+	"name": "Mountain Dwarf",
+	"description": "As a mountain dwarf, you’re strong and hardy, accustomed to a difficult life in rugged terrain."
+}

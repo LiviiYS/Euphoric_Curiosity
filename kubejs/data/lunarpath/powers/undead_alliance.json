@@ -1,0 +1,96 @@
+{
+    "name": "§2Undead Alliance",
+    "description": "All undead creatures that you summon are all your allies and will not attack you.",
+    "type": "origins:action_over_time",
+    "interval": 20,
+    "entity_action": {
+        "type": "origins:and",
+        "actions": [
+			{
+                "type": "origins:execute_command",
+                "command": "team add self",
+                "permission_level": 4
+            },
+            {
+                "type": "origins:execute_command",
+                "command": "team join self @s",
+                "permission_level": 4
+            },
+            {
+                "type": "origins:execute_command",
+                "command": "team join self @e[type=minecraft:drowned]",
+                "permission_level": 4
+            },
+            {
+                "type": "origins:execute_command",
+                "command": "team join self @e[type=minecraft:husk]",
+                "permission_level": 4
+            },
+            {
+                "type": "origins:execute_command",
+                "command": "team join self @e[type=minecraft:zombie_villager]",
+                "permission_level": 4
+            },
+            {
+                "type": "origins:execute_command",
+                "command": "team join self @e[type=minecraft:phantom]",
+                "permission_level": 4
+            },
+            {
+                "type": "origins:execute_command",
+                "command": "team join self @e[type=minecraft:skeleton_horse]",
+                "permission_level": 4
+            },
+            {
+                "type": "origins:execute_command",
+                "command": "team join self @e[type=minecraft:skeleton]",
+                "permission_level": 4
+            },
+            {
+                "type": "origins:execute_command",
+                "command": "team join self @e[type=minecraft:stray]",
+                "permission_level": 4
+            },
+            {
+                "type": "origins:execute_command",
+                "command": "team join self @e[type=minecraft:wither_skeleton]",
+                "permission_level": 4
+            },
+            {
+                "type": "origins:execute_command",
+                "command": "team join self @e[type=minecraft:wither]",
+                "permission_level": 4
+            },
+            {
+                "type": "origins:execute_command",
+                "command": "team join self @e[type=minecraft:wither_skull]",
+                "permission_level": 4
+            },
+            {
+                "type": "origins:execute_command",
+                "command": "team join self @e[type=minecraft:zoglin]",
+                "permission_level": 4
+            },
+            {
+                "type": "origins:execute_command",
+                "command": "team join self @e[type=minecraft:zombie_horse]",
+                "permission_level": 4
+            },
+            {
+                "type": "origins:execute_command",
+                "command": "team join self @e[type=minecraft:zombie_villager]",
+                "permission_level": 4
+            },
+            {
+                "type": "origins:execute_command",
+                "command": "team join self @e[type=minecraft:zombie]",
+                "permission_level": 4
+            },
+            {
+                "type": "origins:execute_command",
+                "command": "team join self @e[type=minecraft:zombified_piglin]",
+                "permission_level": 4
+            }
+        ]
+    }
+}

@@ -1,0 +1,622 @@
+{
+	id: "1CB7FC52C9DD8325"
+	group: "2BBA68A47A608B1A"
+	order_index: 4
+	filename: "magic_fungi"
+	title: "Magic Fungi"
+	icon: "magicfungi:utilis_essence"
+	default_quest_shape: ""
+	default_hide_dependency_lines: false
+	quests: [
+		{
+			x: -1.5d
+			y: 1.5d
+			dependencies: ["1A2C608F855F322C"]
+			id: "3BE8CA8AEA9A394B"
+			tasks: [{
+				id: "14D07B597CD2C5D8"
+				type: "item"
+				item: "magicfungi:impetus_mushroom"
+			}]
+		}
+		{
+			x: -0.1d
+			y: 2.5d
+			dependencies: ["1A2C608F855F322C"]
+			id: "1BEA03EDA326D87A"
+			tasks: [{
+				id: "27B48AA843BF64B9"
+				type: "item"
+				item: "magicfungi:clypeus_mushroom"
+			}]
+		}
+		{
+			x: -0.5d
+			y: 1.5d
+			dependencies: ["1A2C608F855F322C"]
+			id: "4ACD44DE8820E93F"
+			tasks: [{
+				id: "44FF658035860630"
+				type: "item"
+				item: "magicfungi:utilis_mushroom"
+			}]
+		}
+		{
+			x: -1.9d
+			y: 2.5d
+			dependencies: ["1A2C608F855F322C"]
+			id: "5C55C36DA24DABDA"
+			tasks: [{
+				id: "3113857770C9525C"
+				type: "item"
+				item: "magicfungi:vivifica_mushroom"
+			}]
+		}
+		{
+			x: -1.0d
+			y: 3.3d
+			dependencies: ["1A2C608F855F322C"]
+			id: "375BCB72F24015F3"
+			tasks: [{
+				id: "3C2CD0A070690CEF"
+				type: "item"
+				item: "magicfungi:morbus_mushroom"
+			}]
+			rewards: [{
+				id: "28993D84C539FCD6"
+				type: "item"
+				item: "magicfungi:guide_book"
+			}]
+		}
+		{
+			x: 3.0d
+			y: -1.5d
+			dependencies: ["1A2C608F855F322C"]
+			id: "5798CC06508F6AED"
+			tasks: [{
+				id: "67FAD591F149C47B"
+				type: "item"
+				item: "magicfungi:glyph_carving_workbench"
+			}]
+		}
+		{
+			x: 3.5d
+			y: 0.0d
+			dependencies: ["5798CC06508F6AED"]
+			id: "438FA4698B7A4E7E"
+			tasks: [{
+				id: "4DCD9F7372588C1B"
+				type: "item"
+				item: "magicfungi:exponentia_glyph"
+			}]
+		}
+		{
+			x: 4.5d
+			y: 3.0d
+			dependencies: ["438FA4698B7A4E7E"]
+			id: "339B9FD30FD68ACF"
+			tasks: [{
+				id: "4FB590EE9B0D4A85"
+				type: "item"
+				item: "magicfungi:spell_discovery_workbench"
+			}]
+			rewards: [
+				{
+					id: "715D7DE506D627A6"
+					type: "item"
+					item: "magicfungi:magical_fungi_nugget"
+					count: 3
+				}
+				{
+					id: "6D9178B4B9F2EA75"
+					type: "item"
+					item: "minecraft:emerald"
+					count: 6
+				}
+				{
+					id: "71D09420C0E21503"
+					type: "random"
+					table_id: 3990050942893790865L
+				}
+			]
+		}
+		{
+			x: 1.5d
+			y: -2.0d
+			dependencies: ["5798CC06508F6AED"]
+			id: "054D21466975C625"
+			tasks: [{
+				id: "6FD25D2467C0A553"
+				type: "item"
+				item: "magicfungi:maledictio_glyph"
+			}]
+		}
+		{
+			x: 1.5d
+			y: -1.0d
+			dependencies: ["5798CC06508F6AED"]
+			id: "4F67065AE095A7BA"
+			tasks: [{
+				id: "16D57EEDB81CF6B2"
+				type: "item"
+				item: "magicfungi:corrumpere_glyph"
+			}]
+		}
+		{
+			x: 2.5d
+			y: 0.0d
+			dependencies: ["5798CC06508F6AED"]
+			id: "4DECB065D62B92E2"
+			tasks: [{
+				id: "34286DEBA74B5B3E"
+				type: "item"
+				item: "magicfungi:parasitus_glyph"
+			}]
+		}
+		{
+			x: 4.5d
+			y: -1.0d
+			dependencies: ["5798CC06508F6AED"]
+			id: "441F25D76124BC35"
+			tasks: [{
+				id: "780227762C4E20E4"
+				type: "item"
+				item: "magicfungi:sanctificare_glyph"
+			}]
+		}
+		{
+			x: 4.5d
+			y: -2.0d
+			dependencies: ["5798CC06508F6AED"]
+			id: "56A8CA3BD4A5A543"
+			tasks: [{
+				id: "6FAA75616C1C737C"
+				type: "item"
+				item: "magicfungi:pudicitiam_glyph"
+			}]
+		}
+		{
+			x: 3.5d
+			y: -3.0d
+			dependencies: ["5798CC06508F6AED"]
+			id: "08DD4A607C5129B2"
+			tasks: [{
+				id: "4EF63924090E3FF9"
+				type: "item"
+				item: "magicfungi:cadentis_glyph"
+			}]
+		}
+		{
+			x: 2.5d
+			y: -3.0d
+			dependencies: ["5798CC06508F6AED"]
+			id: "5AE7655318020D0C"
+			tasks: [{
+				id: "61F49DE3013A8511"
+				type: "item"
+				item: "magicfungi:pluviam_glyph"
+			}]
+		}
+		{
+			x: 6.0d
+			y: 3.5d
+			dependencies: ["339B9FD30FD68ACF"]
+			id: "2670BEA4D50BED26"
+			tasks: [{
+				id: "045E3CAA0F229D51"
+				type: "item"
+				item: "magicfungi:ignei_spell"
+			}]
+		}
+		{
+			x: 6.0d
+			y: 2.5d
+			dependencies: ["339B9FD30FD68ACF"]
+			id: "788E7F6DF47419D8"
+			tasks: [{
+				id: "7333763BC20ABC2C"
+				type: "item"
+				item: "magicfungi:scintillam_spell"
+			}]
+		}
+		{
+			x: 5.0d
+			y: 4.5d
+			dependencies: ["339B9FD30FD68ACF"]
+			id: "7DDCF6CC48A9E1E7"
+			tasks: [{
+				id: "536A434C8E76A152"
+				type: "item"
+				item: "magicfungi:cadere_spell"
+			}]
+		}
+		{
+			x: 4.0d
+			y: 4.5d
+			dependencies: ["339B9FD30FD68ACF"]
+			id: "39B8B1D58ACA9423"
+			tasks: [{
+				id: "6A23B5061FEDA55C"
+				type: "item"
+				item: "magicfungi:glacies_spell"
+			}]
+		}
+		{
+			x: 3.0d
+			y: 3.5d
+			dependencies: ["339B9FD30FD68ACF"]
+			id: "419E35147D0C55CD"
+			tasks: [{
+				id: "0A891A981048D01B"
+				type: "item"
+				item: "magicfungi:tractabile_spell"
+			}]
+		}
+		{
+			x: 3.0d
+			y: 2.5d
+			dependencies: ["339B9FD30FD68ACF"]
+			id: "4C5ED1184342084B"
+			tasks: [{
+				id: "5E70FFFAAD23CF04"
+				type: "item"
+				item: "magicfungi:cibus_spell"
+			}]
+		}
+		{
+			x: 5.0d
+			y: 1.5d
+			dependencies: ["339B9FD30FD68ACF"]
+			id: "529F7E6DEFE5D857"
+			tasks: [{
+				id: "016790E6CE4D14F7"
+				type: "item"
+				item: "magicfungi:fertilis_spell"
+			}]
+		}
+		{
+			x: -2.0d
+			y: 0.5d
+			dependencies: ["3BE8CA8AEA9A394B"]
+			id: "7977555893AD2C0F"
+			tasks: [{
+				id: "712E9A353E243596"
+				type: "item"
+				item: "magicfungi:impetus_essence"
+			}]
+		}
+		{
+			x: 0.0d
+			y: 0.5d
+			dependencies: ["4ACD44DE8820E93F"]
+			id: "4F1855BF916E7C33"
+			tasks: [{
+				id: "258C27CD098880F9"
+				type: "item"
+				item: "magicfungi:utilis_essence"
+			}]
+		}
+		{
+			x: -2.9d
+			y: 2.5d
+			dependencies: ["5C55C36DA24DABDA"]
+			id: "0DEEE8167E4C7AD6"
+			tasks: [{
+				id: "52E6FD0EC24BB60D"
+				type: "item"
+				item: "magicfungi:vivifica_essence"
+			}]
+		}
+		{
+			x: 0.9d
+			y: 2.5d
+			dependencies: ["1BEA03EDA326D87A"]
+			id: "63103816DEEB3777"
+			tasks: [{
+				id: "242BEEAE7C0F9561"
+				type: "item"
+				item: "magicfungi:clypeus_essence"
+			}]
+		}
+		{
+			x: -1.0d
+			y: 4.3d
+			dependencies: ["375BCB72F24015F3"]
+			id: "2A731F447185CFAA"
+			tasks: [{
+				id: "498E6BBDDE217D46"
+				type: "item"
+				item: "magicfungi:morbus_essence"
+			}]
+		}
+		{
+			x: -1.5d
+			y: -2.0d
+			dependencies: ["1A2C608F855F322C"]
+			id: "056D348938ABF759"
+			tasks: [{
+				id: "240FCB3518E20127"
+				type: "item"
+				item: "magicfungi:fungi_fertilizer"
+			}]
+		}
+		{
+			x: -0.5d
+			y: -2.0d
+			dependencies: ["1A2C608F855F322C"]
+			id: "0A33EDE1CC293404"
+			tasks: [{
+				id: "48B5AD2B17420A33"
+				type: "item"
+				item: "magicfungi:morbus_clock"
+			}]
+		}
+		{
+			x: -1.5d
+			y: -1.0d
+			dependencies: ["1A2C608F855F322C"]
+			id: "2037A1BA2DF0E7A8"
+			tasks: [{
+				id: "77A5D2A00583AD49"
+				type: "item"
+				item: "magicfungi:heart_of_vivifica"
+			}]
+			rewards: [
+				{
+					id: "71004DD7A683747D"
+					type: "item"
+					item: "magicfungi:vivifica_mushroom_stew"
+				}
+				{
+					id: "031C53EC62C28C14"
+					type: "random"
+					table_id: 3234863821922014612L
+				}
+			]
+		}
+		{
+			x: -0.5d
+			y: -1.0d
+			dependencies: ["1A2C608F855F322C"]
+			id: "29BC653CADFD3F25"
+			tasks: [{
+				id: "75757FACE4239B37"
+				type: "item"
+				item: "magicfungi:heart_of_morbus"
+			}]
+			rewards: [
+				{
+					id: "54DAA5193BC75C4F"
+					type: "item"
+					item: "magicfungi:morbus_mushroom_stew"
+				}
+				{
+					id: "1CA3057921203012"
+					type: "random"
+					table_id: 3990050942893790865L
+				}
+			]
+		}
+		{
+			x: 6.5d
+			y: -2.0d
+			hide_dependency_lines: true
+			dependencies: ["339B9FD30FD68ACF"]
+			id: "0A8F035982612A50"
+			tasks: [{
+				id: "7698283EE9207947"
+				type: "item"
+				item: {
+					id: "magicfungi:impetus_sword"
+					Count: 1b
+					tag: {
+						Damage: 0
+					}
+				}
+			}]
+			rewards: [
+				{
+					id: "715371FE9CD1CA37"
+					type: "random"
+					table_id: 4084316573772962007L
+				}
+				{
+					id: "05A970700F54D315"
+					type: "random"
+					table_id: 3990050942893790865L
+				}
+			]
+		}
+		{
+			x: 7.5d
+			y: -2.0d
+			hide_dependency_lines: true
+			dependencies: ["339B9FD30FD68ACF"]
+			id: "4BC6D89A345C39D8"
+			tasks: [{
+				id: "5CDF1513023EAFF9"
+				type: "item"
+				item: {
+					id: "magicfungi:utilis_pickaxe"
+					Count: 1b
+					tag: {
+						Damage: 0
+					}
+				}
+			}]
+			rewards: [
+				{
+					id: "416D04755A19728A"
+					type: "random"
+					table_id: 7876699373989475424L
+				}
+				{
+					id: "098A3D202D553E5A"
+					type: "random"
+					table_id: 3990050942893790865L
+				}
+			]
+		}
+		{
+			x: 6.5d
+			y: -1.0d
+			hide_dependency_lines: true
+			dependencies: ["339B9FD30FD68ACF"]
+			id: "78B9E05C5C2F0127"
+			tasks: [{
+				id: "190ED407EF44F859"
+				type: "item"
+				item: {
+					id: "magicfungi:morbus_scythe"
+					Count: 1b
+					tag: {
+						Damage: 0
+					}
+				}
+			}]
+			rewards: [
+				{
+					id: "02E51B3807B77386"
+					type: "random"
+					table_id: 4084316573772962007L
+				}
+				{
+					id: "13943768C56EA966"
+					type: "random"
+					table_id: 3990050942893790865L
+				}
+			]
+		}
+		{
+			x: 7.5d
+			y: -1.0d
+			hide_dependency_lines: true
+			dependencies: ["339B9FD30FD68ACF"]
+			id: "63B6FA8C226C4842"
+			tasks: [{
+				id: "795AD85B74B31A38"
+				type: "item"
+				item: {
+					id: "magicfungi:clypeus_shield"
+					Count: 1b
+					tag: {
+						Damage: 0
+					}
+				}
+			}]
+			rewards: [
+				{
+					id: "75C51D02B80BD52E"
+					type: "item"
+					item: "byg:emeraldite_shards"
+					count: 45
+				}
+				{
+					id: "628D92AD7BEB9D8A"
+					type: "random"
+					table_id: 3990050942893790865L
+				}
+			]
+		}
+		{
+			x: 7.5d
+			y: 1.5d
+			dependencies: ["7F2A837E4B896354"]
+			id: "23DC44DF20D559E7"
+			tasks: [{
+				id: "3C26F8C638B89A72"
+				type: "item"
+				item: {
+					id: "magicfungi:magical_fungi_helmet"
+					Count: 1b
+					tag: {
+						Damage: 0
+					}
+				}
+			}]
+		}
+		{
+			x: 7.5d
+			y: 4.5d
+			dependencies: ["7F2A837E4B896354"]
+			id: "290E0590EFDB069B"
+			tasks: [{
+				id: "02165BA973057DE0"
+				type: "item"
+				item: {
+					id: "magicfungi:magical_fungi_chestplate"
+					Count: 1b
+					tag: {
+						Damage: 0
+					}
+				}
+			}]
+		}
+		{
+			x: 8.5d
+			y: 1.5d
+			dependencies: ["7F2A837E4B896354"]
+			id: "2BB64121FD9D1347"
+			tasks: [{
+				id: "5C57CCCB3BA4004B"
+				type: "item"
+				item: {
+					id: "magicfungi:magical_fungi_leggings"
+					Count: 1b
+					tag: {
+						Damage: 0
+					}
+				}
+			}]
+		}
+		{
+			x: 8.5d
+			y: 4.5d
+			dependencies: ["7F2A837E4B896354"]
+			id: "670CD1ED2BA7469F"
+			tasks: [{
+				id: "2C32790DB2B06D40"
+				type: "item"
+				item: {
+					id: "magicfungi:magical_fungi_boots"
+					Count: 1b
+					tag: {
+						Damage: 0
+					}
+				}
+			}]
+		}
+		{
+			x: 8.0d
+			y: 3.0d
+			hide_dependency_lines: true
+			dependencies: ["339B9FD30FD68ACF"]
+			size: 1.5d
+			id: "7F2A837E4B896354"
+			tasks: [{
+				id: "6FC427E7EC018E01"
+				type: "item"
+				item: "magicfungi:magical_fungi_alloy"
+			}]
+			rewards: [
+				{
+					id: "3830CCC22C2EAD08"
+					type: "item"
+					item: "magicfungi:magical_fungi_nugget"
+					count: 5
+				}
+				{
+					id: "7FFDEEB23AFA7C98"
+					type: "item"
+					item: "minecraft:emerald"
+					count: 13
+				}
+				{
+					id: "7B5428FD15FA9834"
+					type: "random"
+					table_id: 3990050942893790865L
+				}
+			]
+		}
+	]
+}

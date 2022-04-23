@@ -1,0 +1,154 @@
+{
+	id: "00B53D69C635CCA9"
+	group: ""
+	order_index: 0
+	filename: "introduction"
+	title: "Welcome"
+	icon: "kubejs:bench2"
+	default_quest_shape: ""
+	default_hide_dependency_lines: false
+	images: [{
+		x: 0.0d
+		y: -2.0d
+		width: 10.6d
+		height: 4.4d
+		rotation: 0.0d
+		image: "kubejs:textures/ftbquests/welcome.png"
+		hover: [ ]
+		click: ""
+		dev: false
+		corner: false
+	}]
+	quests: [
+		{
+			icon: {
+				id: "kubejs:bench2"
+				Count: 1b
+				tag: { }
+			}
+			x: 0.0d
+			y: 1.0d
+			shape: "gear"
+			description: ["Welcome to Benchmark II, a large modpack with all types of mods.       Feel free to play around with the mods like you want or follow every quest chapter, but don't forget that you'll need to finish most of the mods to get the endgame stuff !"]
+			size: 2.0d
+			id: "120A6331136951E4"
+			tasks: [{
+				id: "323BF3F2285ACD9D"
+				type: "checkmark"
+				title: "Welcome to Benchmark II !"
+			}]
+		}
+		{
+			x: 0.0d
+			y: 3.0d
+			shape: "gear"
+			description: ["Unlocks the chapter that will unlock the other chapters."]
+			dependencies: ["120A6331136951E4"]
+			size: 1.4d
+			id: "297D1E50C45B87F1"
+			tasks: [{
+				id: "6E3C9A36FBD838D2"
+				type: "checkmark"
+				title: "Let's begin the quests !"
+			}]
+		}
+		{
+			icon: {
+				id: "minecraft:iron_pickaxe"
+				Count: 1b
+				tag: {
+					Damage: 0
+				}
+			}
+			x: 2.5d
+			y: 2.5d
+			shape: "gear"
+			description: ["Vein mining is provided by the mod called FTB Ultimine, check the configs to see ho to use shapes."]
+			id: "11B0937D9F284BD6"
+			tasks: [{
+				id: "3199F6FA95A1CAD4"
+				type: "checkmark"
+				title: "Vein Mining"
+			}]
+		}
+		{
+			icon: "kubejs:inv"
+			x: 4.5d
+			y: 2.5d
+			shape: "gear"
+			description: ["Inventory sorting is handled by a mod called Inventory Profiles Next, you have to go in mod menu (mods button) to configure it."]
+			id: "4C9B654F298D6FCA"
+			tasks: [{
+				id: "7C18BE7E8FA0BACD"
+				type: "checkmark"
+				title: "Inventory Sorting"
+			}]
+		}
+		{
+			icon: "kubejs:lock"
+			x: 2.5d
+			y: 1.5d
+			shape: "gear"
+			description: ["To play a quest chapter, you have to unlock it first in the Unlock Chapters section. In the same section, you can click a checkmark when you finished the chapter, to prove to the whole world you finished it :p"]
+			id: "693EB234B0E8AC00"
+			tasks: [{
+				id: "3A4E320AF0C984B3"
+				type: "checkmark"
+				title: "Quest Progression"
+			}]
+		}
+		{
+			icon: "kubejs:backpack"
+			x: 3.5d
+			y: 2.5d
+			shape: "gear"
+			description: ["As you can see, your armor, hand slots and a few other info are displayed. To add more or to disable that, go to mod menu and configure Inventory HUD+."]
+			id: "4883F446C72C28B0"
+			tasks: [{
+				id: "27F3E62C51B6DF6D"
+				type: "checkmark"
+				title: "Inventory HUD"
+			}]
+		}
+		{
+			title: "Teams"
+			icon: "kubejs:teams"
+			x: 3.5d
+			y: 1.5d
+			shape: "gear"
+			description: ["With FTB Teams, you can create teams that will have access to the same claimed chunks and a quest completed by someone from a team will be completed for the other members as well."]
+			id: "7DD86EE4EBC25062"
+			tasks: [{
+				id: "18BFE25A0C4F4FFB"
+				type: "checkmark"
+			}]
+		}
+		{
+			title: "Maps and chunkloading"
+			icon: "kubejs:chunks"
+			x: 4.5d
+			y: 1.5d
+			shape: "gear"
+			description: ["With the FTB Chunks mod, you have a minimap and a worldmap, as well as the ability to make waypoints and claim the chunks."]
+			id: "4E9E6FFEB2D38B39"
+			tasks: [{
+				id: "076EEE46B6D9ACC4"
+				type: "checkmark"
+			}]
+		}
+		{
+			title: "Sound Muffler"
+			icon: "kubejs:nosound"
+			x: 5.5d
+			y: 1.5d
+			shape: "gear"
+			description: ["Add a keybind to extreme sound muffler to use it. With this mod, you can disable any sound you want (client side)."]
+			id: "4D4AA443CBF0126F"
+			tasks: [{
+				id: "2B9F363E9EC7C4B0"
+				type: "checkmark"
+				title: "Sound Muffler"
+			}]
+		}
+	]
+}

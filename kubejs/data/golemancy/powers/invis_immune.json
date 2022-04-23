@@ -1,0 +1,6 @@
+{
+	"type": "origins:effect_immunity",
+	"effect": "minecraft:invisibility",
+	"name": "Unconcealable",
+	"description": "You cannot utilize Invisibility."
+}

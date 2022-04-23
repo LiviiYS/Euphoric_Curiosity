@@ -1,0 +1,693 @@
+{
+	"type": "origins:multiple",
+	"natura": {
+		"type": "origins:resource",
+		"min": 0,
+		"max": 4,
+		"hud_render": {
+			"should_render": false
+		}
+	},
+	"pyrus": {
+		"type": "origins:resource",
+		"min": 0,
+		"max": 4,
+		"hud_render": {
+			"should_render": false
+		}
+	},
+	"zephyr": {
+		"type": "origins:resource",
+		"min": 0,
+		"max": 4,
+		"hud_render": {
+			"should_render": false
+		}
+	},
+	"buy": {
+		"type": "origins:active_self",
+		"entity_action": {
+			"type": "origins:if_else_list",
+			"actions": [
+			{
+				"condition": {
+					"type": "origins:and",
+					"conditions": [
+					{
+						"type": "origins:or",
+						"conditions": [
+						{
+							"type": "origins:equipped_item",
+							"equipment_slot": "mainhand",
+							"item_condition": {
+								"type": "origins:ingredient",
+								"ingredient": {
+									"item": "minecraft:iron_ingot"
+								}
+							}
+						},
+						{
+							"type": "origins:equipped_item",
+							"equipment_slot": "offhand",
+							"item_condition": {
+								"type": "origins:ingredient",
+								"ingredient": {
+									"item": "minecraft:iron_ingot"
+								}
+							}
+						}
+						]
+					},
+					{
+						"type": "origins:resource",
+						"resource": "golemancy:enchant_natura",
+						"comparison": "<",
+						"compare_to": 4
+					}
+					]
+				},
+				"action": {
+					"type": "origins:and",
+					"actions": [
+					{
+						"type": "origins:change_resource",
+						"resource": "golemancy:augment_aura",
+						"change": -1
+					},
+					{
+						"type": "origins:change_resource",
+						"resource": "golemancy:enchant_natura",
+						"change": 1
+					},
+					{
+						"type": "origins:execute_command",
+						"command": "tellraw @s {\"text\":\"The earth fortifies you.\",\"color\":\"dark_green\"}"
+					},
+					{
+						"type": "origins:execute_command",
+						"command": "clear @s iron_ingot 1"
+					},
+					{
+						"type": "origins:play_sound",
+						"sound": "minecraft:entity.item.break",
+						"pitch": 1.4,
+						"volume": 1
+					},
+					{
+						"type": "origins:play_sound",
+						"sound": "minecraft:block.note_block.basedrum",
+						"pitch": 1,
+						"volume": 0.8
+					},
+					{
+						"type": "origins:delay",
+						"ticks": 4,
+						"action": {
+							"type": "origins:play_sound",
+							"sound": "minecraft:block.bell.resonate",
+							"pitch": 2,
+							"volume": 0.7
+						}
+					},
+					{
+						"type": "origins:delay",
+						"ticks": 8,
+						"action": {
+							"type": "origins:play_sound",
+							"sound": "minecraft:entity.item.break",
+							"pitch": 0.8,
+							"volume": 1
+						}
+					},
+					{
+						"type": "origins:delay",
+						"ticks": 8,
+						"action": {
+							"type": "origins:play_sound",
+							"sound": "minecraft:block.note_block.basedrum",
+							"pitch": 0.8,
+							"volume": 0.8
+						}
+					},
+					{
+						"type": "origins:delay",
+						"ticks": 16,
+						"action": {
+							"type": "origins:play_sound",
+							"sound": "minecraft:entity.item.break",
+							"pitch": 0.5,
+							"volume": 1
+						}
+					},
+					{
+						"type": "origins:delay",
+						"ticks": 16,
+						"action": {
+							"type": "origins:play_sound",
+							"sound": "minecraft:block.note_block.basedrum",
+							"pitch": 0.5,
+							"volume": 0.8
+						}
+					},
+					{
+						"type": "origins:delay",
+						"ticks": 16,
+						"action": {
+							"type": "origins:play_sound",
+							"sound": "minecraft:block.enchantment_table.use",
+							"pitch": 1,
+							"volume": 1
+						}
+					}
+					]
+				}
+			},
+			{
+				"condition": {
+					"type": "origins:and",
+					"conditions": [
+					{
+						"type": "origins:or",
+						"conditions": [
+						{
+							"type": "origins:equipped_item",
+							"equipment_slot": "mainhand",
+							"item_condition": {
+								"type": "origins:ingredient",
+								"ingredient": {
+									"item": "minecraft:gold_ingot"
+								}
+							}
+						},
+						{
+							"type": "origins:equipped_item",
+							"equipment_slot": "offhand",
+							"item_condition": {
+								"type": "origins:ingredient",
+								"ingredient": {
+									"item": "minecraft:gold_ingot"
+								}
+							}
+						}
+						]
+					},
+					{
+						"type": "origins:resource",
+						"resource": "golemancy:enchant_pyrus",
+						"comparison": "<",
+						"compare_to": 4
+					}
+					]
+				},
+				"action": {
+					"type": "origins:and",
+					"actions": [
+					{
+						"type": "origins:change_resource",
+						"resource": "golemancy:augment_aura",
+						"change": -1
+					},
+					{
+						"type": "origins:change_resource",
+						"resource": "golemancy:enchant_pyrus",
+						"change": 1
+					},
+					{
+						"type": "origins:execute_command",
+						"command": "tellraw @s {\"text\":\"The fire invigorates you.\",\"color\":\"red\"}"
+					},
+					{
+						"type": "origins:execute_command",
+						"command": "clear @s gold_ingot 1"
+					},
+					{
+						"type": "origins:play_sound",
+						"sound": "minecraft:entity.item.break",
+						"pitch": 1.4,
+						"volume": 1
+					},
+					{
+						"type": "origins:play_sound",
+						"sound": "minecraft:block.note_block.basedrum",
+						"pitch": 1,
+						"volume": 0.8
+					},
+					{
+						"type": "origins:delay",
+						"ticks": 4,
+						"action": {
+							"type": "origins:play_sound",
+							"sound": "minecraft:block.bell.resonate",
+							"pitch": 2,
+							"volume": 0.7
+						}
+					},
+					{
+						"type": "origins:delay",
+						"ticks": 8,
+						"action": {
+							"type": "origins:play_sound",
+							"sound": "minecraft:entity.item.break",
+							"pitch": 0.8,
+							"volume": 1
+						}
+					},
+					{
+						"type": "origins:delay",
+						"ticks": 8,
+						"action": {
+							"type": "origins:play_sound",
+							"sound": "minecraft:block.note_block.basedrum",
+							"pitch": 0.8,
+							"volume": 0.8
+						}
+					},
+					{
+						"type": "origins:delay",
+						"ticks": 16,
+						"action": {
+							"type": "origins:play_sound",
+							"sound": "minecraft:entity.item.break",
+							"pitch": 0.5,
+							"volume": 1
+						}
+					},
+					{
+						"type": "origins:delay",
+						"ticks": 16,
+						"action": {
+							"type": "origins:play_sound",
+							"sound": "minecraft:block.note_block.basedrum",
+							"pitch": 0.5,
+							"volume": 0.8
+						}
+					},
+					{
+						"type": "origins:delay",
+						"ticks": 16,
+						"action": {
+							"type": "origins:play_sound",
+							"sound": "minecraft:block.enchantment_table.use",
+							"pitch": 1,
+							"volume": 1
+						}
+					}
+					]
+				}
+			},
+			{
+				"condition": {
+					"type": "origins:and",
+					"conditions": [
+					{
+						"type": "origins:or",
+						"conditions": [
+						{
+							"type": "origins:equipped_item",
+							"equipment_slot": "mainhand",
+							"item_condition": {
+								"type": "origins:ingredient",
+								"ingredient": {
+									"item": "minecraft:lapis_lazuli"
+								}
+							}
+						},
+						{
+							"type": "origins:equipped_item",
+							"equipment_slot": "offhand",
+							"item_condition": {
+								"type": "origins:ingredient",
+								"ingredient": {
+									"item": "minecraft:lapis_lazuli"
+								}
+							}
+						}
+						]
+					},
+					{
+						"type": "origins:resource",
+						"resource": "golemancy:enchant_zephyr",
+						"comparison": "<",
+						"compare_to": 4
+					}
+					]
+				},
+				"action": {
+					"type": "origins:and",
+					"actions": [
+					{
+						"type": "origins:change_resource",
+						"resource": "golemancy:augment_aura",
+						"change": -1
+					},
+					{
+						"type": "origins:change_resource",
+						"resource": "golemancy:enchant_zephyr",
+						"change": 1
+					},
+					{
+						"type": "origins:execute_command",
+						"command": "tellraw @s {\"text\":\"The wind carries you.\",\"color\":\"aqua\"}"
+					},
+					{
+						"type": "origins:execute_command",
+						"command": "clear @s lapis_lazuli 1"
+					},
+					{
+						"type": "origins:play_sound",
+						"sound": "minecraft:entity.item.break",
+						"pitch": 1.4,
+						"volume": 1
+					},
+					{
+						"type": "origins:play_sound",
+						"sound": "minecraft:block.note_block.basedrum",
+						"pitch": 1,
+						"volume": 0.8
+					},
+					{
+						"type": "origins:delay",
+						"ticks": 4,
+						"action": {
+							"type": "origins:play_sound",
+							"sound": "minecraft:block.bell.resonate",
+							"pitch": 2,
+							"volume": 0.7
+						}
+					},
+					{
+						"type": "origins:delay",
+						"ticks": 8,
+						"action": {
+							"type": "origins:play_sound",
+							"sound": "minecraft:entity.item.break",
+							"pitch": 0.8,
+							"volume": 1
+						}
+					},
+					{
+						"type": "origins:delay",
+						"ticks": 8,
+						"action": {
+							"type": "origins:play_sound",
+							"sound": "minecraft:block.note_block.basedrum",
+							"pitch": 0.8,
+							"volume": 0.8
+						}
+					},
+					{
+						"type": "origins:delay",
+						"ticks": 16,
+						"action": {
+							"type": "origins:play_sound",
+							"sound": "minecraft:entity.item.break",
+							"pitch": 0.5,
+							"volume": 1
+						}
+					},
+					{
+						"type": "origins:delay",
+						"ticks": 16,
+						"action": {
+							"type": "origins:play_sound",
+							"sound": "minecraft:block.note_block.basedrum",
+							"pitch": 0.5,
+							"volume": 0.8
+						}
+					},
+					{
+						"type": "origins:delay",
+						"ticks": 16,
+						"action": {
+							"type": "origins:play_sound",
+							"sound": "minecraft:block.enchantment_table.use",
+							"pitch": 1,
+							"volume": 1
+						}
+					}
+					]
+				}
+			}
+			]
+		},
+		"cooldown": 5,
+		"hud_render": {
+			"should_render": false
+		},
+		"condition": {
+			"type": "origins:and",
+			"conditions": [
+			{
+				"type": "origins:resource",
+				"resource": "golemancy:augment_aura",
+				"comparison": ">",
+				"compare_to": 0
+			},
+			{
+				"type": "origins:sneaking"
+			}
+			]
+		},
+		"key": {
+			"key": "key.origins.secondary_active"
+		}
+	},
+	"natura1": {
+		"type": "origins:conditioned_attribute",
+		"modifier": {
+			"attribute": "minecraft:generic.max_health",
+			"operation": "addition",
+			"value": 2
+		},
+		"condition": {
+			"type": "origins:resource",
+			"resource": "golemancy:enchant_natura",
+			"comparison": ">=",
+			"compare_to": 1
+		}
+	},
+	"natura2": {
+		"type": "origins:conditioned_attribute",
+		"modifier": {
+			"attribute": "minecraft:generic.max_health",
+			"operation": "addition",
+			"value": 2
+		},
+		"condition": {
+			"type": "origins:resource",
+			"resource": "golemancy:enchant_natura",
+			"comparison": ">=",
+			"compare_to": 2
+		}
+	},
+	"natura3": {
+		"type": "origins:conditioned_attribute",
+		"modifier": {
+			"attribute": "minecraft:generic.max_health",
+			"operation": "addition",
+			"value": 2
+		},
+		"condition": {
+			"type": "origins:resource",
+			"resource": "golemancy:enchant_natura",
+			"comparison": ">=",
+			"compare_to": 3
+		}
+	},
+	"natura4": {
+		"type": "origins:conditioned_attribute",
+		"modifier": {
+			"attribute": "minecraft:generic.max_health",
+			"operation": "addition",
+			"value": 2
+		},
+		"condition": {
+			"type": "origins:resource",
+			"resource": "golemancy:enchant_natura",
+			"comparison": "==",
+			"compare_to": 4
+		}
+	},
+	"pyrus1": {
+		"type": "origins:conditioned_attribute",
+		"modifier": {
+			"attribute": "minecraft:generic.attack_damage",
+			"operation": "addition",
+			"value": 0.5
+		},
+		"condition": {
+			"type": "origins:resource",
+			"resource": "golemancy:enchant_pyrus",
+			"comparison": ">=",
+			"compare_to": 1
+		}
+	},
+	"pyrus2": {
+		"type": "origins:conditioned_attribute",
+		"modifier": {
+			"attribute": "minecraft:generic.attack_damage",
+			"operation": "addition",
+			"value": 0.5
+		},
+		"condition": {
+			"type": "origins:resource",
+			"resource": "golemancy:enchant_pyrus",
+			"comparison": ">=",
+			"compare_to": 2
+		}
+	},
+	"pyrus3": {
+		"type": "origins:conditioned_attribute",
+		"modifier": {
+			"attribute": "minecraft:generic.attack_damage",
+			"operation": "addition",
+			"value": 0.5
+		},
+		"condition": {
+			"type": "origins:resource",
+			"resource": "golemancy:enchant_pyrus",
+			"comparison": ">=",
+			"compare_to": 3
+		}
+	},
+	"pyrus4": {
+		"type": "origins:conditioned_attribute",
+		"modifier": {
+			"attribute": "minecraft:generic.attack_damage",
+			"operation": "addition",
+			"value": 0.5
+		},
+		"condition": {
+			"type": "origins:resource",
+			"resource": "golemancy:enchant_pyrus",
+			"comparison": "==",
+			"compare_to": 4
+		}
+	},
+	"zephyr_cooldown": {
+		"type": "origins:cooldown",
+		"cooldown": 160,
+		"hud_render": {
+			"should_render": false
+		}
+	},
+	"zephyr_trigger": {
+		"type": "origins:modify_damage_taken",
+		"self_action": {
+			"type": "origins:trigger_cooldown",
+			"power": "golemancy:enchant_zephyr_cooldown"
+		}
+	},
+	"zephyr1": {
+		"type": "origins:conditioned_attribute",
+		"modifier": {
+			"attribute": "minecraft:generic.movement_speed",
+			"operation": "multiply_base",
+			"value": 0.15
+		},
+		"condition": {
+			"type": "origins:and",
+			"conditions": [
+			{
+				"type": "origins:resource",
+				"resource": "golemancy:enchant_zephyr",
+				"comparison": "==",
+				"compare_to": 1
+			},
+			{
+				"type": "origins:resource",
+				"resource": "golemancy:enchant_zephyr_cooldown",
+				"comparison": "==",
+				"compare_to": 0
+			}
+			]
+		}
+	},
+	"zephyr2": {
+		"type": "origins:conditioned_attribute",
+		"modifier": {
+			"attribute": "minecraft:generic.movement_speed",
+			"operation": "multiply_base",
+			"value": 0.2
+		},
+		"condition": {
+			"type": "origins:and",
+			"conditions": [
+			{
+				"type": "origins:resource",
+				"resource": "golemancy:enchant_zephyr",
+				"comparison": "==",
+				"compare_to": 2
+			},
+			{
+				"type": "origins:resource",
+				"resource": "golemancy:enchant_zephyr_cooldown",
+				"comparison": "==",
+				"compare_to": 0
+			}
+			]
+		}
+	},
+	"zephyr3": {
+		"type": "origins:conditioned_attribute",
+		"modifier": {
+			"attribute": "minecraft:generic.movement_speed",
+			"operation": "multiply_base",
+			"value": 0.25
+		},
+		"condition": {
+			"type": "origins:and",
+			"conditions": [
+			{
+				"type": "origins:resource",
+				"resource": "golemancy:enchant_zephyr",
+				"comparison": "==",
+				"compare_to": 3
+			},
+			{
+				"type": "origins:resource",
+				"resource": "golemancy:enchant_zephyr_cooldown",
+				"comparison": "==",
+				"compare_to": 0
+			}
+			]
+		}
+	},
+	"zephyr4": {
+		"type": "origins:conditioned_attribute",
+		"modifier": {
+			"attribute": "minecraft:generic.movement_speed",
+			"operation": "multiply_base",
+			"value": 0.3
+		},
+		"condition": {
+			"type": "origins:and",
+			"conditions": [
+			{
+				"type": "origins:resource",
+				"resource": "golemancy:enchant_zephyr",
+				"comparison": "==",
+				"compare_to": 4
+			},
+			{
+				"type": "origins:resource",
+				"resource": "golemancy:enchant_zephyr_cooldown",
+				"comparison": "==",
+				"compare_to": 0
+			}
+			]
+		}
+	},
+	"name": "Aura Manipulation",
+	"description": "As you augment yourself further, you'll occasionally gain Aura. Aura can be combined with specific items to gain permanent bonuses.",
+	"badges": [
+	{
+		"sprite": "origins:textures/gui/badge/active.png",
+		"text": "Active ability, use with %s while sneaking and with an appropriate item in your hands to spend Aura."
+	},
+	{
+		"sprite": "origins:textures/gui/badge/info.png",
+		"text": "Iron grants bonus health. Gold grants bonus damage. Lapis Lazuli grants bonus movement speed, which is temporarily lost when struck."
+	}
+	]
+}

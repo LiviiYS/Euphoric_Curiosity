@@ -1,0 +1,348 @@
+{
+	"type": "origins:multiple",
+	"resource": {
+		"type": "origins:resource",
+		"min": 0,
+		"max": 1000,
+		"hud_render": {
+			"sprite_location": "origins:textures/gui/community/spiderkolo/resource_bar_02.png",
+			"bar_index": 8
+		}
+	},
+	"low_move": {
+		"type": "origins:conditioned_attribute",
+		"modifier": {
+			"attribute": "minecraft:generic.movement_speed",
+			"operation": "multiply_total",
+			"value": -0.15
+		},
+		"condition": {
+			"type": "origins:and",
+			"conditions": [
+			{
+				"type": "origins:resource",
+				"resource": "golemancy:temperature_resource",
+				"comparison": ">=",
+				"compare_to": 400
+			},
+			{
+				"type": "origins:resource",
+				"resource": "golemancy:temperature_resource",
+				"comparison": "<",
+				"compare_to": 599
+			}
+			]
+		}
+	},
+	"low_break": {
+		"type": "origins:modify_break_speed",
+		"modifier": {
+			"operation": "multiply_total",
+			"value": -0.15
+		},
+		"condition": {
+			"type": "origins:and",
+			"conditions": [
+			{
+				"type": "origins:resource",
+				"resource": "golemancy:temperature_resource",
+				"comparison": ">=",
+				"compare_to": 400
+			},
+			{
+				"type": "origins:resource",
+				"resource": "golemancy:temperature_resource",
+				"comparison": "<",
+				"compare_to": 599
+			}
+			]
+		}
+	},
+	"medium_move": {
+		"type": "origins:conditioned_attribute",
+		"modifier": {
+			"attribute": "minecraft:generic.movement_speed",
+			"operation": "multiply_total",
+			"value": -0.25
+		},
+		"condition": {
+			"type": "origins:resource",
+			"resource": "golemancy:temperature_resource",
+			"comparison": ">=",
+			"compare_to": 600
+		}
+	},
+	"medium_break": {
+		"type": "origins:modify_break_speed",
+		"modifier": {
+			"operation": "multiply_total",
+			"value": -0.25
+		},
+		"condition": {
+			"type": "origins:resource",
+			"resource": "golemancy:temperature_resource",
+			"comparison": ">=",
+			"compare_to": 600
+		}
+	},
+	"melt_high": {
+		"type": "origins:damage_over_time",
+		"interval": 20,
+		"onset_delay": 20,
+		"damage": 0.33,
+		"damage_easy": 0.33,
+		"damage_source": {
+			"name": "onFire",
+			"bypasses_armor": true,
+			"fire": true,
+			"unblockable": true
+		},
+		"condition": {
+			"type": "origins:and",
+			"conditions": [
+			{
+				"type": "origins:resource",
+				"resource": "golemancy:temperature_resource",
+				"comparison": ">=",
+				"compare_to": 900
+			},
+			{
+				"type": "origins:and",
+				"conditions": [
+				{
+					"type": "origins:biome",
+					"condition": {
+						"type": "origins:precipitation",
+						"precipitation": "snow"
+					}
+				},
+				{
+					"type": "origins:predicate",
+					"predicate": "golemancy:raining"
+				},
+				{
+					"type": "origins:exposed_to_sky"
+				}
+				],
+				"inverted": true
+			}
+			]
+		}
+	},
+	"chill_phasable": {
+		"type": "origins:action_over_time",
+		"interval": 20,
+		"entity_action": {
+			"type": "origins:change_resource",
+			"resource": "golemancy:temperature_resource",
+			"change": -4
+		},
+		"condition": {
+			"type": "origins:in_block_anywhere",
+			"compare_to": 2,
+			"block_condition": {
+				"type": "origins:in_tag",
+				"tag": "golemancy:snow_phasing"
+			}
+		}
+	},
+	"chill_hail": {
+		"type": "origins:action_over_time",
+		"interval": 20,
+		"entity_action": {
+			"type": "origins:change_resource",
+			"resource": "golemancy:temperature_resource",
+			"change": -12
+		},
+		"condition": {
+			"type": "origins:and",
+			"conditions": [
+			{
+				"type": "origins:biome",
+				"condition": {
+					"type": "origins:precipitation",
+					"precipitation": "snow"
+				}
+			},
+			{
+				"type": "origins:predicate",
+				"predicate": "golemancy:raining"
+			},
+			{
+				"type": "origins:exposed_to_sky"
+			}
+			]
+		}
+	},
+	"chill_extreme": {
+		"type": "origins:action_over_time",
+		"interval": 20,
+		"entity_action": {
+			"type": "origins:change_resource",
+			"resource": "golemancy:temperature_resource",
+			"change": -3
+		},
+		"condition": {
+			"type": "origins:biome",
+			"condition": {
+				"type": "origins:temperature",
+				"comparison": "<=",
+				"compare_to": 0.1
+			}
+		}
+	},
+	"chill_high": {
+		"type": "origins:action_over_time",
+		"interval": 20,
+		"entity_action": {
+			"type": "origins:change_resource",
+			"resource": "golemancy:temperature_resource",
+			"change": -3
+		},
+		"condition": {
+			"type": "origins:biome",
+			"condition": {
+				"type": "origins:temperature",
+				"comparison": "<",
+				"compare_to": 0.25
+			}
+		}
+	},
+	"chill_medium": {
+		"type": "origins:action_over_time",
+		"interval": 20,
+		"entity_action": {
+			"type": "origins:change_resource",
+			"resource": "golemancy:temperature_resource",
+			"change": -2
+		},
+		"condition": {
+			"type": "origins:biome",
+			"condition": {
+				"type": "origins:temperature",
+				"comparison": "<",
+				"compare_to": 0.5
+			}
+		}
+	},
+	"chill_low": {
+		"type": "origins:action_over_time",
+		"interval": 20,
+		"entity_action": {
+			"type": "origins:change_resource",
+			"resource": "golemancy:temperature_resource",
+			"change": -1
+		},
+		"condition": {
+			"type": "origins:biome",
+			"condition": {
+				"type": "origins:temperature",
+				"comparison": "<",
+				"compare_to": 0.6
+			}
+		}
+	},
+	"heat_low": {
+		"type": "origins:action_over_time",
+		"interval": 20,
+		"entity_action": {
+			"type": "origins:change_resource",
+			"resource": "golemancy:temperature_resource",
+			"change": 1
+		},
+		"condition": {
+			"type": "origins:biome",
+			"condition": {
+				"type": "origins:temperature",
+				"comparison": ">",
+				"compare_to": 0.7
+			}
+		}
+	},
+	"heat_medium": {
+		"type": "origins:action_over_time",
+		"interval": 20,
+		"entity_action": {
+			"type": "origins:change_resource",
+			"resource": "golemancy:temperature_resource",
+			"change": 2
+		},
+		"condition": {
+			"type": "origins:biome",
+			"condition": {
+				"type": "origins:temperature",
+				"comparison": ">",
+				"compare_to": 0.8
+			}
+		}
+	},
+	"heat_high": {
+		"type": "origins:action_over_time",
+		"interval": 20,
+		"entity_action": {
+			"type": "origins:change_resource",
+			"resource": "golemancy:temperature_resource",
+			"change": 3
+		},
+		"condition": {
+			"type": "origins:biome",
+			"condition": {
+				"type": "origins:temperature",
+				"comparison": ">=",
+				"compare_to": 0.95
+			}
+		}
+	},
+	"heat_extreme": {
+		"type": "origins:action_over_time",
+		"interval": 20,
+		"entity_action": {
+			"type": "origins:change_resource",
+			"resource": "golemancy:temperature_resource",
+			"change": 3
+		},
+		"condition": {
+			"type": "origins:biome",
+			"condition": {
+				"type": "origins:temperature",
+				"comparison": ">=",
+				"compare_to": 1.8
+			}
+		}
+	},
+	"heat_nether": {
+		"type": "origins:action_over_time",
+		"interval": 20,
+		"entity_action": {
+			"type": "origins:change_resource",
+			"resource": "golemancy:temperature_resource",
+			"change": 3
+		},
+		"condition": {
+			"type": "origins:dimension",
+			"dimension": "minecraft:nether"
+		}
+	},
+	"heat_fire": {
+		"type": "origins:action_over_time",
+		"interval": 10,
+		"entity_action": {
+			"type": "origins:change_resource",
+			"resource": "golemancy:temperature_resource",
+			"change": 2
+		},
+		"condition": {
+			"type": "origins:on_fire"
+		}
+	},
+	"forgive": {
+		"type": "origins:action_on_callback",
+		"entity_action_respawned": {
+			"type": "origins:change_resource",
+			"resource": "golemancy:temperature_resource",
+			"change": -1000
+		}
+	},
+	"name": "Thermodynamics",
+	"description": "Due to the materials making up your body, you are quite sensitive to temperature. Becoming too hot causes you to melt, and eventually begin to die."
+}

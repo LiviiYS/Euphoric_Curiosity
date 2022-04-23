@@ -1,0 +1,156 @@
+{
+	"type": "origins:multiple",
+	"jump": {
+		"type": "origins:modify_jump",
+		"modifier": {
+			"name": "Aquanaut underwater jump",
+			"value": 0.5,
+			"operation": "multiply_base"
+		},
+		"condition": {
+			"type": "origins:and",
+			"conditions": [
+			{
+				"type": "origins:in_block",
+				"block_condition": {
+					"type": "origins:fluid",
+					"fluid_condition": {
+						"type": "origins:in_tag",
+						"tag": "minecraft:water"
+					}
+				}
+			},
+			{
+				"type": "origins:fall_flying",
+				"inverted": true
+			},
+			{
+				"type": "origins:sneaking",
+				"inverted": true
+			},
+			{
+				"type": "origins:status_effect",
+				"effect": "minecraft:conduit_power",
+				"inverted": true
+			}
+			]
+		}
+	},
+	"conduit_jump": {
+		"type": "origins:modify_jump",
+		"modifier": {
+			"name": "Aquabatics Conduit Jump",
+			"value": 0.75,
+			"operation": "multiply_base"
+		},
+		"condition": {
+			"type": "origins:and",
+			"conditions": [
+			{
+				"type": "origins:in_block",
+				"block_condition": {
+					"type": "origins:fluid",
+					"fluid_condition": {
+						"type": "origins:in_tag",
+						"tag": "minecraft:water"
+					}
+				}
+			},
+			{
+				"type": "origins:fall_flying",
+				"inverted": true
+			},
+			{
+				"type": "origins:sneaking",
+				"inverted": true
+			},
+			{
+				"type": "origins:status_effect",
+				"effect": "minecraft:conduit_power"
+			}
+			]
+		}
+	},
+	"conduit_speed": {
+		"type": "origins:conditioned_attribute",
+		"modifier": {
+			"attribute": "minecraft:generic.movement_speed",
+			"name": "Aquabatics Conduit Speed",
+			"value": 0.2,
+			"operation": "multiply_base"
+		},
+		"condition": {
+			"type": "origins:and",
+			"conditions": [
+			{
+				"type": "origins:in_block",
+				"block_condition": {
+					"type": "origins:fluid",
+					"fluid_condition": {
+						"type": "origins:in_tag",
+						"tag": "minecraft:water"
+					}
+				}
+			},
+			{
+				"type": "origins:fall_flying",
+				"inverted": true
+			},
+			{
+				"type": "origins:sneaking",
+				"inverted": true
+			},
+			{
+				"type": "origins:status_effect",
+				"effect": "minecraft:conduit_power"
+			}
+			]
+		}
+	},
+	"fall": {
+		"type": "origins:modify_falling",
+		"velocity": 0.01,
+		"take_fall_damage": false,
+		"condition": {
+			"type": "origins:and",
+			"conditions": [
+			{
+				"type": "origins:in_block",
+				"block_condition": {
+					"type": "origins:fluid",
+					"fluid_condition": {
+						"type": "origins:in_tag",
+						"tag": "minecraft:water"
+					}
+				}
+			},
+			{
+				"type": "origins:fall_flying",
+				"inverted": true
+			},
+			{
+				"type": "origins:sneaking",
+				"inverted": true
+			}
+			]
+		}
+	},
+	"like_air": {
+		"type": "origins:attribute_modify_transfer",
+		"class": "modify_air_speed",
+		"attribute": "minecraft:generic.movement_speed",
+		"multiplier": 1,
+		"condition": {
+			"type": "origins:in_block",
+			"block_condition": {
+				"type": "origins:fluid",
+				"fluid_condition": {
+					"type": "origins:in_tag",
+					"tag": "minecraft:water"
+				}
+			}
+		}
+	},
+	"name": "Aquabatics",
+	"description": "You jump higher and fall slower while submerged in water."
+}

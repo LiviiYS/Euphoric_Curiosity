@@ -1,0 +1,133 @@
+{
+	"name": "Light",
+	"description": "You take more knockback and fall slower. You can only wear light armor (armor with protection values up to chainmail).",
+	"type": "origins:multiple",
+	"only_light_armor": {
+		"type": "origins:restrict_armor",
+		"head": {
+			"type": "origins:or",
+			"conditions": [
+				{
+					"type": "origins:armor_value",
+					"comparison": ">",
+					"compare_to": 2
+				},
+				{
+					"type": "origins:ingredient",
+					"ingredient": {
+						"item": "minecraft:iron_helmet"
+					}
+				}
+			]
+		},
+		"chest": {
+			"type": "origins:armor_value",
+			"comparison": ">",
+			"compare_to": 5
+		},
+		"legs": {
+			"type": "origins:armor_value",
+			"comparison": ">",
+			"compare_to": 4
+		},
+		"feet": {
+			"type": "origins:armor_value",
+			"comparison": ">",
+			"compare_to": 1
+		}
+	},
+	"slow_fall": {
+		"type": "origins:modify_falling",
+		"velocity": 0.01,
+		"take_fall_damage": false,
+		"condition": {
+			"type": "origins:or",
+			"conditions": [
+				{
+					"type": "origins:and",
+					"conditions": [
+						{
+							"type": "origins:sneaking"
+						},
+						{
+							"type": "origins:fall_flying"
+						}
+					]
+				},
+				{
+					"type": "origins:and",
+					"conditions": [
+						{
+							"type": "origins:sneaking",
+							"inverted": true
+						},
+						{
+							"type": "origins:fall_flying",
+							"inverted": true
+						}
+					]
+				}
+			]
+		}
+	},
+	"more_knockback": {
+		"type": "origins:self_action_when_hit",
+		"cooldown": 0,
+		"entity_action": {
+			"type": "origins:add_velocity",
+			"space": "velocity_horizontal_normalized",
+			"set": false,
+			"y": 0.1,
+			"z": 0.5
+		},
+		"damage_condition": {
+			"type": "origins:or",
+			"conditions": [
+			{
+				"type": "origins:name",
+				"name": "sting"
+			},
+			{
+				"type": "origins:name",
+				"name": "mob"
+			},
+			{
+				"type": "origins:name",
+				"name": "player"
+			},
+			{
+				"type": "origins:name",
+				"name": "arrow"
+			},
+			{
+				"type": "origins:name",
+				"name": "trident"
+			},
+			{
+				"type": "origins:name",
+				"name": "fireworks"
+			},
+			{
+				"type": "origins:name",
+				"name": "witherSkull"
+			},
+			{
+				"type": "origins:name",
+				"name": "thrown"
+			},
+			{
+				"type": "origins:name",
+				"name": "thorns"
+			},
+			{
+				"type": "origins:name",
+				"name": "explosion.player"
+			},
+			{
+				"type": "origins:name",
+				"name": "explosion"
+			}
+			]
+		}
+	}
+}

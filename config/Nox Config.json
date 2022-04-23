@@ -1,0 +1,22 @@
+{
+  //[Global] Friendly fire enabled
+  "friendlyFire": false,
+  //[Global] Mobs see through walls
+  "mobXray": true,
+  //[Global] Baseline Monster buffs
+  "buffAllMonsters": true,
+  //[Global] Baseline Golem buffs
+  "buffAllGolems": true,
+  //[Global] (Certain) mobs can break blocks
+  "mobsBreakBlocks": false,
+  //[Sleep] Monsters detected glow
+  "sleepApplyGlowing": true,
+  //[Sleep] Check expands to reach sea level
+  "sleepExtendToSeaLevel": false,
+  //[Sleep] Horizontal search distance
+  "sleepHorizontalSearchDistance": 0,
+  //[Sleep] Minimum vertical search distance
+  "sleepMinVerticalSearchDistance": 0,
+  //[Mobs] Creepers breach walls
+  "creepersBreachWalls": false
+}

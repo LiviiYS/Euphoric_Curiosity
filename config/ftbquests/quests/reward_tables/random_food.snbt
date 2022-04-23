@@ -1,0 +1,49 @@
+{
+	id: "2CE48B81CA6C9594"
+	order_index: 1
+	title: "Random Food"
+	icon: "kubejs:dice_food"
+	loot_size: 1
+	hide_tooltip: true
+	rewards: [
+		{ item: "minecraft:apple", count: 3 }
+		{ item: "minecraft:cake" }
+		{ item: "minecraft:dried_kelp", count: 16 }
+		{ item: "nears:glowy_snack" }
+		{ item: "nears:fungus_and_faar" }
+		{ item: "additionaladditions:fried_egg", count: 2 }
+		{ item: "promenade:banana", count: 5 }
+		{ item: "promenade:apricot", count: 5 }
+		{ item: "promenade:mango", count: 5 }
+		{ item: "untitledduckmod:raw_duck", count: 3 }
+		{ item: "untitledduckmod:raw_goose", count: 3 }
+		{ item: "gobber2:gobber2_gooey_bread", count: 3 }
+		{ item: "gobber2:gobber2_goo", count: 3 }
+		{ item: "cacao:milk_chocolate_covered_apple", count: 3 }
+		{ item: "cacao:dark_chocolate_covered_apple", count: 3 }
+		{ item: "cacao:white_chocolate_covered_apple", count: 3 }
+		{ item: "farmersdelight:cooked_chicken_cuts", count: 2 }
+		{ item: "farmersdelight:beef_patty", count: 2 }
+		{ item: "farmersdelight:rice", count: 16 }
+		{ item: "farmersdelight:cabbage", count: 16 }
+		{ item: "farmersdelight:melon_popsicle", count: 3 }
+		{ item: "farmersdelight:ham", count: 2 }
+		{ item: "farmersdelight:honey_cookie", count: 4 }
+		{ item: "croptopia:doughnut", count: 3 }
+		{ item: "croptopia:rhubarb", count: 9 }
+		{ item: "croptopia:kiwi", count: 8 }
+		{ item: "croptopia:starfruit", count: 8 }
+		{ item: "croptopia:lemon", count: 9 }
+		{ item: "croptopia:flour", count: 18 }
+		{ item: "croptopia:pepper", count: 14 }
+		{ item: "croptopia:paprika", count: 14 }
+		{ item: "croptopia:wine" }
+		{ item: "croptopia:scrambled_eggs" }
+		{ item: "croptopia:cheesy_asparagus" }
+		{ item: "tacocraft:empty_shell", count: 2 }
+		{ item: "byg:green_apple", count: 5 }
+		{ item: "byg:baobab_fruit", count: 4 }
+		{ item: "byg:nightshade_berries", count: 4 }
+		{ item: "byg:blueberries", count: 7 }
+	]
+}

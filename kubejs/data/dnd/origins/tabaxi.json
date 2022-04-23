@@ -1,0 +1,17 @@
+{
+	"powers": [
+		"dnd:tabaxi/feline_agility",
+		"dnd:tabaxi/cats_claws",
+		"origins:fall_immunity",
+		"dnd:tabaxi/aquatic_weakness",
+		"origins:scare_creepers",
+		"dnd:slender_build",
+		"origins:carnivore",
+		"dnd:darkvision"
+	],
+	"icon": "minecraft:string",
+	"order": 1,
+	"impact": 1,
+	"name": "Tabaxi",
+	"description": "Hailing from a strange and distant land, wandering tabaxi are catlike humanoids driven by curiosity to collect interesting artifacts, gather tales and stories, and lay eyes on all the world's wonders."
+}

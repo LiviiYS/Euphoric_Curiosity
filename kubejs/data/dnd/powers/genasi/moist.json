@@ -1,0 +1,24 @@
+{
+	"name": "Moist",
+	"description": "You take quadruple fire and lava damage, but you cannot burn.",
+	"type": "origins:multiple",
+	"fire_damage": {
+		"type": "origins:modify_damage_taken",
+		"damage_condition": {
+			"type": "origins:fire"
+		},
+		"modifier": {
+			"name": "Moist, increased fire damage",
+			"operation": "multiply_base",
+			"value": 3
+		},
+		"self_action": {
+			"type": "origins:extinguish"
+		}
+	},
+	"particles": {
+		"type": "origins:particle",
+		"particle": "minecraft:falling_water",
+		"frequency": 4
+	}
+}

@@ -1,0 +1,8 @@
+{
+  "jamOptions": {
+    "maxJamIngredients": 4
+  },
+  "compatOptions": {
+    "enableSandwichableCompat": true
+  }
+}

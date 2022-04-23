@@ -1,0 +1,13 @@
+{
+	"type": "origins:action_over_time",
+	"entity_action": {
+		"type": "origins:change_resource",
+		"resource": "avian:air_time/resource",
+		"change": -4
+	},
+	"condition": {
+		"type": "origins:on_block"
+	},
+	"interval": 5,
+	"hidden": true
+}

@@ -1,0 +1,63 @@
+{
+	"name": "Naturally Stealthy",
+	"description": "Mobs have to be closer to you in order to notice you.",
+	"type": "origins:multiple",
+	"create_team": {
+		"type": "origins:action_on_callback",
+		"entity_action_chosen":
+		{
+			"type": "origins:and",
+			"actions": [
+				{
+					"type": "origins:execute_command",
+					"command": "team add Undetected",
+					"permission_level": 4
+				},
+				{
+					"type": "origins:execute_command",
+					"command": "team add Detected",
+					"permission_level": 4
+				}
+			]
+		},
+		"entity_action_removed": {
+			"type": "origins:execute_command",
+			"command": "team leave @s",
+			"permission_level": 4
+		}
+	},
+	"join_team": {
+		"type": "origins:action_over_time",
+		"interval": 10,
+		"entity_action": {
+			"type": "origins:and",
+			"actions":
+			[
+				{
+					"type": "origins:execute_command",
+					"command": "team join Undetected @s",
+					"permission_level": 4
+				},
+				{
+					"type": "origins:execute_command",
+					"command": "team join Undetected @e[type=!player, team=!Detected, distance=8..]",
+					"permission_level": 4
+				},
+				{
+					"type": "origins:execute_command",
+					"command": "team join Detected @e[type=!player, team=Undetected, distance=..8]",
+					"permission_level": 4
+				}
+			]
+		}
+	},
+	"detect_on_hit": {
+		"type": "origins:target_action_on_hit",
+		"cooldown": 0,
+		"entity_action": {
+			"type": "origins:execute_command",
+			"command": "team join Detected @s[team=Undetected]",
+			"permission_level": 4
+		}
+	}
+}

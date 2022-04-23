@@ -1,0 +1,117 @@
+{
+	"hidden": true,
+	"type": "origins:multiple",
+	"resource1": {
+		"type": "origins:resource",
+		"min": 0,
+		"max": 200,
+		"hud_render": {
+			"should_render": true,
+			"bar_index": 3,
+			"condition": {
+			"type": "origins:resource",
+			"resource": "merling:reflex/stress_cooldown_resource1",
+			"comparison": ">",
+			"compare_to": 0
+		}
+		}
+	},
+	"cooldownn_filler": {
+		"type": "origins:action_over_time",
+		"entity_action": {
+			"type": "origins:change_resource",
+			"resource": "*:*_resource1",
+			"change": -1
+		},
+		"interval": 1,
+		"condition": {
+			"type": "origins:resource",
+			"resource": "merling:reflex/resource",
+			"comparison": ">=",
+			"compare_to": 0
+		}
+	},
+	"damage1": {
+		"type": "origins:action_over_time",
+		"entity_action": {
+			"type": "origins:damage",
+			"amount": 1,
+			"source": {
+				"name": "outOfWorld",
+				"bypasses_armor": true,
+				"unblockeable": true
+			}
+		},
+		"interval": 40,
+		"condition": {
+			"type": "origins:resource",
+			"resource": "merling:reflex/stress",
+			"comparison": "==",
+			"compare_to": 1
+		}
+	},
+	"damage2": {
+		"type": "origins:action_over_time",
+		"entity_action": {
+			"type": "origins:damage",
+			"amount": 1,
+			"source": {
+				"name": "outOfWorld",
+				"bypasses_armor": true,
+				"unblockeable": true
+			}
+		},
+		"interval": 20,
+		"condition": {
+			"type": "origins:resource",
+			"resource": "merling:reflex/stress",
+			"comparison": "==",
+			"compare_to": 2
+		}
+	},
+	"damage3": {
+		"type": "origins:action_over_time",
+		"entity_action": {
+			"type": "origins:damage",
+			"amount": 2,
+			"source": {
+				"name": "outOfWorld",
+				"bypasses_armor": true,
+				"unblockeable": true
+			}
+		},
+		"interval": 20,
+		"condition": {
+			"type": "origins:resource",
+			"resource": "merling:reflex/stress",
+			"comparison": "==",
+			"compare_to": 3
+		}
+	},
+	"stress_checker": {
+		"type": "origins:action_over_time",
+		"entity_action": {
+                    "type": "origins:change_resource",
+                    "resource": "merling:reflex/stress_cooldown_resource1",
+                    "change": 200
+                },
+		"interval": 1,
+		"condition": {
+			"type": "origins:and",
+			"conditions": [
+				{
+			"type": "origins:resource",
+			"resource": "merling:reflex/stress",
+			"comparison": ">",
+			"compare_to": 0
+		},
+		 {
+                "type": "origins:resource",
+                "resource": "merling:reflex/stress_cooldown_resource1",
+                "comparison": "==",
+                "compare_to": 0
+            }
+	]
+		}
+	}
+}

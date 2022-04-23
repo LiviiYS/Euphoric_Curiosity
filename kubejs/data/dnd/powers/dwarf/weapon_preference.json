@@ -1,0 +1,48 @@
+{
+	"name": "Weapon Preference",
+	"description": "You deal 2 extra damage with axes, but 2 less damage with swords and you can't use bows.",
+	"type": "origins:multiple",
+	"axes": {
+		"type": "origins:modify_damage_dealt",
+		"condition": {
+			"type": "origins:equipped_item",
+			"equipment_slot": "mainhand",
+			"item_condition": {
+				"type": "origins:ingredient",
+				"ingredient": {
+					"tag": "fabric:axes"
+				}
+			}
+		},
+		"modifier": {
+			"operation": "addition",
+			"value": 2
+		}
+	},
+	"swords": {
+		"type": "origins:modify_damage_dealt",
+		"condition": {
+			"type": "origins:equipped_item",
+			"equipment_slot": "mainhand",
+			"item_condition": {
+				"type": "origins:ingredient",
+				"ingredient": {
+					"tag": "fabric:swords"
+				}
+			}
+		},
+		"modifier": {
+			"operation": "addition",
+			"value": -2
+		}
+	},
+	"bows": {
+		"type": "origins:prevent_item_use",
+		"item_condition": {
+			"type": "origins:ingredient",
+			"ingredient": {
+				"item": "minecraft:bow"
+			}
+		}
+	}
+}

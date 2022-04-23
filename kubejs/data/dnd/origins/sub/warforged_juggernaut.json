@@ -1,0 +1,13 @@
+{
+	"powers": [
+		"dnd:warforged/iron_fists",
+		"dnd:powerful_build",
+		"dnd:bulky",
+		"dnd:large_stature"
+	],
+	"icon": "minecraft:shield",
+	"order": 2,
+	"impact": 1,
+	"name": "Juggernaut",
+	"description": "You’re an imposing war machine built for close combat and raw might."
+}

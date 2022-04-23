@@ -1,0 +1,9 @@
+{
+	id: "21B264FC62F86084"
+	order_index: 2
+	title: "Random Equipment"
+	icon: "kubejs:dice_equipment"
+	loot_size: 1
+	hide_tooltip: true
+	rewards: [ ]
+}

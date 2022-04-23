@@ -1,0 +1,8 @@
+{
+  "isEnabled": false,
+  "panicFallDistance": 5.0,
+  "flyingPitch": -10.0,
+  "additiveYaw": 45.0,
+  "restoreView": true,
+  "chatMessageOnActivate": false
+}

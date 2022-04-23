@@ -1,0 +1,13 @@
+{
+	"powers": [
+		"dnd:genasi/mingle_with_the_wind",
+		"dnd:genasi/light",
+		"dnd:genasi/unending_breath",
+		"dnd:weak"
+	],
+	"icon": "minecraft:glass",
+	"order": 1,
+	"impact": 2,
+	"name": "Air Genasi",
+	"description": "As an air genasi, you are descended from the djinn. As changeable as the weather, your moods shift from calm to wild and violent with little warning, but these storms rarely last long."
+}

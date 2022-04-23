@@ -1,0 +1,85 @@
+{
+	"type": "origins:active_self",
+	"entity_action": {
+		"type": "origins:if_else",
+		"condition": {
+			"type": "origins:resource",
+			"resource": "avian:air_time/resource",
+			"comparison": "<",
+			"compare_to": 2
+		},
+		"if_action": {
+			"type": "origins:and",
+			"actions": [
+				{
+					"type": "origins:change_resource",
+					"resource": "avian:double_jump/resource",
+					"change": -1
+				},
+				{
+					"type": "origins:change_resource",
+					"resource": "avian:air_time/resource",
+					"change": -2
+				},
+				{
+					"type": "origins:add_velocity",
+					"space": "world",
+					"y": 0.37
+				}
+			]
+		},
+		"else_action": {
+			"type": "origins:and",
+			"actions": [
+				{
+					"type": "origins:change_resource",
+					"resource": "avian:double_jump/resource",
+					"change": -1
+				},
+				{
+					"type": "origins:change_resource",
+					"resource": "avian:air_time/resource",
+					"change": -2
+				},
+				{
+					"type": "origins:add_velocity",
+					"space": "world",
+					"y": 0.37
+				}
+			]
+		}
+	},
+	"condition": {
+		"type": "origins:and",
+		"conditions": [
+			{
+				"type": "origins:on_block",
+				"inverted": true
+			},
+			{
+				"type": "origins:resource",
+				"resource": "avian:double_jump/resource",
+				"comparison": ">=",
+				"compare_to": 1
+			},
+			{
+				"type": "origins:in_block_anywhere",
+				"block_condition": {
+					"type": "origins:block",
+					"block": "minecraft:water"
+				},
+				"inverted": true
+			}
+		]
+	},
+	"cooldown": 5,
+	"key": {
+		"key": "key.jump",
+		"continuous": false
+	},
+	"hud_render": {
+		"should_render": false
+	},
+	"name": "Double Jump",
+	"description": "While airborne, you may jump a second time. Your jumps are also stronger."
+}

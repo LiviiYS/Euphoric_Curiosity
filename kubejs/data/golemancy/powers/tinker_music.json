@@ -1,0 +1,1015 @@
+{
+	"type": "origins:active_self",
+	"cooldown": 1,
+	"entity_action": {
+		"type": "origins:choice",
+		"actions": [{
+				"element": {
+					"type": "origins:and",
+					"actions": [{
+							"type": "origins:change_resource",
+							"resource": "golemancy:tinker_cooldown",
+							"change": 34
+						},
+						{
+							"type": "origins:play_sound",
+							"sound": "block.note_block.didgeridoo",
+							"pitch": 0.79,
+							"volume": 1
+						},
+						{
+							"type": "origins:delay",
+							"ticks": 2,
+							"action": {
+								"type": "origins:play_sound",
+								"sound": "block.note_block.didgeridoo",
+								"pitch": 0.79,
+								"volume": 1
+							}
+						},
+						{
+							"type": "origins:delay",
+							"ticks": 4,
+							"action": {
+								"type": "origins:play_sound",
+								"sound": "block.note_block.didgeridoo",
+								"pitch": 1.59,
+								"volume": 1
+							}
+						},
+						{
+							"type": "origins:delay",
+							"ticks": 8,
+							"action": {
+								"type": "origins:play_sound",
+								"sound": "block.note_block.didgeridoo",
+								"pitch": 1.19,
+								"volume": 1
+							}
+						},
+						{
+							"type": "origins:delay",
+							"ticks": 16,
+							"action": {
+								"type": "origins:play_sound",
+								"sound": "block.note_block.didgeridoo",
+								"pitch": 1.12,
+								"volume": 1
+							}
+						},
+						{
+							"type": "origins:delay",
+							"ticks": 20,
+							"action": {
+								"type": "origins:play_sound",
+								"sound": "block.note_block.didgeridoo",
+								"pitch": 1.06,
+								"volume": 1
+							}
+						},
+						{
+							"type": "origins:delay",
+							"ticks": 24,
+							"action": {
+								"type": "origins:play_sound",
+								"sound": "block.note_block.didgeridoo",
+								"pitch": 0.94,
+								"volume": 1
+							}
+						},
+						{
+							"type": "origins:delay",
+							"ticks": 28,
+							"action": {
+								"type": "origins:play_sound",
+								"sound": "block.note_block.didgeridoo",
+								"pitch": 0.79,
+								"volume": 1
+							}
+						},
+						{
+							"type": "origins:delay",
+							"ticks": 30,
+							"action": {
+								"type": "origins:play_sound",
+								"sound": "block.note_block.didgeridoo",
+								"pitch": 0.94,
+								"volume": 1
+							}
+						},
+						{
+							"type": "origins:delay",
+							"ticks": 32,
+							"action": {
+								"type": "origins:play_sound",
+								"sound": "block.note_block.didgeridoo",
+								"pitch": 1.06,
+								"volume": 1
+							}
+						}
+					]
+				},
+				"weight": 10
+			},
+			{
+				"element": {
+					"type": "origins:and",
+					"actions": [{
+							"type": "origins:change_resource",
+							"resource": "golemancy:tinker_cooldown",
+							"change": 114
+						},
+						{
+							"type": "origins:play_sound",
+							"sound": "block.note_block.bell",
+							"pitch": 0.79,
+							"volume": 1
+						},
+						{
+							"type": "origins:delay",
+							"ticks": 4,
+							"action": {
+								"type": "origins:play_sound",
+								"sound": "block.note_block.bell",
+								"pitch": 0.79,
+								"volume": 1
+							}
+						},
+						{
+							"type": "origins:delay",
+							"ticks": 8,
+							"action": {
+								"type": "origins:play_sound",
+								"sound": "block.note_block.bell",
+								"pitch": 0.94,
+								"volume": 1
+							}
+						},
+						{
+							"type": "origins:delay",
+							"ticks": 12,
+							"action": {
+								"type": "origins:play_sound",
+								"sound": "block.note_block.bell",
+								"pitch": 1.06,
+								"volume": 1
+							}
+						},
+						{
+							"type": "origins:delay",
+							"ticks": 16,
+							"action": {
+								"type": "origins:play_sound",
+								"sound": "block.note_block.bell",
+								"pitch": 1.06,
+								"volume": 1
+							}
+						},
+						{
+							"type": "origins:delay",
+							"ticks": 22,
+							"action": {
+								"type": "origins:play_sound",
+								"sound": "block.note_block.bell",
+								"pitch": 1.19,
+								"volume": 1
+							}
+						},
+						{
+							"type": "origins:delay",
+							"ticks": 26,
+							"action": {
+								"type": "origins:play_sound",
+								"sound": "block.note_block.bell",
+								"pitch": 1.19,
+								"volume": 1
+							}
+						},
+						{
+							"type": "origins:delay",
+							"ticks": 34,
+							"action": {
+								"type": "origins:play_sound",
+								"sound": "block.note_block.bell",
+								"pitch": 1.19,
+								"volume": 1
+							}
+						},
+						{
+							"type": "origins:delay",
+							"ticks": 38,
+							"action": {
+								"type": "origins:play_sound",
+								"sound": "block.note_block.bell",
+								"pitch": 1.41,
+								"volume": 1
+							}
+						},
+						{
+							"type": "origins:delay",
+							"ticks": 42,
+							"action": {
+								"type": "origins:play_sound",
+								"sound": "block.note_block.bell",
+								"pitch": 1.59,
+								"volume": 1
+							}
+						},
+						{
+							"type": "origins:delay",
+							"ticks": 46,
+							"action": {
+								"type": "origins:play_sound",
+								"sound": "block.note_block.bell",
+								"pitch": 1.06,
+								"volume": 1
+							}
+						},
+						{
+							"type": "origins:delay",
+							"ticks": 50,
+							"action": {
+								"type": "origins:play_sound",
+								"sound": "block.note_block.bell",
+								"pitch": 0.94,
+								"volume": 1
+							}
+						},
+						{
+							"type": "origins:delay",
+							"ticks": 54,
+							"action": {
+								"type": "origins:play_sound",
+								"sound": "block.note_block.bell",
+								"pitch": 1.19,
+								"volume": 1
+							}
+						},
+						{
+							"type": "origins:delay",
+							"ticks": 60,
+							"action": {
+								"type": "origins:play_sound",
+								"sound": "block.note_block.bell",
+								"pitch": 0.79,
+								"volume": 1
+							}
+						},
+						{
+							"type": "origins:delay",
+							"ticks": 64,
+							"action": {
+								"type": "origins:play_sound",
+								"sound": "block.note_block.bell",
+								"pitch": 0.94,
+								"volume": 1
+							}
+						},
+						{
+							"type": "origins:delay",
+							"ticks": 68,
+							"action": {
+								"type": "origins:play_sound",
+								"sound": "block.note_block.bell",
+								"pitch": 1.06,
+								"volume": 1
+							}
+						},
+						{
+							"type": "origins:delay",
+							"ticks": 72,
+							"action": {
+								"type": "origins:play_sound",
+								"sound": "block.note_block.bell",
+								"pitch": 1.06,
+								"volume": 1
+							}
+						},
+						{
+							"type": "origins:delay",
+							"ticks": 78,
+							"action": {
+								"type": "origins:play_sound",
+								"sound": "block.note_block.bell",
+								"pitch": 1.19,
+								"volume": 1
+							}
+						},
+						{
+							"type": "origins:delay",
+							"ticks": 82,
+							"action": {
+								"type": "origins:play_sound",
+								"sound": "block.note_block.bell",
+								"pitch": 1.19,
+								"volume": 1
+							}
+						},
+						{
+							"type": "origins:delay",
+							"ticks": 90,
+							"action": {
+								"type": "origins:play_sound",
+								"sound": "block.note_block.bell",
+								"pitch": 1.19,
+								"volume": 1
+							}
+						},
+						{
+							"type": "origins:delay",
+							"ticks": 94,
+							"action": {
+								"type": "origins:play_sound",
+								"sound": "block.note_block.bell",
+								"pitch": 1.26,
+								"volume": 1
+							}
+						},
+						{
+							"type": "origins:delay",
+							"ticks": 98,
+							"action": {
+								"type": "origins:play_sound",
+								"sound": "block.note_block.bell",
+								"pitch": 1.19,
+								"volume": 1
+							}
+						},
+						{
+							"type": "origins:delay",
+							"ticks": 102,
+							"action": {
+								"type": "origins:play_sound",
+								"sound": "block.note_block.bell",
+								"pitch": 1.06,
+								"volume": 1
+							}
+						},
+						{
+							"type": "origins:delay",
+							"ticks": 106,
+							"action": {
+								"type": "origins:play_sound",
+								"sound": "block.note_block.bell",
+								"pitch": 0.94,
+								"volume": 1
+							}
+						},
+						{
+							"type": "origins:delay",
+							"ticks": 110,
+							"action": {
+								"type": "origins:play_sound",
+								"sound": "block.note_block.bell",
+								"pitch": 0.94,
+								"volume": 1
+							}
+						}
+					]
+				},
+				"weight": 10
+			},
+			{
+				"element": {
+					"type": "origins:and",
+					"actions": [{
+							"type": "origins:change_resource",
+							"resource": "golemancy:tinker_cooldown",
+							"change": 122
+						},
+						{
+							"type": "origins:play_sound",
+							"sound": "block.note_block.guitar",
+							"pitch": 0.94,
+							"volume": 1
+						},
+						{
+							"type": "origins:delay",
+							"ticks": 14,
+							"action": {
+								"type": "origins:play_sound",
+								"sound": "block.note_block.guitar",
+								"pitch": 1.41,
+								"volume": 1
+							}
+						},
+						{
+							"type": "origins:delay",
+							"ticks": 16,
+							"action": {
+								"type": "origins:play_sound",
+								"sound": "block.note_block.guitar",
+								"pitch": 1.33,
+								"volume": 1
+							}
+						},
+						{
+							"type": "origins:delay",
+							"ticks": 18,
+							"action": {
+								"type": "origins:play_sound",
+								"sound": "block.note_block.guitar",
+								"pitch": 1.41,
+								"volume": 1
+							}
+						},
+						{
+							"type": "origins:delay",
+							"ticks": 20,
+							"action": {
+								"type": "origins:play_sound",
+								"sound": "block.note_block.guitar",
+								"pitch": 1.33,
+								"volume": 1
+							}
+						},
+						{
+							"type": "origins:delay",
+							"ticks": 24,
+							"action": {
+								"type": "origins:play_sound",
+								"sound": "block.note_block.guitar",
+								"pitch": 1.41,
+								"volume": 1
+							}
+						},
+						{
+							"type": "origins:delay",
+							"ticks": 28,
+							"action": {
+								"type": "origins:play_sound",
+								"sound": "block.note_block.guitar",
+								"pitch": 1.12,
+								"volume": 1
+							}
+						},
+						{
+							"type": "origins:delay",
+							"ticks": 36,
+							"action": {
+								"type": "origins:play_sound",
+								"sound": "block.note_block.guitar",
+								"pitch": 0.94,
+								"volume": 1
+							}
+						},
+						{
+							"type": "origins:delay",
+							"ticks": 46,
+							"action": {
+								"type": "origins:play_sound",
+								"sound": "block.note_block.guitar",
+								"pitch": 0.94,
+								"volume": 1
+							}
+						},
+						{
+							"type": "origins:delay",
+							"ticks": 50,
+							"action": {
+								"type": "origins:play_sound",
+								"sound": "block.note_block.guitar",
+								"pitch": 1.12,
+								"volume": 1
+							}
+						},
+						{
+							"type": "origins:delay",
+							"ticks": 54,
+							"action": {
+								"type": "origins:play_sound",
+								"sound": "block.note_block.guitar",
+								"pitch": 1.41,
+								"volume": 1
+							}
+						},
+						{
+							"type": "origins:delay",
+							"ticks": 60,
+							"action": {
+								"type": "origins:play_sound",
+								"sound": "block.note_block.guitar",
+								"pitch": 1.5,
+								"volume": 1
+							}
+						},
+						{
+							"type": "origins:delay",
+							"ticks": 66,
+							"action": {
+								"type": "origins:play_sound",
+								"sound": "block.note_block.guitar",
+								"pitch": 1.12,
+								"volume": 1
+							}
+						},
+						{
+							"type": "origins:delay",
+							"ticks": 74,
+							"action": {
+								"type": "origins:play_sound",
+								"sound": "block.note_block.guitar",
+								"pitch": 1.68,
+								"volume": 1
+							}
+						},
+						{
+							"type": "origins:delay",
+							"ticks": 82,
+							"action": {
+								"type": "origins:play_sound",
+								"sound": "block.note_block.guitar",
+								"pitch": 1.5,
+								"volume": 1
+							}
+						},
+						{
+							"type": "origins:delay",
+							"ticks": 90,
+							"action": {
+								"type": "origins:play_sound",
+								"sound": "block.note_block.guitar",
+								"pitch": 1.41,
+								"volume": 1
+							}
+						},
+						{
+							"type": "origins:delay",
+							"ticks": 94,
+							"action": {
+								"type": "origins:play_sound",
+								"sound": "block.note_block.guitar",
+								"pitch": 1.5,
+								"volume": 1
+							}
+						},
+						{
+							"type": "origins:delay",
+							"ticks": 98,
+							"action": {
+								"type": "origins:play_sound",
+								"sound": "block.note_block.guitar",
+								"pitch": 1.41,
+								"volume": 1
+							}
+						},
+						{
+							"type": "origins:delay",
+							"ticks": 102,
+							"action": {
+								"type": "origins:play_sound",
+								"sound": "block.note_block.guitar",
+								"pitch": 1.5,
+								"volume": 1
+							}
+						},
+						{
+							"type": "origins:delay",
+							"ticks": 106,
+							"action": {
+								"type": "origins:play_sound",
+								"sound": "block.note_block.guitar",
+								"pitch": 1.41,
+								"volume": 1
+							}
+						}
+					]
+				},
+				"weight": 10
+			},
+			{
+				"element": {
+					"type": "origins:and",
+					"actions": [{
+							"type": "origins:change_resource",
+							"resource": "golemancy:tinker_cooldown",
+							"change": 62
+						},
+						{
+							"type": "origins:play_sound",
+							"sound": "block.note_block.pling",
+							"pitch": 0.79,
+							"volume": 1
+						},
+						{
+							"type": "origins:delay",
+							"ticks": 4,
+							"action": {
+								"type": "origins:play_sound",
+								"sound": "block.note_block.pling",
+								"pitch": 1.26,
+								"volume": 1
+							}
+						},
+						{
+							"type": "origins:delay",
+							"ticks": 8,
+							"action": {
+								"type": "origins:play_sound",
+								"sound": "block.note_block.pling",
+								"pitch": 1.06,
+								"volume": 1
+							}
+						},
+						{
+							"type": "origins:delay",
+							"ticks": 12,
+							"action": {
+								"type": "origins:play_sound",
+								"sound": "block.note_block.pling",
+								"pitch": 1.06,
+								"volume": 1
+							}
+						},
+						{
+							"type": "origins:delay",
+							"ticks": 14,
+							"action": {
+								"type": "origins:play_sound",
+								"sound": "block.note_block.pling",
+								"pitch": 0.79,
+								"volume": 1
+							}
+						},
+						{
+							"type": "origins:delay",
+							"ticks": 18,
+							"action": {
+								"type": "origins:play_sound",
+								"sound": "block.note_block.pling",
+								"pitch": 0.79,
+								"volume": 1
+							}
+						},
+						{
+							"type": "origins:delay",
+							"ticks": 20,
+							"action": {
+								"type": "origins:play_sound",
+								"sound": "block.note_block.pling",
+								"pitch": 1.19,
+								"volume": 1
+							}
+						},
+						{
+							"type": "origins:delay",
+							"ticks": 22,
+							"action": {
+								"type": "origins:play_sound",
+								"sound": "block.note_block.pling",
+								"pitch": 0.94,
+								"volume": 1
+							}
+						},
+						{
+							"type": "origins:delay",
+							"ticks": 26,
+							"action": {
+								"type": "origins:play_sound",
+								"sound": "block.note_block.pling",
+								"pitch": 0.94,
+								"volume": 1
+							}
+						},
+						{
+							"type": "origins:delay",
+							"ticks": 28,
+							"action": {
+								"type": "origins:play_sound",
+								"sound": "block.note_block.pling",
+								"pitch": 0.79,
+								"volume": 1
+							}
+						},
+						{
+							"type": "origins:delay",
+							"ticks": 32,
+							"action": {
+								"type": "origins:play_sound",
+								"sound": "block.note_block.pling",
+								"pitch": 0.79,
+								"volume": 1
+							}
+						},
+						{
+							"type": "origins:delay",
+							"ticks": 34,
+							"action": {
+								"type": "origins:play_sound",
+								"sound": "block.note_block.pling",
+								"pitch": 1.19,
+								"volume": 1
+							}
+						},
+						{
+							"type": "origins:delay",
+							"ticks": 38,
+							"action": {
+								"type": "origins:play_sound",
+								"sound": "block.note_block.pling",
+								"pitch": 0.94,
+								"volume": 1
+							}
+						},
+						{
+							"type": "origins:delay",
+							"ticks": 42,
+							"action": {
+								"type": "origins:play_sound",
+								"sound": "block.note_block.pling",
+								"pitch": 0.94,
+								"volume": 1
+							}
+						},
+						{
+							"type": "origins:delay",
+							"ticks": 44,
+							"action": {
+								"type": "origins:play_sound",
+								"sound": "block.note_block.pling",
+								"pitch": 0.71,
+								"volume": 1
+							}
+						},
+						{
+							"type": "origins:delay",
+							"ticks": 48,
+							"action": {
+								"type": "origins:play_sound",
+								"sound": "block.note_block.pling",
+								"pitch": 0.71,
+								"volume": 1
+							}
+						},
+						{
+							"type": "origins:delay",
+							"ticks": 52,
+							"action": {
+								"type": "origins:play_sound",
+								"sound": "block.note_block.pling",
+								"pitch": 0.89,
+								"volume": 1
+							}
+						},
+						{
+							"type": "origins:delay",
+							"ticks": 56,
+							"action": {
+								"type": "origins:play_sound",
+								"sound": "block.note_block.pling",
+								"pitch": 0.89,
+								"volume": 1
+							}
+						},
+						{
+							"type": "origins:delay",
+							"ticks": 58,
+							"action": {
+								"type": "origins:play_sound",
+								"sound": "block.note_block.pling",
+								"pitch": 0.94,
+								"volume": 1
+							}
+						},
+						{
+							"type": "origins:delay",
+							"ticks": 60,
+							"action": {
+								"type": "origins:play_sound",
+								"sound": "block.note_block.pling",
+								"pitch": 0.89,
+								"volume": 1
+							}
+						}
+					]
+				},
+				"weight": 10
+			},
+			{
+				"element": {
+					"type": "origins:and",
+					"actions": [
+					{
+						"type": "origins:change_resource",
+						"resource": "golemancy:tinker_cooldown",
+						"change": 62
+					},
+					{
+						"type": "origins:and",
+						"actions": [
+						{
+							"type": "origins:play_sound",
+							"sound": "minecraft:block.note_block.bit",
+							"pitch": 1.78,
+							"volume": 1
+						},
+						{
+							"type": "origins:play_sound",
+							"sound": "minecraft:block.note_block.bit",
+							"pitch": 1.0,
+							"volume": 1
+						},
+						{
+							"type": "origins:play_sound",
+							"sound": "minecraft:block.note_block.bit",
+							"pitch": 0.79,
+							"volume": 1
+						}
+						]
+					},
+					{
+						"type": "origins:delay",
+						"ticks": 4,
+						"action": {
+							"type": "origins:and",
+							"actions": [
+							{
+								"type": "origins:play_sound",
+								"sound": "minecraft:block.note_block.bit",
+								"pitch": 1.78,
+								"volume": 1
+							},
+							{
+								"type": "origins:play_sound",
+								"sound": "minecraft:block.note_block.bit",
+								"pitch": 1.0,
+								"volume": 1
+							},
+							{
+								"type": "origins:play_sound",
+								"sound": "minecraft:block.note_block.bit",
+								"pitch": 0.79,
+								"volume": 1
+							}
+							]
+						}
+					},
+					{
+						"type": "origins:delay",
+						"ticks": 12,
+						"action": {
+							"type": "origins:and",
+							"actions": [
+							{
+								"type": "origins:play_sound",
+								"sound": "minecraft:block.note_block.bit",
+								"pitch": 1.78,
+								"volume": 1
+							},
+							{
+								"type": "origins:play_sound",
+								"sound": "minecraft:block.note_block.bit",
+								"pitch": 1.0,
+								"volume": 1
+							},
+							{
+								"type": "origins:play_sound",
+								"sound": "minecraft:block.note_block.bit",
+								"pitch": 0.79,
+								"volume": 1
+							}
+							]
+						}
+					},
+					{
+						"type": "origins:delay",
+						"ticks": 20,
+						"action": {
+							"type": "origins:and",
+							"actions": [
+							{
+								"type": "origins:play_sound",
+								"sound": "minecraft:block.note_block.bit",
+								"pitch": 1.41,
+								"volume": 1
+							},
+							{
+								"type": "origins:play_sound",
+								"sound": "minecraft:block.note_block.bit",
+								"pitch": 1.0,
+								"volume": 1
+							},
+							{
+								"type": "origins:play_sound",
+								"sound": "minecraft:block.note_block.bit",
+								"pitch": 0.79,
+								"volume": 1
+							}
+							]
+						}
+					},
+					{
+						"type": "origins:delay",
+						"ticks": 24,
+						"action": {
+							"type": "origins:and",
+							"actions": [
+							{
+								"type": "origins:play_sound",
+								"sound": "minecraft:block.note_block.bit",
+								"pitch": 1.78,
+								"volume": 1
+							},
+							{
+								"type": "origins:play_sound",
+								"sound": "minecraft:block.note_block.bit",
+								"pitch": 1.0,
+								"volume": 1
+							},
+							{
+								"type": "origins:play_sound",
+								"sound": "minecraft:block.note_block.bit",
+								"pitch": 0.79,
+								"volume": 1
+							}
+							]
+						}
+					},
+					{
+						"type": "origins:delay",
+						"ticks": 30,
+						"action": {
+							"type": "origins:and",
+							"actions": [
+							{
+								"type": "origins:play_sound",
+								"sound": "minecraft:block.note_block.bit",
+								"pitch": 1.33,
+								"volume": 1
+							},
+							{
+								"type": "origins:play_sound",
+								"sound": "minecraft:block.note_block.bit",
+								"pitch": 1.06,
+								"volume": 1
+							}
+							]
+						}
+					},
+					{
+						"type": "origins:delay",
+						"ticks": 46,
+						"action": {
+							"type": "origins:and",
+							"actions": [
+							{
+								"type": "origins:play_sound",
+								"sound": "minecraft:block.note_block.bit",
+								"pitch": 1.06,
+								"volume": 1
+							},
+							{
+								"type": "origins:play_sound",
+								"sound": "minecraft:block.note_block.bit",
+								"pitch": 0.53,
+								"volume": 1
+							}
+							]
+						}
+					}
+					]
+				},
+				"weight": 10
+			}
+		]
+	},
+	"condition": {
+		"type": "origins:and",
+		"conditions": [{
+				"type": "origins:resource",
+				"resource": "golemancy:tinker_cooldown",
+				"comparison": "==",
+				"compare_to": 0
+			},
+			{
+				"type": "origins:or",
+				"conditions": [{
+						"type": "origins:equipped_item",
+						"equipment_slot": "offhand",
+						"item_condition": {
+							"type": "origins:ingredient",
+							"ingredient": {
+								"item": "minecraft:note_block"
+							}
+						}
+					},
+					{
+						"type": "origins:equipped_item",
+						"equipment_slot": "offhand",
+						"item_condition": {
+							"type": "origins:ingredient",
+							"ingredient": {
+								"item": "minecraft:jukebox"
+							}
+						}
+					}
+				]
+			}
+		]
+	},
+	"key": {
+		"key": "key.origins.primary_active",
+		"continuous": true
+	},
+	"hidden": true
+}

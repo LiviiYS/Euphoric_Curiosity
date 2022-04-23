@@ -1,0 +1,5532 @@
+{
+	id: "6B92095799FC1036"
+	group: "0631C37AA5FCBCF1"
+	order_index: 0
+	filename: "adventure_items"
+	title: "Adventure Items"
+	icon: "kibe:pocket_crafting_table"
+	default_quest_shape: "hexagon"
+	default_hide_dependency_lines: false
+	quests: [
+		{
+			x: -6.5d
+			y: -7.0d
+			dependencies: ["0E4DF4FC20773B34"]
+			id: "51CA0BB8DEC0BC1B"
+			tasks: [{
+				id: "69D486F2A2FE01D5"
+				type: "item"
+				item: "nyfsquiver:basic_quiver"
+			}]
+		}
+		{
+			x: -7.5d
+			y: -6.5d
+			dependencies: ["51CA0BB8DEC0BC1B"]
+			id: "103C05ACA8EF63FF"
+			tasks: [{
+				id: "7BE47A950B0B24E5"
+				type: "item"
+				item: "nyfsquiver:iron_quiver"
+			}]
+		}
+		{
+			x: -7.5d
+			y: -5.5d
+			dependencies: ["103C05ACA8EF63FF"]
+			id: "0BA9D8DE7B308FB6"
+			tasks: [{
+				id: "5053053C0B9FFA4F"
+				type: "item"
+				item: "nyfsquiver:gold_quiver"
+			}]
+		}
+		{
+			x: -6.5d
+			y: -6.0d
+			min_required_dependencies: 1
+			dependencies: [
+				"0BA9D8DE7B308FB6"
+				"067D7F5549920473"
+			]
+			id: "733EB153B0240890"
+			tasks: [{
+				id: "268A7BBE289484C0"
+				type: "item"
+				item: "nyfsquiver:diamond_quiver"
+			}]
+		}
+		{
+			x: -6.5d
+			y: -5.0d
+			dependencies: ["733EB153B0240890"]
+			id: "512566A69DE7AF96"
+			tasks: [{
+				id: "7502FA6574FF6538"
+				type: "item"
+				item: "nyfsquiver:netherite_quiver"
+			}]
+			rewards: [
+				{
+					id: "7D006D1A346ABE9C"
+					type: "item"
+					item: "minecraft:netherite_scrap"
+					count: 4
+				}
+				{
+					id: "1BDD834DD2E98914"
+					type: "random"
+					table_id: 3990050942893790865L
+				}
+			]
+		}
+		{
+			x: -5.5d
+			y: -6.5d
+			dependencies: ["51CA0BB8DEC0BC1B"]
+			id: "7C854DF85F32569F"
+			tasks: [{
+				id: "5C5E26B2DA4AD147"
+				type: "item"
+				item: "nyfsquiver:copper_quiver"
+			}]
+			rewards: [{
+				id: "19A7B73750C0A01A"
+				type: "random"
+				table_id: 2428114184261099652L
+			}]
+		}
+		{
+			x: -5.5d
+			y: -5.5d
+			dependencies: ["7C854DF85F32569F"]
+			id: "067D7F5549920473"
+			tasks: [{
+				id: "3A61F464B94815FF"
+				type: "item"
+				item: "nyfsquiver:silver_quiver"
+			}]
+		}
+		{
+			x: -11.5d
+			y: -3.0d
+			dependencies: ["0E4DF4FC20773B34"]
+			id: "0AA4D70C87789B81"
+			tasks: [{
+				id: "0961A99FD4C00B8C"
+				type: "item"
+				item: {
+					id: "kibe:slime_boots"
+					Count: 1b
+					tag: {
+						Damage: 0
+					}
+				}
+			}]
+		}
+		{
+			x: -10.5d
+			y: -3.5d
+			dependencies: ["0AA4D70C87789B81"]
+			id: "0614A42C16397060"
+			tasks: [{
+				id: "4D5A6DA61055360A"
+				type: "item"
+				item: "kibe:slime_sling"
+			}]
+			rewards: [
+				{
+					id: "161E8DDE04F69BD0"
+					type: "random"
+					table_id: 3990050942893790865L
+				}
+				{
+					id: "3E066C5D28860E75"
+					type: "random"
+					table_id: 2428114184261099652L
+				}
+			]
+		}
+		{
+			x: -11.5d
+			y: -5.5d
+			dependencies: ["0E4DF4FC20773B34"]
+			id: "6579484EE065BEA7"
+			tasks: [{
+				id: "45995CB7A5567FF4"
+				type: "item"
+				item: "kibe:glider_left_wing"
+			}]
+		}
+		{
+			x: -9.5d
+			y: -5.5d
+			dependencies: ["0E4DF4FC20773B34"]
+			id: "0BE65EA0CE3C4935"
+			tasks: [{
+				id: "2343D68B6F6C0031"
+				type: "item"
+				item: "kibe:glider_right_wing"
+			}]
+		}
+		{
+			x: -10.5d
+			y: -6.0d
+			dependencies: [
+				"6579484EE065BEA7"
+				"0BE65EA0CE3C4935"
+			]
+			id: "6524652E65DC86BB"
+			tasks: [{
+				id: "38768FD9EE41A74E"
+				type: "item"
+				item: {
+					id: "kibe:white_glider"
+					Count: 1b
+					tag: { }
+				}
+			}]
+			rewards: [{
+				id: "63495FC29C11840D"
+				type: "random"
+				table_id: 3990050942893790865L
+			}]
+		}
+		{
+			x: -6.5d
+			y: -3.0d
+			dependencies: ["0E4DF4FC20773B34"]
+			size: 1.5d
+			id: "53911EFAADFCF37C"
+			tasks: [{
+				id: "13F3DFECDBDBF4FA"
+				type: "item"
+				item: "kibe:pocket_crafting_table"
+			}]
+		}
+		{
+			x: -9.5d
+			y: -3.0d
+			dependencies: ["0E4DF4FC20773B34"]
+			id: "7D1045079B210D64"
+			tasks: [{
+				id: "007C539F8E028D5B"
+				type: "item"
+				item: {
+					id: "kibe:magnet"
+					Count: 1b
+					tag: { }
+				}
+			}]
+		}
+		{
+			x: -10.5d
+			y: -1.0d
+			dependencies: ["0E4DF4FC20773B34"]
+			id: "4AEF59BB443183EC"
+			tasks: [{
+				id: "181783B2C0B61DCC"
+				type: "item"
+				item: "kibe:torch_sling"
+			}]
+		}
+		{
+			x: -11.5d
+			y: -0.5d
+			dependencies: ["0E4DF4FC20773B34"]
+			id: "26FF90756D2823EA"
+			tasks: [{
+				id: "37557670848D329A"
+				type: "item"
+				item: {
+					id: "kibe:escape_rope"
+					Count: 1b
+					tag: {
+						Damage: 0
+					}
+				}
+			}]
+			rewards: [{
+				id: "559DC9F6A6D85780"
+				type: "random"
+				table_id: 2428114184261099652L
+			}]
+		}
+		{
+			x: -9.5d
+			y: -0.5d
+			dependencies: ["0E4DF4FC20773B34"]
+			id: "36379CFD4C5C1F94"
+			tasks: [{
+				id: "6237E027F1700342"
+				type: "item"
+				item: "kibe:cooler"
+			}]
+			rewards: [{
+				id: "061857DE02FB18D5"
+				type: "random"
+				table_id: 3990050942893790865L
+			}]
+		}
+		{
+			x: -2.5d
+			y: -6.0d
+			dependencies: ["0E4DF4FC20773B34"]
+			id: "2E843CDA8DF3B985"
+			tasks: [{
+				id: "69E4F658464C9DB6"
+				type: "item"
+				item: "waystones:abyss_watcher"
+			}]
+		}
+		{
+			x: -1.5d
+			y: -5.5d
+			dependencies: ["2E843CDA8DF3B985"]
+			dependency_requirement: "one_completed"
+			id: "62CA961D9F75AFA3"
+			tasks: [{
+				id: "1F5D41626EB00E32"
+				type: "item"
+				item: "waystones:pocket_wormhole"
+			}]
+			rewards: [
+				{
+					id: "1DA9637280556B7E"
+					type: "item"
+					item: "minecraft:diamond"
+					count: 6
+				}
+				{
+					id: "5AD0F87BF13A397B"
+					type: "random"
+					table_id: 3990050942893790865L
+				}
+			]
+		}
+		{
+			x: -3.5d
+			y: -5.5d
+			dependencies: ["2E843CDA8DF3B985"]
+			id: "12545D5F22551768"
+			tasks: [{
+				id: "05D963F91F5092ED"
+				type: "item"
+				item: "waystones:waystone"
+			}]
+			rewards: [{
+				id: "5957C569EAC4E1FF"
+				type: "random"
+				table_id: 2428114184261099652L
+			}]
+		}
+		{
+			x: -2.5d
+			y: -3.5d
+			dependencies: ["0E4DF4FC20773B34"]
+			id: "60F29A3A684C4A37"
+			tasks: [{
+				id: "52981CDC8D38E60A"
+				type: "item"
+				item: "comforts:sleeping_bag_white"
+			}]
+			rewards: [{
+				id: "5ED5FCAF622FA462"
+				type: "random"
+				table_id: 2428114184261099652L
+			}]
+		}
+		{
+			x: -3.5d
+			y: -3.0d
+			dependencies: ["0E4DF4FC20773B34"]
+			id: "2C4D2428ECCD1BDE"
+			tasks: [{
+				id: "46449AC4EB745C68"
+				type: "item"
+				item: "comforts:hammock_white"
+			}]
+		}
+		{
+			x: -1.5d
+			y: -3.0d
+			dependencies: ["0E4DF4FC20773B34"]
+			id: "24470FD1C6153DA0"
+			tasks: [{
+				id: "2A3C7A22A6BA8879"
+				type: "item"
+				item: "comforts:rope_and_nail"
+			}]
+		}
+		{
+			x: -6.5d
+			y: -1.0d
+			dependencies: ["0E4DF4FC20773B34"]
+			id: "420B6F672358FB26"
+			tasks: [{
+				id: "0AE0931742907008"
+				type: "item"
+				item: "additionaladditions:rope"
+			}]
+		}
+		{
+			x: -6.5d
+			y: 0.0d
+			dependencies: ["0E4DF4FC20773B34"]
+			id: "50C574EB09EFAA08"
+			tasks: [{
+				id: "2DCDE0D82C46912B"
+				type: "item"
+				item: "additionaladditions:depth_meter"
+			}]
+		}
+		{
+			x: -7.5d
+			y: -0.5d
+			dependencies: ["0E4DF4FC20773B34"]
+			id: "168AD6774546E619"
+			tasks: [{
+				id: "0631CBFBCCD9CA07"
+				type: "item"
+				item: {
+					id: "additionaladditions:pocket_jukebox"
+					Count: 1b
+					tag: { }
+				}
+			}]
+			rewards: [{
+				id: "22FA1112ACE3C5D6"
+				type: "random"
+				table_id: 2428114184261099652L
+			}]
+		}
+		{
+			x: -5.5d
+			y: -0.5d
+			dependencies: ["0E4DF4FC20773B34"]
+			id: "505274C5FE88769B"
+			tasks: [{
+				id: "42B1B1BE2A1F7642"
+				type: "item"
+				item: {
+					id: "additionaladditions:crossbow_with_spyglass"
+					Count: 1b
+					tag: {
+						Damage: 0
+					}
+				}
+			}]
+		}
+		{
+			x: -6.5d
+			y: 2.0d
+			dependencies: ["0E4DF4FC20773B34"]
+			size: 1.5d
+			id: "2DEA2F1A58DFD4C8"
+			tasks: [{
+				id: "3ADB637C36152A3E"
+				type: "item"
+				item: {
+					id: "hookshot:white_hookshot"
+					Count: 1b
+					tag: {
+						Damage: 0
+					}
+				}
+			}]
+			rewards: [{
+				id: "600862B1A18A88CF"
+				type: "random"
+				table_id: 3990050942893790865L
+			}]
+		}
+		{
+			x: -2.5d
+			y: 2.0d
+			dependencies: ["0E4DF4FC20773B34"]
+			id: "5DB932767693D515"
+			tasks: [{
+				id: "21CBA1D946E8C4F5"
+				type: "item"
+				item: "campanion:leather_tanner"
+			}]
+		}
+		{
+			x: -2.5d
+			y: 1.0d
+			dependencies: ["5DB932767693D515"]
+			id: "6398551D6AF4F600"
+			tasks: [{
+				id: "014E02B31AAF84DC"
+				type: "item"
+				item: "campanion:tanned_leather"
+			}]
+		}
+		{
+			x: -2.5d
+			y: 0.0d
+			dependencies: ["6398551D6AF4F600"]
+			id: "35C142910511CDD1"
+			tasks: [{
+				id: "2594744A344D2C7E"
+				type: "item"
+				item: "campanion:tanned_leather_pouch"
+			}]
+			rewards: [{
+				id: "2F123EC07B9F492A"
+				type: "random"
+				table_id: 2428114184261099652L
+			}]
+		}
+		{
+			x: -1.5d
+			y: 0.5d
+			dependencies: ["0E4DF4FC20773B34"]
+			id: "7694B2066D80DDF9"
+			tasks: [{
+				id: "2F12F65B2F99B0FE"
+				type: "item"
+				item: "campanion:leather_pouch"
+			}]
+		}
+		{
+			x: -1.5d
+			y: -0.5d
+			dependencies: ["0E4DF4FC20773B34"]
+			id: "5724E2625A90BB09"
+			tasks: [{
+				id: "4A5C7C2A461506B5"
+				type: "item"
+				item: "campanion:day_pack"
+			}]
+		}
+		{
+			x: -2.5d
+			y: -1.0d
+			dependencies: ["5724E2625A90BB09"]
+			id: "3CDA7273272D380F"
+			tasks: [{
+				id: "1752371D5120C834"
+				type: "item"
+				item: "campanion:camping_pack"
+			}]
+		}
+		{
+			x: -3.5d
+			y: -0.5d
+			dependencies: ["3CDA7273272D380F"]
+			id: "671600CB4FA60172"
+			tasks: [{
+				id: "0877030DD1A2F6FF"
+				type: "item"
+				item: {
+					id: "campanion:hiking_pack"
+					Count: 1b
+					tag: { }
+				}
+			}]
+			rewards: [{
+				id: "08E3C3122F62584E"
+				type: "random"
+				table_id: 3990050942893790865L
+			}]
+		}
+		{
+			x: -10.5d
+			y: 3.5d
+			description: ["The cheapest item in the pack..."]
+			dependencies: ["0E4DF4FC20773B34"]
+			id: "1220BB8A50D73C9C"
+			tasks: [{
+				id: "5E13DB6ED9045956"
+				type: "item"
+				item: "campanion:skipping_stone"
+			}]
+		}
+		{
+			x: -10.5d
+			y: 1.5d
+			dependencies: ["0E4DF4FC20773B34"]
+			id: "38F0851897AB0B03"
+			tasks: [{
+				id: "4EB6645E13EC6206"
+				type: "item"
+				item: {
+					id: "campanion:small_unbuilt_tent"
+					Count: 1b
+					tag: {
+						TentSize: {
+							Z: 7
+							X: 7
+							Y: 3
+						}
+						Blocks: [
+							{
+								BlockState: {
+									Name: "minecraft:air"
+								}
+								Pos: {
+									Z: -1
+									X: -3
+									Y: 0
+								}
+							}
+							{
+								BlockState: {
+									Name: "minecraft:air"
+								}
+								Pos: {
+									Z: 0
+									X: -3
+									Y: 0
+								}
+							}
+							{
+								BlockState: {
+									Name: "minecraft:air"
+								}
+								Pos: {
+									Z: 1
+									X: -3
+									Y: 0
+								}
+							}
+							{
+								BlockState: {
+									Name: "minecraft:air"
+								}
+								Pos: {
+									Z: -1
+									X: -2
+									Y: 0
+								}
+							}
+							{
+								BlockState: {
+									Name: "minecraft:air"
+								}
+								Pos: {
+									Z: 1
+									X: -2
+									Y: 0
+								}
+							}
+							{
+								BlockState: {
+									Name: "minecraft:air"
+								}
+								Pos: {
+									Z: -1
+									X: -1
+									Y: 0
+								}
+							}
+							{
+								BlockState: {
+									Name: "minecraft:air"
+								}
+								Pos: {
+									Z: 0
+									X: -1
+									Y: 0
+								}
+							}
+							{
+								BlockState: {
+									Name: "minecraft:air"
+								}
+								Pos: {
+									Z: 1
+									X: -1
+									Y: 0
+								}
+							}
+							{
+								BlockState: {
+									Name: "minecraft:air"
+								}
+								Pos: {
+									Z: -1
+									X: 0
+									Y: 0
+								}
+							}
+							{
+								BlockState: {
+									Name: "minecraft:air"
+								}
+								Pos: {
+									Z: 0
+									X: 0
+									Y: 0
+								}
+							}
+							{
+								BlockState: {
+									Name: "minecraft:air"
+								}
+								Pos: {
+									Z: 1
+									X: 0
+									Y: 0
+								}
+							}
+							{
+								BlockState: {
+									Name: "minecraft:air"
+								}
+								Pos: {
+									Z: -1
+									X: 1
+									Y: 0
+								}
+							}
+							{
+								BlockState: {
+									Name: "minecraft:air"
+								}
+								Pos: {
+									Z: 0
+									X: 1
+									Y: 0
+								}
+							}
+							{
+								BlockState: {
+									Name: "minecraft:air"
+								}
+								Pos: {
+									Z: 1
+									X: 1
+									Y: 0
+								}
+							}
+							{
+								BlockState: {
+									Name: "minecraft:air"
+								}
+								Pos: {
+									Z: -1
+									X: 2
+									Y: 0
+								}
+							}
+							{
+								BlockState: {
+									Name: "minecraft:air"
+								}
+								Pos: {
+									Z: 1
+									X: 2
+									Y: 0
+								}
+							}
+							{
+								BlockState: {
+									Name: "minecraft:air"
+								}
+								Pos: {
+									Z: -1
+									X: 3
+									Y: 0
+								}
+							}
+							{
+								BlockState: {
+									Name: "minecraft:air"
+								}
+								Pos: {
+									Z: 0
+									X: 3
+									Y: 0
+								}
+							}
+							{
+								BlockState: {
+									Name: "minecraft:air"
+								}
+								Pos: {
+									Z: 1
+									X: 3
+									Y: 0
+								}
+							}
+							{
+								BlockState: {
+									Name: "minecraft:air"
+								}
+								Pos: {
+									Z: 0
+									X: -3
+									Y: 1
+								}
+							}
+							{
+								BlockState: {
+									Name: "minecraft:air"
+								}
+								Pos: {
+									Z: 0
+									X: -1
+									Y: 1
+								}
+							}
+							{
+								BlockState: {
+									Name: "minecraft:air"
+								}
+								Pos: {
+									Z: 0
+									X: 0
+									Y: 1
+								}
+							}
+							{
+								BlockState: {
+									Name: "minecraft:air"
+								}
+								Pos: {
+									Z: -2
+									X: 1
+									Y: 1
+								}
+							}
+							{
+								BlockState: {
+									Name: "minecraft:air"
+								}
+								Pos: {
+									Z: 0
+									X: 1
+									Y: 1
+								}
+							}
+							{
+								BlockState: {
+									Name: "minecraft:air"
+								}
+								Pos: {
+									Z: 0
+									X: 3
+									Y: 1
+								}
+							}
+							{
+								BlockState: {
+									Name: "minecraft:air"
+								}
+								Pos: {
+									Z: 1
+									X: 2
+									Y: 2
+								}
+							}
+							{
+								BlockState: {
+									Properties: {
+										facing: "south"
+									}
+									Name: "campanion:white_tent_side"
+								}
+								BlockEntityData: {
+									id: "campanion:tent_part"
+									LinkedPos: {
+										Z: 0
+										X: 0
+										Y: 0
+									}
+									Size: {
+										Z: 0
+										X: 0
+										Y: 0
+									}
+								}
+								Pos: {
+									Z: -2
+									X: -2
+									Y: 0
+								}
+							}
+							{
+								BlockState: {
+									Properties: {
+										facing: "west"
+									}
+									Name: "campanion:tent_pole"
+								}
+								BlockEntityData: {
+									id: "campanion:tent_part"
+									LinkedPos: {
+										Z: 0
+										X: 0
+										Y: 0
+									}
+									Size: {
+										Z: 0
+										X: 0
+										Y: 0
+									}
+								}
+								Pos: {
+									Z: 0
+									X: -2
+									Y: 0
+								}
+							}
+							{
+								BlockState: {
+									Properties: {
+										facing: "north"
+									}
+									Name: "campanion:white_tent_side"
+								}
+								BlockEntityData: {
+									id: "campanion:tent_part"
+									LinkedPos: {
+										Z: 0
+										X: 0
+										Y: 0
+									}
+									Size: {
+										Z: 0
+										X: 0
+										Y: 0
+									}
+								}
+								Pos: {
+									Z: 2
+									X: -2
+									Y: 0
+								}
+							}
+							{
+								BlockState: {
+									Properties: {
+										facing: "south"
+									}
+									Name: "campanion:white_tent_side"
+								}
+								BlockEntityData: {
+									id: "campanion:tent_part"
+									LinkedPos: {
+										Z: 0
+										X: 0
+										Y: 0
+									}
+									Size: {
+										Z: 0
+										X: 0
+										Y: 0
+									}
+								}
+								Pos: {
+									Z: -2
+									X: -1
+									Y: 0
+								}
+							}
+							{
+								BlockState: {
+									Properties: {
+										facing: "north"
+									}
+									Name: "campanion:white_tent_side"
+								}
+								BlockEntityData: {
+									id: "campanion:tent_part"
+									LinkedPos: {
+										Z: 0
+										X: 0
+										Y: 0
+									}
+									Size: {
+										Z: 0
+										X: 0
+										Y: 0
+									}
+								}
+								Pos: {
+									Z: 2
+									X: -1
+									Y: 0
+								}
+							}
+							{
+								BlockState: {
+									Properties: {
+										facing: "south"
+									}
+									Name: "campanion:white_tent_side"
+								}
+								BlockEntityData: {
+									id: "campanion:tent_part"
+									LinkedPos: {
+										Z: 0
+										X: 0
+										Y: 0
+									}
+									Size: {
+										Z: 0
+										X: 0
+										Y: 0
+									}
+								}
+								Pos: {
+									Z: -2
+									X: 0
+									Y: 0
+								}
+							}
+							{
+								BlockState: {
+									Properties: {
+										facing: "north"
+									}
+									Name: "campanion:white_tent_side"
+								}
+								BlockEntityData: {
+									id: "campanion:tent_part"
+									LinkedPos: {
+										Z: 0
+										X: 0
+										Y: 0
+									}
+									Size: {
+										Z: 0
+										X: 0
+										Y: 0
+									}
+								}
+								Pos: {
+									Z: 2
+									X: 0
+									Y: 0
+								}
+							}
+							{
+								BlockState: {
+									Properties: {
+										facing: "south"
+									}
+									Name: "campanion:white_tent_side"
+								}
+								BlockEntityData: {
+									id: "campanion:tent_part"
+									LinkedPos: {
+										Z: 0
+										X: 0
+										Y: 0
+									}
+									Size: {
+										Z: 0
+										X: 0
+										Y: 0
+									}
+								}
+								Pos: {
+									Z: -2
+									X: 1
+									Y: 0
+								}
+							}
+							{
+								BlockState: {
+									Properties: {
+										facing: "north"
+									}
+									Name: "campanion:white_tent_side"
+								}
+								BlockEntityData: {
+									id: "campanion:tent_part"
+									LinkedPos: {
+										Z: 0
+										X: 0
+										Y: 0
+									}
+									Size: {
+										Z: 0
+										X: 0
+										Y: 0
+									}
+								}
+								Pos: {
+									Z: 2
+									X: 1
+									Y: 0
+								}
+							}
+							{
+								BlockState: {
+									Properties: {
+										facing: "south"
+									}
+									Name: "campanion:white_tent_side"
+								}
+								BlockEntityData: {
+									id: "campanion:tent_part"
+									LinkedPos: {
+										Z: 0
+										X: 0
+										Y: 0
+									}
+									Size: {
+										Z: 0
+										X: 0
+										Y: 0
+									}
+								}
+								Pos: {
+									Z: -2
+									X: 2
+									Y: 0
+								}
+							}
+							{
+								BlockState: {
+									Properties: {
+										facing: "east"
+									}
+									Name: "campanion:tent_pole"
+								}
+								BlockEntityData: {
+									id: "campanion:tent_part"
+									LinkedPos: {
+										Z: 0
+										X: 0
+										Y: 0
+									}
+									Size: {
+										Z: 0
+										X: 0
+										Y: 0
+									}
+								}
+								Pos: {
+									Z: 0
+									X: 2
+									Y: 0
+								}
+							}
+							{
+								BlockState: {
+									Properties: {
+										facing: "north"
+									}
+									Name: "campanion:white_tent_side"
+								}
+								BlockEntityData: {
+									id: "campanion:tent_part"
+									LinkedPos: {
+										Z: 0
+										X: 0
+										Y: 0
+									}
+									Size: {
+										Z: 0
+										X: 0
+										Y: 0
+									}
+								}
+								Pos: {
+									Z: 2
+									X: 2
+									Y: 0
+								}
+							}
+							{
+								BlockState: {
+									Properties: {
+										facing: "south"
+									}
+									Name: "campanion:white_tent_side"
+								}
+								BlockEntityData: {
+									id: "campanion:tent_part"
+									LinkedPos: {
+										Z: 0
+										X: 0
+										Y: 0
+									}
+									Size: {
+										Z: 0
+										X: 0
+										Y: 0
+									}
+								}
+								Pos: {
+									Z: -1
+									X: -2
+									Y: 1
+								}
+							}
+							{
+								BlockState: {
+									Properties: {
+										facing: "west"
+									}
+									Name: "campanion:tent_pole"
+								}
+								BlockEntityData: {
+									id: "campanion:tent_part"
+									LinkedPos: {
+										Z: 0
+										X: 0
+										Y: 0
+									}
+									Size: {
+										Z: 0
+										X: 0
+										Y: 0
+									}
+								}
+								Pos: {
+									Z: 0
+									X: -2
+									Y: 1
+								}
+							}
+							{
+								BlockState: {
+									Properties: {
+										facing: "north"
+									}
+									Name: "campanion:white_tent_side"
+								}
+								BlockEntityData: {
+									id: "campanion:tent_part"
+									LinkedPos: {
+										Z: 0
+										X: 0
+										Y: 0
+									}
+									Size: {
+										Z: 0
+										X: 0
+										Y: 0
+									}
+								}
+								Pos: {
+									Z: 1
+									X: -2
+									Y: 1
+								}
+							}
+							{
+								BlockState: {
+									Properties: {
+										facing: "south"
+									}
+									Name: "campanion:white_tent_side"
+								}
+								BlockEntityData: {
+									id: "campanion:tent_part"
+									LinkedPos: {
+										Z: 0
+										X: 0
+										Y: 0
+									}
+									Size: {
+										Z: 0
+										X: 0
+										Y: 0
+									}
+								}
+								Pos: {
+									Z: -1
+									X: -1
+									Y: 1
+								}
+							}
+							{
+								BlockState: {
+									Properties: {
+										facing: "north"
+									}
+									Name: "campanion:white_tent_side"
+								}
+								BlockEntityData: {
+									id: "campanion:tent_part"
+									LinkedPos: {
+										Z: 0
+										X: 0
+										Y: 0
+									}
+									Size: {
+										Z: 0
+										X: 0
+										Y: 0
+									}
+								}
+								Pos: {
+									Z: 1
+									X: -1
+									Y: 1
+								}
+							}
+							{
+								BlockState: {
+									Properties: {
+										facing: "south"
+									}
+									Name: "campanion:white_tent_side"
+								}
+								BlockEntityData: {
+									id: "campanion:tent_part"
+									LinkedPos: {
+										Z: 0
+										X: 0
+										Y: 0
+									}
+									Size: {
+										Z: 0
+										X: 0
+										Y: 0
+									}
+								}
+								Pos: {
+									Z: -1
+									X: 0
+									Y: 1
+								}
+							}
+							{
+								BlockState: {
+									Properties: {
+										facing: "north"
+									}
+									Name: "campanion:white_tent_side"
+								}
+								BlockEntityData: {
+									id: "campanion:tent_part"
+									LinkedPos: {
+										Z: 0
+										X: 0
+										Y: 0
+									}
+									Size: {
+										Z: 0
+										X: 0
+										Y: 0
+									}
+								}
+								Pos: {
+									Z: 1
+									X: 0
+									Y: 1
+								}
+							}
+							{
+								BlockState: {
+									Properties: {
+										facing: "south"
+									}
+									Name: "campanion:white_tent_side"
+								}
+								BlockEntityData: {
+									id: "campanion:tent_part"
+									LinkedPos: {
+										Z: 0
+										X: 0
+										Y: 0
+									}
+									Size: {
+										Z: 0
+										X: 0
+										Y: 0
+									}
+								}
+								Pos: {
+									Z: -1
+									X: 1
+									Y: 1
+								}
+							}
+							{
+								BlockState: {
+									Properties: {
+										facing: "north"
+									}
+									Name: "campanion:white_tent_side"
+								}
+								BlockEntityData: {
+									id: "campanion:tent_part"
+									LinkedPos: {
+										Z: 0
+										X: 0
+										Y: 0
+									}
+									Size: {
+										Z: 0
+										X: 0
+										Y: 0
+									}
+								}
+								Pos: {
+									Z: 1
+									X: 1
+									Y: 1
+								}
+							}
+							{
+								BlockState: {
+									Properties: {
+										facing: "south"
+									}
+									Name: "campanion:white_tent_side"
+								}
+								BlockEntityData: {
+									id: "campanion:tent_part"
+									LinkedPos: {
+										Z: 0
+										X: 0
+										Y: 0
+									}
+									Size: {
+										Z: 0
+										X: 0
+										Y: 0
+									}
+								}
+								Pos: {
+									Z: -1
+									X: 2
+									Y: 1
+								}
+							}
+							{
+								BlockState: {
+									Properties: {
+										facing: "east"
+									}
+									Name: "campanion:tent_pole"
+								}
+								BlockEntityData: {
+									id: "campanion:tent_part"
+									LinkedPos: {
+										Z: 0
+										X: 0
+										Y: 0
+									}
+									Size: {
+										Z: 0
+										X: 0
+										Y: 0
+									}
+								}
+								Pos: {
+									Z: 0
+									X: 2
+									Y: 1
+								}
+							}
+							{
+								BlockState: {
+									Properties: {
+										facing: "north"
+									}
+									Name: "campanion:white_tent_side"
+								}
+								BlockEntityData: {
+									id: "campanion:tent_part"
+									LinkedPos: {
+										Z: 0
+										X: 0
+										Y: 0
+									}
+									Size: {
+										Z: 0
+										X: 0
+										Y: 0
+									}
+								}
+								Pos: {
+									Z: 1
+									X: 2
+									Y: 1
+								}
+							}
+							{
+								BlockState: {
+									Properties: {
+										facing: "west"
+									}
+									Name: "campanion:white_topped_tent_pole"
+								}
+								BlockEntityData: {
+									id: "campanion:tent_part"
+									LinkedPos: {
+										Z: 0
+										X: 0
+										Y: 0
+									}
+									Size: {
+										Z: 0
+										X: 0
+										Y: 0
+									}
+								}
+								Pos: {
+									Z: 0
+									X: -2
+									Y: 2
+								}
+							}
+							{
+								BlockState: {
+									Properties: {
+										axis: "x"
+									}
+									Name: "campanion:white_tent_top"
+								}
+								BlockEntityData: {
+									id: "campanion:tent_part"
+									LinkedPos: {
+										Z: 0
+										X: 0
+										Y: 0
+									}
+									Size: {
+										Z: 0
+										X: 0
+										Y: 0
+									}
+								}
+								Pos: {
+									Z: 0
+									X: -1
+									Y: 2
+								}
+							}
+							{
+								BlockState: {
+									Properties: {
+										axis: "x"
+									}
+									Name: "campanion:white_tent_top"
+								}
+								BlockEntityData: {
+									id: "campanion:tent_part"
+									LinkedPos: {
+										Z: 0
+										X: 0
+										Y: 0
+									}
+									Size: {
+										Z: 0
+										X: 0
+										Y: 0
+									}
+								}
+								Pos: {
+									Z: 0
+									X: 0
+									Y: 2
+								}
+							}
+							{
+								BlockState: {
+									Properties: {
+										axis: "x"
+									}
+									Name: "campanion:white_tent_top"
+								}
+								BlockEntityData: {
+									id: "campanion:tent_part"
+									LinkedPos: {
+										Z: 0
+										X: 0
+										Y: 0
+									}
+									Size: {
+										Z: 0
+										X: 0
+										Y: 0
+									}
+								}
+								Pos: {
+									Z: 0
+									X: 1
+									Y: 2
+								}
+							}
+							{
+								BlockState: {
+									Properties: {
+										facing: "east"
+									}
+									Name: "campanion:white_topped_tent_pole"
+								}
+								BlockEntityData: {
+									id: "campanion:tent_part"
+									LinkedPos: {
+										Z: 0
+										X: 0
+										Y: 0
+									}
+									Size: {
+										Z: 0
+										X: 0
+										Y: 0
+									}
+								}
+								Pos: {
+									Z: 0
+									X: 2
+									Y: 2
+								}
+							}
+						]
+					}
+				}
+			}]
+		}
+		{
+			x: -11.5d
+			y: 2.0d
+			dependencies: ["38F0851897AB0B03"]
+			id: "593FC99DFA617525"
+			tasks: [{
+				id: "207DA5420ED4597E"
+				type: "item"
+				item: {
+					id: "campanion:large_unbuilt_tent"
+					Count: 1b
+					tag: {
+						TentSize: {
+							Z: 11
+							X: 11
+							Y: 4
+						}
+						Blocks: [
+							{
+								BlockState: {
+									Name: "minecraft:air"
+								}
+								Pos: {
+									Z: -3
+									X: -5
+									Y: 0
+								}
+							}
+							{
+								BlockState: {
+									Name: "minecraft:air"
+								}
+								Pos: {
+									Z: -2
+									X: -5
+									Y: 0
+								}
+							}
+							{
+								BlockState: {
+									Name: "minecraft:air"
+								}
+								Pos: {
+									Z: -1
+									X: -5
+									Y: 0
+								}
+							}
+							{
+								BlockState: {
+									Name: "minecraft:air"
+								}
+								Pos: {
+									Z: 0
+									X: -5
+									Y: 0
+								}
+							}
+							{
+								BlockState: {
+									Name: "minecraft:air"
+								}
+								Pos: {
+									Z: 1
+									X: -5
+									Y: 0
+								}
+							}
+							{
+								BlockState: {
+									Name: "minecraft:air"
+								}
+								Pos: {
+									Z: 2
+									X: -5
+									Y: 0
+								}
+							}
+							{
+								BlockState: {
+									Name: "minecraft:air"
+								}
+								Pos: {
+									Z: 3
+									X: -5
+									Y: 0
+								}
+							}
+							{
+								BlockState: {
+									Name: "minecraft:air"
+								}
+								Pos: {
+									Z: -3
+									X: -4
+									Y: 0
+								}
+							}
+							{
+								BlockState: {
+									Name: "minecraft:air"
+								}
+								Pos: {
+									Z: -2
+									X: -4
+									Y: 0
+								}
+							}
+							{
+								BlockState: {
+									Name: "minecraft:air"
+								}
+								Pos: {
+									Z: 0
+									X: -4
+									Y: 0
+								}
+							}
+							{
+								BlockState: {
+									Name: "minecraft:air"
+								}
+								Pos: {
+									Z: 2
+									X: -4
+									Y: 0
+								}
+							}
+							{
+								BlockState: {
+									Name: "minecraft:air"
+								}
+								Pos: {
+									Z: 3
+									X: -4
+									Y: 0
+								}
+							}
+							{
+								BlockState: {
+									Name: "minecraft:air"
+								}
+								Pos: {
+									Z: -3
+									X: -3
+									Y: 0
+								}
+							}
+							{
+								BlockState: {
+									Name: "minecraft:air"
+								}
+								Pos: {
+									Z: -2
+									X: -3
+									Y: 0
+								}
+							}
+							{
+								BlockState: {
+									Name: "minecraft:air"
+								}
+								Pos: {
+									Z: -1
+									X: -3
+									Y: 0
+								}
+							}
+							{
+								BlockState: {
+									Name: "minecraft:air"
+								}
+								Pos: {
+									Z: 0
+									X: -3
+									Y: 0
+								}
+							}
+							{
+								BlockState: {
+									Name: "minecraft:air"
+								}
+								Pos: {
+									Z: 1
+									X: -3
+									Y: 0
+								}
+							}
+							{
+								BlockState: {
+									Name: "minecraft:air"
+								}
+								Pos: {
+									Z: 2
+									X: -3
+									Y: 0
+								}
+							}
+							{
+								BlockState: {
+									Name: "minecraft:air"
+								}
+								Pos: {
+									Z: 3
+									X: -3
+									Y: 0
+								}
+							}
+							{
+								BlockState: {
+									Name: "minecraft:air"
+								}
+								Pos: {
+									Z: -3
+									X: -2
+									Y: 0
+								}
+							}
+							{
+								BlockState: {
+									Name: "minecraft:air"
+								}
+								Pos: {
+									Z: -2
+									X: -2
+									Y: 0
+								}
+							}
+							{
+								BlockState: {
+									Name: "minecraft:air"
+								}
+								Pos: {
+									Z: -1
+									X: -2
+									Y: 0
+								}
+							}
+							{
+								BlockState: {
+									Name: "minecraft:air"
+								}
+								Pos: {
+									Z: 0
+									X: -2
+									Y: 0
+								}
+							}
+							{
+								BlockState: {
+									Name: "minecraft:air"
+								}
+								Pos: {
+									Z: 1
+									X: -2
+									Y: 0
+								}
+							}
+							{
+								BlockState: {
+									Name: "minecraft:air"
+								}
+								Pos: {
+									Z: 2
+									X: -2
+									Y: 0
+								}
+							}
+							{
+								BlockState: {
+									Name: "minecraft:air"
+								}
+								Pos: {
+									Z: 3
+									X: -2
+									Y: 0
+								}
+							}
+							{
+								BlockState: {
+									Name: "minecraft:air"
+								}
+								Pos: {
+									Z: -3
+									X: -1
+									Y: 0
+								}
+							}
+							{
+								BlockState: {
+									Name: "minecraft:air"
+								}
+								Pos: {
+									Z: -2
+									X: -1
+									Y: 0
+								}
+							}
+							{
+								BlockState: {
+									Name: "minecraft:air"
+								}
+								Pos: {
+									Z: -1
+									X: -1
+									Y: 0
+								}
+							}
+							{
+								BlockState: {
+									Name: "minecraft:air"
+								}
+								Pos: {
+									Z: 0
+									X: -1
+									Y: 0
+								}
+							}
+							{
+								BlockState: {
+									Name: "minecraft:air"
+								}
+								Pos: {
+									Z: 1
+									X: -1
+									Y: 0
+								}
+							}
+							{
+								BlockState: {
+									Name: "minecraft:air"
+								}
+								Pos: {
+									Z: 2
+									X: -1
+									Y: 0
+								}
+							}
+							{
+								BlockState: {
+									Name: "minecraft:air"
+								}
+								Pos: {
+									Z: 3
+									X: -1
+									Y: 0
+								}
+							}
+							{
+								BlockState: {
+									Name: "minecraft:air"
+								}
+								Pos: {
+									Z: -3
+									X: 0
+									Y: 0
+								}
+							}
+							{
+								BlockState: {
+									Name: "minecraft:air"
+								}
+								Pos: {
+									Z: -2
+									X: 0
+									Y: 0
+								}
+							}
+							{
+								BlockState: {
+									Name: "minecraft:air"
+								}
+								Pos: {
+									Z: -1
+									X: 0
+									Y: 0
+								}
+							}
+							{
+								BlockState: {
+									Name: "minecraft:air"
+								}
+								Pos: {
+									Z: 0
+									X: 0
+									Y: 0
+								}
+							}
+							{
+								BlockState: {
+									Name: "minecraft:air"
+								}
+								Pos: {
+									Z: 1
+									X: 0
+									Y: 0
+								}
+							}
+							{
+								BlockState: {
+									Name: "minecraft:air"
+								}
+								Pos: {
+									Z: 2
+									X: 0
+									Y: 0
+								}
+							}
+							{
+								BlockState: {
+									Name: "minecraft:air"
+								}
+								Pos: {
+									Z: 3
+									X: 0
+									Y: 0
+								}
+							}
+							{
+								BlockState: {
+									Name: "minecraft:air"
+								}
+								Pos: {
+									Z: -3
+									X: 1
+									Y: 0
+								}
+							}
+							{
+								BlockState: {
+									Name: "minecraft:air"
+								}
+								Pos: {
+									Z: -2
+									X: 1
+									Y: 0
+								}
+							}
+							{
+								BlockState: {
+									Name: "minecraft:air"
+								}
+								Pos: {
+									Z: -1
+									X: 1
+									Y: 0
+								}
+							}
+							{
+								BlockState: {
+									Name: "minecraft:air"
+								}
+								Pos: {
+									Z: 0
+									X: 1
+									Y: 0
+								}
+							}
+							{
+								BlockState: {
+									Name: "minecraft:air"
+								}
+								Pos: {
+									Z: 1
+									X: 1
+									Y: 0
+								}
+							}
+							{
+								BlockState: {
+									Name: "minecraft:air"
+								}
+								Pos: {
+									Z: 2
+									X: 1
+									Y: 0
+								}
+							}
+							{
+								BlockState: {
+									Name: "minecraft:air"
+								}
+								Pos: {
+									Z: 3
+									X: 1
+									Y: 0
+								}
+							}
+							{
+								BlockState: {
+									Name: "minecraft:air"
+								}
+								Pos: {
+									Z: -3
+									X: 2
+									Y: 0
+								}
+							}
+							{
+								BlockState: {
+									Name: "minecraft:air"
+								}
+								Pos: {
+									Z: -2
+									X: 2
+									Y: 0
+								}
+							}
+							{
+								BlockState: {
+									Name: "minecraft:air"
+								}
+								Pos: {
+									Z: -1
+									X: 2
+									Y: 0
+								}
+							}
+							{
+								BlockState: {
+									Name: "minecraft:air"
+								}
+								Pos: {
+									Z: 0
+									X: 2
+									Y: 0
+								}
+							}
+							{
+								BlockState: {
+									Name: "minecraft:air"
+								}
+								Pos: {
+									Z: 1
+									X: 2
+									Y: 0
+								}
+							}
+							{
+								BlockState: {
+									Name: "minecraft:air"
+								}
+								Pos: {
+									Z: 2
+									X: 2
+									Y: 0
+								}
+							}
+							{
+								BlockState: {
+									Name: "minecraft:air"
+								}
+								Pos: {
+									Z: 3
+									X: 2
+									Y: 0
+								}
+							}
+							{
+								BlockState: {
+									Name: "minecraft:air"
+								}
+								Pos: {
+									Z: -3
+									X: 3
+									Y: 0
+								}
+							}
+							{
+								BlockState: {
+									Name: "minecraft:air"
+								}
+								Pos: {
+									Z: -2
+									X: 3
+									Y: 0
+								}
+							}
+							{
+								BlockState: {
+									Name: "minecraft:air"
+								}
+								Pos: {
+									Z: -1
+									X: 3
+									Y: 0
+								}
+							}
+							{
+								BlockState: {
+									Name: "minecraft:air"
+								}
+								Pos: {
+									Z: 0
+									X: 3
+									Y: 0
+								}
+							}
+							{
+								BlockState: {
+									Name: "minecraft:air"
+								}
+								Pos: {
+									Z: 1
+									X: 3
+									Y: 0
+								}
+							}
+							{
+								BlockState: {
+									Name: "minecraft:air"
+								}
+								Pos: {
+									Z: 2
+									X: 3
+									Y: 0
+								}
+							}
+							{
+								BlockState: {
+									Name: "minecraft:air"
+								}
+								Pos: {
+									Z: 3
+									X: 3
+									Y: 0
+								}
+							}
+							{
+								BlockState: {
+									Name: "minecraft:air"
+								}
+								Pos: {
+									Z: -3
+									X: 4
+									Y: 0
+								}
+							}
+							{
+								BlockState: {
+									Name: "minecraft:air"
+								}
+								Pos: {
+									Z: -2
+									X: 4
+									Y: 0
+								}
+							}
+							{
+								BlockState: {
+									Name: "minecraft:air"
+								}
+								Pos: {
+									Z: 0
+									X: 4
+									Y: 0
+								}
+							}
+							{
+								BlockState: {
+									Name: "minecraft:air"
+								}
+								Pos: {
+									Z: 2
+									X: 4
+									Y: 0
+								}
+							}
+							{
+								BlockState: {
+									Name: "minecraft:air"
+								}
+								Pos: {
+									Z: 3
+									X: 4
+									Y: 0
+								}
+							}
+							{
+								BlockState: {
+									Name: "minecraft:air"
+								}
+								Pos: {
+									Z: -3
+									X: 5
+									Y: 0
+								}
+							}
+							{
+								BlockState: {
+									Name: "minecraft:air"
+								}
+								Pos: {
+									Z: -2
+									X: 5
+									Y: 0
+								}
+							}
+							{
+								BlockState: {
+									Name: "minecraft:air"
+								}
+								Pos: {
+									Z: -1
+									X: 5
+									Y: 0
+								}
+							}
+							{
+								BlockState: {
+									Name: "minecraft:air"
+								}
+								Pos: {
+									Z: 0
+									X: 5
+									Y: 0
+								}
+							}
+							{
+								BlockState: {
+									Name: "minecraft:air"
+								}
+								Pos: {
+									Z: 1
+									X: 5
+									Y: 0
+								}
+							}
+							{
+								BlockState: {
+									Name: "minecraft:air"
+								}
+								Pos: {
+									Z: 2
+									X: 5
+									Y: 0
+								}
+							}
+							{
+								BlockState: {
+									Name: "minecraft:air"
+								}
+								Pos: {
+									Z: 3
+									X: 5
+									Y: 0
+								}
+							}
+							{
+								BlockState: {
+									Name: "minecraft:air"
+								}
+								Pos: {
+									Z: -2
+									X: -5
+									Y: 1
+								}
+							}
+							{
+								BlockState: {
+									Name: "minecraft:air"
+								}
+								Pos: {
+									Z: -1
+									X: -5
+									Y: 1
+								}
+							}
+							{
+								BlockState: {
+									Name: "minecraft:air"
+								}
+								Pos: {
+									Z: 0
+									X: -5
+									Y: 1
+								}
+							}
+							{
+								BlockState: {
+									Name: "minecraft:air"
+								}
+								Pos: {
+									Z: 1
+									X: -5
+									Y: 1
+								}
+							}
+							{
+								BlockState: {
+									Name: "minecraft:air"
+								}
+								Pos: {
+									Z: 2
+									X: -5
+									Y: 1
+								}
+							}
+							{
+								BlockState: {
+									Name: "minecraft:air"
+								}
+								Pos: {
+									Z: -2
+									X: -4
+									Y: 1
+								}
+							}
+							{
+								BlockState: {
+									Name: "minecraft:air"
+								}
+								Pos: {
+									Z: 0
+									X: -4
+									Y: 1
+								}
+							}
+							{
+								BlockState: {
+									Name: "minecraft:air"
+								}
+								Pos: {
+									Z: 2
+									X: -4
+									Y: 1
+								}
+							}
+							{
+								BlockState: {
+									Name: "minecraft:air"
+								}
+								Pos: {
+									Z: -2
+									X: -3
+									Y: 1
+								}
+							}
+							{
+								BlockState: {
+									Name: "minecraft:air"
+								}
+								Pos: {
+									Z: -1
+									X: -3
+									Y: 1
+								}
+							}
+							{
+								BlockState: {
+									Name: "minecraft:air"
+								}
+								Pos: {
+									Z: 0
+									X: -3
+									Y: 1
+								}
+							}
+							{
+								BlockState: {
+									Name: "minecraft:air"
+								}
+								Pos: {
+									Z: 1
+									X: -3
+									Y: 1
+								}
+							}
+							{
+								BlockState: {
+									Name: "minecraft:air"
+								}
+								Pos: {
+									Z: 2
+									X: -3
+									Y: 1
+								}
+							}
+							{
+								BlockState: {
+									Name: "minecraft:air"
+								}
+								Pos: {
+									Z: -2
+									X: -2
+									Y: 1
+								}
+							}
+							{
+								BlockState: {
+									Name: "minecraft:air"
+								}
+								Pos: {
+									Z: -1
+									X: -2
+									Y: 1
+								}
+							}
+							{
+								BlockState: {
+									Name: "minecraft:air"
+								}
+								Pos: {
+									Z: 0
+									X: -2
+									Y: 1
+								}
+							}
+							{
+								BlockState: {
+									Name: "minecraft:air"
+								}
+								Pos: {
+									Z: 1
+									X: -2
+									Y: 1
+								}
+							}
+							{
+								BlockState: {
+									Name: "minecraft:air"
+								}
+								Pos: {
+									Z: 2
+									X: -2
+									Y: 1
+								}
+							}
+							{
+								BlockState: {
+									Name: "minecraft:air"
+								}
+								Pos: {
+									Z: -2
+									X: -1
+									Y: 1
+								}
+							}
+							{
+								BlockState: {
+									Name: "minecraft:air"
+								}
+								Pos: {
+									Z: -1
+									X: -1
+									Y: 1
+								}
+							}
+							{
+								BlockState: {
+									Name: "minecraft:air"
+								}
+								Pos: {
+									Z: 0
+									X: -1
+									Y: 1
+								}
+							}
+							{
+								BlockState: {
+									Name: "minecraft:air"
+								}
+								Pos: {
+									Z: 1
+									X: -1
+									Y: 1
+								}
+							}
+							{
+								BlockState: {
+									Name: "minecraft:air"
+								}
+								Pos: {
+									Z: 2
+									X: -1
+									Y: 1
+								}
+							}
+							{
+								BlockState: {
+									Name: "minecraft:air"
+								}
+								Pos: {
+									Z: -2
+									X: 0
+									Y: 1
+								}
+							}
+							{
+								BlockState: {
+									Name: "minecraft:air"
+								}
+								Pos: {
+									Z: -1
+									X: 0
+									Y: 1
+								}
+							}
+							{
+								BlockState: {
+									Name: "minecraft:air"
+								}
+								Pos: {
+									Z: 0
+									X: 0
+									Y: 1
+								}
+							}
+							{
+								BlockState: {
+									Name: "minecraft:air"
+								}
+								Pos: {
+									Z: 1
+									X: 0
+									Y: 1
+								}
+							}
+							{
+								BlockState: {
+									Name: "minecraft:air"
+								}
+								Pos: {
+									Z: 2
+									X: 0
+									Y: 1
+								}
+							}
+							{
+								BlockState: {
+									Name: "minecraft:air"
+								}
+								Pos: {
+									Z: -2
+									X: 1
+									Y: 1
+								}
+							}
+							{
+								BlockState: {
+									Name: "minecraft:air"
+								}
+								Pos: {
+									Z: -1
+									X: 1
+									Y: 1
+								}
+							}
+							{
+								BlockState: {
+									Name: "minecraft:air"
+								}
+								Pos: {
+									Z: 0
+									X: 1
+									Y: 1
+								}
+							}
+							{
+								BlockState: {
+									Name: "minecraft:air"
+								}
+								Pos: {
+									Z: 1
+									X: 1
+									Y: 1
+								}
+							}
+							{
+								BlockState: {
+									Name: "minecraft:air"
+								}
+								Pos: {
+									Z: 2
+									X: 1
+									Y: 1
+								}
+							}
+							{
+								BlockState: {
+									Name: "minecraft:air"
+								}
+								Pos: {
+									Z: -2
+									X: 2
+									Y: 1
+								}
+							}
+							{
+								BlockState: {
+									Name: "minecraft:air"
+								}
+								Pos: {
+									Z: -1
+									X: 2
+									Y: 1
+								}
+							}
+							{
+								BlockState: {
+									Name: "minecraft:air"
+								}
+								Pos: {
+									Z: 0
+									X: 2
+									Y: 1
+								}
+							}
+							{
+								BlockState: {
+									Name: "minecraft:air"
+								}
+								Pos: {
+									Z: 1
+									X: 2
+									Y: 1
+								}
+							}
+							{
+								BlockState: {
+									Name: "minecraft:air"
+								}
+								Pos: {
+									Z: 2
+									X: 2
+									Y: 1
+								}
+							}
+							{
+								BlockState: {
+									Name: "minecraft:air"
+								}
+								Pos: {
+									Z: -2
+									X: 3
+									Y: 1
+								}
+							}
+							{
+								BlockState: {
+									Name: "minecraft:air"
+								}
+								Pos: {
+									Z: -1
+									X: 3
+									Y: 1
+								}
+							}
+							{
+								BlockState: {
+									Name: "minecraft:air"
+								}
+								Pos: {
+									Z: 0
+									X: 3
+									Y: 1
+								}
+							}
+							{
+								BlockState: {
+									Name: "minecraft:air"
+								}
+								Pos: {
+									Z: 1
+									X: 3
+									Y: 1
+								}
+							}
+							{
+								BlockState: {
+									Name: "minecraft:air"
+								}
+								Pos: {
+									Z: 2
+									X: 3
+									Y: 1
+								}
+							}
+							{
+								BlockState: {
+									Name: "minecraft:air"
+								}
+								Pos: {
+									Z: -2
+									X: 4
+									Y: 1
+								}
+							}
+							{
+								BlockState: {
+									Name: "minecraft:air"
+								}
+								Pos: {
+									Z: 0
+									X: 4
+									Y: 1
+								}
+							}
+							{
+								BlockState: {
+									Name: "minecraft:air"
+								}
+								Pos: {
+									Z: 2
+									X: 4
+									Y: 1
+								}
+							}
+							{
+								BlockState: {
+									Name: "minecraft:air"
+								}
+								Pos: {
+									Z: -2
+									X: 5
+									Y: 1
+								}
+							}
+							{
+								BlockState: {
+									Name: "minecraft:air"
+								}
+								Pos: {
+									Z: -1
+									X: 5
+									Y: 1
+								}
+							}
+							{
+								BlockState: {
+									Name: "minecraft:air"
+								}
+								Pos: {
+									Z: 0
+									X: 5
+									Y: 1
+								}
+							}
+							{
+								BlockState: {
+									Name: "minecraft:air"
+								}
+								Pos: {
+									Z: 1
+									X: 5
+									Y: 1
+								}
+							}
+							{
+								BlockState: {
+									Name: "minecraft:air"
+								}
+								Pos: {
+									Z: 2
+									X: 5
+									Y: 1
+								}
+							}
+							{
+								BlockState: {
+									Name: "minecraft:air"
+								}
+								Pos: {
+									Z: -1
+									X: -5
+									Y: 2
+								}
+							}
+							{
+								BlockState: {
+									Name: "minecraft:air"
+								}
+								Pos: {
+									Z: 0
+									X: -5
+									Y: 2
+								}
+							}
+							{
+								BlockState: {
+									Name: "minecraft:air"
+								}
+								Pos: {
+									Z: 1
+									X: -5
+									Y: 2
+								}
+							}
+							{
+								BlockState: {
+									Name: "minecraft:air"
+								}
+								Pos: {
+									Z: 0
+									X: -4
+									Y: 2
+								}
+							}
+							{
+								BlockState: {
+									Name: "minecraft:air"
+								}
+								Pos: {
+									Z: -1
+									X: -3
+									Y: 2
+								}
+							}
+							{
+								BlockState: {
+									Name: "minecraft:air"
+								}
+								Pos: {
+									Z: 0
+									X: -3
+									Y: 2
+								}
+							}
+							{
+								BlockState: {
+									Name: "minecraft:air"
+								}
+								Pos: {
+									Z: 1
+									X: -3
+									Y: 2
+								}
+							}
+							{
+								BlockState: {
+									Name: "minecraft:air"
+								}
+								Pos: {
+									Z: -1
+									X: -2
+									Y: 2
+								}
+							}
+							{
+								BlockState: {
+									Name: "minecraft:air"
+								}
+								Pos: {
+									Z: 0
+									X: -2
+									Y: 2
+								}
+							}
+							{
+								BlockState: {
+									Name: "minecraft:air"
+								}
+								Pos: {
+									Z: 1
+									X: -2
+									Y: 2
+								}
+							}
+							{
+								BlockState: {
+									Name: "minecraft:air"
+								}
+								Pos: {
+									Z: -1
+									X: -1
+									Y: 2
+								}
+							}
+							{
+								BlockState: {
+									Name: "minecraft:air"
+								}
+								Pos: {
+									Z: 0
+									X: -1
+									Y: 2
+								}
+							}
+							{
+								BlockState: {
+									Name: "minecraft:air"
+								}
+								Pos: {
+									Z: 1
+									X: -1
+									Y: 2
+								}
+							}
+							{
+								BlockState: {
+									Name: "minecraft:air"
+								}
+								Pos: {
+									Z: -1
+									X: 0
+									Y: 2
+								}
+							}
+							{
+								BlockState: {
+									Name: "minecraft:air"
+								}
+								Pos: {
+									Z: 0
+									X: 0
+									Y: 2
+								}
+							}
+							{
+								BlockState: {
+									Name: "minecraft:air"
+								}
+								Pos: {
+									Z: 1
+									X: 0
+									Y: 2
+								}
+							}
+							{
+								BlockState: {
+									Name: "minecraft:air"
+								}
+								Pos: {
+									Z: -1
+									X: 1
+									Y: 2
+								}
+							}
+							{
+								BlockState: {
+									Name: "minecraft:air"
+								}
+								Pos: {
+									Z: 0
+									X: 1
+									Y: 2
+								}
+							}
+							{
+								BlockState: {
+									Name: "minecraft:air"
+								}
+								Pos: {
+									Z: 1
+									X: 1
+									Y: 2
+								}
+							}
+							{
+								BlockState: {
+									Name: "minecraft:air"
+								}
+								Pos: {
+									Z: -1
+									X: 2
+									Y: 2
+								}
+							}
+							{
+								BlockState: {
+									Name: "minecraft:air"
+								}
+								Pos: {
+									Z: 0
+									X: 2
+									Y: 2
+								}
+							}
+							{
+								BlockState: {
+									Name: "minecraft:air"
+								}
+								Pos: {
+									Z: 1
+									X: 2
+									Y: 2
+								}
+							}
+							{
+								BlockState: {
+									Name: "minecraft:air"
+								}
+								Pos: {
+									Z: -1
+									X: 3
+									Y: 2
+								}
+							}
+							{
+								BlockState: {
+									Name: "minecraft:air"
+								}
+								Pos: {
+									Z: 0
+									X: 3
+									Y: 2
+								}
+							}
+							{
+								BlockState: {
+									Name: "minecraft:air"
+								}
+								Pos: {
+									Z: 1
+									X: 3
+									Y: 2
+								}
+							}
+							{
+								BlockState: {
+									Name: "minecraft:air"
+								}
+								Pos: {
+									Z: 0
+									X: 4
+									Y: 2
+								}
+							}
+							{
+								BlockState: {
+									Name: "minecraft:air"
+								}
+								Pos: {
+									Z: -1
+									X: 5
+									Y: 2
+								}
+							}
+							{
+								BlockState: {
+									Name: "minecraft:air"
+								}
+								Pos: {
+									Z: 0
+									X: 5
+									Y: 2
+								}
+							}
+							{
+								BlockState: {
+									Name: "minecraft:air"
+								}
+								Pos: {
+									Z: 1
+									X: 5
+									Y: 2
+								}
+							}
+							{
+								BlockState: {
+									Properties: {
+										facing: "south"
+									}
+									Name: "campanion:white_tent_side"
+								}
+								BlockEntityData: {
+									id: "campanion:tent_part"
+									LinkedPos: {
+										Z: 0
+										X: 0
+										Y: 0
+									}
+									Size: {
+										Z: 0
+										X: 0
+										Y: 0
+									}
+								}
+								Pos: {
+									Z: -4
+									X: -4
+									Y: 0
+								}
+							}
+							{
+								BlockState: {
+									Properties: {
+										facing: "west"
+									}
+									Name: "campanion:tent_pole"
+								}
+								BlockEntityData: {
+									id: "campanion:tent_part"
+									LinkedPos: {
+										Z: 0
+										X: 0
+										Y: 0
+									}
+									Size: {
+										Z: 0
+										X: 0
+										Y: 0
+									}
+								}
+								Pos: {
+									Z: -1
+									X: -4
+									Y: 0
+								}
+							}
+							{
+								BlockState: {
+									Properties: {
+										facing: "west"
+									}
+									Name: "campanion:tent_pole"
+								}
+								BlockEntityData: {
+									id: "campanion:tent_part"
+									LinkedPos: {
+										Z: 0
+										X: 0
+										Y: 0
+									}
+									Size: {
+										Z: 0
+										X: 0
+										Y: 0
+									}
+								}
+								Pos: {
+									Z: 1
+									X: -4
+									Y: 0
+								}
+							}
+							{
+								BlockState: {
+									Properties: {
+										facing: "north"
+									}
+									Name: "campanion:white_tent_side"
+								}
+								BlockEntityData: {
+									id: "campanion:tent_part"
+									LinkedPos: {
+										Z: 0
+										X: 0
+										Y: 0
+									}
+									Size: {
+										Z: 0
+										X: 0
+										Y: 0
+									}
+								}
+								Pos: {
+									Z: 4
+									X: -4
+									Y: 0
+								}
+							}
+							{
+								BlockState: {
+									Properties: {
+										facing: "south"
+									}
+									Name: "campanion:white_tent_side"
+								}
+								BlockEntityData: {
+									id: "campanion:tent_part"
+									LinkedPos: {
+										Z: 0
+										X: 0
+										Y: 0
+									}
+									Size: {
+										Z: 0
+										X: 0
+										Y: 0
+									}
+								}
+								Pos: {
+									Z: -4
+									X: -3
+									Y: 0
+								}
+							}
+							{
+								BlockState: {
+									Properties: {
+										facing: "north"
+									}
+									Name: "campanion:white_tent_side"
+								}
+								BlockEntityData: {
+									id: "campanion:tent_part"
+									LinkedPos: {
+										Z: 0
+										X: 0
+										Y: 0
+									}
+									Size: {
+										Z: 0
+										X: 0
+										Y: 0
+									}
+								}
+								Pos: {
+									Z: 4
+									X: -3
+									Y: 0
+								}
+							}
+							{
+								BlockState: {
+									Properties: {
+										facing: "south"
+									}
+									Name: "campanion:white_tent_side"
+								}
+								BlockEntityData: {
+									id: "campanion:tent_part"
+									LinkedPos: {
+										Z: 0
+										X: 0
+										Y: 0
+									}
+									Size: {
+										Z: 0
+										X: 0
+										Y: 0
+									}
+								}
+								Pos: {
+									Z: -4
+									X: -2
+									Y: 0
+								}
+							}
+							{
+								BlockState: {
+									Properties: {
+										facing: "north"
+									}
+									Name: "campanion:white_tent_side"
+								}
+								BlockEntityData: {
+									id: "campanion:tent_part"
+									LinkedPos: {
+										Z: 0
+										X: 0
+										Y: 0
+									}
+									Size: {
+										Z: 0
+										X: 0
+										Y: 0
+									}
+								}
+								Pos: {
+									Z: 4
+									X: -2
+									Y: 0
+								}
+							}
+							{
+								BlockState: {
+									Properties: {
+										facing: "south"
+									}
+									Name: "campanion:white_tent_side"
+								}
+								BlockEntityData: {
+									id: "campanion:tent_part"
+									LinkedPos: {
+										Z: 0
+										X: 0
+										Y: 0
+									}
+									Size: {
+										Z: 0
+										X: 0
+										Y: 0
+									}
+								}
+								Pos: {
+									Z: -4
+									X: -1
+									Y: 0
+								}
+							}
+							{
+								BlockState: {
+									Properties: {
+										facing: "north"
+									}
+									Name: "campanion:white_tent_side"
+								}
+								BlockEntityData: {
+									id: "campanion:tent_part"
+									LinkedPos: {
+										Z: 0
+										X: 0
+										Y: 0
+									}
+									Size: {
+										Z: 0
+										X: 0
+										Y: 0
+									}
+								}
+								Pos: {
+									Z: 4
+									X: -1
+									Y: 0
+								}
+							}
+							{
+								BlockState: {
+									Properties: {
+										facing: "south"
+									}
+									Name: "campanion:white_tent_side"
+								}
+								BlockEntityData: {
+									id: "campanion:tent_part"
+									LinkedPos: {
+										Z: 0
+										X: 0
+										Y: 0
+									}
+									Size: {
+										Z: 0
+										X: 0
+										Y: 0
+									}
+								}
+								Pos: {
+									Z: -4
+									X: 0
+									Y: 0
+								}
+							}
+							{
+								BlockState: {
+									Properties: {
+										facing: "north"
+									}
+									Name: "campanion:white_tent_side"
+								}
+								BlockEntityData: {
+									id: "campanion:tent_part"
+									LinkedPos: {
+										Z: 0
+										X: 0
+										Y: 0
+									}
+									Size: {
+										Z: 0
+										X: 0
+										Y: 0
+									}
+								}
+								Pos: {
+									Z: 4
+									X: 0
+									Y: 0
+								}
+							}
+							{
+								BlockState: {
+									Properties: {
+										facing: "south"
+									}
+									Name: "campanion:white_tent_side"
+								}
+								BlockEntityData: {
+									id: "campanion:tent_part"
+									LinkedPos: {
+										Z: 0
+										X: 0
+										Y: 0
+									}
+									Size: {
+										Z: 0
+										X: 0
+										Y: 0
+									}
+								}
+								Pos: {
+									Z: -4
+									X: 1
+									Y: 0
+								}
+							}
+							{
+								BlockState: {
+									Properties: {
+										facing: "north"
+									}
+									Name: "campanion:white_tent_side"
+								}
+								BlockEntityData: {
+									id: "campanion:tent_part"
+									LinkedPos: {
+										Z: 0
+										X: 0
+										Y: 0
+									}
+									Size: {
+										Z: 0
+										X: 0
+										Y: 0
+									}
+								}
+								Pos: {
+									Z: 4
+									X: 1
+									Y: 0
+								}
+							}
+							{
+								BlockState: {
+									Properties: {
+										facing: "south"
+									}
+									Name: "campanion:white_tent_side"
+								}
+								BlockEntityData: {
+									id: "campanion:tent_part"
+									LinkedPos: {
+										Z: 0
+										X: 0
+										Y: 0
+									}
+									Size: {
+										Z: 0
+										X: 0
+										Y: 0
+									}
+								}
+								Pos: {
+									Z: -4
+									X: 2
+									Y: 0
+								}
+							}
+							{
+								BlockState: {
+									Properties: {
+										facing: "north"
+									}
+									Name: "campanion:white_tent_side"
+								}
+								BlockEntityData: {
+									id: "campanion:tent_part"
+									LinkedPos: {
+										Z: 0
+										X: 0
+										Y: 0
+									}
+									Size: {
+										Z: 0
+										X: 0
+										Y: 0
+									}
+								}
+								Pos: {
+									Z: 4
+									X: 2
+									Y: 0
+								}
+							}
+							{
+								BlockState: {
+									Properties: {
+										facing: "south"
+									}
+									Name: "campanion:white_tent_side"
+								}
+								BlockEntityData: {
+									id: "campanion:tent_part"
+									LinkedPos: {
+										Z: 0
+										X: 0
+										Y: 0
+									}
+									Size: {
+										Z: 0
+										X: 0
+										Y: 0
+									}
+								}
+								Pos: {
+									Z: -4
+									X: 3
+									Y: 0
+								}
+							}
+							{
+								BlockState: {
+									Properties: {
+										facing: "north"
+									}
+									Name: "campanion:white_tent_side"
+								}
+								BlockEntityData: {
+									id: "campanion:tent_part"
+									LinkedPos: {
+										Z: 0
+										X: 0
+										Y: 0
+									}
+									Size: {
+										Z: 0
+										X: 0
+										Y: 0
+									}
+								}
+								Pos: {
+									Z: 4
+									X: 3
+									Y: 0
+								}
+							}
+							{
+								BlockState: {
+									Properties: {
+										facing: "south"
+									}
+									Name: "campanion:white_tent_side"
+								}
+								BlockEntityData: {
+									id: "campanion:tent_part"
+									LinkedPos: {
+										Z: 0
+										X: 0
+										Y: 0
+									}
+									Size: {
+										Z: 0
+										X: 0
+										Y: 0
+									}
+								}
+								Pos: {
+									Z: -4
+									X: 4
+									Y: 0
+								}
+							}
+							{
+								BlockState: {
+									Properties: {
+										facing: "east"
+									}
+									Name: "campanion:tent_pole"
+								}
+								BlockEntityData: {
+									id: "campanion:tent_part"
+									LinkedPos: {
+										Z: 0
+										X: 0
+										Y: 0
+									}
+									Size: {
+										Z: 0
+										X: 0
+										Y: 0
+									}
+								}
+								Pos: {
+									Z: -1
+									X: 4
+									Y: 0
+								}
+							}
+							{
+								BlockState: {
+									Properties: {
+										facing: "east"
+									}
+									Name: "campanion:tent_pole"
+								}
+								BlockEntityData: {
+									id: "campanion:tent_part"
+									LinkedPos: {
+										Z: 0
+										X: 0
+										Y: 0
+									}
+									Size: {
+										Z: 0
+										X: 0
+										Y: 0
+									}
+								}
+								Pos: {
+									Z: 1
+									X: 4
+									Y: 0
+								}
+							}
+							{
+								BlockState: {
+									Properties: {
+										facing: "north"
+									}
+									Name: "campanion:white_tent_side"
+								}
+								BlockEntityData: {
+									id: "campanion:tent_part"
+									LinkedPos: {
+										Z: 0
+										X: 0
+										Y: 0
+									}
+									Size: {
+										Z: 0
+										X: 0
+										Y: 0
+									}
+								}
+								Pos: {
+									Z: 4
+									X: 4
+									Y: 0
+								}
+							}
+							{
+								BlockState: {
+									Properties: {
+										facing: "south"
+									}
+									Name: "campanion:white_tent_side"
+								}
+								BlockEntityData: {
+									id: "campanion:tent_part"
+									LinkedPos: {
+										Z: 0
+										X: 0
+										Y: 0
+									}
+									Size: {
+										Z: 0
+										X: 0
+										Y: 0
+									}
+								}
+								Pos: {
+									Z: -3
+									X: -4
+									Y: 1
+								}
+							}
+							{
+								BlockState: {
+									Properties: {
+										facing: "west"
+									}
+									Name: "campanion:tent_pole"
+								}
+								BlockEntityData: {
+									id: "campanion:tent_part"
+									LinkedPos: {
+										Z: 0
+										X: 0
+										Y: 0
+									}
+									Size: {
+										Z: 0
+										X: 0
+										Y: 0
+									}
+								}
+								Pos: {
+									Z: -1
+									X: -4
+									Y: 1
+								}
+							}
+							{
+								BlockState: {
+									Properties: {
+										facing: "west"
+									}
+									Name: "campanion:tent_pole"
+								}
+								BlockEntityData: {
+									id: "campanion:tent_part"
+									LinkedPos: {
+										Z: 0
+										X: 0
+										Y: 0
+									}
+									Size: {
+										Z: 0
+										X: 0
+										Y: 0
+									}
+								}
+								Pos: {
+									Z: 1
+									X: -4
+									Y: 1
+								}
+							}
+							{
+								BlockState: {
+									Properties: {
+										facing: "north"
+									}
+									Name: "campanion:white_tent_side"
+								}
+								BlockEntityData: {
+									id: "campanion:tent_part"
+									LinkedPos: {
+										Z: 0
+										X: 0
+										Y: 0
+									}
+									Size: {
+										Z: 0
+										X: 0
+										Y: 0
+									}
+								}
+								Pos: {
+									Z: 3
+									X: -4
+									Y: 1
+								}
+							}
+							{
+								BlockState: {
+									Properties: {
+										facing: "south"
+									}
+									Name: "campanion:white_tent_side"
+								}
+								BlockEntityData: {
+									id: "campanion:tent_part"
+									LinkedPos: {
+										Z: 0
+										X: 0
+										Y: 0
+									}
+									Size: {
+										Z: 0
+										X: 0
+										Y: 0
+									}
+								}
+								Pos: {
+									Z: -3
+									X: -3
+									Y: 1
+								}
+							}
+							{
+								BlockState: {
+									Properties: {
+										facing: "north"
+									}
+									Name: "campanion:white_tent_side"
+								}
+								BlockEntityData: {
+									id: "campanion:tent_part"
+									LinkedPos: {
+										Z: 0
+										X: 0
+										Y: 0
+									}
+									Size: {
+										Z: 0
+										X: 0
+										Y: 0
+									}
+								}
+								Pos: {
+									Z: 3
+									X: -3
+									Y: 1
+								}
+							}
+							{
+								BlockState: {
+									Properties: {
+										facing: "south"
+									}
+									Name: "campanion:white_tent_side"
+								}
+								BlockEntityData: {
+									id: "campanion:tent_part"
+									LinkedPos: {
+										Z: 0
+										X: 0
+										Y: 0
+									}
+									Size: {
+										Z: 0
+										X: 0
+										Y: 0
+									}
+								}
+								Pos: {
+									Z: -3
+									X: -2
+									Y: 1
+								}
+							}
+							{
+								BlockState: {
+									Properties: {
+										facing: "north"
+									}
+									Name: "campanion:white_tent_side"
+								}
+								BlockEntityData: {
+									id: "campanion:tent_part"
+									LinkedPos: {
+										Z: 0
+										X: 0
+										Y: 0
+									}
+									Size: {
+										Z: 0
+										X: 0
+										Y: 0
+									}
+								}
+								Pos: {
+									Z: 3
+									X: -2
+									Y: 1
+								}
+							}
+							{
+								BlockState: {
+									Properties: {
+										facing: "south"
+									}
+									Name: "campanion:white_tent_side"
+								}
+								BlockEntityData: {
+									id: "campanion:tent_part"
+									LinkedPos: {
+										Z: 0
+										X: 0
+										Y: 0
+									}
+									Size: {
+										Z: 0
+										X: 0
+										Y: 0
+									}
+								}
+								Pos: {
+									Z: -3
+									X: -1
+									Y: 1
+								}
+							}
+							{
+								BlockState: {
+									Properties: {
+										facing: "north"
+									}
+									Name: "campanion:white_tent_side"
+								}
+								BlockEntityData: {
+									id: "campanion:tent_part"
+									LinkedPos: {
+										Z: 0
+										X: 0
+										Y: 0
+									}
+									Size: {
+										Z: 0
+										X: 0
+										Y: 0
+									}
+								}
+								Pos: {
+									Z: 3
+									X: -1
+									Y: 1
+								}
+							}
+							{
+								BlockState: {
+									Properties: {
+										facing: "south"
+									}
+									Name: "campanion:white_tent_side"
+								}
+								BlockEntityData: {
+									id: "campanion:tent_part"
+									LinkedPos: {
+										Z: 0
+										X: 0
+										Y: 0
+									}
+									Size: {
+										Z: 0
+										X: 0
+										Y: 0
+									}
+								}
+								Pos: {
+									Z: -3
+									X: 0
+									Y: 1
+								}
+							}
+							{
+								BlockState: {
+									Properties: {
+										facing: "north"
+									}
+									Name: "campanion:white_tent_side"
+								}
+								BlockEntityData: {
+									id: "campanion:tent_part"
+									LinkedPos: {
+										Z: 0
+										X: 0
+										Y: 0
+									}
+									Size: {
+										Z: 0
+										X: 0
+										Y: 0
+									}
+								}
+								Pos: {
+									Z: 3
+									X: 0
+									Y: 1
+								}
+							}
+							{
+								BlockState: {
+									Properties: {
+										facing: "south"
+									}
+									Name: "campanion:white_tent_side"
+								}
+								BlockEntityData: {
+									id: "campanion:tent_part"
+									LinkedPos: {
+										Z: 0
+										X: 0
+										Y: 0
+									}
+									Size: {
+										Z: 0
+										X: 0
+										Y: 0
+									}
+								}
+								Pos: {
+									Z: -3
+									X: 1
+									Y: 1
+								}
+							}
+							{
+								BlockState: {
+									Properties: {
+										facing: "north"
+									}
+									Name: "campanion:white_tent_side"
+								}
+								BlockEntityData: {
+									id: "campanion:tent_part"
+									LinkedPos: {
+										Z: 0
+										X: 0
+										Y: 0
+									}
+									Size: {
+										Z: 0
+										X: 0
+										Y: 0
+									}
+								}
+								Pos: {
+									Z: 3
+									X: 1
+									Y: 1
+								}
+							}
+							{
+								BlockState: {
+									Properties: {
+										facing: "south"
+									}
+									Name: "campanion:white_tent_side"
+								}
+								BlockEntityData: {
+									id: "campanion:tent_part"
+									LinkedPos: {
+										Z: 0
+										X: 0
+										Y: 0
+									}
+									Size: {
+										Z: 0
+										X: 0
+										Y: 0
+									}
+								}
+								Pos: {
+									Z: -3
+									X: 2
+									Y: 1
+								}
+							}
+							{
+								BlockState: {
+									Properties: {
+										facing: "north"
+									}
+									Name: "campanion:white_tent_side"
+								}
+								BlockEntityData: {
+									id: "campanion:tent_part"
+									LinkedPos: {
+										Z: 0
+										X: 0
+										Y: 0
+									}
+									Size: {
+										Z: 0
+										X: 0
+										Y: 0
+									}
+								}
+								Pos: {
+									Z: 3
+									X: 2
+									Y: 1
+								}
+							}
+							{
+								BlockState: {
+									Properties: {
+										facing: "south"
+									}
+									Name: "campanion:white_tent_side"
+								}
+								BlockEntityData: {
+									id: "campanion:tent_part"
+									LinkedPos: {
+										Z: 0
+										X: 0
+										Y: 0
+									}
+									Size: {
+										Z: 0
+										X: 0
+										Y: 0
+									}
+								}
+								Pos: {
+									Z: -3
+									X: 3
+									Y: 1
+								}
+							}
+							{
+								BlockState: {
+									Properties: {
+										facing: "north"
+									}
+									Name: "campanion:white_tent_side"
+								}
+								BlockEntityData: {
+									id: "campanion:tent_part"
+									LinkedPos: {
+										Z: 0
+										X: 0
+										Y: 0
+									}
+									Size: {
+										Z: 0
+										X: 0
+										Y: 0
+									}
+								}
+								Pos: {
+									Z: 3
+									X: 3
+									Y: 1
+								}
+							}
+							{
+								BlockState: {
+									Properties: {
+										facing: "south"
+									}
+									Name: "campanion:white_tent_side"
+								}
+								BlockEntityData: {
+									id: "campanion:tent_part"
+									LinkedPos: {
+										Z: 0
+										X: 0
+										Y: 0
+									}
+									Size: {
+										Z: 0
+										X: 0
+										Y: 0
+									}
+								}
+								Pos: {
+									Z: -3
+									X: 4
+									Y: 1
+								}
+							}
+							{
+								BlockState: {
+									Properties: {
+										facing: "east"
+									}
+									Name: "campanion:tent_pole"
+								}
+								BlockEntityData: {
+									id: "campanion:tent_part"
+									LinkedPos: {
+										Z: 0
+										X: 0
+										Y: 0
+									}
+									Size: {
+										Z: 0
+										X: 0
+										Y: 0
+									}
+								}
+								Pos: {
+									Z: -1
+									X: 4
+									Y: 1
+								}
+							}
+							{
+								BlockState: {
+									Properties: {
+										facing: "east"
+									}
+									Name: "campanion:tent_pole"
+								}
+								BlockEntityData: {
+									id: "campanion:tent_part"
+									LinkedPos: {
+										Z: 0
+										X: 0
+										Y: 0
+									}
+									Size: {
+										Z: 0
+										X: 0
+										Y: 0
+									}
+								}
+								Pos: {
+									Z: 1
+									X: 4
+									Y: 1
+								}
+							}
+							{
+								BlockState: {
+									Properties: {
+										facing: "north"
+									}
+									Name: "campanion:white_tent_side"
+								}
+								BlockEntityData: {
+									id: "campanion:tent_part"
+									LinkedPos: {
+										Z: 0
+										X: 0
+										Y: 0
+									}
+									Size: {
+										Z: 0
+										X: 0
+										Y: 0
+									}
+								}
+								Pos: {
+									Z: 3
+									X: 4
+									Y: 1
+								}
+							}
+							{
+								BlockState: {
+									Properties: {
+										facing: "south"
+									}
+									Name: "campanion:white_tent_side"
+								}
+								BlockEntityData: {
+									id: "campanion:tent_part"
+									LinkedPos: {
+										Z: 0
+										X: 0
+										Y: 0
+									}
+									Size: {
+										Z: 0
+										X: 0
+										Y: 0
+									}
+								}
+								Pos: {
+									Z: -2
+									X: -4
+									Y: 2
+								}
+							}
+							{
+								BlockState: {
+									Properties: {
+										facing: "west"
+									}
+									Name: "campanion:tent_pole"
+								}
+								BlockEntityData: {
+									id: "campanion:tent_part"
+									LinkedPos: {
+										Z: 0
+										X: 0
+										Y: 0
+									}
+									Size: {
+										Z: 0
+										X: 0
+										Y: 0
+									}
+								}
+								Pos: {
+									Z: -1
+									X: -4
+									Y: 2
+								}
+							}
+							{
+								BlockState: {
+									Properties: {
+										facing: "west"
+									}
+									Name: "campanion:tent_pole"
+								}
+								BlockEntityData: {
+									id: "campanion:tent_part"
+									LinkedPos: {
+										Z: 0
+										X: 0
+										Y: 0
+									}
+									Size: {
+										Z: 0
+										X: 0
+										Y: 0
+									}
+								}
+								Pos: {
+									Z: 1
+									X: -4
+									Y: 2
+								}
+							}
+							{
+								BlockState: {
+									Properties: {
+										facing: "north"
+									}
+									Name: "campanion:white_tent_side"
+								}
+								BlockEntityData: {
+									id: "campanion:tent_part"
+									LinkedPos: {
+										Z: 0
+										X: 0
+										Y: 0
+									}
+									Size: {
+										Z: 0
+										X: 0
+										Y: 0
+									}
+								}
+								Pos: {
+									Z: 2
+									X: -4
+									Y: 2
+								}
+							}
+							{
+								BlockState: {
+									Properties: {
+										facing: "south"
+									}
+									Name: "campanion:white_tent_side"
+								}
+								BlockEntityData: {
+									id: "campanion:tent_part"
+									LinkedPos: {
+										Z: 0
+										X: 0
+										Y: 0
+									}
+									Size: {
+										Z: 0
+										X: 0
+										Y: 0
+									}
+								}
+								Pos: {
+									Z: -2
+									X: -3
+									Y: 2
+								}
+							}
+							{
+								BlockState: {
+									Properties: {
+										facing: "north"
+									}
+									Name: "campanion:white_tent_side"
+								}
+								BlockEntityData: {
+									id: "campanion:tent_part"
+									LinkedPos: {
+										Z: 0
+										X: 0
+										Y: 0
+									}
+									Size: {
+										Z: 0
+										X: 0
+										Y: 0
+									}
+								}
+								Pos: {
+									Z: 2
+									X: -3
+									Y: 2
+								}
+							}
+							{
+								BlockState: {
+									Properties: {
+										facing: "south"
+									}
+									Name: "campanion:white_tent_side"
+								}
+								BlockEntityData: {
+									id: "campanion:tent_part"
+									LinkedPos: {
+										Z: 0
+										X: 0
+										Y: 0
+									}
+									Size: {
+										Z: 0
+										X: 0
+										Y: 0
+									}
+								}
+								Pos: {
+									Z: -2
+									X: -2
+									Y: 2
+								}
+							}
+							{
+								BlockState: {
+									Properties: {
+										facing: "north"
+									}
+									Name: "campanion:white_tent_side"
+								}
+								BlockEntityData: {
+									id: "campanion:tent_part"
+									LinkedPos: {
+										Z: 0
+										X: 0
+										Y: 0
+									}
+									Size: {
+										Z: 0
+										X: 0
+										Y: 0
+									}
+								}
+								Pos: {
+									Z: 2
+									X: -2
+									Y: 2
+								}
+							}
+							{
+								BlockState: {
+									Properties: {
+										facing: "south"
+									}
+									Name: "campanion:white_tent_side"
+								}
+								BlockEntityData: {
+									id: "campanion:tent_part"
+									LinkedPos: {
+										Z: 0
+										X: 0
+										Y: 0
+									}
+									Size: {
+										Z: 0
+										X: 0
+										Y: 0
+									}
+								}
+								Pos: {
+									Z: -2
+									X: -1
+									Y: 2
+								}
+							}
+							{
+								BlockState: {
+									Properties: {
+										facing: "north"
+									}
+									Name: "campanion:white_tent_side"
+								}
+								BlockEntityData: {
+									id: "campanion:tent_part"
+									LinkedPos: {
+										Z: 0
+										X: 0
+										Y: 0
+									}
+									Size: {
+										Z: 0
+										X: 0
+										Y: 0
+									}
+								}
+								Pos: {
+									Z: 2
+									X: -1
+									Y: 2
+								}
+							}
+							{
+								BlockState: {
+									Properties: {
+										facing: "south"
+									}
+									Name: "campanion:white_tent_side"
+								}
+								BlockEntityData: {
+									id: "campanion:tent_part"
+									LinkedPos: {
+										Z: 0
+										X: 0
+										Y: 0
+									}
+									Size: {
+										Z: 0
+										X: 0
+										Y: 0
+									}
+								}
+								Pos: {
+									Z: -2
+									X: 0
+									Y: 2
+								}
+							}
+							{
+								BlockState: {
+									Properties: {
+										facing: "north"
+									}
+									Name: "campanion:white_tent_side"
+								}
+								BlockEntityData: {
+									id: "campanion:tent_part"
+									LinkedPos: {
+										Z: 0
+										X: 0
+										Y: 0
+									}
+									Size: {
+										Z: 0
+										X: 0
+										Y: 0
+									}
+								}
+								Pos: {
+									Z: 2
+									X: 0
+									Y: 2
+								}
+							}
+							{
+								BlockState: {
+									Properties: {
+										facing: "south"
+									}
+									Name: "campanion:white_tent_side"
+								}
+								BlockEntityData: {
+									id: "campanion:tent_part"
+									LinkedPos: {
+										Z: 0
+										X: 0
+										Y: 0
+									}
+									Size: {
+										Z: 0
+										X: 0
+										Y: 0
+									}
+								}
+								Pos: {
+									Z: -2
+									X: 1
+									Y: 2
+								}
+							}
+							{
+								BlockState: {
+									Properties: {
+										facing: "north"
+									}
+									Name: "campanion:white_tent_side"
+								}
+								BlockEntityData: {
+									id: "campanion:tent_part"
+									LinkedPos: {
+										Z: 0
+										X: 0
+										Y: 0
+									}
+									Size: {
+										Z: 0
+										X: 0
+										Y: 0
+									}
+								}
+								Pos: {
+									Z: 2
+									X: 1
+									Y: 2
+								}
+							}
+							{
+								BlockState: {
+									Properties: {
+										facing: "south"
+									}
+									Name: "campanion:white_tent_side"
+								}
+								BlockEntityData: {
+									id: "campanion:tent_part"
+									LinkedPos: {
+										Z: 0
+										X: 0
+										Y: 0
+									}
+									Size: {
+										Z: 0
+										X: 0
+										Y: 0
+									}
+								}
+								Pos: {
+									Z: -2
+									X: 2
+									Y: 2
+								}
+							}
+							{
+								BlockState: {
+									Properties: {
+										facing: "north"
+									}
+									Name: "campanion:white_tent_side"
+								}
+								BlockEntityData: {
+									id: "campanion:tent_part"
+									LinkedPos: {
+										Z: 0
+										X: 0
+										Y: 0
+									}
+									Size: {
+										Z: 0
+										X: 0
+										Y: 0
+									}
+								}
+								Pos: {
+									Z: 2
+									X: 2
+									Y: 2
+								}
+							}
+							{
+								BlockState: {
+									Properties: {
+										facing: "south"
+									}
+									Name: "campanion:white_tent_side"
+								}
+								BlockEntityData: {
+									id: "campanion:tent_part"
+									LinkedPos: {
+										Z: 0
+										X: 0
+										Y: 0
+									}
+									Size: {
+										Z: 0
+										X: 0
+										Y: 0
+									}
+								}
+								Pos: {
+									Z: -2
+									X: 3
+									Y: 2
+								}
+							}
+							{
+								BlockState: {
+									Properties: {
+										facing: "north"
+									}
+									Name: "campanion:white_tent_side"
+								}
+								BlockEntityData: {
+									id: "campanion:tent_part"
+									LinkedPos: {
+										Z: 0
+										X: 0
+										Y: 0
+									}
+									Size: {
+										Z: 0
+										X: 0
+										Y: 0
+									}
+								}
+								Pos: {
+									Z: 2
+									X: 3
+									Y: 2
+								}
+							}
+							{
+								BlockState: {
+									Properties: {
+										facing: "south"
+									}
+									Name: "campanion:white_tent_side"
+								}
+								BlockEntityData: {
+									id: "campanion:tent_part"
+									LinkedPos: {
+										Z: 0
+										X: 0
+										Y: 0
+									}
+									Size: {
+										Z: 0
+										X: 0
+										Y: 0
+									}
+								}
+								Pos: {
+									Z: -2
+									X: 4
+									Y: 2
+								}
+							}
+							{
+								BlockState: {
+									Properties: {
+										facing: "east"
+									}
+									Name: "campanion:tent_pole"
+								}
+								BlockEntityData: {
+									id: "campanion:tent_part"
+									LinkedPos: {
+										Z: 0
+										X: 0
+										Y: 0
+									}
+									Size: {
+										Z: 0
+										X: 0
+										Y: 0
+									}
+								}
+								Pos: {
+									Z: -1
+									X: 4
+									Y: 2
+								}
+							}
+							{
+								BlockState: {
+									Properties: {
+										facing: "east"
+									}
+									Name: "campanion:tent_pole"
+								}
+								BlockEntityData: {
+									id: "campanion:tent_part"
+									LinkedPos: {
+										Z: 0
+										X: 0
+										Y: 0
+									}
+									Size: {
+										Z: 0
+										X: 0
+										Y: 0
+									}
+								}
+								Pos: {
+									Z: 1
+									X: 4
+									Y: 2
+								}
+							}
+							{
+								BlockState: {
+									Properties: {
+										facing: "north"
+									}
+									Name: "campanion:white_tent_side"
+								}
+								BlockEntityData: {
+									id: "campanion:tent_part"
+									LinkedPos: {
+										Z: 0
+										X: 0
+										Y: 0
+									}
+									Size: {
+										Z: 0
+										X: 0
+										Y: 0
+									}
+								}
+								Pos: {
+									Z: 2
+									X: 4
+									Y: 2
+								}
+							}
+							{
+								BlockState: {
+									Name: "campanion:white_flat_tent_top"
+								}
+								BlockEntityData: {
+									id: "campanion:tent_part"
+									LinkedPos: {
+										Z: 0
+										X: 0
+										Y: 0
+									}
+									Size: {
+										Z: 0
+										X: 0
+										Y: 0
+									}
+								}
+								Pos: {
+									Z: -1
+									X: -4
+									Y: 3
+								}
+							}
+							{
+								BlockState: {
+									Name: "campanion:white_flat_tent_top"
+								}
+								BlockEntityData: {
+									id: "campanion:tent_part"
+									LinkedPos: {
+										Z: 0
+										X: 0
+										Y: 0
+									}
+									Size: {
+										Z: 0
+										X: 0
+										Y: 0
+									}
+								}
+								Pos: {
+									Z: 0
+									X: -4
+									Y: 3
+								}
+							}
+							{
+								BlockState: {
+									Name: "campanion:white_flat_tent_top"
+								}
+								BlockEntityData: {
+									id: "campanion:tent_part"
+									LinkedPos: {
+										Z: 0
+										X: 0
+										Y: 0
+									}
+									Size: {
+										Z: 0
+										X: 0
+										Y: 0
+									}
+								}
+								Pos: {
+									Z: 1
+									X: -4
+									Y: 3
+								}
+							}
+							{
+								BlockState: {
+									Name: "campanion:white_flat_tent_top"
+								}
+								BlockEntityData: {
+									id: "campanion:tent_part"
+									LinkedPos: {
+										Z: 0
+										X: 0
+										Y: 0
+									}
+									Size: {
+										Z: 0
+										X: 0
+										Y: 0
+									}
+								}
+								Pos: {
+									Z: -1
+									X: -3
+									Y: 3
+								}
+							}
+							{
+								BlockState: {
+									Name: "campanion:white_flat_tent_top"
+								}
+								BlockEntityData: {
+									id: "campanion:tent_part"
+									LinkedPos: {
+										Z: 0
+										X: 0
+										Y: 0
+									}
+									Size: {
+										Z: 0
+										X: 0
+										Y: 0
+									}
+								}
+								Pos: {
+									Z: 0
+									X: -3
+									Y: 3
+								}
+							}
+							{
+								BlockState: {
+									Name: "campanion:white_flat_tent_top"
+								}
+								BlockEntityData: {
+									id: "campanion:tent_part"
+									LinkedPos: {
+										Z: 0
+										X: 0
+										Y: 0
+									}
+									Size: {
+										Z: 0
+										X: 0
+										Y: 0
+									}
+								}
+								Pos: {
+									Z: 1
+									X: -3
+									Y: 3
+								}
+							}
+							{
+								BlockState: {
+									Name: "campanion:white_flat_tent_top"
+								}
+								BlockEntityData: {
+									id: "campanion:tent_part"
+									LinkedPos: {
+										Z: 0
+										X: 0
+										Y: 0
+									}
+									Size: {
+										Z: 0
+										X: 0
+										Y: 0
+									}
+								}
+								Pos: {
+									Z: -1
+									X: -2
+									Y: 3
+								}
+							}
+							{
+								BlockState: {
+									Name: "campanion:white_flat_tent_top"
+								}
+								BlockEntityData: {
+									id: "campanion:tent_part"
+									LinkedPos: {
+										Z: 0
+										X: 0
+										Y: 0
+									}
+									Size: {
+										Z: 0
+										X: 0
+										Y: 0
+									}
+								}
+								Pos: {
+									Z: 0
+									X: -2
+									Y: 3
+								}
+							}
+							{
+								BlockState: {
+									Name: "campanion:white_flat_tent_top"
+								}
+								BlockEntityData: {
+									id: "campanion:tent_part"
+									LinkedPos: {
+										Z: 0
+										X: 0
+										Y: 0
+									}
+									Size: {
+										Z: 0
+										X: 0
+										Y: 0
+									}
+								}
+								Pos: {
+									Z: 1
+									X: -2
+									Y: 3
+								}
+							}
+							{
+								BlockState: {
+									Name: "campanion:white_flat_tent_top"
+								}
+								BlockEntityData: {
+									id: "campanion:tent_part"
+									LinkedPos: {
+										Z: 0
+										X: 0
+										Y: 0
+									}
+									Size: {
+										Z: 0
+										X: 0
+										Y: 0
+									}
+								}
+								Pos: {
+									Z: -1
+									X: -1
+									Y: 3
+								}
+							}
+							{
+								BlockState: {
+									Name: "campanion:white_flat_tent_top"
+								}
+								BlockEntityData: {
+									id: "campanion:tent_part"
+									LinkedPos: {
+										Z: 0
+										X: 0
+										Y: 0
+									}
+									Size: {
+										Z: 0
+										X: 0
+										Y: 0
+									}
+								}
+								Pos: {
+									Z: 0
+									X: -1
+									Y: 3
+								}
+							}
+							{
+								BlockState: {
+									Name: "campanion:white_flat_tent_top"
+								}
+								BlockEntityData: {
+									id: "campanion:tent_part"
+									LinkedPos: {
+										Z: 0
+										X: 0
+										Y: 0
+									}
+									Size: {
+										Z: 0
+										X: 0
+										Y: 0
+									}
+								}
+								Pos: {
+									Z: 1
+									X: -1
+									Y: 3
+								}
+							}
+							{
+								BlockState: {
+									Name: "campanion:white_flat_tent_top"
+								}
+								BlockEntityData: {
+									id: "campanion:tent_part"
+									LinkedPos: {
+										Z: 0
+										X: 0
+										Y: 0
+									}
+									Size: {
+										Z: 0
+										X: 0
+										Y: 0
+									}
+								}
+								Pos: {
+									Z: -1
+									X: 0
+									Y: 3
+								}
+							}
+							{
+								BlockState: {
+									Name: "campanion:white_flat_tent_top"
+								}
+								BlockEntityData: {
+									id: "campanion:tent_part"
+									LinkedPos: {
+										Z: 0
+										X: 0
+										Y: 0
+									}
+									Size: {
+										Z: 0
+										X: 0
+										Y: 0
+									}
+								}
+								Pos: {
+									Z: 0
+									X: 0
+									Y: 3
+								}
+							}
+							{
+								BlockState: {
+									Name: "campanion:white_flat_tent_top"
+								}
+								BlockEntityData: {
+									id: "campanion:tent_part"
+									LinkedPos: {
+										Z: 0
+										X: 0
+										Y: 0
+									}
+									Size: {
+										Z: 0
+										X: 0
+										Y: 0
+									}
+								}
+								Pos: {
+									Z: 1
+									X: 0
+									Y: 3
+								}
+							}
+							{
+								BlockState: {
+									Name: "campanion:white_flat_tent_top"
+								}
+								BlockEntityData: {
+									id: "campanion:tent_part"
+									LinkedPos: {
+										Z: 0
+										X: 0
+										Y: 0
+									}
+									Size: {
+										Z: 0
+										X: 0
+										Y: 0
+									}
+								}
+								Pos: {
+									Z: -1
+									X: 1
+									Y: 3
+								}
+							}
+							{
+								BlockState: {
+									Name: "campanion:white_flat_tent_top"
+								}
+								BlockEntityData: {
+									id: "campanion:tent_part"
+									LinkedPos: {
+										Z: 0
+										X: 0
+										Y: 0
+									}
+									Size: {
+										Z: 0
+										X: 0
+										Y: 0
+									}
+								}
+								Pos: {
+									Z: 0
+									X: 1
+									Y: 3
+								}
+							}
+							{
+								BlockState: {
+									Name: "campanion:white_flat_tent_top"
+								}
+								BlockEntityData: {
+									id: "campanion:tent_part"
+									LinkedPos: {
+										Z: 0
+										X: 0
+										Y: 0
+									}
+									Size: {
+										Z: 0
+										X: 0
+										Y: 0
+									}
+								}
+								Pos: {
+									Z: 1
+									X: 1
+									Y: 3
+								}
+							}
+							{
+								BlockState: {
+									Name: "campanion:white_flat_tent_top"
+								}
+								BlockEntityData: {
+									id: "campanion:tent_part"
+									LinkedPos: {
+										Z: 0
+										X: 0
+										Y: 0
+									}
+									Size: {
+										Z: 0
+										X: 0
+										Y: 0
+									}
+								}
+								Pos: {
+									Z: -1
+									X: 2
+									Y: 3
+								}
+							}
+							{
+								BlockState: {
+									Name: "campanion:white_flat_tent_top"
+								}
+								BlockEntityData: {
+									id: "campanion:tent_part"
+									LinkedPos: {
+										Z: 0
+										X: 0
+										Y: 0
+									}
+									Size: {
+										Z: 0
+										X: 0
+										Y: 0
+									}
+								}
+								Pos: {
+									Z: 0
+									X: 2
+									Y: 3
+								}
+							}
+							{
+								BlockState: {
+									Name: "campanion:white_flat_tent_top"
+								}
+								BlockEntityData: {
+									id: "campanion:tent_part"
+									LinkedPos: {
+										Z: 0
+										X: 0
+										Y: 0
+									}
+									Size: {
+										Z: 0
+										X: 0
+										Y: 0
+									}
+								}
+								Pos: {
+									Z: 1
+									X: 2
+									Y: 3
+								}
+							}
+							{
+								BlockState: {
+									Name: "campanion:white_flat_tent_top"
+								}
+								BlockEntityData: {
+									id: "campanion:tent_part"
+									LinkedPos: {
+										Z: 0
+										X: 0
+										Y: 0
+									}
+									Size: {
+										Z: 0
+										X: 0
+										Y: 0
+									}
+								}
+								Pos: {
+									Z: -1
+									X: 3
+									Y: 3
+								}
+							}
+							{
+								BlockState: {
+									Name: "campanion:white_flat_tent_top"
+								}
+								BlockEntityData: {
+									id: "campanion:tent_part"
+									LinkedPos: {
+										Z: 0
+										X: 0
+										Y: 0
+									}
+									Size: {
+										Z: 0
+										X: 0
+										Y: 0
+									}
+								}
+								Pos: {
+									Z: 0
+									X: 3
+									Y: 3
+								}
+							}
+							{
+								BlockState: {
+									Name: "campanion:white_flat_tent_top"
+								}
+								BlockEntityData: {
+									id: "campanion:tent_part"
+									LinkedPos: {
+										Z: 0
+										X: 0
+										Y: 0
+									}
+									Size: {
+										Z: 0
+										X: 0
+										Y: 0
+									}
+								}
+								Pos: {
+									Z: 1
+									X: 3
+									Y: 3
+								}
+							}
+							{
+								BlockState: {
+									Name: "campanion:white_flat_tent_top"
+								}
+								BlockEntityData: {
+									id: "campanion:tent_part"
+									LinkedPos: {
+										Z: 0
+										X: 0
+										Y: 0
+									}
+									Size: {
+										Z: 0
+										X: 0
+										Y: 0
+									}
+								}
+								Pos: {
+									Z: -1
+									X: 4
+									Y: 3
+								}
+							}
+							{
+								BlockState: {
+									Name: "campanion:white_flat_tent_top"
+								}
+								BlockEntityData: {
+									id: "campanion:tent_part"
+									LinkedPos: {
+										Z: 0
+										X: 0
+										Y: 0
+									}
+									Size: {
+										Z: 0
+										X: 0
+										Y: 0
+									}
+								}
+								Pos: {
+									Z: 0
+									X: 4
+									Y: 3
+								}
+							}
+							{
+								BlockState: {
+									Name: "campanion:white_flat_tent_top"
+								}
+								BlockEntityData: {
+									id: "campanion:tent_part"
+									LinkedPos: {
+										Z: 0
+										X: 0
+										Y: 0
+									}
+									Size: {
+										Z: 0
+										X: 0
+										Y: 0
+									}
+								}
+								Pos: {
+									Z: 1
+									X: 4
+									Y: 3
+								}
+							}
+						]
+					}
+				}
+			}]
+			rewards: [{
+				id: "6E7956CFCDCB9C9A"
+				type: "random"
+				table_id: 3990050942893790865L
+			}]
+		}
+		{
+			x: -11.5d
+			y: 3.0d
+			dependencies: ["0E4DF4FC20773B34"]
+			id: "37F9960AD61D7D8A"
+			tasks: [{
+				id: "49707E734B200006"
+				type: "item"
+				item: "campanion:rope_bridge_post"
+			}]
+		}
+		{
+			x: -11.5d
+			y: 4.0d
+			dependencies: ["37F9960AD61D7D8A"]
+			id: "7CE3E5773BF25E94"
+			tasks: [{
+				id: "2789B2576FBB6841"
+				type: "item"
+				item: "campanion:rope_ladder"
+			}]
+		}
+		{
+			x: -9.5d
+			y: 2.0d
+			dependencies: ["0E4DF4FC20773B34"]
+			id: "14BA2DAAF2E3FE5F"
+			tasks: [{
+				id: "296DED24A765125E"
+				type: "item"
+				item: {
+					id: "campanion:tent_bag"
+					Count: 1b
+					tag: { }
+				}
+			}]
+			rewards: [{
+				id: "28A3BA61543D839C"
+				type: "random"
+				table_id: 3990050942893790865L
+			}]
+		}
+		{
+			x: -10.5d
+			y: 2.5d
+			dependencies: ["0E4DF4FC20773B34"]
+			id: "3A32087EA1A8E6D4"
+			tasks: [{
+				id: "4D0A065EFA062159"
+				type: "item"
+				item: "campanion:flare"
+			}]
+		}
+	]
+}

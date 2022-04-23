@@ -1,0 +1,17 @@
+{
+	"name": "Weak",
+	"description": "You deal 1 less damage and have 2 less hearts.",
+	"type": "origins:attribute",
+	"modifiers": [
+		{
+			"attribute": "minecraft:generic.attack_damage",
+			"operation": "addition",
+			"value": -1
+		},
+		{
+			"attribute": "minecraft:generic.max_health",
+			"operation": "addition",
+			"value": -4
+		}
+	]
+}

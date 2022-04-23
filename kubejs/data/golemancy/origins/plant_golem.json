@@ -1,0 +1,15 @@
+{
+	"powers": [
+		"golemancy:camouflage",
+		"golemancy:more_planks",
+		"golemancy:spike_immune",
+		"golemancy:natura_arcana",
+		"golemancy:vegetarian",
+		"golemancy:fire_vuln"
+	],
+	"icon": "minecraft:vine",
+	"order": 685,
+	"impact": 1,
+	"name": "Overgrolem",
+	"description": "Overgrolems are created by nature itself, and work together with the natural order."
+}

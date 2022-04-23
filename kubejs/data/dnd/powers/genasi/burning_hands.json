@@ -1,0 +1,10 @@
+{
+	"name": "Burning Hands",
+	"description": "Your attacks set enemies ablaze.",
+	"type": "origins:target_action_on_hit",
+	"cooldown": 0,
+	"entity_action": {
+		"type": "origins:set_on_fire",
+		"duration": 4
+	}
+}

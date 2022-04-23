@@ -1,0 +1,10 @@
+{
+	"name": "Artificer's Lore",
+	"description": "All recipes are unlocked by default.",
+	"type": "origins:action_on_callback",
+	"entity_action_added": {
+		"type": "origins:execute_command",
+		"permission_level": 4,
+		"command": "recipe give @s *"
+	}
+}

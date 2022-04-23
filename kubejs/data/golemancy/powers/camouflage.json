@@ -1,0 +1,43 @@
+{
+	"type": "origins:multiple",
+	"phasing": {
+		"type": "origins:phasing",
+		"block_condition": {
+			"type": "origins:in_tag",
+			"tag": "minecraft:leaves"
+		},
+		"render_type": "none",
+		"phase_down_condition": {
+			"type": "origins:and",
+			"conditions": [
+            {
+                "type": "origins:sneaking"
+            },
+            {
+                "type": "origins:on_block"
+            }
+			]
+		},
+		"condition": {
+			"type": "origins:power_active",
+			"power": "golemancy:camouflage_toggle"
+		}
+	},
+	"stealth": {
+		"type": "origins:invisibility",
+		"render_armor": true,
+		"condition": {
+			"type": "origins:in_block_anywhere",
+			"block_condition": {
+				"type": "origins:in_tag",
+				"tag": "minecraft:leaves"
+			},
+			"compare_to": 2
+		}
+	},
+	"toggle": {
+		"type": "origins:toggle"
+	},
+	"name": "Camouflage",
+	"description": "You can move freely through foliage, and become invisible while inside of it."
+}

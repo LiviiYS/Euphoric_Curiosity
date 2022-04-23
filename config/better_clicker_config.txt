@@ -1,0 +1,26 @@
+#BetterClicker Configuration File
+#Fri Jan 21 21:28:07 ACDT 2022
+lmb_mobCheck=false
+rmb_interval=19
+rmb_hold=false
+lmb_jitter=false
+lmb_jitterRange=1.0
+rmb_intervalMin=19
+lmb_playerCheck=false
+lmb_hold=false
+rmb_clicker=false
+lmb_intervalMax=21
+lmb_interval=19
+rmb_jitterRange=1.0
+lmb_onHold=false
+rmb_onHold=false
+rmb_mobCheck=false
+rmb_dynamicInterval=false
+rmb_playerCheck=false
+rmb_cooldownCheck=false
+lmb_clicker=false
+lmb_intervalMin=19
+lmb_dynamicInterval=false
+lmb_cooldownCheck=false
+rmb_intervalMax=21
+rmb_jitter=false

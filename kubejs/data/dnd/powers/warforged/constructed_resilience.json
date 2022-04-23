@@ -1,0 +1,41 @@
+{
+	"name": "Constructed Resilience",
+	"description": "You don't need to eat or breathe, and you can't sleep or be poisoned. You don't regenerate health naturally.",
+	"type": "origins:multiple",
+	"no_food": {
+		"type": "origins:prevent_item_use",
+		"item_condition": {
+			"type": "origins:food"
+		}
+	},
+	"no_exhaustion": {
+		"type": "origins:modify_exhaustion",
+		"modifier": {
+			"name": "Constructed Resilience, no exhaustion",
+			"operation": "multiply_base",
+			"value": -1
+		}
+	},
+	"no_regen": {
+		"type": "origins:disable_regen"
+	},
+	"no_sleep": {
+		"type": "origins:prevent_sleep",
+		"message": "You can't sleep."
+	},
+	"no_hunger_no_poison": {
+		"type": "origins:effect_immunity",
+		"effects": [
+			"minecraft:poison",
+			"minecraft:hunger"
+		]
+	},
+	"water_breathing": {
+		"type": "origins:action_over_time",
+		"interval": 10,
+		"entity_action": {
+			"type": "origins:gain_air",
+			"value": 20
+		}
+	}
+}

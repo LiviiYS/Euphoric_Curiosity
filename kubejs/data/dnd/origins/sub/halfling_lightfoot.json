@@ -1,0 +1,11 @@
+{
+	"powers": [
+		"dnd:halfling/naturally_stealthy",
+		"dnd:halfling/light_footed"
+	],
+	"icon": "minecraft:feather",
+	"order": 1,
+	"impact": 0,
+	"name": "Lightfoot Halfling",
+	"description": "As a lightfoot halfling, you can easily hide from notice."
+}

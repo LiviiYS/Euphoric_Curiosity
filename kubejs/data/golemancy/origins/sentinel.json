@@ -1,0 +1,17 @@
+{
+	"powers": [
+		"golemancy:augment",
+		"golemancy:enchant",
+		"golemancy:no_stomach",
+		"golemancy:sink",
+		"golemancy:iron_regen",
+		"golemancy:no_armor",
+		"golemancy:fire_vuln",
+		"golemancy:invis_immune"
+	],
+	"icon": "minecraft:iron_block",
+	"order": 679,
+	"impact": 3,
+	"name": "Sentinel",
+	"description": "A living suit of armor, gifted the ability to modify and augment its body."
+}

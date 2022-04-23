@@ -1,0 +1,440 @@
+{
+	id: "49FEF80A7697F2EA"
+	group: "0D2279FE883A3D33"
+	order_index: 2
+	filename: "mob_farming_utilities"
+	title: "Mob Farming Utilities"
+	icon: "kibe:cursed_droplets"
+	default_quest_shape: ""
+	default_hide_dependency_lines: false
+	quests: [
+		{
+			x: -5.0d
+			y: -2.5d
+			dependencies: ["5BA6272AD369212B"]
+			id: "3123F421D1FF687A"
+			tasks: [{
+				id: "7E47550224DC5438"
+				type: "item"
+				item: "kibe:stone_spikes"
+			}]
+		}
+		{
+			x: -4.0d
+			y: -2.5d
+			dependencies: ["3123F421D1FF687A"]
+			id: "113448990722CE0E"
+			tasks: [{
+				id: "69C09640706ED149"
+				type: "item"
+				item: "kibe:iron_spikes"
+			}]
+		}
+		{
+			x: -3.0d
+			y: -2.5d
+			dependencies: ["113448990722CE0E"]
+			id: "4BC96A91C285F522"
+			tasks: [{
+				id: "63BDE3445A6851A6"
+				type: "item"
+				item: "kibe:gold_spikes"
+			}]
+		}
+		{
+			x: -2.0d
+			y: -2.5d
+			dependencies: ["4BC96A91C285F522"]
+			id: "6147946313C2BB84"
+			tasks: [{
+				id: "2F6685790A078016"
+				type: "item"
+				item: "kibe:diamond_spikes"
+			}]
+			rewards: [
+				{
+					id: "7B9C164292945382"
+					type: "item"
+					item: "minecraft:diamond"
+					count: 3
+				}
+				{
+					id: "63B23B042818DF03"
+					type: "random"
+					table_id: 3990050942893790865L
+				}
+			]
+		}
+		{
+			x: -4.5d
+			y: -1.5d
+			dependencies: ["5BA6272AD369212B"]
+			id: "5881DD8529399AFC"
+			tasks: [{
+				id: "3B5752BC01D68C79"
+				type: "item"
+				item: "kibe:regular_conveyor_belt"
+			}]
+		}
+		{
+			x: -3.5d
+			y: -1.5d
+			dependencies: ["5881DD8529399AFC"]
+			id: "665445F033F874F2"
+			tasks: [{
+				id: "5AC9A0C70BA747A8"
+				type: "item"
+				item: "kibe:fast_conveyor_belt"
+			}]
+		}
+		{
+			x: -2.5d
+			y: -1.5d
+			dependencies: ["665445F033F874F2"]
+			id: "5C7BB42613868868"
+			tasks: [{
+				id: "6F14B7F835086CB9"
+				type: "item"
+				item: "kibe:express_conveyor_belt"
+			}]
+			rewards: [
+				{
+					id: "6B182549440C7E76"
+					type: "random"
+					title: "Random Potion"
+					table_id: 4084316573772962007L
+				}
+				{
+					id: "0CA0679D66B41F85"
+					type: "random"
+					table_id: 3990050942893790865L
+				}
+			]
+		}
+		{
+			x: -1.5d
+			y: 0.0d
+			dependencies: ["5BA6272AD369212B"]
+			id: "55F52418862C8CDE"
+			tasks: [{
+				id: "4EF3800357C55C8A"
+				type: "item"
+				item: "kibe:vacuum_hopper"
+			}]
+		}
+		{
+			x: 1.0d
+			y: -1.5d
+			dependencies: ["5BA6272AD369212B"]
+			id: "6A939BE79E6C92E0"
+			tasks: [{
+				id: "55AEF196FCCBAC7B"
+				type: "item"
+				item: "kibe:wither_proof_block"
+			}]
+		}
+		{
+			x: 2.0d
+			y: -1.5d
+			dependencies: ["6A939BE79E6C92E0"]
+			id: "0077D2E8BAAB27A0"
+			tasks: [{
+				id: "0B0EE4CB9D54DD1C"
+				type: "item"
+				item: "kibe:wither_builder"
+			}]
+		}
+		{
+			x: 0.5d
+			y: -2.5d
+			dependencies: ["5BA6272AD369212B"]
+			id: "0125EE93671F040C"
+			tasks: [{
+				id: "339E9AC5D44AAD72"
+				type: "item"
+				item: "kibe:obsidian_sand"
+			}]
+		}
+		{
+			x: 1.5d
+			y: -2.5d
+			dependencies: ["0125EE93671F040C"]
+			id: "55883EF2E3BBE1C1"
+			tasks: [{
+				id: "2E7E81FB62EE93B6"
+				type: "item"
+				item: "kibe:wither_proof_sand"
+			}]
+		}
+		{
+			x: 2.5d
+			y: -2.5d
+			dependencies: ["55883EF2E3BBE1C1"]
+			id: "69A24311221CF697"
+			tasks: [{
+				id: "2E4E6772F9CD3F2F"
+				type: "item"
+				item: "kibe:wither_proof_glass"
+			}]
+		}
+		{
+			x: -4.0d
+			y: 0.0d
+			dependencies: ["5BA6272AD369212B"]
+			id: "5617A9CA903D2281"
+			tasks: [{
+				id: "5D4B10F202449233"
+				type: "item"
+				item: "kibe:xp_drain"
+			}]
+		}
+		{
+			x: -3.0d
+			y: 0.0d
+			dependencies: ["5617A9CA903D2281"]
+			id: "40042FCDD254AC39"
+			tasks: [{
+				id: "19BF1CD6E36BCCE3"
+				type: "item"
+				item: "kibe:xp_shower"
+			}]
+			rewards: [{
+				id: "16CCB92CCD358B39"
+				type: "random"
+				table_id: 3990050942893790865L
+			}]
+		}
+		{
+			x: -4.5d
+			y: 1.5d
+			dependencies: ["5BA6272AD369212B"]
+			id: "1268C68B1E673E53"
+			tasks: [{
+				id: "4E44FDBF68C60A2A"
+				type: "item"
+				item: "kibe:cursed_droplets"
+			}]
+		}
+		{
+			x: -3.5d
+			y: 1.5d
+			dependencies: ["1268C68B1E673E53"]
+			id: "26CA02C35D61800B"
+			tasks: [{
+				id: "4879210B1B19A47B"
+				type: "item"
+				item: "kibe:cursed_seeds"
+			}]
+			rewards: [{
+				id: "16FCFA1774176CD1"
+				type: "random"
+				table_id: 3990050942893790865L
+			}]
+		}
+		{
+			x: -0.5d
+			y: 0.0d
+			dependencies: ["5BA6272AD369212B"]
+			id: "3403C9F4AFEA70D4"
+			tasks: [{
+				id: "73714736922673B8"
+				type: "item"
+				item: {
+					id: "kibe:tank"
+					Count: 1b
+					tag: {
+						BlockEntityTag: { }
+					}
+				}
+			}]
+		}
+		{
+			x: -1.0d
+			y: 1.5d
+			dependencies: ["5BA6272AD369212B"]
+			id: "143AE114BFD69D66"
+			tasks: [{
+				id: "695DF726020F383D"
+				type: "item"
+				item: "glassential:tinted_ethereal_glass"
+			}]
+		}
+		{
+			x: -1.0d
+			y: 2.5d
+			dependencies: ["143AE114BFD69D66"]
+			id: "2094A794948A8CCA"
+			tasks: [{
+				id: "027E1B70B1B66491"
+				type: "item"
+				item: "glassential:tinted_reverse_ethereal_glass"
+			}]
+		}
+		{
+			x: 0.0d
+			y: 1.5d
+			dependencies: ["5BA6272AD369212B"]
+			id: "63D669A658255171"
+			tasks: [{
+				id: "48F8218357012B2B"
+				type: "item"
+				item: "glassential:ethereal_glass"
+			}]
+		}
+		{
+			x: 0.0d
+			y: 2.5d
+			dependencies: ["63D669A658255171"]
+			id: "66108219FCBE6A30"
+			tasks: [{
+				id: "545CD9D3A3E7E0FC"
+				type: "item"
+				item: "glassential:reverse_ethereal_glass"
+			}]
+		}
+		{
+			x: 1.0d
+			y: 1.5d
+			dependencies: ["5BA6272AD369212B"]
+			id: "2FFF76F1FC93B063"
+			tasks: [{
+				id: "18E4E25336079853"
+				type: "item"
+				item: "glassential:ghostly_glass"
+			}]
+		}
+		{
+			x: 2.0d
+			y: 1.5d
+			dependencies: ["5BA6272AD369212B"]
+			id: "1D6AA5C157798C0C"
+			tasks: [{
+				id: "7FEF7DCA78B62264"
+				type: "item"
+				item: "glassential:light_glass"
+			}]
+		}
+		{
+			title: "Wither Totem"
+			icon: "totemmod:totem_top"
+			x: 1.5d
+			y: 0.0d
+			dependencies: ["5BA6272AD369212B"]
+			id: "52550FD67461BFE4"
+			tasks: [
+				{
+					id: "464502D1C3A3CBB3"
+					type: "item"
+					item: "totemmod:totem_top"
+				}
+				{
+					id: "0E7C814C88DE160A"
+					type: "item"
+					item: "totemmod:totem_base"
+				}
+			]
+			rewards: [
+				{
+					id: "186CC821CC4EFD85"
+					type: "item"
+					item: "architects_palette:withered_bone"
+					count: 12
+				}
+				{
+					id: "53D14A157351D7DF"
+					type: "random"
+					table_id: 3990050942893790865L
+				}
+			]
+		}
+		{
+			x: -5.0d
+			y: 4.0d
+			dependencies: ["5BA6272AD369212B"]
+			id: "3969FC0B10DB7800"
+			tasks: [{
+				id: "6803E87040E28FEF"
+				type: "item"
+				item: "trapexpansion:slippery_stone"
+			}]
+		}
+		{
+			x: -3.5d
+			y: 4.0d
+			dependencies: ["5BA6272AD369212B"]
+			id: "6CDCFAEACE5F7368"
+			tasks: [{
+				id: "7AF9CE7B5E40CFA0"
+				type: "item"
+				item: "trapexpansion:spike_trap"
+			}]
+		}
+		{
+			x: -2.5d
+			y: 4.0d
+			dependencies: ["6CDCFAEACE5F7368"]
+			id: "7A765634930E0850"
+			tasks: [{
+				id: "01AAFDC05263BD69"
+				type: "item"
+				item: "trapexpansion:powered_spike_trap"
+			}]
+			rewards: [{
+				id: "7D83E993264A472E"
+				type: "random"
+				title: "Random Redstone"
+				table_id: 8180674179655573119L
+			}]
+		}
+		{
+			x: -1.0d
+			y: 4.0d
+			dependencies: ["5BA6272AD369212B"]
+			id: "0BADCCEAA6E8F54A"
+			tasks: [{
+				id: "6A6C21841D8CCAB6"
+				type: "item"
+				item: "trapexpansion:fan"
+			}]
+		}
+		{
+			x: 0.0d
+			y: 4.0d
+			dependencies: ["0BADCCEAA6E8F54A"]
+			id: "61FDD6C40AF68B96"
+			tasks: [{
+				id: "7CA41A1A28172735"
+				type: "item"
+				item: "trapexpansion:analog_fan"
+			}]
+			rewards: [{
+				id: "166D6F4F4A1686C7"
+				type: "random"
+				title: "Random Redstone"
+				table_id: 8180674179655573119L
+			}]
+		}
+		{
+			x: 1.0d
+			y: 4.0d
+			dependencies: ["5BA6272AD369212B"]
+			id: "79B2D955EB29089F"
+			tasks: [{
+				id: "5EA94FCC0D4DF762"
+				type: "item"
+				item: "trapexpansion:detector"
+			}]
+		}
+		{
+			x: 3.0d
+			y: 1.5d
+			dependencies: ["5BA6272AD369212B"]
+			id: "3EF7DA8B4FCAA317"
+			tasks: [{
+				id: "079844200C63577D"
+				type: "item"
+				item: "glassential:redstone_glass"
+			}]
+		}
+	]
+}

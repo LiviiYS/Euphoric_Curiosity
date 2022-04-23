@@ -1,0 +1,9 @@
+{
+	"name": "Giant Appetite",
+	"description": "You exhaust twice as fast as a human.",
+	"type": "origins:modify_exhaustion",
+	"modifier": {
+		"operation": "multiply_base",
+		"value": 1 
+	}
+}

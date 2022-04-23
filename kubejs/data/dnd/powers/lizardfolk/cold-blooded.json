@@ -1,0 +1,39 @@
+{
+	"name": "Coldblooded",
+	"description": "You are slower and weaker in both cold and hot biomes including the nether.",
+	"type": "origins:conditioned_attribute",
+	"tick_rate": 10,
+	"modifiers": [
+		{
+			"attribute": "minecraft:generic.movement_speed",
+			"operation": "multiply_total",
+			"value": "-0.2"
+		},
+		{
+			"attribute": "minecraft:generic.attack_damage",
+			"operation": "addition",
+			"value": "-2"
+		}
+	],
+	"condition": {
+		"type": "origins:or",
+		"conditions": [
+			{
+				"type": "origins:biome",
+				"condition": {
+					"type": "origins:temperature",
+					"comparison": ">=",
+					"compare_to": 1
+				}
+			},
+			{
+				"type": "origins:biome",
+				"condition": {
+					"type": "origins:temperature",
+					"comparison": "<=",
+					"compare_to": 0
+				}
+			}
+		]
+	}
+}

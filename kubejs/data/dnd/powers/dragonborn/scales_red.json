@@ -1,0 +1,8 @@
+{
+	"name": "Red Scales",
+	"description": "Your skin is tinted red.",
+	"type": "origins:model_color",
+	"red": 1,
+	"green": 0.5,
+	"blue": 0.5
+}

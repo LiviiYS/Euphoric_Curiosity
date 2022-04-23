@@ -1,0 +1,877 @@
+{
+	id: "5E5388B53193B93C"
+	group: "0D2279FE883A3D33"
+	order_index: 3
+	filename: "storage"
+	title: "Storage and Furnaces"
+	icon: "expandedstorage:iron_chest"
+	default_quest_shape: ""
+	default_hide_dependency_lines: false
+	quests: [
+		{
+			x: -5.5d
+			y: -4.5d
+			dependencies: ["613CADFE6D1BD57F"]
+			id: "722D19B0EA1E96A4"
+			tasks: [{
+				id: "26CA41E5FB975B47"
+				type: "item"
+				item: "minecraft:chest"
+			}]
+		}
+		{
+			x: -5.0d
+			y: -3.5d
+			dependencies: ["722D19B0EA1E96A4"]
+			id: "45900671467DDA26"
+			tasks: [{
+				id: "240EE41B9AACF8A8"
+				type: "item"
+				item: "expandedstorage:iron_chest"
+			}]
+		}
+		{
+			x: -4.5d
+			y: -4.5d
+			dependencies: ["45900671467DDA26"]
+			id: "420E34B9539279F7"
+			tasks: [{
+				id: "671A8B2DFCA5EBBB"
+				type: "item"
+				item: "expandedstorage:gold_chest"
+			}]
+			rewards: [{
+				id: "706ADCABED2FCAFA"
+				type: "random"
+				table_id: 7876699373989475424L
+			}]
+		}
+		{
+			x: -4.0d
+			y: -3.5d
+			dependencies: ["420E34B9539279F7"]
+			id: "4F4B0BCE15D3BF7B"
+			tasks: [{
+				id: "293E281D90AD1F2C"
+				type: "item"
+				item: "expandedstorage:diamond_chest"
+			}]
+		}
+		{
+			x: -3.5d
+			y: -4.5d
+			dependencies: ["4F4B0BCE15D3BF7B"]
+			id: "5BE4FB920B2884CD"
+			tasks: [{
+				id: "09927F63AFA25FBC"
+				type: "item"
+				item: "expandedstorage:obsidian_chest"
+			}]
+		}
+		{
+			x: -3.0d
+			y: -3.5d
+			dependencies: ["5BE4FB920B2884CD"]
+			id: "7DED56B1D88ED965"
+			tasks: [{
+				id: "42300B3AAFE60060"
+				type: "item"
+				item: "expandedstorage:netherite_chest"
+			}]
+			rewards: [
+				{
+					id: "67712B399BFFAC15"
+					type: "item"
+					item: "minecraft:netherite_scrap"
+					count: 3
+				}
+				{
+					id: "3A3F63AA96924CC4"
+					type: "random"
+					table_id: 3990050942893790865L
+				}
+			]
+		}
+		{
+			x: -5.5d
+			y: -1.0d
+			dependencies: ["613CADFE6D1BD57F"]
+			id: "7D162B963B0A0F53"
+			tasks: [{
+				id: "025A4FED08D7AEAF"
+				type: "item"
+				item: "minecraft:barrel"
+			}]
+		}
+		{
+			x: -5.0d
+			y: -2.0d
+			dependencies: ["7D162B963B0A0F53"]
+			id: "2CCBE2B7E4AD27AF"
+			tasks: [{
+				id: "0D947CA43B6A3E3B"
+				type: "item"
+				item: "expandedstorage:iron_barrel"
+			}]
+		}
+		{
+			x: -4.5d
+			y: -1.0d
+			dependencies: ["2CCBE2B7E4AD27AF"]
+			id: "218C70601380A24D"
+			tasks: [{
+				id: "43DC0DCF53601478"
+				type: "item"
+				item: "expandedstorage:gold_barrel"
+			}]
+			rewards: [{
+				id: "19785EE637FC5F55"
+				type: "random"
+				table_id: 3234863821922014612L
+			}]
+		}
+		{
+			x: -4.0d
+			y: -2.0d
+			dependencies: ["218C70601380A24D"]
+			id: "5F93E83FDE4024E6"
+			tasks: [{
+				id: "12FE3EBC6F8BDE1A"
+				type: "item"
+				item: "expandedstorage:diamond_barrel"
+			}]
+		}
+		{
+			x: -3.5d
+			y: -1.0d
+			dependencies: ["5F93E83FDE4024E6"]
+			id: "6DE0FA84748D93B4"
+			tasks: [{
+				id: "51F41C15374ECA02"
+				type: "item"
+				item: "expandedstorage:obsidian_barrel"
+			}]
+		}
+		{
+			x: -3.0d
+			y: -2.0d
+			dependencies: ["6DE0FA84748D93B4"]
+			id: "21A38E6B45FCFFDA"
+			tasks: [{
+				id: "7CAA433443E74588"
+				type: "item"
+				item: "expandedstorage:netherite_barrel"
+			}]
+			rewards: [
+				{
+					id: "348999C4D4EDF2D4"
+					type: "item"
+					item: "minecraft:diamond"
+					count: 7
+				}
+				{
+					id: "169A8B60CD832AA0"
+					type: "random"
+					table_id: 3990050942893790865L
+				}
+			]
+		}
+		{
+			x: -1.5d
+			y: -4.5d
+			dependencies: ["613CADFE6D1BD57F"]
+			id: "588B169F3A69442F"
+			tasks: [{
+				id: "6482CE234ECE1DAB"
+				type: "item"
+				item: {
+					id: "inmis:baby_backpack"
+					Count: 1b
+					tag: { }
+				}
+			}]
+			rewards: [{
+				id: "2CEE64BBF29B2A5D"
+				type: "item"
+				item: "betterend:leather_stripe"
+				count: 2
+			}]
+		}
+		{
+			x: -1.0d
+			y: -3.5d
+			dependencies: ["613CADFE6D1BD57F"]
+			id: "1E3BE4A1D2EBF819"
+			tasks: [{
+				id: "71993A488870E0D9"
+				type: "item"
+				item: {
+					id: "inmis:frayed_backpack"
+					Count: 1b
+					tag: { }
+				}
+			}]
+		}
+		{
+			x: -0.5d
+			y: -4.5d
+			dependencies: ["1E3BE4A1D2EBF819"]
+			id: "7B999AFE66D4BDF9"
+			tasks: [{
+				id: "2E4B7BF6A7357F97"
+				type: "item"
+				item: {
+					id: "inmis:plated_backpack"
+					Count: 1b
+					tag: { }
+				}
+			}]
+		}
+		{
+			x: 0.0d
+			y: -3.5d
+			dependencies: ["7B999AFE66D4BDF9"]
+			id: "558CA20FFC36C673"
+			tasks: [{
+				id: "2F5471D51A723A79"
+				type: "item"
+				item: {
+					id: "inmis:gilded_backpack"
+					Count: 1b
+					tag: { }
+				}
+			}]
+		}
+		{
+			x: 0.5d
+			y: -4.5d
+			dependencies: ["558CA20FFC36C673"]
+			id: "7CDD0C1BB1B9CE64"
+			tasks: [{
+				id: "22D8F51A425E48F2"
+				type: "item"
+				item: {
+					id: "inmis:bejeweled_backpack"
+					Count: 1b
+					tag: { }
+				}
+			}]
+			rewards: [
+				{
+					id: "699FB3B3F95C8F74"
+					type: "item"
+					item: "minecraft:diamond"
+					count: 5
+				}
+				{
+					id: "0179E97F2FFE453E"
+					type: "random"
+					table_id: 7876699373989475424L
+				}
+			]
+		}
+		{
+			x: 1.0d
+			y: -5.5d
+			dependencies: ["7CDD0C1BB1B9CE64"]
+			id: "4C42D35D5595D787"
+			tasks: [{
+				id: "62DCDEC67B4CCF14"
+				type: "item"
+				item: {
+					id: "inmis:blazing_backpack"
+					Count: 1b
+					tag: { }
+				}
+			}]
+			rewards: [{
+				id: "7D10A62B63281188"
+				type: "item"
+				item: "minecraft:netherite_scrap"
+				count: 7
+			}]
+		}
+		{
+			x: 1.0d
+			y: -3.5d
+			dependencies: ["7CDD0C1BB1B9CE64"]
+			id: "50D43AFD4B592B17"
+			tasks: [{
+				id: "0ED164CA8CB4D152"
+				type: "item"
+				item: {
+					id: "inmis:withered_backpack"
+					Count: 1b
+					tag: { }
+				}
+			}]
+		}
+		{
+			x: 1.5d
+			y: -4.5d
+			dependencies: ["50D43AFD4B592B17"]
+			id: "62A0CD0F7AAE812E"
+			tasks: [{
+				id: "39A7032E4AA7375B"
+				type: "item"
+				item: {
+					id: "inmis:endless_backpack"
+					Count: 1b
+					tag: { }
+				}
+			}]
+			rewards: [
+				{
+					id: "2A9C578391A43CC2"
+					type: "item"
+					item: "techreborn:tungsten_ore"
+					count: 16
+				}
+				{
+					id: "5F7A53C37541DB30"
+					type: "item"
+					item: "minecraft:ancient_debris"
+					count: 4
+				}
+				{
+					id: "0E053CE2DA198071"
+					type: "random"
+					table_id: 3990050942893790865L
+				}
+			]
+		}
+		{
+			x: -0.5d
+			y: -1.0d
+			dependencies: ["77284C6B849E2FCF"]
+			id: "054FFD17FB4D0A68"
+			tasks: [{
+				id: "45E4952EA01C9020"
+				type: "item"
+				item: "ironbundles:iron_bundle"
+			}]
+		}
+		{
+			x: 0.0d
+			y: -2.0d
+			dependencies: ["054FFD17FB4D0A68"]
+			id: "698460F6536FDB62"
+			tasks: [{
+				id: "7E8BECA729597990"
+				type: "item"
+				item: "ironbundles:gold_bundle"
+			}]
+		}
+		{
+			x: 0.5d
+			y: -1.0d
+			dependencies: ["698460F6536FDB62"]
+			id: "6B10BB33AA74E8E1"
+			tasks: [{
+				id: "27254E252DF315CD"
+				type: "item"
+				item: "ironbundles:diamond_bundle"
+			}]
+		}
+		{
+			x: 1.0d
+			y: -2.0d
+			dependencies: ["6B10BB33AA74E8E1"]
+			id: "22A2EB1F07A43C4D"
+			tasks: [{
+				id: "1A56DA888875CF08"
+				type: "item"
+				item: "ironbundles:netherite_bundle"
+			}]
+			rewards: [
+				{
+					id: "6768B01473A70842"
+					type: "item"
+					item: "minecraft:diamond_ore"
+					count: 3
+				}
+				{
+					id: "685FA0693B24752A"
+					type: "item"
+					item: "minecraft:ancient_debris"
+					count: 3
+				}
+			]
+		}
+		{
+			x: -1.0d
+			y: -2.0d
+			dependencies: ["613CADFE6D1BD57F"]
+			id: "77284C6B849E2FCF"
+			tasks: [{
+				id: "7DEDB0910EF747CB"
+				type: "item"
+				item: "minecraft:bundle"
+			}]
+		}
+		{
+			x: 3.0d
+			y: -2.5d
+			dependencies: ["613CADFE6D1BD57F"]
+			id: "3E4354AE8E8AD76D"
+			tasks: [{
+				id: "5B0C7408F0E770B3"
+				type: "item"
+				item: "slotlink:master"
+			}]
+		}
+		{
+			x: 4.0d
+			y: -3.0d
+			dependencies: ["3E4354AE8E8AD76D"]
+			id: "06529A0852DB6AEB"
+			tasks: [{
+				id: "5304644F56AC4214"
+				type: "item"
+				item: "slotlink:request"
+			}]
+		}
+		{
+			title: "Cables"
+			icon: "slotlink:cable"
+			x: 5.0d
+			y: -2.5d
+			dependencies: ["06529A0852DB6AEB"]
+			id: "3BB15E1E7AA30733"
+			tasks: [
+				{
+					id: "3D86CE1324794792"
+					type: "item"
+					item: "slotlink:cable"
+				}
+				{
+					id: "544B06A94450B3E5"
+					type: "item"
+					item: "slotlink:import_cable"
+				}
+				{
+					id: "5E14742F0AD5E6FA"
+					type: "item"
+					item: "slotlink:link_cable"
+				}
+				{
+					id: "0DA1C07324860AF1"
+					type: "item"
+					item: "slotlink:export_cable"
+				}
+			]
+			rewards: [{
+				id: "73957E6B020A0E44"
+				type: "random"
+				table_id: 7876699373989475424L
+			}]
+		}
+		{
+			x: 5.0d
+			y: -3.5d
+			dependencies: ["06529A0852DB6AEB"]
+			id: "76FC7D246813CAD2"
+			tasks: [{
+				id: "6D9003FFFEF72813"
+				type: "item"
+				item: {
+					id: "slotlink:limited_remote"
+					Count: 1b
+					tag: { }
+				}
+			}]
+		}
+		{
+			x: 4.0d
+			y: -4.0d
+			dependencies: ["76FC7D246813CAD2"]
+			id: "6B6FE5A0973B6C3B"
+			tasks: [{
+				id: "5F234772F06B91D0"
+				type: "item"
+				item: {
+					id: "slotlink:unlimited_remote"
+					Count: 1b
+					tag: { }
+				}
+			}]
+		}
+		{
+			x: 5.0d
+			y: -4.5d
+			dependencies: ["6B6FE5A0973B6C3B"]
+			id: "236E084C4246B2B3"
+			tasks: [{
+				id: "4CED441FC6AB4C4F"
+				type: "item"
+				item: {
+					id: "slotlink:multi_dim_remote"
+					Count: 1b
+					tag: { }
+				}
+			}]
+			rewards: [
+				{
+					id: "7FEAEA9CA7F3A358"
+					type: "item"
+					item: "minecraft:netherite_scrap"
+					count: 16
+				}
+				{
+					id: "630C444E44B8FE99"
+					type: "random"
+					table_id: 3990050942893790865L
+				}
+			]
+		}
+		{
+			x: 5.0d
+			y: -1.0d
+			dependencies: ["613CADFE6D1BD57F"]
+			id: "5D4C19165CA468AB"
+			tasks: [{
+				id: "1989A155BD0F8EC1"
+				type: "item"
+				item: "dankstorage:dock"
+			}]
+		}
+		{
+			x: 4.0d
+			y: -0.5d
+			dependencies: ["5D4C19165CA468AB"]
+			id: "735279211F973514"
+			tasks: [{
+				id: "5BFAC09F40F9C08E"
+				type: "item"
+				item: "dankstorage:dank_1"
+			}]
+		}
+		{
+			x: 5.0d
+			y: 0.0d
+			dependencies: ["735279211F973514"]
+			id: "4C729C8F7A8D2825"
+			tasks: [{
+				id: "0A89CA012C76D03A"
+				type: "item"
+				item: "dankstorage:dank_2"
+			}]
+		}
+		{
+			x: 4.0d
+			y: 0.5d
+			dependencies: ["4C729C8F7A8D2825"]
+			id: "4AD1377CD2C39043"
+			tasks: [{
+				id: "68E18EDCE6C859B5"
+				type: "item"
+				item: "dankstorage:dank_3"
+			}]
+		}
+		{
+			x: 5.0d
+			y: 1.0d
+			dependencies: ["4AD1377CD2C39043"]
+			id: "60A8C8312716C160"
+			tasks: [{
+				id: "56B895E5D54D88BA"
+				type: "item"
+				item: "dankstorage:dank_4"
+			}]
+		}
+		{
+			x: 4.0d
+			y: 1.5d
+			dependencies: ["60A8C8312716C160"]
+			id: "2163AEA3EA211181"
+			tasks: [{
+				id: "2AC6E7A6CE6CB6EA"
+				type: "item"
+				item: "dankstorage:dank_5"
+			}]
+		}
+		{
+			x: 5.0d
+			y: 2.0d
+			dependencies: ["2163AEA3EA211181"]
+			id: "0E906B72547AFE9E"
+			tasks: [{
+				id: "21AE8654EBA8FD88"
+				type: "item"
+				item: "dankstorage:dank_6"
+			}]
+		}
+		{
+			x: 4.0d
+			y: 2.5d
+			dependencies: ["0E906B72547AFE9E"]
+			id: "5B7A3F01366B75B3"
+			tasks: [{
+				id: "16FE07B3A27CFB2F"
+				type: "item"
+				item: "dankstorage:dank_7"
+			}]
+			rewards: [
+				{
+					id: "6CC54A552B0D043A"
+					type: "item"
+					item: "minecraft:nether_star"
+				}
+				{
+					id: "727E0EE8DF85F7E5"
+					type: "item"
+					item: "gobber2:gobber2_ingot_nether"
+					count: 4
+				}
+				{
+					id: "080208774EC01A19"
+					type: "item"
+					item: "minecraft:netherite_ingot"
+					count: 4
+				}
+			]
+		}
+		{
+			x: -5.5d
+			y: 1.5d
+			dependencies: ["613CADFE6D1BD57F"]
+			id: "1407CA3ABFDBE238"
+			tasks: [{
+				id: "37743142B32FA7E7"
+				type: "item"
+				item: "minecraft:furnace"
+			}]
+		}
+		{
+			x: -5.0d
+			y: 0.5d
+			dependencies: ["1407CA3ABFDBE238"]
+			id: "4BBD5DB8D7A58890"
+			tasks: [{
+				id: "52969AC6012DBEF4"
+				type: "item"
+				item: "ironfurnaces:iron_furnace"
+			}]
+			rewards: [{
+				id: "372447B82F04C715"
+				type: "random"
+				table_id: 7876699373989475424L
+			}]
+		}
+		{
+			x: -4.0d
+			y: 0.5d
+			dependencies: ["4BBD5DB8D7A58890"]
+			id: "6889880190CCF4BB"
+			tasks: [{
+				id: "460AB2895770E002"
+				type: "item"
+				item: "ironfurnaces:gold_furnace"
+			}]
+		}
+		{
+			x: -3.5d
+			y: 1.5d
+			dependencies: [
+				"6889880190CCF4BB"
+				"0E7FE1CA037AC407"
+			]
+			dependency_requirement: "one_completed"
+			id: "22A692A1C87CA7E5"
+			tasks: [{
+				id: "7539B649DF909DBE"
+				type: "item"
+				item: "ironfurnaces:diamond_furnace"
+			}]
+		}
+		{
+			x: -3.0d
+			y: 0.5d
+			dependencies: ["22A692A1C87CA7E5"]
+			id: "01E8465C40A87ED3"
+			tasks: [{
+				id: "600EC61E2AD6F262"
+				type: "item"
+				item: "ironfurnaces:emerald_furnace"
+			}]
+			rewards: [{
+				id: "5BDA8A16699D672A"
+				type: "random"
+				table_id: 3990050942893790865L
+			}]
+		}
+		{
+			x: -2.5d
+			y: 1.5d
+			dependencies: [
+				"01E8465C40A87ED3"
+				"3082C25F532D2BF0"
+			]
+			dependency_requirement: "one_completed"
+			id: "085AD41CCA22587C"
+			tasks: [{
+				id: "6D96A6CA211FC674"
+				type: "item"
+				item: "ironfurnaces:obsidian_furnace"
+			}]
+		}
+		{
+			x: -1.5d
+			y: 1.5d
+			dependencies: ["085AD41CCA22587C"]
+			id: "6F2EE4E45FA88696"
+			tasks: [{
+				id: "2DE9038D9BBD64EF"
+				type: "item"
+				item: "ironfurnaces:netherite_furnace"
+			}]
+			rewards: [
+				{
+					id: "39020C789EA5B31C"
+					type: "item"
+					item: "minecraft:netherite_scrap"
+					count: 4
+				}
+				{
+					id: "3C3850D51C88BE27"
+					type: "choice"
+					table_id: 3990050942893790865L
+				}
+			]
+		}
+		{
+			x: -5.0d
+			y: 2.5d
+			dependencies: ["1407CA3ABFDBE238"]
+			id: "77C97B0FC97561E2"
+			tasks: [{
+				id: "386D0819E76D33A1"
+				type: "item"
+				item: "ironfurnaces:copper_furnace"
+			}]
+			rewards: [{
+				id: "2DD6199CDFCC5209"
+				type: "random"
+				table_id: 3234863821922014612L
+			}]
+		}
+		{
+			x: -4.0d
+			y: 2.5d
+			dependencies: ["77C97B0FC97561E2"]
+			id: "0E7FE1CA037AC407"
+			tasks: [{
+				id: "795B5F8B49F1E9CC"
+				type: "item"
+				item: "ironfurnaces:silver_furnace"
+			}]
+		}
+		{
+			x: -3.0d
+			y: 2.5d
+			dependencies: ["22A692A1C87CA7E5"]
+			id: "3082C25F532D2BF0"
+			tasks: [{
+				id: "67C440D7B11489EB"
+				type: "item"
+				item: "ironfurnaces:crystal_furnace"
+			}]
+			rewards: [
+				{
+					id: "75038828778467B1"
+					type: "random"
+					table_id: 4084316573772962007L
+				}
+				{
+					id: "5FFB25B9BCAC5717"
+					type: "random"
+					table_id: 3234863821922014612L
+				}
+			]
+		}
+		{
+			x: 0.0d
+			y: 1.5d
+			dependencies: ["613CADFE6D1BD57F"]
+			id: "07680034FD5E4E9B"
+			tasks: [{
+				id: "54EB00DFA933B107"
+				type: "item"
+				item: "ironfurnaces:augment_blasting"
+			}]
+		}
+		{
+			x: 0.5d
+			y: 2.5d
+			dependencies: ["613CADFE6D1BD57F"]
+			id: "1B647597868703B4"
+			tasks: [{
+				id: "02923D4A9E4505AE"
+				type: "item"
+				item: "ironfurnaces:augment_smoking"
+			}]
+		}
+		{
+			x: 0.5d
+			y: 0.5d
+			dependencies: ["613CADFE6D1BD57F"]
+			id: "618B25112A066577"
+			tasks: [{
+				id: "1271E7F443B4BA1B"
+				type: "item"
+				item: "ironfurnaces:augment_speed"
+			}]
+		}
+		{
+			x: 1.0d
+			y: 1.5d
+			dependencies: ["613CADFE6D1BD57F"]
+			id: "2509F37947C69C1A"
+			tasks: [{
+				id: "1767FFBC7912DF9A"
+				type: "item"
+				item: "ironfurnaces:augment_fuel"
+			}]
+		}
+		{
+			x: 2.5d
+			y: 2.0d
+			dependencies: ["739D7E915EE9DC7E"]
+			id: "719969CFC07CF52C"
+			tasks: [{
+				id: "386E064CE5E3D56E"
+				type: "item"
+				item: "ironfurnaces:item_heater"
+			}]
+			rewards: [
+				{
+					id: "11B79C304EF63306"
+					type: "random"
+					table_id: 8180674179655573119L
+				}
+				{
+					id: "62504871B8778D50"
+					type: "random"
+					table_id: 3990050942893790865L
+				}
+			]
+		}
+		{
+			x: 2.5d
+			y: 1.0d
+			dependencies: ["613CADFE6D1BD57F"]
+			id: "739D7E915EE9DC7E"
+			tasks: [{
+				id: "349D03A5A5F72E82"
+				type: "item"
+				item: {
+					id: "ironfurnaces:block_heater"
+					Count: 1b
+					tag: {
+						energy: 0.0d
+					}
+				}
+			}]
+		}
+	]
+}

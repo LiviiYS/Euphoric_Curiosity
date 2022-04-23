@@ -1,0 +1,17 @@
+{
+    "hidden": true,
+    "type": "origins:resource",
+    "min": 0,
+    "max": 3,
+    "hud_render": {
+        "should_render": true,
+        "sprite_location": "origins:textures/gui/community/spiderkolo/resource_bar_02.png",
+        "bar_index": 7,
+        "condition": {
+    "type": "origins:resource",
+    "resource": "merling:reflex/stress",
+    "comparison": ">",
+    "compare_to": 0
+}
+    }
+}

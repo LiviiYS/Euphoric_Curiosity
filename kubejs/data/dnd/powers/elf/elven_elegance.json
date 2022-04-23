@@ -1,0 +1,13 @@
+{
+	"name": "Elven Elegance",
+	"description": "You take 75% less fall damage",
+	"type": "origins:modify_damage_taken",
+	"damage_condition": {
+		"type": "origins:name",
+		"name": "fall"
+	},
+	"modifier": {
+		"operation": "multiply_total",
+		"value": -0.75
+	}
+}

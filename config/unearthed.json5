@@ -1,0 +1,8 @@
+{
+	"enableDebug": false,
+	"disableReplacement": true,
+	"disableCobbleReplacement": false,
+	"disableDirtReplacement": false,
+	"disableOreReplacement": false,
+	"enableRegolithToDirt": false
+}

@@ -1,0 +1,100 @@
+{
+	/* 
+	   
+	   ***********************
+	   Enable-Disable Blocks
+	   ***********************
+	*/
+	"enableGrowthBlock": true,
+	"enableHealthBlock": true,
+	"enableDefenseBlock": true,
+	"enableExpBlock": true,
+	"enableAttackBlock": true,
+	"enableLootBlock": false,
+	/* 
+	   
+	   ***********************
+	   Block Loot Chances
+	   ***********************
+	*/
+	"growthBlockChance": 0.07000000029802322,
+	"healthBlockChance": 0.10000000149011612,
+	"defenseBlockChance": 0.07999999821186066,
+	"expBlockChance": 0.05000000074505806,
+	"attackBlockChance": 0.05000000074505806,
+	"lootBlockChance": 0.05000000074505806,
+	/* 
+	   
+	   ***********************
+	   Health Ward
+	   ***********************
+	*/
+	"healthHorizRadius": 8,
+	"healthVertRadius": 4,
+	"healthLevel": 0,
+	"enableYellowHearts": true,
+	"healthYellowHearts": 6.0,
+	"effectTickInterval": 20,
+	/* 
+	   
+	   ***********************
+	   Defense Ward
+	   ***********************
+	*/
+	"defenseHorizRadius": 8,
+	"defenseVertRadius": 6,
+	"defenseLevel": 1,
+	/* 
+	   
+	   ***********************
+	   Growth Ward
+	   ***********************
+	*/
+	"growthHoriz": 10,
+	"growthHeight": 5,
+	"baseTickDelay": 70,
+	"cactusTickDelay": 20,
+	/* 
+	   
+	   ***********************
+	   Exp Ward
+	   ***********************
+	*/
+	"expHorizRadius": 6,
+	"expVertRadius": 4,
+	"expLevel": 1,
+	/* 
+	   
+	   ***********************
+	   Attack Ward
+	   ***********************
+	*/
+	"attackHorizRadius": 8,
+	"attackVertRadius": 6,
+	"damageAmount": 3,
+	/* 
+	   
+	   ***********************
+	   Loot Ward
+	   ***********************
+	*/
+	"lootHorizRadius": 10,
+	"lootVertRadius": 4,
+	"skipNamedEndermite": false,
+	/* 
+	   
+	   ***********************
+	   Loot Ward - Drops
+	   - only use values between .01 to .99
+	   - values cannot overlap
+	   - values should be in decending order from
+	   cutoff, common, uncommon, and rare
+	   - values above cutoff threshold get a carrot
+	   ***********************
+	*/
+	"defaultDrop": "minecraft:carrot",
+	"cutoffThreshold": 0.48,
+	"commonThreshold": 0.28,
+	"uncommonThreshold": 0.12,
+	"rareThreshold": 0.04
+}

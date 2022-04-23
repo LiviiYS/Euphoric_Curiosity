@@ -1,0 +1,14 @@
+{
+	"resourcesAndCooldowns": {
+		"hudOffsetX": 125,
+		"hudOffsetY": 25
+	},
+	"tooltips": {
+		"showUsabilityHints": false,
+		"compactUsabilityHints": false
+	},
+	"executeCommand": {
+		"permissionLevel": 2,
+		"showOutput": false
+	}
+}

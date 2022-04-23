@@ -1,0 +1,16 @@
+{
+	"powers": [
+		"dnd:dwarf/dwarven_stature",
+		"dnd:short_legs",
+		"dnd:dwarf/stonecunning",
+		"origins:more_exhaustion",
+		"dnd:dwarf/weapon_preference",
+		"dnd:dwarf/cave_dweller",
+		"dnd:dense"
+	],
+	"icon": "minecraft:iron_pickaxe",
+	"order": 1,
+	"impact": 3,
+	"name": "Dwarf",
+	"description": "Bold and hardy, dwarves are known as skilled warriors, miners, and workers of stone and metal."
+}

@@ -1,0 +1,41 @@
+{
+	"name": "Speak with Beasts",
+	"description": "You instantly tame nearby cats and wolves. They will also breed randomly when near you.",
+	"type": "origins:multiple",
+	"tame_wolves": {
+		"type": "origins:action_over_time",
+		"entity_action": {
+			"type": "origins:execute_command",
+			"command": "execute as @e[type=wolf, distance=..8] unless data entity @s Owner run data modify entity @s Owner set from entity @p UUID",
+			"permission_level": 4
+		},
+		"interval": 10
+	},
+	"tame_cats": {
+		"type": "origins:action_over_time",
+		"entity_action": {
+			"type": "origins:execute_command",
+			"command": "execute as @e[type=cat, distance=..8] unless data entity @s Owner run data modify entity @s Owner set from entity @p UUID",
+			"permission_level": 4
+		},
+		"interval": 10
+	},
+	"breed_wolves": {
+		"type": "origins:action_over_time",
+		"entity_action": {
+			"type": "origins:execute_command",
+			"command": "execute as @e[type=wolf, distance=..8] run data merge entity @s {InLove:200}",
+			"permission_level": 4
+		},
+		"interval": 12000
+	},
+	"breed_cats": {
+		"type": "origins:action_over_time",
+		"entity_action": {
+			"type": "origins:execute_command",
+			"command": "execute as @e[type=cat, distance=..8] run data merge entity @s {InLove:200}",
+			"permission_level": 4
+		},
+		"interval": 12000
+	}
+}

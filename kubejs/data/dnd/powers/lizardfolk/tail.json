@@ -1,0 +1,9 @@
+{
+	"name": "Tail",
+	"description": "You swim 50% faster than humans.",
+	"type": "origins:modify_swim_speed",
+	"modifier": {
+		"operation": "multiply_base",
+		"value": 0.5
+	}
+}

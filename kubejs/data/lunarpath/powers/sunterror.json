@@ -1,0 +1,15 @@
+{
+	"type": "origins:burn",
+	"interval": 20,
+	"burn_duration": 6,
+	"condition": {
+		"type": "origins:and",
+		"conditions": [{
+				"type": "origins:exposed_to_sun"
+
+			}
+		]
+	},
+	"name":"§cSun Terror",
+	"description":"You burn when exposed to sunlight."
+}

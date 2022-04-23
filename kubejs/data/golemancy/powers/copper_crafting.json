@@ -1,0 +1,461 @@
+{
+	"type": "origins:multiple",
+	"hopper": {
+		"type": "origins:recipe",
+		"recipe": {
+			"type": "minecraft:crafting_shaped",
+			"id": "golemancy:copper_hopper",
+			"pattern": [
+				"# #",
+				"#C#",
+				" # "
+			],
+			"key": {
+				"#": {
+					"item": "minecraft:copper_ingot"
+				},
+				"C": {
+					"item": "minecraft:chest"
+				}
+			},
+			"result": {
+				"item": "minecraft:hopper",
+				"count": 1
+			}
+		}
+	},
+	"sword": {
+		"type": "origins:recipe",
+		"recipe": {
+			"type": "minecraft:crafting_shaped",
+			"id": "golemancy:copper_sword",
+			"pattern": [
+				"#",
+				"#",
+				"S"
+			],
+			"key": {
+				"#": {
+					"item": "minecraft:copper_ingot"
+				},
+				"S": {
+					"item": "minecraft:stick"
+				}
+			},
+			"result": {
+				"item": "minecraft:iron_sword",
+				"count": 1
+			}
+		}
+	},
+	"sword_nbt": {
+		"type": "origins:modify_crafting",
+		"recipe": "golemancy:copper_sword",
+		"result": {
+			"item": "minecraft:iron_sword",
+			"amount": 1,
+			"tag": "{display:{Name:'[{\"text\":\"Copper Sword\",\"italic\":false}]'}}"
+		}
+	},
+	"pickaxe": {
+		"type": "origins:recipe",
+		"recipe": {
+			"type": "minecraft:crafting_shaped",
+			"id": "golemancy:copper_pickaxe",
+			"pattern": [
+				"###",
+				" S ",
+				" S "
+			],
+			"key": {
+				"#": {
+					"item": "minecraft:copper_ingot"
+				},
+				"S": {
+					"item": "minecraft:stick"
+				}
+			},
+			"result": {
+				"item": "minecraft:iron_pickaxe",
+				"count": 1
+			}
+		}
+	},
+	"pickaxe_nbt": {
+		"type": "origins:modify_crafting",
+		"recipe": "golemancy:copper_pickaxe",
+		"result": {
+			"item": "minecraft:iron_pickaxe",
+			"amount": 1,
+			"tag": "{display:{Name:'[{\"text\":\"Copper Pickaxe\",\"italic\":false}]'}}"
+		}
+	},
+	"shovel": {
+		"type": "origins:recipe",
+		"recipe": {
+			"type": "minecraft:crafting_shaped",
+			"id": "golemancy:copper_shovel",
+			"pattern": [
+				"#",
+				"S",
+				"S"
+			],
+			"key": {
+				"#": {
+					"item": "minecraft:copper_ingot"
+				},
+				"S": {
+					"item": "minecraft:stick"
+				}
+			},
+			"result": {
+				"item": "minecraft:iron_shovel",
+				"count": 1
+			}
+		}
+	},
+	"shovel_nbt": {
+		"type": "origins:modify_crafting",
+		"recipe": "golemancy:copper_shovel",
+		"result": {
+			"item": "minecraft:iron_shovel",
+			"amount": 1,
+			"tag": "{display:{Name:'[{\"text\":\"Copper Shovel\",\"italic\":false}]'}}"
+		}
+	},
+	"axe": {
+		"type": "origins:recipe",
+		"recipe": {
+			"type": "minecraft:crafting_shaped",
+			"id": "golemancy:copper_axe",
+			"pattern": [
+				"##",
+				"#S",
+				" S"
+			],
+			"key": {
+				"#": {
+					"item": "minecraft:copper_ingot"
+				},
+				"S": {
+					"item": "minecraft:stick"
+				}
+			},
+			"result": {
+				"item": "minecraft:iron_axe",
+				"count": 1
+			}
+		}
+	},
+	"axe_nbt": {
+		"type": "origins:modify_crafting",
+		"recipe": "golemancy:copper_axe",
+		"result": {
+			"item": "minecraft:iron_axe",
+			"amount": 1,
+			"tag": "{display:{Name:'[{\"text\":\"Copper Axe\",\"italic\":false}]'}}"
+		}
+	},
+	"axe_mirror": {
+		"type": "origins:recipe",
+		"recipe": {
+			"type": "minecraft:crafting_shaped",
+			"id": "golemancy:copper_axe",
+			"pattern": [
+				"##",
+				"S#",
+				"S "
+			],
+			"key": {
+				"#": {
+					"item": "minecraft:copper_ingot"
+				},
+				"S": {
+					"item": "minecraft:stick"
+				}
+			},
+			"result": {
+				"item": "minecraft:iron_axe",
+				"count": 1
+			}
+		}
+	},
+	"axe_mirror_nbt": {
+		"type": "origins:modify_crafting",
+		"recipe": "golemancy:copper_axe_mirror",
+		"result": {
+			"item": "minecraft:iron_axe",
+			"amount": 1,
+			"tag": "{display:{Name:'[{\"text\":\"Copper Axe\",\"italic\":false}]'}}"
+		}
+	},
+	"shield": {
+		"type": "origins:recipe",
+		"recipe": {
+			"type": "minecraft:crafting_shaped",
+			"id": "golemancy:copper_shield",
+			"pattern": [
+				"P#P",
+				"PPP",
+				" P "
+			],
+			"key": {
+				"#": {
+					"item": "minecraft:copper_ingot"
+				},
+				"P": {
+					"tag": "minecraft:planks"
+				}
+			},
+			"result": {
+				"item": "minecraft:shield",
+				"count": 1
+			}
+		}
+	},
+	"bucket": {
+		"type": "origins:recipe",
+		"recipe": {
+			"type": "minecraft:crafting_shaped",
+			"id": "golemancy:copper_bucket",
+			"pattern": [
+				"# #",
+				" # "
+			],
+			"key": {
+				"#": {
+					"item": "minecraft:copper_ingot"
+				}
+			},
+			"result": {
+				"item": "minecraft:bucket",
+				"count": 1
+			}
+		}
+	},
+	"shears": {
+		"type": "origins:recipe",
+		"recipe": {
+			"type": "minecraft:crafting_shaped",
+			"id": "golemancy:copper_shears",
+			"pattern": [
+				"# ",
+				" #"
+			],
+			"key": {
+				"#": {
+					"item": "minecraft:copper_ingot"
+				}
+			},
+			"result": {
+				"item": "minecraft:shears",
+				"count": 1
+			}
+		}
+	},
+	"shears_mirror": {
+		"type": "origins:recipe",
+		"recipe": {
+			"type": "minecraft:crafting_shaped",
+			"id": "golemancy:copper_shears_mirror",
+			"pattern": [
+				" #",
+				"# "
+			],
+			"key": {
+				"#": {
+					"item": "minecraft:copper_ingot"
+				}
+			},
+			"result": {
+				"item": "minecraft:shears",
+				"count": 1
+			}
+		}
+	},
+	"piston": {
+		"type": "origins:recipe",
+		"recipe": {
+			"type": "minecraft:crafting_shaped",
+			"id": "golemancy:copper_piston",
+			"pattern": [
+				"PPP",
+				"C#C",
+				"CRC"
+			],
+			"key": {
+				"#": {
+					"item": "minecraft:copper_ingot"
+				},
+				"R": {
+					"item": "minecraft:redstone"
+				},
+				"C": {
+					"item": "minecraft:cobblestone"
+				},
+				"P": {
+					"tag": "minecraft:planks"
+				}
+			},
+			"result": {
+				"item": "minecraft:piston",
+				"count": 1
+			}
+		}
+	},
+	"lantern": {
+		"type": "origins:recipe",
+		"recipe": {
+			"type": "minecraft:crafting_shaped",
+			"id": "golemancy:copper_lantern",
+			"pattern": [
+				" # ",
+				"#C#",
+				" # "
+			],
+			"key": {
+				"#": {
+					"item": "minecraft:copper_ingot"
+				},
+				"C": {
+					"item": "minecraft:coal"
+				}
+			},
+			"result": {
+				"item": "minecraft:lantern",
+				"count": 8
+			}
+		}
+	},
+	"soul_lantern": {
+		"type": "origins:recipe",
+		"recipe": {
+			"type": "minecraft:crafting_shaped",
+			"id": "golemancy:copper_soul_lantern",
+			"pattern": [
+				"S#S",
+				"#C#",
+				"S#S"
+			],
+			"key": {
+				"#": {
+					"item": "minecraft:copper_ingot"
+				},
+				"C": {
+					"item": "minecraft:coal"
+				},
+				"S": {
+					"tag": "minecraft:soul_fire_base_blocks"
+				}
+			},
+			"result": {
+				"item": "minecraft:soul_lantern",
+				"count": 8
+			}
+		}
+	},
+	"lantern_charcoal": {
+		"type": "origins:recipe",
+		"recipe": {
+			"type": "minecraft:crafting_shaped",
+			"id": "golemancy:copper_lantern_charcoal",
+			"pattern": [
+				" # ",
+				"#C#",
+				" # "
+			],
+			"key": {
+				"#": {
+					"item": "minecraft:copper_ingot"
+				},
+				"C": {
+					"item": "minecraft:charcoal"
+				}
+			},
+			"result": {
+				"item": "minecraft:lantern",
+				"count": 8
+			}
+		}
+	},
+	"soul_lantern_charcoal": {
+		"type": "origins:recipe",
+		"recipe": {
+			"type": "minecraft:crafting_shaped",
+			"id": "golemancy:copper_soul_lantern_charcoal",
+			"pattern": [
+				"S#S",
+				"#C#",
+				"S#S"
+			],
+			"key": {
+				"#": {
+					"item": "minecraft:copper_ingot"
+				},
+				"C": {
+					"item": "minecraft:charcoal"
+				},
+				"S": {
+					"tag": "minecraft:soul_fire_base_blocks"
+				}
+			},
+			"result": {
+				"item": "minecraft:soul_lantern",
+				"count": 8
+			}
+		}
+	},
+	"tripwire": {
+		"type": "origins:recipe",
+		"recipe": {
+			"type": "minecraft:crafting_shaped",
+			"id": "golemancy:copper_tripwire",
+			"pattern": [
+				"#",
+				"S",
+				"P"
+			],
+			"key": {
+				"#": {
+					"item": "minecraft:copper_ingot"
+				},
+				"S": {
+					"item": "minecraft:stick"
+				},
+				"P": {
+					"tag": "minecraft:planks"
+				}
+			},
+			"result": {
+				"item": "minecraft:tripwire_hook",
+				"count": 2
+			}
+		}
+	},
+	"redstone_lamp": {
+		"type": "origins:recipe",
+		"recipe": {
+			"type": "minecraft:crafting_shaped",
+			"id": "golemancy:copper_redstone_lamp",
+			"pattern": [
+				" # ",
+				"#R#",
+				" # "
+			],
+			"key": {
+				"#": {
+					"item": "minecraft:copper_ingot"
+				},
+				"R": {
+					"item": "minecraft:redstone"
+				}
+			},
+			"result": {
+				"item": "minecraft:redstone_lamp",
+				"count": 1
+			}
+		}
+	},
+	"name": "Architect",
+	"description": "Because of your familiarity with copper as a material, you can use it to craft many more things."
+}

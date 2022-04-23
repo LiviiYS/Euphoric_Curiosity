@@ -1,0 +1,50 @@
+{
+	"type": "origins:multiple",
+	"duration": {
+		"type": "origins:resource",
+		"min": 0,
+		"max": 120,
+		"start_value": 120,
+		"hud_render": {
+			"should_render": false
+		}
+	},
+	"tick": {
+		"type": "origins:action_over_time",
+		"interval": 4,
+		"entity_action": {
+			"type": "origins:change_resource",
+			"resource": "golemancy:glass_status_duration",
+			"change": -4
+		}
+	},
+	"frail": {
+		"type": "origins:modify_damage_taken",
+		"modifier": {
+			"operation": "multiply_total",
+			"value": 1,
+			"name": "Glass Golem Frail"
+		}
+	},
+	"remove": {
+		"type": "origins:action_over_time",
+		"interval": 2,
+		"rising_action": {
+			"type": "origins:revoke_power",
+			"power": "golemancy:glass_status",
+			"source": "golemancy:glass_golem"
+		},
+		"condition": {
+			"type": "origins:resource",
+			"resource": "golemancy:glass_status_duration",
+			"comparison": "==",
+			"compare_to": 0
+		}
+	},
+	"visual": {
+		"type": "origins:particle",
+		"particle": "minecraft:firework",
+		"frequency": 3
+	},
+	"hidden": true
+}

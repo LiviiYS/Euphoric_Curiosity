@@ -1,0 +1,10 @@
+{
+	"powers": [
+		"dnd:genasi/planetouched"
+	],
+	"icon": "minecraft:allium",
+	"order": 1,
+	"impact": 0,
+	"name": "Genasi",
+	"description": "Genasi carry the power of the elemental planes of air, earth, fire, and water in their blood."
+}

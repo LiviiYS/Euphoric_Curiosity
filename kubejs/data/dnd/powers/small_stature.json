@@ -1,0 +1,87 @@
+{
+	"name": "Small Stature",
+	"description": "You are half as large as a human. You also have 7 hearts and deal 0.5 less damage.",
+	"type": "origins:multiple",
+	"size": {
+		"type": "origins:action_on_callback",
+		"entity_action_chosen":
+		{
+			"type": "origins:and",
+			"actions": [
+			{
+				"type": "origins:execute_command",
+				"permission_level": 4,
+				"command": "scale set pehkui:height 0.5 @s"
+			},
+			{
+				"type": "origins:execute_command",
+				"permission_level": 4,
+				"command": "scale set pehkui:width 0.5 @s"
+			}
+			]
+		},
+		"entity_action_added":
+		{
+			"type": "origins:and",
+			"actions": [
+			{
+				"type": "origins:execute_command",
+				"permission_level": 4,
+				"command": "scale set pehkui:height 0.5 @s"
+			},
+			{
+				"type": "origins:execute_command",
+				"permission_level": 4,
+				"command": "scale set pehkui:width 0.5 @s"
+			}
+			]
+		},
+		"entity_action_lost":
+		{
+			"type": "origins:and",
+			"actions": [
+			{
+				"type": "origins:execute_command",
+				"permission_level": 4,
+				"command": "scale set pehkui:height 1 @s"
+			},
+			{
+				"type": "origins:execute_command",
+				"permission_level": 4,
+				"command": "scale set pehkui:width 1 @s"
+			}
+			]
+		},
+		"entity_action_removed":
+		{
+			"type": "origins:and",
+			"actions": [
+			{
+				"type": "origins:execute_command",
+				"permission_level": 4,
+				"command": "scale set pehkui:height 1 @s"
+			},
+			{
+				"type": "origins:execute_command",
+				"permission_level": 4,
+				"command": "scale set pehkui:width 1 @s"
+			}
+			]
+		}
+	},
+	"stats": {
+		"type": "origins:attribute",
+		"modifiers": [
+		{
+			"attribute": "minecraft:generic.max_health",
+			"operation": "addition",
+			"value": -6
+		},
+		{
+			"attribute": "generic.attack_damage",
+			"value": -0.5,
+			"operation": "addition"
+		}
+		]
+	}
+}

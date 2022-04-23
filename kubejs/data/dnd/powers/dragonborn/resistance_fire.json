@@ -1,0 +1,22 @@
+{
+	"name": "Flame Resistance",
+	"description": "You are immune to fire but not lava.",
+	"type": "origins:invulnerability",
+	"damage_condition": {
+		"type": "origins:or",
+		"conditions": [
+		{
+			"type": "origins:name",
+			"name": "hotFloor"
+		},
+		{
+			"type": "origins:name",
+			"name": "inFire"
+		},
+		{
+			"type": "origins:name",
+			"name": "onFire"
+		}
+		]
+	}
+}

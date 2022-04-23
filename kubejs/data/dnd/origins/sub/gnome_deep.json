@@ -1,0 +1,11 @@
+{
+	"powers": [
+		"dnd:merge_with_stone",
+		"dnd:gnome/superior_darkvision"
+	],
+	"icon": "minecraft:deepslate",
+	"order": 3,
+	"impact": 0,
+	"name": "Deep Gnome",
+	"description": "Guarded, and suspicious of outsiders, deep gnomes are cunning and taciturn, but can be just as kind-hearted, loyal, and compassionate as their surface cousins."
+}

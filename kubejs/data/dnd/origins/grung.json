@@ -1,0 +1,16 @@
+{
+	"powers": [
+		"dnd:amphibious",
+		"dnd:grung/water_dependency",
+		"dnd:small_stature",
+		"dnd:short_legs",
+		"dnd:grung/standing_leap",
+		"dnd:grung/sticky_feet",
+		"dnd:grung/poisonous_skin"
+	],
+	"icon": "minecraft:lily_pad",
+	"order": 1,
+	"impact": 3,
+	"name": "Grung",
+	"description": "Grungs are aggressive froglike humanoids found in rainforests and tropical jungles. They are fiercely territorial and see themselves as superior to most other creatures."
+}

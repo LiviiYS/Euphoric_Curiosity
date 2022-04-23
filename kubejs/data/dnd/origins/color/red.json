@@ -1,0 +1,12 @@
+{
+	"powers": [
+		"dnd:dragonborn/breath_fire",
+		"dnd:dragonborn/resistance_fire",
+		"dnd:dragonborn/scales_red"
+	],
+	"icon": "minecraft:red_concrete",
+	"order": 1,
+	"impact": 0,
+	"name": "Red",
+	"description": "As a descendant of the red dragons you can shoot fireballs."
+}

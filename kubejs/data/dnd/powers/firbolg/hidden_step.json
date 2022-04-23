@@ -1,0 +1,53 @@
+{
+    "name": "Hidden Step",
+    "description": "You become invisible while near leaves. The invisibility ends for 10 seconds after attacking or being attacked.",
+    "type": "origins:multiple",
+    "invisibility": {
+        "type": "origins:invisibility",
+        "render_armor": true,
+        "condition": {
+            "type": "origins:and",
+            "conditions": [
+                {
+                    "type": "origins:block_in_radius",
+                    "radius": 4,
+                    "block_condition": {
+                        "type": "origins:in_tag",
+                        "tag": "minecraft:leaves"
+                    }
+                },
+                {
+                    "type": "origins:resource",
+                    "resource": "dnd:firbolg/hidden_step_cooldown",
+                    "comparison": "==",
+                    "compare_to": 0
+                }
+            ]
+        }
+    },
+    "cooldown": {
+        "type": "origins:cooldown",
+        "cooldown": 200,
+        "hud_render": {
+            "should_render": true,
+            "sprite_location": "origins:textures/gui/community/spiderkolo/resource_bar_02.png",
+            "bar_index": 7
+        }
+    },
+    "cooldown_on_hit": {
+        "type": "origins:self_action_on_hit",
+        "cooldown": 0,
+        "entity_action": {
+            "type": "origins:trigger_cooldown",
+            "power": "dnd:firbolg/hidden_step_cooldown"
+        }
+    },
+    "cooldown_when_hit": {
+        "type": "origins:self_action_when_hit",
+        "cooldown": 0,
+        "entity_action": {
+            "type": "origins:trigger_cooldown",
+            "power": "dnd:firbolg/hidden_step_cooldown"
+        }
+    }
+}

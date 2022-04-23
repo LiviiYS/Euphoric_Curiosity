@@ -1,0 +1,23 @@
+{
+	"powers": [
+		"origins:water_breathing",
+		"origins:water_vision",
+		"origins:aqua_affinity",
+		"origins:swim_speed",
+		"origins:like_water",
+		"origins:aquatic",
+		"origins:conduit_power_on_land",
+		"origins:air_from_potions",
+		"merling:friends",
+		"merling:chug",
+		"merling:reflex/reflex",
+		"merling:reflex/stress",
+		"merling:reflex/stress_cooldown"
+	],
+	"icon": {
+		"item": "minecraft:cod"
+	},
+	"order": 0,
+	"impact": 3,
+	"loading_priority": 10
+}

@@ -1,0 +1,11 @@
+{
+	"powers": [
+		"dnd:halfling/stout_resilience",
+		"dnd:tough"
+	],
+	"icon": "minecraft:apple",
+	"order": 2,
+	"impact": 0,
+	"name": "Stout Halfling",
+	"description": "As a stout halfling, you’re hardier than average and have some resistance to poison."
+}

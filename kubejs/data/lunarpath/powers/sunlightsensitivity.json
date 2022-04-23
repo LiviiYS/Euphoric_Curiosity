@@ -1,0 +1,36 @@
+{
+	"name": "§cSunlight Sensitivity",
+	"description": "After staying out in the sun for too long, get Weakness I and slowness I.",
+    "type": "origins:action_over_time",
+    "condition": {
+        "type": "origins:daytime",
+        "inverted": false
+    },
+    "interval": 20,
+    "entity_action": {
+        "type": "origins:and",
+        "actions": [
+            {
+                "type": "origins:apply_effect",
+                "effects": [
+                    {
+                        "duration": 300,
+                        "is_ambient": false,
+                        "show_particles": true,
+                        "show_icon": true,
+                        "effect": "minecraft:slowness",
+                        "amplifier": 1
+                    },
+                    {
+                        "duration": 300,
+                        "is_ambient": false,
+                        "show_particles": true,
+                        "show_icon": true,
+                        "effect": "minecraft:weakness",
+                        "amplifier": 1
+                    }
+                ]
+            }
+        ]
+    }
+}

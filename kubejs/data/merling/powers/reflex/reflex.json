@@ -1,0 +1,138 @@
+{
+    "name": "Fishy Reflex",
+    "description": "[Primary] You can dodge any attack and not take any damage! But you can only do it 3 times {inticated by a stress bar} and you need to wait 10 seconds, and not take damage, to lower the stree bar. More stress equals more pain.",
+    "type": "origins:multiple",
+    "toggle": {
+        "type": "origins:toggle",
+        "key": {
+            "key": "key.origins.primary_active",
+            "continuous": false
+        },
+        "active_by_default": false
+    },
+    "resource": {
+        "type": "origins:resource",
+        "min": 0,
+        "max": 1,
+        "hud_render": {
+            "should_render": true,
+            "sprite_location": "origins:textures/gui/community/spiderkolo/resource_bar_02.png",
+            "bar_index": 0,
+            "condition": {
+                "type": "origins:resource",
+                "resource": "*:*_resource",
+                "comparison": ">",
+                "compare_to": 0
+            }
+        }
+    },
+    "indicator1": {
+        "type": "origins:action_over_time",
+        "entity_action": {
+            "type": "origins:change_resource",
+            "resource": "*:*_resource",
+            "change": 1
+        },
+        "interval": 1,
+        "condition": {
+            "type": "origins:power_active",
+            "power": "*:*_toggle"
+        }
+    },
+    "indicator2": {
+        "type": "origins:action_over_time",
+        "entity_action": {
+            "type": "origins:change_resource",
+            "resource": "*:*_resource",
+            "change": -1
+        },
+        "interval": 1,
+        "condition": {
+            "type": "origins:power_active",
+            "power": "*:*_toggle",
+            "inverted": true
+        }
+    },
+    "particles": {
+        "type": "origins:action_over_time",
+        "entity_action": {
+            "type": "origins:execute_command",
+            "command": "particle minecraft:falling_water ~ ~ ~ .5 .6 .5 0 50",
+            "permission_level": 4
+        },
+        "interval": 1,
+        "condition": {
+            "type": "origins:power_active",
+            "power": "*:*_toggle"
+        }
+    },
+    "resist": {
+        "type": "origins:modify_damage_taken",
+        "condition": {
+            "type": "origins:power_active",
+            "power": "*:*_toggle"
+        },
+             "damage_condition": {
+            "type": "origins:or",
+            "conditions": [{
+                "type": "origins:name",
+                "name": "outOfWorld",
+                "inverted": true
+            }]
+        },
+        "modifier": {
+            "operation": "multiply_total",
+            "value": -0.99
+        }
+    },
+    "stress_filler": {
+        "type": "origins:self_action_when_hit",
+        "entity_action": {
+            "type": "origins:and",
+            "actions": [{
+                    "type": "origins:change_resource",
+                    "resource": "merling:reflex/stress",
+                    "change": 1
+                },
+                {
+                    "type": "origins:change_resource",
+                    "resource": "merling:reflex/stress_cooldown_resource1",
+                    "change": 200
+                }
+            ]
+        },
+        "cooldown": 1,
+        "damage_condition": {
+            "type": "origins:or",
+            "conditions": [{
+                "type": "origins:name",
+                "name": "outOfWorld",
+                "inverted": true
+            }]
+        },
+        "condition": {
+            "type": "origins:and",
+            "conditions": [
+        {
+            "type": "origins:power_active",
+            "power": "*:*_toggle"
+        }
+    ]
+        }
+    },
+    "cooldown_lower": {
+        "type": "origins:action_over_time",
+        "entity_action": {
+            "type": "origins:change_resource",
+            "resource": "merling:reflex/stress",
+            "change": -1
+        },
+        "interval": 1,
+        "condition": {
+            "type": "origins:resource",
+            "resource": "merling:reflex/stress_cooldown_resource1",
+            "comparison": "==",
+            "compare_to": 1
+        }
+    }
+}

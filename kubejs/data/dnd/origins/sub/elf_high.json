@@ -1,0 +1,11 @@
+{
+	"powers": [
+		"dnd:elf/mending",
+		"dnd:intelligent"
+	],
+	"icon": "minecraft:experience_bottle",
+	"order": 2,
+	"impact": 0,
+	"name": "High Elf",
+	"description": "As a high elf, you have a keen mind and a mastery of at least the basics of magic."
+}

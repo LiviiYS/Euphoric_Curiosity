@@ -1,0 +1,17 @@
+{
+	"name": "Frost Breath",
+	"description": "Press the primary key to freeze your enemies in place.",
+	"type": "origins:fire_projectile",
+	"entity_type": "minecraft:potion",
+	"cooldown": 400,
+	"hud_render": {
+		"sprite_location": "origins:textures/gui/community/spiderkolo/resource_bar_03.png",
+		"bar_index": 0
+	},
+	"count": 1,
+	"speed": 1.5,
+	"divergence": 1,
+	"sound": "entity.ender_dragon.shoot",
+	"tag": "{Item:{id:\"minecraft:lingering_potion\",Count:1b,tag:{CustomPotionColor:12441599,CustomPotionEffects:[{Id:2b,Amplifier:6b,Duration:40}]}}}",
+	"key": "key.origins.primary_active"
+}

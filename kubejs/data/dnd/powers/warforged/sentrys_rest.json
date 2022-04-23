@@ -1,0 +1,132 @@
+{
+	"name": "Sentry's Rest",
+	"description": "Hold primary when standing still to set your spawn wherever you are.",
+	"type": "origins:multiple",
+	"resource": {
+		"type": "origins:resource",
+		"min": 0,
+		"max": 100,
+		"hud_render": {
+			"sprite_location": "origins:textures/gui/community/spiderkolo/resource_bar_02.png",
+			"bar_index": 7,
+			"condition": {
+				"type": "origins:resource",
+				"resource": "dnd:warforged/sentrys_rest_resource",
+				"comparison": "!=",
+				"compare_to": 0
+			}
+		},
+		"max_action": {
+			"type": "origins:and",
+			"actions": [
+				{
+					"type": "origins:execute_command",
+					"command": "spawnpoint @s"
+				},
+				{
+					"type": "origins:change_resource",
+					"resource": "dnd:warforged/sentrys_rest_resource",
+					"change": -100
+				},
+				{
+					"type": "origins:trigger_cooldown",
+					"power": "dnd:warforged/sentrys_rest_cooldown"
+				}
+			]
+		}
+	},
+	"cooldown": {
+		"type": "origins:cooldown",
+		"cooldown": 2400,
+		"hud_render": {
+			"sprite_location": "origins:textures/gui/community/spiderkolo/resource_bar_02.png",
+			"bar_index": 23
+		}
+	},
+	"sleep": {
+		"type": "origins:active_self",
+		"cooldown": 1,
+		"key": {
+			"key": "primary",
+			"continuous": true
+		},
+		"hud_render": {
+			"should_render": false
+		},
+		"entity_action": {
+			"type": "origins:and",
+			"actions": [
+				{
+					"type": "origins:change_resource",
+					"resource": "dnd:warforged/sentrys_rest_resource",
+					"change": 1
+				},
+				{
+					"type": "origins:apply_effect",
+					"effects": [
+						{
+							"effect": "minecraft:slowness",
+							"amplifier": 6,
+							"duration": 2,
+							"is_ambient": true,
+							"show_particles": false,
+							"show_icon": false
+						},
+						{
+							"effect": "minecraft:weakness",
+							"amplifier": 9,
+							"duration": 2,
+							"is_ambient": true,
+							"show_particles": false,
+							"show_icon": false
+						}
+					]
+				}
+			]
+		},
+		"condition": {
+			"type": "origins:and",
+			"conditions": [
+				{
+					"type": "origins:block_collision",
+					"offset_x": 0,
+					"offset_y": -0.01,
+					"offset_z": 0
+				},
+				{
+					"type": "origins:resource",
+					"resource": "dnd:warforged/sentrys_rest_cooldown",
+					"comparison": "==",
+					"compare_to": 0
+				}
+			]
+		}
+	},
+	"reset": {
+		"type": "origins:action_over_time",
+		"interval": 1,
+		"entity_action": {
+			"type": "origins:change_resource",
+			"resource": "dnd:warforged/sentrys_rest_resource",
+			"change": -100
+		},
+		"condition": {
+			"type": "origins:or",
+			"conditions": [
+				{
+					"inverted": true,
+					"type": "origins:status_effect",
+					"effect": "minecraft:slowness",
+					"min_amplifier": 6
+				},
+				{
+					"inverted": true,
+					"type": "origins:block_collision",
+					"offset_x": 0,
+					"offset_y": -0.01,
+					"offset_z": 0
+				}
+			]
+		}
+	}
+}

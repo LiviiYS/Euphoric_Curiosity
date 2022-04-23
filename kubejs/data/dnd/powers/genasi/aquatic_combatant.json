@@ -1,0 +1,28 @@
+{
+	"name": "Aquatic Combatant",
+	"description": "You deal 50% more damage when fully submerged in water, but only half damage otherwise.",
+	"type": "origins:multiple",
+	"more_damage_in_water": {
+		"type": "origins:modify_damage_dealt",
+		"modifier": {
+			"operation": "multiply_total",
+			"value": 0.5
+		},
+		"condition": {
+			"type": "origins:submerged_in",
+			"fluid": "minecraft:water"
+		}
+	},
+	"less_damage_outside_of_water": {
+		"type": "origins:modify_damage_dealt",
+		"modifier": {
+			"operation": "multiply_total",
+			"value": -0.5
+		},
+		"condition": {
+			"inverted": true,
+			"type": "origins:submerged_in",
+			"fluid": "minecraft:water"
+		}
+	}
+}

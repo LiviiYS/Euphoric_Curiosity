@@ -1,0 +1,13 @@
+{
+	"powers": [
+		"dnd:small_stature",
+		"dnd:short_legs",
+		"dnd:halfling/nimble",
+		"dnd:halfling/lucky"
+	],
+	"icon": "minecraft:dandelion",
+	"order": 1,
+	"impact": 2,
+	"name": "Halfling",
+	"description": "The diminutive halflings survive in a world full of larger creatures by avoiding notice or, barring that, avoiding offense."
+}

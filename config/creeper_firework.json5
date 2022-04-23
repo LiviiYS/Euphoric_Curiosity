@@ -1,0 +1,8 @@
+{
+	// Will the firework destroy nearby environment just like creeper normally exploding?
+	"DESTROY_BLOCK": false,
+	// Will the firework effect hurt nearby creature?
+	"HURT_CREATURE": false,
+	// The probability of creeper turning into firework. It must be bigger than 0.0 and not exceed 1.0.
+	"TURNING_PROBABILITY": 1.0
+}

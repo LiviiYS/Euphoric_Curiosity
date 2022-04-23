@@ -1,0 +1,10 @@
+{
+    "name": "Mending",
+	"description": "Items you hold slowly repair themselves over time.",
+	"type": "origins:action_over_time",
+    "interval": 200,
+    "entity_action": {
+		"type": "origins:execute_command",
+		"command": "item modify entity @s weapon.mainhand dnd:repair"
+    }
+}

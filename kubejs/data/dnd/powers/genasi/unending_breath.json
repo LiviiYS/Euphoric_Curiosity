@@ -1,0 +1,10 @@
+{
+	"name": "Unending Breath",
+	"description": "You can never drown.",
+	"type": "origins:action_over_time",
+	"interval": 10,
+	"entity_action": {
+		"type": "origins:gain_air",
+		"value": 20
+	}
+}

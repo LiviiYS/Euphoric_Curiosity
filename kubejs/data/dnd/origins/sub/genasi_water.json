@@ -1,0 +1,17 @@
+{
+	"powers": [
+		"dnd:amphibious",
+		"dnd:genasi/aquatic_combatant",
+		"dnd:genasi/call_to_the_wave",
+		"origins:like_water",
+		"origins:water_vision",
+		"dnd:genasi/create_or_destroy_water",
+		"dnd:genasi/moist",
+		"dnd:genasi/hypothermia"
+	],
+	"icon": "minecraft:tube_coral_block",
+	"order": 1,
+	"impact": 3,
+	"name": "Water Genasi",
+	"description": "The lapping of waves, the spray of sea foam on the wind, the ocean depths — all of these things call to your heart. You wander freely and take pride in your independence, though others might consider you selfish."
+}

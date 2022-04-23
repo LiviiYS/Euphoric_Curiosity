@@ -1,0 +1,100 @@
+{
+	"type": "origins:active_self",
+	"entity_action": {
+		"type": "origins:and",
+		"actions": [
+		{
+			"type": "origins:area_of_effect",
+			"radius": 5,
+			"bientity_action": {
+				"type": "origins:and",
+				"actions": [
+				{
+					"type": "origins:add_velocity",
+					"z": 3
+				},
+				{
+					"type": "origins:damage",
+					"amount": 3,
+					"source": {
+						"name": "magic",
+						"bypasses_armor": true,
+						"magic": true
+					}
+				},
+				{
+					"type": "origins:target_action",
+					"action": {
+						"type": "origins:spawn_particles",
+						"particle": "minecraft:end_rod",
+						"count": 5,
+						"speed": 0.5
+					}
+				}
+				]
+			}
+		},
+		{
+			"type": "origins:add_velocity",
+			"z": -0.5,
+			"space": "local"
+		},
+		{
+			"type": "origins:play_sound",
+			"sound": "minecraft:block.glass.break",
+			"volume": 0.65,
+			"pitch": 0.5
+		},
+		{
+			"type": "origins:play_sound",
+			"sound": "minecraft:entity.ender_dragon.shoot",
+			"volume": 1,
+			"pitch": 1.6
+		},
+		{
+			"type": "origins:play_sound",
+			"sound": "minecraft:entity.player.hurt_freeze",
+			"volume": 0.6,
+			"pitch": 0.9
+		},
+		{
+			"type": "origins:play_sound",
+			"sound": "minecraft:block.respawn_anchor.charge",
+			"volume": 0.5,
+			"pitch": 2
+		},
+		{
+			"type": "origins:execute_command",
+			"command": "particle minecraft:firework ~ ~ ~ 1 0.5 4 0.01 30"
+		},
+		{
+			"type": "origins:execute_command",
+			"command": "particle minecraft:firework ~ ~ ~ 4 0.5 1 0.01 30"
+		},
+		{
+			"type": "origins:execute_command",
+			"command": "particle minecraft:firework ~ ~ ~ 3.5 3.5 3.5 0.01 60"
+		}
+		]
+	},
+	"cooldown": 400,
+	"hud_render": {
+		"sprite_location": "origins:textures/gui/community/spiderkolo/resource_bar_03.png",
+		"bar_index": 12
+	},
+	"key": {
+		"key": "key.origins.secondary_active"
+	},
+	"name": "Shockwave",
+	"description": "You can release a shockwave around you, dealing damage and knocking everything back.",
+	"badges": [
+	{
+		"sprite": "origins:textures/gui/badge/active.png",
+		"text": "Active ability, use with %s."
+	},
+	{
+		"sprite": "origins:textures/gui/badge/info.png",
+		"text": "Has slight kickback."
+	}
+	]
+}

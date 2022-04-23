@@ -1,0 +1,289 @@
+{
+	"type": "origins:multiple",
+	"lava": {
+		"type": "origins:resource",
+		"min": 0,
+		"max": 10000,
+		"start_value": 10000,
+		"hud_render": {
+			"bar_index": 7
+		}
+	},
+	"loss_ambient": {
+		"type": "origins:action_over_time",
+		"interval": 20,
+		"entity_action": {
+			"type": "origins:change_resource",
+			"resource": "golemancy:molten_core_lava",
+			"change": -30
+		},
+		"condition": {
+			"type": "origins:fluid_height",
+			"fluid": "minecraft:lava",
+			"comparison": ">",
+			"compare_to": 0,
+			"inverted": true
+		}
+	},
+	"loss_sprinting": {
+		"type": "origins:action_over_time",
+		"interval": 10,
+		"entity_action": {
+			"type": "origins:change_resource",
+			"resource": "golemancy:molten_core_lava",
+			"change": -15
+		},
+		"condition": {
+			"type": "origins:and",
+			"conditions": [
+			{
+				"type": "origins:sprinting"
+			},
+			{
+				"type": "origins:fluid_height",
+				"fluid": "minecraft:lava",
+				"comparison": ">",
+				"compare_to": 0,
+				"inverted": true
+			}
+			]
+		}
+	},
+	"gain_lava": {
+		"type": "origins:action_over_time",
+		"interval": 5,
+		"entity_action": {
+			"type": "origins:change_resource",
+			"resource": "golemancy:molten_core_lava",
+			"change": 20
+		},
+		"condition": {
+			"type": "origins:fluid_height",
+			"fluid": "minecraft:lava",
+			"comparison": ">",
+			"compare_to": 0
+		}
+	},
+	"gain_lava_dehydrated": {
+		"type": "origins:action_over_time",
+		"interval": 5,
+		"entity_action": {
+			"type": "origins:change_resource",
+			"resource": "golemancy:molten_core_lava",
+			"change": 10
+		},
+		"condition": {
+			"type": "origins:and",
+			"conditions": [
+			{
+				"type": "origins:fluid_height",
+				"fluid": "minecraft:lava",
+				"comparison": ">",
+				"compare_to": 0
+			},
+			{
+				"type": "origins:resource",
+				"resource": "golemancy:molten_core_lava",
+				"comparison": "<=",
+				"compare_to": 2500
+			}
+			]
+		}
+	},
+	"gain_lava_respiration1": {
+		"type": "origins:action_over_time",
+		"interval": 20,
+		"entity_action": {
+			"type": "origins:change_resource",
+			"resource": "golemancy:molten_core_lava",
+			"change": 5
+		},
+		"condition": {
+			"type": "origins:equipped_item",
+			"equipment_slot": "head",
+			"item_condition": {
+				"type": "origins:enchantment",
+				"enchantment": "minecraft:respiration",
+				"comparison": "==",
+				"compare_to": 1
+			}
+		}
+	},
+	"gain_lava_respiration2": {
+		"type": "origins:action_over_time",
+		"interval": 20,
+		"entity_action": {
+			"type": "origins:change_resource",
+			"resource": "golemancy:molten_core_lava",
+			"change": 10
+		},
+		"condition": {
+			"type": "origins:equipped_item",
+			"equipment_slot": "head",
+			"item_condition": {
+				"type": "origins:enchantment",
+				"enchantment": "minecraft:respiration",
+				"comparison": "==",
+				"compare_to": 2
+			}
+		}
+	},
+	"gain_lava_respiration3": {
+		"type": "origins:action_over_time",
+		"interval": 20,
+		"entity_action": {
+			"type": "origins:change_resource",
+			"resource": "golemancy:molten_core_lava",
+			"change": 15
+		},
+		"condition": {
+			"type": "origins:equipped_item",
+			"equipment_slot": "head",
+			"item_condition": {
+				"type": "origins:enchantment",
+				"enchantment": "minecraft:respiration",
+				"comparison": "==",
+				"compare_to": 3
+			}
+		}
+	},
+	"effect_hunger_minor": {
+		"type": "origins:modify_exhaustion",
+		"modifier": {
+			"operation": "multiply_total",
+			"value": 0.5
+		},
+		"condition": {
+			"type": "origins:and",
+			"conditions": [
+			{
+				"type": "origins:resource",
+				"resource": "golemancy:molten_core_lava",
+				"comparison": "<=",
+				"compare_to": 8000
+			},
+			{
+				"type": "origins:resource",
+				"resource": "golemancy:molten_core_lava",
+				"comparison": ">",
+				"compare_to": 5500
+			}
+			]
+		}
+	},
+	"effect_hunger_medium": {
+		"type": "origins:modify_exhaustion",
+		"modifier": {
+			"operation": "multiply_total",
+			"value": 1
+		},
+		"condition": {
+			"type": "origins:and",
+			"conditions": [
+			{
+				"type": "origins:resource",
+				"resource": "golemancy:molten_core_lava",
+				"comparison": "<=",
+				"compare_to": 5500
+			},
+			{
+				"type": "origins:resource",
+				"resource": "golemancy:molten_core_lava",
+				"comparison": ">",
+				"compare_to": 3500
+			}
+			]
+		}
+	},
+	"effect_hunger_intense": {
+		"type": "origins:modify_exhaustion",
+		"modifier": {
+			"operation": "multiply_total",
+			"value": 1.5
+		},
+		"condition": {
+			"type": "origins:resource",
+			"resource": "golemancy:molten_core_lava",
+			"comparison": "<=",
+			"compare_to": 3500
+		}
+	},
+	"effect_health_low": {
+		"type": "origins:conditioned_attribute",
+		"modifier": {
+			"attribute": "minecraft:generic.max_health",
+			"operation": "addition",
+			"value": -2
+		},
+		"condition": {
+			"type": "origins:resource",
+			"resource": "golemancy:molten_core_lava",
+			"comparison": "<=",
+			"compare_to": 500
+		}
+	},
+	"effect_health_mid_low": {
+		"type": "origins:conditioned_attribute",
+		"modifier": {
+			"attribute": "minecraft:generic.max_health",
+			"operation": "addition",
+			"value": -2
+		},
+		"condition": {
+			"type": "origins:resource",
+			"resource": "golemancy:molten_core_lava",
+			"comparison": "<=",
+			"compare_to": 2000
+		}
+	},
+	"effect_health_mid": {
+		"type": "origins:conditioned_attribute",
+		"modifier": {
+			"attribute": "minecraft:generic.max_health",
+			"operation": "addition",
+			"value": -2
+		},
+		"condition": {
+			"type": "origins:resource",
+			"resource": "golemancy:molten_core_lava",
+			"comparison": "<=",
+			"compare_to": 4000
+		}
+	},
+	"effect_health_mid_high": {
+		"type": "origins:conditioned_attribute",
+		"modifier": {
+			"attribute": "minecraft:generic.max_health",
+			"operation": "addition",
+			"value": -2
+		},
+		"condition": {
+			"type": "origins:resource",
+			"resource": "golemancy:molten_core_lava",
+			"comparison": "<=",
+			"compare_to": 6000
+		}
+	},
+	"effect_health_high": {
+		"type": "origins:conditioned_attribute",
+		"modifier": {
+			"attribute": "minecraft:generic.max_health",
+			"operation": "addition",
+			"value": -2
+		},
+		"condition": {
+			"type": "origins:resource",
+			"resource": "golemancy:molten_core_lava",
+			"comparison": "<=",
+			"compare_to": 7500
+		}
+	},
+    "name": "Molten Core",
+    "description": "Due to the materials making up your body, you require constant access to lava.",
+	"badges": [
+	{
+		"sprite": "origins:textures/gui/badge/info.png",
+		"text": "Failing to submerge in lava causes you to starve, reducing your health and hunger."
+	}
+	]
+}

@@ -1,0 +1,36 @@
+{
+	"name": "Cave Dweller",
+	"description": "You see better below y=50 and have to be below y=50 to sleep.",
+	"type": "origins:multiple",
+	"sleep": {
+		"type": "origins:prevent_sleep",
+		"block_condition": {
+			"type": "origins:height",
+			"comparison": ">=",
+			"compare_to": 50
+		},
+		"message": "You can't sleep above y=50."
+	},
+	"vision": {
+		"type": "origins:night_vision",
+		"strength": 0.5,
+		"condition": {
+			"type": "origins:and",
+			"conditions": [
+				{
+					"type": "origins:in_block",
+					"block_condition": {
+						"type": "origins:height",
+						"comparison": "<=",
+						"compare_to": 50
+					}
+				},
+				{
+					"type": "origins:submerged_in",
+					"fluid": "minecraft:water",
+					"inverted": true
+				}
+			]
+		}
+	}
+}

@@ -1,0 +1,11 @@
+{
+	"type": "origins:attribute",
+	"modifier": {
+		"name": "Upgraded tailwind speed bonus",
+		"attribute": "minecraft:generic.movement_speed",
+		"value": 0.040,
+		"operation": "addition"
+	},
+	"name": "Tailwind",
+	"description": "You are significantly faster than others, both on foot and floating in the sky."
+}

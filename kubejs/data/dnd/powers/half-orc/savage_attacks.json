@@ -1,0 +1,14 @@
+{
+    "name": "Savage Attacks",
+    "description": "Critical hits deal 2x damage instead of 1.5x damage.",
+    "type": "origins:modify_damage_dealt",
+    "modifier": {
+        "value": 0.333334,
+        "operation": "multiply_base"
+    },
+    "condition": {
+      "type": "origins:fall_distance",
+      "comparison": ">",
+      "compare_to": 0
+    }
+}

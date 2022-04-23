@@ -1,0 +1,36 @@
+{
+	"name": "Need for Mobility",
+	"description": "You can only wear light armor (armor with protection values up to chainmail).",
+	"type": "origins:restrict_armor",
+	"head": {
+		"type": "origins:or",
+		"conditions": [
+			{
+				"type": "origins:armor_value",
+				"comparison": ">",
+				"compare_to": 2
+			},
+			{
+				"type": "origins:ingredient",
+				"ingredient": {
+					"item": "minecraft:iron_helmet"
+				}
+			}
+		]
+	},
+	"chest": {
+		"type": "origins:armor_value",
+		"comparison": ">",
+		"compare_to": 5
+	},
+	"legs": {
+		"type": "origins:armor_value",
+		"comparison": ">",
+		"compare_to": 4
+	},
+	"feet": {
+		"type": "origins:armor_value",
+		"comparison": ">",
+		"compare_to": 1
+	}
+}

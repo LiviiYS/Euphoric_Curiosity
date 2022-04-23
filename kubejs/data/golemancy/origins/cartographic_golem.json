@@ -1,0 +1,15 @@
+{
+	"powers": [
+		"golemancy:crafting_table",
+		"golemancy:cartography",
+		"golemancy:inertia",
+		"golemancy:night_vision",
+		"golemancy:light_frame",
+		"golemancy:lucky"
+	],
+	"icon": "minecraft:map",
+	"order": 687,
+	"impact": 1,
+	"name": "Globetrotter",
+	"description": "A synthetic explorer, designed to see the world and make the most of their resources."
+}

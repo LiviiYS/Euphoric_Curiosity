@@ -1,0 +1,43 @@
+{
+	"type": "origins:modify_jump",
+	"modifier": {
+		"operation": "multiply_base",
+		"value": 0.35,
+		"name": "Better Avian jump boost"
+	},
+	"entity_action": {
+		"type": "origins:and",
+		"actions": [
+			{
+				"type": "origins:if_else",
+				"condition": {
+					"type": "origins:resource",
+					"resource": "avian:double_jump/resource",
+					"comparison": "==",
+					"compare_to": 0
+				},
+				"if_action": {
+					"type": "origins:change_resource",
+					"resource": "avian:double_jump/resource",
+					"change": 1
+				}
+			},
+			{
+				"type": "origins:if_else",
+				"condition": {
+					"type": "origins:resource",
+					"resource": "avian:air_time/resource",
+					"comparison": ">",
+					"compare_to": 1
+				},
+				"if_action": {
+					"type": "origins:change_resource",
+					"resource": "avian:air_time/resource",
+					"change": -4
+				}
+			}
+		]
+	},
+	"name": "Jump Boost",
+	"hidden": true
+}

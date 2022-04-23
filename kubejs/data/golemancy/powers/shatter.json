@@ -1,0 +1,97 @@
+{
+	"type": "origins:active_self",
+	"entity_action": {
+		"type": "origins:and",
+		"actions": [
+		{
+			"type": "origins:raycast",
+			"distance": 10,
+			"fluid_handling": "none",
+			"shape_type": "collider",
+			"bientity_action": {
+				"type": "origins:and",
+				"actions": [
+					{
+					"type": "origins:target_action",
+					"action": {
+						"type": "origins:and",
+						"actions": [
+						{
+							"type": "origins:delay",
+							"ticks": 1,
+							"action": {
+								"type": "origins:grant_power",
+								"power": "golemancy:glass_status",
+								"source": "golemancy:glass_golem"
+							}
+						},
+						{
+							"type": "origins:damage",
+							"amount": 4,
+							"source": {
+								"name": "magic",
+								"bypasses_armor": true,
+								"magic": true
+							}
+						},
+						{
+							"type": "origins:play_sound",
+							"sound": "minecraft:block.glass.break",
+							"volume": 0.7
+						}
+						]
+					}
+				},
+				{
+					"type": "origins:add_velocity",
+					"z": 0.5,
+					"y": 0.1
+				}
+				]
+			},
+			"command_step": 0.5,
+			"command_along_ray": "particle minecraft:end_rod ~ ~ ~ 0 0 0 0.02 2",
+			"command_at_hit": "particle minecraft:spit ~ ~ ~ 1 1 1 0.01 10"
+		},
+		{
+			"type": "origins:play_sound",
+			"sound": "minecraft:block.enchantment_table.use",
+			"pitch": 2,
+			"volume": 0.45
+		},
+		{
+			"type": "origins:play_sound",
+			"sound": "minecraft:block.glass.break",
+			"pitch": 1.3,
+			"volume": 0.8
+		},
+		{
+			"type": "origins:play_sound",
+			"sound": "minecraft:entity.player.hurt_freeze",
+			"pitch": 1.2,
+			"volume": 1
+		}
+		]
+	},
+	"cooldown": 240,
+	"hud_render": {
+		"sprite_location": "origins:textures/gui/community/huang/resource_bar_01.png",
+		"bar_index": 19
+	},
+	"key": {
+		"key": "key.origins.primary_active",
+		"continuous": false
+	},
+	"name": "Shatter",
+	"description": "You can fire a beam, dealing damage and causing enemies to become frail.",
+	"badges": [
+	{
+		"sprite": "origins:textures/gui/badge/active.png",
+		"text": "Active ability, use with %s."
+	},
+	{
+		"sprite": "origins:textures/gui/badge/info.png",
+		"text": "Frail entities take double damage. Lasts for 6 seconds."
+	}
+	]
+}

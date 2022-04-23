@@ -1,0 +1,10 @@
+{
+	"name": "Amphibious",
+	"description": "You can breathe air and water.",
+	"type": "origins:action_over_time",
+	"interval": 10,
+	"entity_action": {
+		"type": "origins:gain_air",
+		"value": 20
+	}
+}

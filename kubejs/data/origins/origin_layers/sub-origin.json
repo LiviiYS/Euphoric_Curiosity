@@ -1,0 +1,75 @@
+{
+	"origins": [
+		{
+			"condition": {
+				"type": "origins:origin",
+				"layer": "origins:origin",
+				"origin": "dnd:dwarf"
+			},
+			"origins": [
+				"dnd:sub/dwarf_hill",
+				"dnd:sub/dwarf_mountain"
+			]
+		},
+		{
+			"condition": {
+				"type": "origins:origin",
+				"layer": "origins:origin",
+				"origin": "dnd:halfling"
+			},
+			"origins": [
+				"dnd:sub/halfling_lightfoot",
+				"dnd:sub/halfling_stout"
+			]
+		},
+		{
+			"condition": {
+				"type": "origins:origin",
+				"layer": "origins:origin",
+				"origin": "dnd:elf"
+			},
+			"origins": [
+				"dnd:sub/elf_wood",
+				"dnd:sub/elf_high"
+			]
+		},
+		{
+			"condition": {
+				"type": "origins:origin",
+				"layer": "origins:origin",
+				"origin": "dnd:gnome"
+			},
+			"origins": [
+				"dnd:sub/gnome_forest",
+				"dnd:sub/gnome_rock",
+				"dnd:sub/gnome_deep"
+			]
+		},
+		{
+			"condition": {
+				"type": "origins:origin",
+				"layer": "origins:origin",
+				"origin": "dnd:genasi"
+			},
+			"origins": [
+				"dnd:sub/genasi_air",
+				"dnd:sub/genasi_earth",
+				"dnd:sub/genasi_fire",
+				"dnd:sub/genasi_water"
+			]
+		},
+		{
+			"condition": {
+				"type": "origins:origin",
+				"layer": "origins:origin",
+				"origin": "dnd:warforged"
+			},
+			"origins": [
+				"dnd:sub/warforged_juggernaut",
+				"dnd:sub/warforged_skirmisher"
+			]
+		}
+	],
+	"order": 2,
+	"name": "Sub-Origin"
+}

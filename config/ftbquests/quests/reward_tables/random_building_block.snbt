@@ -1,0 +1,9 @@
+{
+	id: "6D4FA8591D2F3460"
+	order_index: 3
+	title: "Random Building Block"
+	icon: "kubejs:dice_building"
+	loot_size: 1
+	hide_tooltip: true
+	rewards: [{ item: "twigs:cobblestone_bricks", count: 24 }]
+}

@@ -1,0 +1,915 @@
+{
+	id: "77D5BDB3E754BAB6"
+	group: "2061988DE7EF893B"
+	order_index: 6
+	filename: "quarries"
+	title: "Quarries"
+	icon: "spatialharvesters:ore_core"
+	default_quest_shape: ""
+	default_hide_dependency_lines: false
+	quests: [
+		{
+			x: -4.0d
+			y: -2.0d
+			dependencies: ["263A25C0B02975DF"]
+			size: 1.5d
+			id: "10F4D2EAB4092EA5"
+			tasks: [{
+				id: "473721EFF40FAF81"
+				type: "item"
+				item: "quarrymod:quarry"
+			}]
+		}
+		{
+			x: -2.5d
+			y: -2.0d
+			dependencies: ["10F4D2EAB4092EA5"]
+			id: "4817B4072DAF4738"
+			tasks: [{
+				id: "1C683544363C6D33"
+				type: "item"
+				item: "quarrymod:drill_tube"
+			}]
+			rewards: [{
+				id: "4DBB8ECD1EBF5A3A"
+				type: "random"
+				table_id: 3990050942893790865L
+			}]
+		}
+		{
+			x: 0.5d
+			y: -2.0d
+			dependencies: ["34CB6B9511E3A181"]
+			size: 1.5d
+			id: "2E3F677E25483814"
+			tasks: [{
+				id: "7B0C500DA567AAD8"
+				type: "item"
+				item: "indrev:mining_rig_mk4"
+			}]
+		}
+		{
+			x: 0.5d
+			y: 0.0d
+			dependencies: ["2E3F677E25483814"]
+			id: "6AED1E7F050EB938"
+			tasks: [{
+				id: "79353156888A2627"
+				type: "item"
+				item: "indrev:drill_bottom"
+			}]
+			rewards: [
+				{
+					id: "21C65509BE370D9E"
+					type: "random"
+					table_id: 3234863821922014612L
+				}
+				{
+					id: "0B93330B630B3B05"
+					type: "random"
+					table_id: 3990050942893790865L
+				}
+			]
+		}
+		{
+			x: 4.0d
+			y: -1.5d
+			dependencies: ["049A212F3BAFA5BA"]
+			id: "17614366F750F6FF"
+			tasks: [{
+				id: "1C1C7560F969FC4D"
+				type: "item"
+				item: "modern_industrialization:steam_quarry"
+			}]
+			rewards: [
+				{
+					id: "7462F348E94E93C7"
+					type: "random"
+					table_id: 7876699373989475424L
+				}
+				{
+					id: "2A7567B3B489CA7A"
+					type: "random"
+					table_id: 7876699373989475424L
+				}
+				{
+					id: "79A3EAC077C06600"
+					type: "random"
+					table_id: 3990050942893790865L
+				}
+			]
+		}
+		{
+			x: 6.0d
+			y: -1.5d
+			dependencies: ["17614366F750F6FF"]
+			id: "5B44F7D6406CCA27"
+			tasks: [{
+				id: "6F2DAF16A73F082B"
+				type: "item"
+				item: "modern_industrialization:electric_quarry"
+			}]
+			rewards: [
+				{
+					id: "7E6664BE05DF2B33"
+					type: "random"
+					table_id: 7876699373989475424L
+				}
+				{
+					id: "1EA58BB521A58E53"
+					type: "random"
+					table_id: 4084316573772962007L
+				}
+				{
+					id: "6E920EE1130B3619"
+					type: "random"
+					table_id: 3990050942893790865L
+				}
+			]
+		}
+		{
+			x: 3.0d
+			y: -0.5d
+			dependencies: [
+				"17614366F750F6FF"
+				"1E3772B5F34DD0CE"
+			]
+			id: "66C5332F2B1E3B00"
+			tasks: [{
+				id: "2E775B0C2299A717"
+				type: "item"
+				item: "modern_industrialization:copper_drill"
+			}]
+		}
+		{
+			x: 4.0d
+			y: 0.0d
+			dependencies: [
+				"17614366F750F6FF"
+				"79FF056EFD077ACB"
+			]
+			id: "7D83A5DF8F5690CA"
+			tasks: [{
+				id: "77D07CD3554EE94E"
+				type: "item"
+				item: "modern_industrialization:bronze_drill"
+			}]
+		}
+		{
+			x: 4.0d
+			y: 1.5d
+			dependencies: ["201BA8FE51CD8F6C"]
+			id: "79FF056EFD077ACB"
+			tasks: [{
+				id: "54B97B61872C88CD"
+				type: "item"
+				item: "modern_industrialization:bronze_drill_head"
+			}]
+		}
+		{
+			x: 3.0d
+			y: 1.0d
+			dependencies: ["201BA8FE51CD8F6C"]
+			id: "1E3772B5F34DD0CE"
+			tasks: [{
+				id: "438DBE74F0CCFDD1"
+				type: "item"
+				item: "modern_industrialization:copper_drill_head"
+			}]
+		}
+		{
+			x: 5.0d
+			y: -0.5d
+			dependencies: [
+				"5B44F7D6406CCA27"
+				"5756370C260883CD"
+			]
+			id: "0EED404B672C1BAE"
+			tasks: [{
+				id: "679C7AA0C3FB03AC"
+				type: "item"
+				item: "modern_industrialization:stainless_steel_drill"
+			}]
+		}
+		{
+			x: 5.0d
+			y: 1.0d
+			dependencies: ["201BA8FE51CD8F6C"]
+			id: "5756370C260883CD"
+			tasks: [{
+				id: "0E0FB30795E5BCA8"
+				type: "item"
+				item: "modern_industrialization:stainless_steel_drill_head"
+			}]
+		}
+		{
+			x: 6.0d
+			y: 0.0d
+			dependencies: [
+				"5B44F7D6406CCA27"
+				"6881F2119FDA2719"
+			]
+			id: "304C06F168302917"
+			tasks: [{
+				id: "4858CF29BA8BE455"
+				type: "item"
+				item: "modern_industrialization:steel_drill"
+			}]
+		}
+		{
+			x: 6.0d
+			y: 1.5d
+			dependencies: ["201BA8FE51CD8F6C"]
+			id: "6881F2119FDA2719"
+			tasks: [{
+				id: "6A945096A981BDAC"
+				type: "item"
+				item: "modern_industrialization:steel_drill_head"
+			}]
+		}
+		{
+			x: 7.0d
+			y: -0.5d
+			dependencies: [
+				"5B44F7D6406CCA27"
+				"1C364BFF5A510423"
+			]
+			id: "6350D0E3A2F783F4"
+			tasks: [{
+				id: "243B7DD5F9E16C29"
+				type: "item"
+				item: "modern_industrialization:gold_drill"
+			}]
+		}
+		{
+			x: 7.0d
+			y: 1.0d
+			dependencies: ["201BA8FE51CD8F6C"]
+			id: "1C364BFF5A510423"
+			tasks: [{
+				id: "2FB99B5671ECE972"
+				type: "item"
+				item: "modern_industrialization:gold_drill_head"
+			}]
+		}
+		{
+			title: "Quarry Multiblock"
+			icon: "modern_industrialization:steel_machine_casing_pipe"
+			x: 4.0d
+			y: -3.0d
+			dependencies: ["17614366F750F6FF"]
+			id: "0466796B69ABAD4E"
+			tasks: [
+				{
+					id: "2638B72952AD7E9D"
+					type: "item"
+					item: "minecraft:chain"
+					count: 4L
+				}
+				{
+					id: "448FE7E27D8909FC"
+					type: "item"
+					item: "modern_industrialization:steel_machine_casing"
+					count: 16L
+				}
+				{
+					id: "08720345EAA0780B"
+					type: "item"
+					item: "modern_industrialization:steel_machine_casing_pipe"
+					count: 6L
+				}
+			]
+		}
+		{
+			x: 6.0d
+			y: -3.0d
+			dependencies: ["5B44F7D6406CCA27"]
+			id: "4AD8B7525C7DA838"
+			tasks: [{
+				id: "0505EDEA228C5CDB"
+				type: "item"
+				item: "indrev:cable_mk1"
+			}]
+		}
+		{
+			x: 7.0d
+			y: -2.5d
+			dependencies: ["5B44F7D6406CCA27"]
+			id: "12FC2C8C65974697"
+			tasks: [{
+				id: "607E02F72A04868C"
+				type: "item"
+				item: "ae2:fluix_glass_cable"
+			}]
+		}
+		{
+			x: -4.5d
+			y: 0.0d
+			hide_dependency_lines: true
+			dependencies: ["10F4D2EAB4092EA5"]
+			id: "1981C3C797BF1A2B"
+			tasks: [{
+				id: "6C3B92839EFCF750"
+				type: "item"
+				item: "quarrymod:range_extender_lvl1_upgrade"
+			}]
+		}
+		{
+			x: -3.5d
+			y: -0.5d
+			dependencies: ["1981C3C797BF1A2B"]
+			id: "45C996F5D409E30A"
+			tasks: [{
+				id: "398A361F1D9A850E"
+				type: "item"
+				item: "quarrymod:range_extender_lvl2_upgrade"
+			}]
+		}
+		{
+			x: -2.5d
+			y: 0.0d
+			dependencies: ["45C996F5D409E30A"]
+			id: "49EDD13431950BAD"
+			tasks: [{
+				id: "24A881A651DD7929"
+				type: "item"
+				item: "quarrymod:range_extender_lvl3_upgrade"
+			}]
+		}
+		{
+			x: -4.5d
+			y: 1.0d
+			hide_dependency_lines: true
+			dependencies: ["10F4D2EAB4092EA5"]
+			id: "2F33E0E4E80D70FF"
+			tasks: [{
+				id: "63810CAED1927AB7"
+				type: "item"
+				item: "quarrymod:fortune_lvl1_upgrade"
+			}]
+		}
+		{
+			x: -3.5d
+			y: 0.5d
+			dependencies: ["2F33E0E4E80D70FF"]
+			id: "3F29AEB36E9563D2"
+			tasks: [{
+				id: "655BDE379EC6C30A"
+				type: "item"
+				item: "quarrymod:fortune_lvl2_upgrade"
+			}]
+		}
+		{
+			x: -2.5d
+			y: 1.0d
+			dependencies: ["3F29AEB36E9563D2"]
+			id: "3782724F209F1A37"
+			tasks: [{
+				id: "2B90EEC729C50333"
+				type: "item"
+				item: "quarrymod:fortune_lvl3_upgrade"
+			}]
+		}
+		{
+			x: -3.5d
+			y: 1.5d
+			hide_dependency_lines: true
+			dependencies: ["10F4D2EAB4092EA5"]
+			id: "55948C011EBBD0DA"
+			tasks: [{
+				id: "751A2D877A0BEE7B"
+				type: "item"
+				item: "quarrymod:silktouch_upgrade"
+			}]
+		}
+		{
+			x: -5.5d
+			y: 6.0d
+			hide_dependency_lines: true
+			dependencies: ["34BF87324B7C9193"]
+			id: "7C9CA37220E8F1FD"
+			tasks: [{
+				id: "17D6C3EAED59707D"
+				type: "item"
+				item: "spatialharvesters:crystal_1"
+			}]
+		}
+		{
+			x: -4.5d
+			y: 6.5d
+			dependencies: ["7C9CA37220E8F1FD"]
+			id: "57B167BBFC363A4B"
+			tasks: [{
+				id: "4B38CD90D5B3C26A"
+				type: "item"
+				item: "spatialharvesters:crystal_2"
+			}]
+		}
+		{
+			x: -5.5d
+			y: 7.0d
+			dependencies: ["57B167BBFC363A4B"]
+			id: "1167C13A5669DC75"
+			tasks: [{
+				id: "09762ED0E63EB012"
+				type: "item"
+				item: "spatialharvesters:crystal_3"
+			}]
+		}
+		{
+			x: -4.5d
+			y: 7.5d
+			dependencies: ["1167C13A5669DC75"]
+			id: "7CB13C68B7E769B3"
+			tasks: [{
+				id: "7118BD7BCE58A322"
+				type: "item"
+				item: "spatialharvesters:crystal_4"
+			}]
+		}
+		{
+			x: -3.5d
+			y: 7.0d
+			dependencies: ["7CB13C68B7E769B3"]
+			id: "45F5B3694B287955"
+			tasks: [{
+				id: "0C510A4696AD7E63"
+				type: "item"
+				item: "spatialharvesters:crystal_5"
+			}]
+		}
+		{
+			x: -2.5d
+			y: 7.5d
+			dependencies: ["45F5B3694B287955"]
+			id: "3AE01DDCFF13885C"
+			tasks: [{
+				id: "6472A36B9BCEFB89"
+				type: "item"
+				item: "spatialharvesters:crystal_6"
+			}]
+		}
+		{
+			x: -1.5d
+			y: 7.0d
+			dependencies: ["3AE01DDCFF13885C"]
+			id: "462D124BF9337B3D"
+			tasks: [{
+				id: "70C9828FB7BCDD01"
+				type: "item"
+				item: "spatialharvesters:crystal_7"
+			}]
+			rewards: [
+				{
+					id: "5B92C03803CBD5B3"
+					type: "item"
+					item: "minecraft:netherite_scrap"
+					count: 2
+				}
+				{
+					id: "3FEAF09F3D928B1F"
+					type: "item"
+					item: {
+						id: "vanilla-hammers:ender_hammer"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+				{
+					id: "0819ADC4453B5DB9"
+					type: "random"
+					table_id: 3990050942893790865L
+				}
+			]
+		}
+		{
+			x: -2.5d
+			y: 6.0d
+			hide_dependency_lines: true
+			dependencies: ["34BF87324B7C9193"]
+			id: "75BCA19B5AAD075B"
+			tasks: [{
+				id: "787CAFF64C0EB91A"
+				type: "item"
+				item: "spatialharvesters:mob_crystal"
+			}]
+		}
+		{
+			x: -2.0d
+			y: 5.0d
+			dependencies: ["66570143B84009EC"]
+			id: "34BF87324B7C9193"
+			tasks: [{
+				id: "7CAF2C6D05D03DE1"
+				type: "item"
+				item: "spatialharvesters:base_powder"
+			}]
+		}
+		{
+			title: "Casing"
+			x: 0.5d
+			y: 5.0d
+			dependencies: ["34BF87324B7C9193"]
+			size: 1.5d
+			id: "2E1B51428228BCD3"
+			tasks: [{
+				id: "0C6413E485452CC1"
+				type: "item"
+				item: "spatialharvesters:casing"
+			}]
+		}
+		{
+			x: 3.0d
+			y: 5.0d
+			dependencies: ["2E1B51428228BCD3"]
+			id: "58EA82CA42E74EA1"
+			tasks: [{
+				id: "37B231161657DF18"
+				type: "item"
+				item: "spatialharvesters:space_ripper"
+			}]
+			rewards: [{
+				id: "41FC942EFB30AA7D"
+				type: "random"
+				table_id: 3990050942893790865L
+			}]
+		}
+		{
+			x: 0.5d
+			y: 6.5d
+			dependencies: ["2E1B51428228BCD3"]
+			id: "711EF52A5F990F8D"
+			tasks: [{
+				id: "6F66558D8304F6B3"
+				type: "item"
+				item: "spatialharvesters:ore_core"
+			}]
+		}
+		{
+			title: "Stone and Soil Core"
+			x: -0.5d
+			y: 6.0d
+			dependencies: ["2E1B51428228BCD3"]
+			id: "6B42A19D3C30E4E3"
+			tasks: [
+				{
+					id: "3A34A1850FDE19C0"
+					type: "item"
+					item: "spatialharvesters:stone_core"
+				}
+				{
+					id: "636D913C3135739F"
+					type: "item"
+					item: "spatialharvesters:soil_core"
+				}
+			]
+		}
+		{
+			x: 1.5d
+			y: 6.0d
+			dependencies: ["2E1B51428228BCD3"]
+			id: "585EEBA4D4BCA356"
+			tasks: [{
+				id: "473AA8262960FA9F"
+				type: "item"
+				item: "spatialharvesters:bio_core"
+			}]
+		}
+		{
+			x: 0.5d
+			y: 3.5d
+			dependencies: ["2E1B51428228BCD3"]
+			id: "61536C37DF537F2D"
+			tasks: [{
+				id: "7CC2532C0373E83D"
+				type: "item"
+				item: "spatialharvesters:loot_core"
+			}]
+		}
+		{
+			title: "Mob Cores"
+			x: 1.5d
+			y: 4.0d
+			dependencies: ["2E1B51428228BCD3"]
+			id: "767368B87872099E"
+			tasks: [
+				{
+					id: "0D29ABC8669E4FEE"
+					type: "item"
+					item: "spatialharvesters:mob_core"
+				}
+				{
+					id: "52FE051557D4E771"
+					type: "item"
+					item: "spatialharvesters:dark_mob_core"
+				}
+			]
+		}
+		{
+			title: "Stone and Soil Harvester"
+			x: -0.5d
+			y: 7.5d
+			dependencies: ["6B42A19D3C30E4E3"]
+			id: "4CADC2746D1839F6"
+			tasks: [
+				{
+					id: "0A365496D66695E3"
+					type: "item"
+					item: {
+						id: "spatialharvesters:stone_harvester_1"
+						Count: 1b
+						tag: { }
+					}
+				}
+				{
+					id: "1D8269E1E0B18080"
+					type: "item"
+					item: {
+						id: "spatialharvesters:soil_harvester_1"
+						Count: 1b
+						tag: { }
+					}
+				}
+			]
+			rewards: [{
+				id: "21E5A03BB6E44FAF"
+				type: "random"
+				table_id: 3990050942893790865L
+			}]
+		}
+		{
+			title: "Ore Harvester"
+			x: 0.5d
+			y: 8.0d
+			dependencies: ["711EF52A5F990F8D"]
+			id: "4C637F78961C9628"
+			tasks: [{
+				id: "11E95220E353D2C4"
+				type: "item"
+				item: {
+					id: "spatialharvesters:ore_harvester_1"
+					Count: 1b
+					tag: { }
+				}
+			}]
+			rewards: [{
+				id: "6E346F651BFCF25F"
+				type: "random"
+				table_id: 3990050942893790865L
+			}]
+		}
+		{
+			title: "Bio Harvester"
+			x: 1.5d
+			y: 7.5d
+			dependencies: ["585EEBA4D4BCA356"]
+			id: "565CD261873B3920"
+			tasks: [{
+				id: "5AAAC8AAFB1CB050"
+				type: "item"
+				item: {
+					id: "spatialharvesters:bio_harvester_1"
+					Count: 1b
+					tag: { }
+				}
+			}]
+			rewards: [{
+				id: "08C6D887D8741088"
+				type: "random"
+				table_id: 3990050942893790865L
+			}]
+		}
+		{
+			x: 0.5d
+			y: 2.0d
+			dependencies: ["61536C37DF537F2D"]
+			id: "5911B3D0B268B615"
+			tasks: [{
+				id: "36FB38561F44593C"
+				type: "item"
+				item: {
+					id: "spatialharvesters:loot_harvester"
+					Count: 1b
+					tag: { }
+				}
+			}]
+			rewards: [{
+				id: "01F8D13116E9F8C5"
+				type: "random"
+				table_id: 3990050942893790865L
+			}]
+		}
+		{
+			x: 1.5d
+			y: 2.5d
+			dependencies: ["767368B87872099E"]
+			id: "424F3F12F5DF63CC"
+			tasks: [
+				{
+					id: "586E8B7B5A9C1CC3"
+					type: "item"
+					item: {
+						id: "spatialharvesters:specific_mob_harvester"
+						Count: 1b
+						tag: { }
+					}
+				}
+				{
+					id: "2185055715EB9F6F"
+					type: "item"
+					item: {
+						id: "spatialharvesters:dark_mob_harvester"
+						Count: 1b
+						tag: { }
+					}
+				}
+			]
+			rewards: [{
+				id: "1E1F2E4ACC6DB744"
+				type: "random"
+				table_id: 3990050942893790865L
+			}]
+		}
+		{
+			x: -0.5d
+			y: 4.0d
+			dependencies: ["2E1B51428228BCD3"]
+			id: "3E025D0389EEBA8B"
+			tasks: [{
+				id: "3AFA2D5807D47026"
+				type: "item"
+				item: {
+					id: "spatialharvesters:heat_generator"
+					Count: 1b
+					tag: { }
+				}
+			}]
+		}
+		{
+			x: -3.5d
+			y: 5.0d
+			dependencies: ["34BF87324B7C9193"]
+			size: 1.5d
+			id: "6190EF884C33CE89"
+			tasks: [{
+				id: "46824279DF9621E5"
+				type: "item"
+				item: "spatialharvesters:player_key"
+			}]
+		}
+		{
+			x: -4.5d
+			y: 4.0d
+			dependencies: ["6190EF884C33CE89"]
+			id: "338878F955CD623C"
+			tasks: [{
+				id: "10D6EE0416E63247"
+				type: "item"
+				item: "spatialharvesters:mob_key"
+			}]
+		}
+		{
+			x: -3.5d
+			y: 3.5d
+			dependencies: ["6190EF884C33CE89"]
+			id: "598C66A95DFEA31A"
+			tasks: [{
+				id: "034AF34434431BF6"
+				type: "item"
+				item: "spatialharvesters:weapon_key"
+			}]
+		}
+		{
+			x: -5.0d
+			y: 5.0d
+			dependencies: ["6190EF884C33CE89"]
+			id: "5B3B1DF39642ECE0"
+			tasks: [{
+				id: "7C4267E73E440CEC"
+				type: "item"
+				item: "spatialharvesters:effect_key"
+			}]
+		}
+		{
+			x: -2.5d
+			y: 4.0d
+			dependencies: ["6190EF884C33CE89"]
+			id: "0AD225194578EEE6"
+			tasks: [{
+				id: "7AA2F69435A800AA"
+				type: "item"
+				item: "spatialharvesters:resource_disabler_key"
+			}]
+		}
+		{
+			x: 4.0d
+			y: 4.0d
+			hide_dependency_lines: true
+			dependencies: ["2E1B51428228BCD3"]
+			id: "77E1A0358EDCBA0E"
+			tasks: [{
+				id: "5CC6B2F4B3E60C11"
+				type: "item"
+				item: "spatialharvesters:regeneration_activator"
+			}]
+		}
+		{
+			x: 5.0d
+			y: 3.5d
+			hide_dependency_lines: true
+			dependencies: ["2E1B51428228BCD3"]
+			id: "302AB272C54697D8"
+			tasks: [{
+				id: "5E66AC795C32D081"
+				type: "item"
+				item: "spatialharvesters:resistance_activator"
+			}]
+		}
+		{
+			x: 6.0d
+			y: 4.0d
+			hide_dependency_lines: true
+			dependencies: ["2E1B51428228BCD3"]
+			id: "7577ED837CC8442A"
+			tasks: [{
+				id: "13A6AB0D39C7D12C"
+				type: "item"
+				item: "spatialharvesters:absorption_activator"
+			}]
+		}
+		{
+			x: 4.0d
+			y: 5.5d
+			hide_dependency_lines: true
+			dependencies: ["2E1B51428228BCD3"]
+			id: "5E0FAB34B322C645"
+			tasks: [{
+				id: "2E490535D5135DF5"
+				type: "item"
+				item: "spatialharvesters:haste_activator"
+			}]
+		}
+		{
+			x: 5.0d
+			y: 5.0d
+			hide_dependency_lines: true
+			dependencies: ["2E1B51428228BCD3"]
+			id: "12032677A51BCA2C"
+			tasks: [{
+				id: "0B8BB6611D3F3EFB"
+				type: "item"
+				item: "spatialharvesters:speed_activator"
+			}]
+		}
+		{
+			x: 6.0d
+			y: 5.5d
+			hide_dependency_lines: true
+			dependencies: ["2E1B51428228BCD3"]
+			id: "5DA89D47F45A0B78"
+			tasks: [{
+				id: "10E3714BAD6C1D66"
+				type: "item"
+				item: "spatialharvesters:jump_boost_activator"
+			}]
+		}
+		{
+			x: 4.0d
+			y: 7.0d
+			hide_dependency_lines: true
+			dependencies: ["2E1B51428228BCD3"]
+			id: "1BFE68B3AB6B0498"
+			tasks: [{
+				id: "5427A6F9839AA121"
+				type: "item"
+				item: "spatialharvesters:invisibility_activator"
+			}]
+		}
+		{
+			x: 5.0d
+			y: 6.5d
+			hide_dependency_lines: true
+			dependencies: ["2E1B51428228BCD3"]
+			id: "47AE0D79940A172B"
+			tasks: [{
+				id: "2571F3354F7EEAC6"
+				type: "item"
+				item: "spatialharvesters:night_vision_activator"
+			}]
+		}
+		{
+			x: 6.0d
+			y: 7.0d
+			hide_dependency_lines: true
+			dependencies: ["2E1B51428228BCD3"]
+			id: "220F9BED9450733A"
+			tasks: [{
+				id: "473A709C2D2B21A3"
+				type: "item"
+				item: "spatialharvesters:strength_activator"
+			}]
+		}
+	]
+}

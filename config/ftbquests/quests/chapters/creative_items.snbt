@@ -1,0 +1,357 @@
+{
+	id: "580968D8927EAB82"
+	group: "708F1B4506ED41C5"
+	order_index: 0
+	filename: "creative_items"
+	title: "Creative Items"
+	icon: "ae2:creative_energy_cell"
+	default_quest_shape: ""
+	default_hide_dependency_lines: false
+	quests: [
+		{
+			title: "The everlasting guilty pool"
+			icon: "botania:creative_pool"
+			x: 0.0d
+			y: -0.5d
+			dependencies: ["7AF4D96097879A89"]
+			size: 1.25d
+			id: "435551DDE85C1A78"
+			tasks: [{
+				id: "4ADD6FD066768CDC"
+				type: "item"
+				icon: "benchmarkadditions:benchmark_core"
+				item: "benchmarkadditions:benchmark_core"
+			}]
+			rewards: [{
+				id: "156004DF3AA6DA0B"
+				type: "item"
+				item: "botania:creative_pool"
+			}]
+		}
+		{
+			title: "Creative Storage Unit"
+			icon: "modern_industrialization:creative_storage_unit"
+			x: 1.5d
+			y: -3.5d
+			dependencies: ["7AF4D96097879A89"]
+			size: 1.25d
+			id: "76781C61DDCFF868"
+			tasks: [{
+				id: "7FF94AC648603304"
+				type: "item"
+				item: "benchmarkadditions:benchmark_core"
+			}]
+			rewards: [{
+				id: "70A76B4FE3D95994"
+				type: "item"
+				item: "modern_industrialization:creative_storage_unit"
+			}]
+		}
+		{
+			title: "Creative Tank"
+			icon: "modern_industrialization:creative_tank"
+			x: 0.0d
+			y: -2.5d
+			dependencies: ["7AF4D96097879A89"]
+			size: 1.25d
+			id: "1FCB2D1109A49BBE"
+			tasks: [{
+				id: "5BBC7376F9A3CFC3"
+				type: "item"
+				item: "benchmarkadditions:benchmark_core"
+			}]
+			rewards: [{
+				id: "7F27A50DF19C578E"
+				type: "item"
+				item: "modern_industrialization:creative_tank"
+			}]
+		}
+		{
+			title: "Creative Solar Panel"
+			icon: "techreborn:creative_solar_panel"
+			x: 1.0d
+			y: -2.5d
+			dependencies: ["7AF4D96097879A89"]
+			size: 1.25d
+			id: "13284E55C4F78854"
+			tasks: [{
+				id: "67752428A3100885"
+				type: "item"
+				item: "benchmarkadditions:benchmark_core"
+			}]
+			rewards: [{
+				id: "0389E5F72F5C40D2"
+				type: "item"
+				item: "techreborn:creative_solar_panel"
+			}]
+		}
+		{
+			title: "Creative Storage and Tank units"
+			x: 2.0d
+			y: -2.5d
+			dependencies: ["7AF4D96097879A89"]
+			size: 1.25d
+			id: "6FAB85D7DC94CE58"
+			tasks: [{
+				id: "7FAC839398D28331"
+				type: "item"
+				icon: "techreborn:creative_storage_unit"
+				item: "benchmarkadditions:benchmark_core"
+			}]
+			rewards: [
+				{
+					id: "589F90B8155356E8"
+					type: "item"
+					item: "techreborn:creative_storage_unit"
+				}
+				{
+					id: "3686DF5B1B104D7A"
+					type: "item"
+					item: "techreborn:creative_tank_unit"
+				}
+			]
+		}
+		{
+			title: "Creative Jetpack"
+			icon: "iron-jetpacks:creative_jetpack"
+			x: 2.5d
+			y: -1.5d
+			dependencies: ["7AF4D96097879A89"]
+			size: 1.25d
+			id: "5178B46FAEECAB8C"
+			tasks: [{
+				id: "5BFA8BC3878FF46A"
+				type: "item"
+				item: "benchmarkadditions:benchmark_core"
+			}]
+			rewards: [{
+				id: "77A2FB49556D3BCE"
+				type: "item"
+				item: "iron-jetpacks:creative_jetpack"
+			}]
+		}
+		{
+			title: "Creative Processing"
+			icon: "indrev:electric_furnace_creative"
+			x: -0.5d
+			y: -1.5d
+			dependencies: ["7AF4D96097879A89"]
+			size: 1.25d
+			id: "586FC47998F19232"
+			tasks: [{
+				id: "1184FF77189465D8"
+				type: "item"
+				item: "benchmarkadditions:benchmark_core"
+			}]
+			rewards: [
+				{
+					id: "0A2B2558051040EF"
+					type: "item"
+					item: "indrev:electric_furnace_creative"
+				}
+				{
+					id: "596A76578BB3C068"
+					type: "item"
+					item: "indrev:pulverizer_creative"
+				}
+				{
+					id: "65F99147423EABF1"
+					type: "item"
+					item: "indrev:compressor_creative"
+				}
+				{
+					id: "232AA489203FADEA"
+					type: "item"
+					item: "indrev:solid_infuser_creative"
+				}
+				{
+					id: "0ABBE6370BE80947"
+					type: "item"
+					item: "indrev:sawmill_creative"
+				}
+				{
+					id: "1E35A037AB2BDC7E"
+					type: "item"
+					item: "indrev:fluid_infuser_creative"
+				}
+			]
+		}
+		{
+			title: "Creative Automation"
+			icon: "indrev:rancher_creative"
+			x: 0.5d
+			y: -1.5d
+			dependencies: ["7AF4D96097879A89"]
+			size: 1.25d
+			id: "0D027EA7C5B9549B"
+			tasks: [{
+				id: "09BA4CB8459EC228"
+				type: "item"
+				item: "benchmarkadditions:benchmark_core"
+			}]
+			rewards: [
+				{
+					id: "2842F21DDEE862C4"
+					type: "item"
+					item: "indrev:chopper_creative"
+				}
+				{
+					id: "031218B313AF3360"
+					type: "item"
+					item: "indrev:farmer_creative"
+				}
+				{
+					id: "6F39C70086120565"
+					type: "item"
+					item: "indrev:slaughter_creative"
+				}
+				{
+					id: "46931CC8884E70CA"
+					type: "item"
+					item: "indrev:rancher_creative"
+				}
+			]
+		}
+		{
+			title: "Wing Gift"
+			icon: "winged:wing_random_creative_flight"
+			x: 2.0d
+			y: -0.5d
+			dependencies: ["7AF4D96097879A89"]
+			size: 1.25d
+			id: "5C5F74201CA95C6A"
+			tasks: [{
+				id: "27218464000CA9B2"
+				type: "item"
+				item: "benchmarkadditions:benchmark_core"
+			}]
+			rewards: [{
+				id: "636FD58125CFCBA0"
+				type: "item"
+				item: "winged:wing_random_creative_flight"
+			}]
+		}
+		{
+			title: "Creative ME item and fluid cell"
+			icon: "ae2:creative_item_cell"
+			x: 1.5d
+			y: -1.5d
+			dependencies: ["7AF4D96097879A89"]
+			size: 1.25d
+			id: "1A3EF632E8EB3F6C"
+			tasks: [{
+				id: "2D3BA10CB6691801"
+				type: "item"
+				item: "benchmarkadditions:benchmark_core"
+			}]
+			rewards: [
+				{
+					id: "56289D514A32A289"
+					type: "item"
+					item: "ae2:creative_item_cell"
+				}
+				{
+					id: "55350025541C2138"
+					type: "item"
+					item: "ae2:creative_fluid_cell"
+				}
+			]
+		}
+		{
+			title: "Creative Music Disc"
+			icon: {
+				id: "phonos:custom_music_disc"
+				Count: 1b
+				tag: {
+					MusicData: {
+						SoundId: "minecraft:empty"
+						ComparatorSignal: 1
+					}
+				}
+			}
+			x: 1.5d
+			y: 0.5d
+			dependencies: ["7AF4D96097879A89"]
+			size: 1.25d
+			id: "2F831A5EEB40555E"
+			tasks: [{
+				id: "1DCB277E494B8031"
+				type: "item"
+				item: "benchmarkadditions:benchmark_core"
+			}]
+			rewards: [{
+				id: "01150579BAF074E0"
+				type: "item"
+				item: {
+					id: "phonos:custom_music_disc"
+					Count: 1b
+					tag: {
+						MusicData: {
+							SoundId: "minecraft:empty"
+							ComparatorSignal: 1
+						}
+					}
+				}
+			}]
+		}
+		{
+			title: "Creative Energy Cell"
+			icon: "ae2:creative_energy_cell"
+			x: 0.5d
+			y: -3.5d
+			dependencies: ["7AF4D96097879A89"]
+			size: 1.25d
+			id: "79730DE14AB92E58"
+			tasks: [{
+				id: "5CDA843603AB0296"
+				type: "item"
+				item: "benchmarkadditions:benchmark_core"
+			}]
+			rewards: [{
+				id: "07C5BC2568B17B7D"
+				type: "item"
+				item: "ae2:creative_energy_cell"
+			}]
+		}
+		{
+			title: "Infrangible Platform"
+			icon: "botania:infrangible_platform"
+			x: 1.0d
+			y: -0.5d
+			dependencies: ["7AF4D96097879A89"]
+			size: 1.25d
+			id: "7AFB2F5BAE429758"
+			tasks: [{
+				id: "6B1CB91947386F58"
+				type: "item"
+				item: "benchmarkadditions:benchmark_core"
+			}]
+			rewards: [{
+				id: "57A895EB9CB83CEC"
+				type: "item"
+				item: "botania:infrangible_platform"
+				count: 16
+			}]
+		}
+		{
+			title: "Nukes o'plenty"
+			icon: "techreborn:nuke"
+			x: 0.5d
+			y: 0.5d
+			dependencies: ["7AF4D96097879A89"]
+			size: 1.25d
+			id: "08564719FB2D35EF"
+			tasks: [{
+				id: "365102ED0A01A6F6"
+				type: "item"
+				item: "benchmarkadditions:benchmark_core"
+			}]
+			rewards: [{
+				id: "65CA4CDC3B0A794B"
+				type: "item"
+				item: "techreborn:nuke"
+				count: 256
+			}]
+		}
+	]
+}
